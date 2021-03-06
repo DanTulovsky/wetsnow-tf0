@@ -1,0 +1,12 @@
+# https://artifacthub.io/packages/helm/prometheus-community/prometheus-pushgateway
+
+resources:
+  limits:
+    cpu: 10m
+    memory: 30Mi
+  requests:
+    cpu: 10m
+    memory: 30Mi
+
+serviceMonitor:
+  enabled: true

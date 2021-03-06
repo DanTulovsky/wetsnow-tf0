@@ -1,0 +1,102 @@
+# https://github.com/bitnami/charts/tree/master/bitnami/kube-prometheus
+fullnameOverride: prometheus0
+operator:
+  service:
+    type: ClusterIP
+    port: 8080
+    clusterIP: None
+  resources:
+    limits:
+      cpu: 100m
+      memory: 128Mi
+    requests:
+      cpu: 100m
+      memory: 128Mi
+exporters:
+  node-exporter:
+    enabled: true
+  kube-state-metrics:
+    enabled: true
+kubeControllerManager:
+  enabled: false
+  service:
+    enabled: false
+kubeScheduler:
+  service:
+    enabled: false
+coreDns:
+  service:
+    enabled: true
+kubeProxy:
+  service:
+    enabled: true
+kubelet:
+  enabled: true
+prometheus:
+  retention: 30d
+  resources:
+    limits:
+      cpu: 1000m
+      memory: 1.6Gi
+    requests:
+      cpu: 200m
+      memory: 1.6Gi
+  service:
+    type: ClusterIP
+    port: 9090
+    clusterIP: None
+  persistence:
+    enabled: true
+    size: 32G
+  volumes:
+    - name: lightstep-config-volume
+      secret:
+        secretName: lightstep-config
+  containers:
+    - name: otel-sidecar
+      image: lightstep/opentelemetry-prometheus-sidecar
+      imagePullPolicy: Always
+      args:
+        - --config-file=/etc/lightstep/config.yaml
+      volumeMounts:
+        - name: prometheus-kube-prometheus-prometheus-db
+          mountPath: /prometheus
+          subPath: prometheus-db
+        - name: lightstep-config-volume
+          mountPath: /etc/lightstep
+      resources:
+        limits:
+          cpu: 100m
+          memory: 512Mi
+        requests:
+          cpu: 100m
+          memory: 256Mi
+alertmanager:
+  enabled: false
+node-exporter:
+  serviceMonitor:
+    enabled: true
+    jobLabel: jobLabel
+    relabelings:
+      - action: replace
+        regex: (.*)
+        replacement: $1
+        sourceLabels:
+          - __meta_kubernetes_pod_node_name
+        targetLabel: kubernetes_node
+  extraArgs:
+    collector.filesystem.ignored-mount-points: "^/(dev|proc|sys|var/lib/docker/.+)($|/)"
+    collector.filesystem.ignored-fs-types: "^(autofs|binfmt_misc|cgroup|configfs|debugfs|devpts|devtmpfs|fusectl|hugetlbfs|mqueue|overlay|proc|procfs|pstore|rpc_pipefs|securityfs|sysfs|tracefs)$"
+    collector.systemd:
+    collector.processes:
+kubeProxy:
+  enabled: true
+kubelet:
+  enabled: true
+  namespace: kube-system
+  serviceMonitor:
+    metricRelabelings:
+      - action: replace
+        sourceLabels:
+          - node
+        targetLabel: instance
