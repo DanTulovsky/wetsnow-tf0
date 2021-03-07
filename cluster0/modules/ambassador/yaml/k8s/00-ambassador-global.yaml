@@ -1,0 +1,43 @@
+apiVersion: getambassador.io/v2
+kind: Module
+metadata:
+  name: ambassador
+  namespace: ambassador
+spec:
+  config:
+    # use_proxy_proto: true
+    xff_num_trusted_hops: 1
+    envoy_log_type: json
+    diagnostics:
+      enabled: true
+---
+apiVersion: getambassador.io/v2
+kind: KubernetesEndpointResolver
+metadata:
+  name: endpoint
+  namespace: ambassador
+---
+apiVersion: cloud.google.com/v1
+kind: BackendConfig
+metadata:
+  name: ambassador-hc-config
+  namespace: ambassador
+spec:
+  # https://cloud.google.com/kubernetes-engine/docs/how-to/ingress-features
+  timeoutSec: 30
+  connectionDraining:
+    drainingTimeoutSec: 30
+  customRequestHeaders:
+    headers:
+      - "X-Client-Region:{client_region}"
+      - "X-Client-City:{client_city}"
+      - "X-Client-CityLatLong:{client_city_lat_long}"
+  logging:
+    enable: true
+    sampleRate: 1.0
+  healthCheck:
+    checkIntervalSec: 10
+    timeoutSec: 10
+    port: 8877
+    type: HTTP
+    requestPath: /ambassador/v0/check_alive

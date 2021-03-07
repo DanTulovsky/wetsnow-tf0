@@ -1,3 +1,8 @@
+resource "kubernetes_namespace" "ambassador" {
+  metadata {
+    name = "ambassador"
+  }
+}
 resource "kubernetes_namespace" "auth" {
   metadata {
     name = "auth"

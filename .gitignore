@@ -34,3 +34,4 @@ cluster0/modules/grafana/.secret/*
 cluster0/modules/keycloak/.secret/*
 cluster0/modules/postgres/.secret/*
 cluster0/modules/open-telemetry/.secret/*
+cluster0/modules/ambassador/.secret/*

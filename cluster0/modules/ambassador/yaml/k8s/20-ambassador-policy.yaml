@@ -1,0 +1,165 @@
+---
+apiVersion: getambassador.io/v2
+kind: FilterPolicy
+metadata:
+  name: pgadmin-policy
+  namespace: ambassador
+spec:
+  rules:
+    - host: "pgadmin.wetsnow.com"
+      # note that "/" only protects "/" and not "/foo"
+      path: "*"
+      filters:
+        - name: keycloak-pgadmin-filter ## Enter the Filter name from above
+          arguments:
+            scope:
+              # required scopes
+              - "email"
+              - "profile"
+              - "default"
+---
+apiVersion: getambassador.io/v2
+kind: FilterPolicy
+metadata:
+  name: kowl-policy
+  namespace: ambassador
+spec:
+  rules:
+    - host: "kafka-ui.wetsnow.com"
+      # note that "/" only protects "/" and not "/foo"
+      path: "*"
+      filters:
+        - name: keycloak-kowl-filter ## Enter the Filter name from above
+          arguments:
+            scope:
+              # required scopes
+              - "email"
+              - "profile"
+              - "default"
+# ---
+# apiVersion: getambassador.io/v2
+# kind: FilterPolicy
+# metadata:
+#   name: predator-policy
+#   namespace: ambassador
+# spec:
+#   rules:
+#     - host: "predator.wetsnow.com"
+#       # note that "/" only protects "/" and not "/foo"
+#       path: "*"
+#       filters:
+#         - name: keycloak-predator-filter ## Enter the Filter name from above
+#           arguments:
+#             scope:
+#               # required scopes
+#               - "email"
+#               - "profile"
+#               - "default"
+---
+apiVersion: getambassador.io/v2
+kind: FilterPolicy
+metadata:
+  name: prometheus-policy
+  namespace: ambassador
+spec:
+  rules:
+    - host: "prometheus.wetsnow.com"
+      # note that "/" only protects "/" and not "/foo"
+      path: "*"
+      filters:
+        - name: keycloak-prometheus-filter ## Enter the Filter name from above
+          arguments:
+            scope:
+              # required scopes
+              - "email"
+              - "profile"
+              - "default"
+---
+# apiVersion: getambassador.io/v2
+# kind: FilterPolicy
+# metadata:
+#   name: linkerd-policy
+#   namespace: ambassador
+# spec:
+#   rules:
+#     - host: "linkerd.wetsnow.com"
+#       # note that "/" only protects "/" and not "/foo"
+#       path: "*"
+#       filters:
+#         - name: keycloak-linkerd-filter ## Enter the Filter name from above
+#           arguments:
+#             scope:
+#               # required scopes
+#               - "email"
+#               - "profile"
+#               - "default"
+# ---
+# apiVersion: getambassador.io/v2
+# kind: FilterPolicy
+# metadata:
+#   name: jaeger-policy
+#   namespace: ambassador
+# spec:
+#   rules:
+#     - host: "jaeger.wetsnow.com"
+#       # note that "/" only protects "/" and not "/foo"
+#       path: "*"
+#       filters:
+#         - name: keycloak-jaeger-filter ## Enter the Filter name from above
+#           arguments:
+#             scope:
+#               # required scopes
+#               - "email"
+#               - "profile"
+#               - "default"
+# ---
+apiVersion: getambassador.io/v2
+kind: FilterPolicy
+metadata:
+  name: pepper-poker-policy
+  namespace: ambassador
+spec:
+  rules:
+    - host: "pepper-poker.wetsnow.com"
+      # note that "/" only protects "/" and not "/foo"
+      path: "*"
+      filters:
+        - name: keycloak-pepper-poker-filter ## Enter the Filter name from above
+          arguments:
+            scope:
+              # required scopes
+              - "email"
+              - "profile"
+              - "poker"
+    # - host: "pepper-poker-grpc.wetsnow.com"
+    # note that "/" only protects "/" and not "/foo"
+    # path: "*"
+    # filters:
+    #   - name: keycloak-pepper-poker-filter ## Enter the Filter name from above
+    #     arguments:
+    #       scope:
+    #         - "poker" # this scope is required to use this endpoint
+    #         - "email"
+    #         - "profile"
+# ---
+# apiVersion: getambassador.io/v2
+# kind: FilterPolicy
+# metadata:
+#   name: n8n-policy
+#   namespace: ambassador
+# spec:
+#   rules:
+#     - host: "n8n.wetsnow.com"
+#       # note that "/" only protects "/" and not "/foo"
+#       path: "/webhook/*"
+#     - host: "n8n.wetsnow.com"
+#       # note that "/" only protects "/" and not "/foo"
+#       path: "*"
+#       filters:
+#         - name: keycloak-n8n-filter ## Enter the Filter name from above
+#           arguments:
+#             scope:
+#               # required scopes
+#               - "email"
+#               - "profile"
+#               - "n8n"
