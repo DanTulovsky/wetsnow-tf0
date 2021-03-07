@@ -3,9 +3,9 @@
 resource "google_sql_database_instance" "master" {
   # name                = "db2"  # random name, since if deleted, can't be re-used for a week
   database_version    = "POSTGRES_13"
-  region              = "us-central1"
+  region              = var.region
   project             = var.project
-  deletion_protection = false
+  deletion_protection = true
   depends_on          = [google_service_networking_connection.private_vpc_connection]
 
 

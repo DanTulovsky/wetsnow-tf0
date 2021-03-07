@@ -9,10 +9,13 @@ terraform {
 }
 
 resource "helm_release" "vector" {
-  name         = "vector"
-  namespace    = "vector"
-  repository   = "https://packages.timber.io/helm/latest"
-  chart        = "vector-agent"
+  name      = "vector"
+  namespace = "vector"
+  # repository   = "https://packages.timber.io/helm/latest"
+  repository = "https://packages.timber.io/helm/nightly"
+  chart      = "vector-agent"
+  # for metrics export
+  version      = "0.12.0-nightly-2021-03-07"
   wait         = true
   force_update = false
 
