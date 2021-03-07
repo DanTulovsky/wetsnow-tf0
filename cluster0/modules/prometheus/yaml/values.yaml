@@ -36,7 +36,7 @@ prometheus:
   retention: 30d
   resources:
     limits:
-      cpu: 1000m
+      cpu: 500m
       memory: 1.6Gi
     requests:
       cpu: 200m

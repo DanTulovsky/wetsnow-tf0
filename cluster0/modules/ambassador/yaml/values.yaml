@@ -48,3 +48,12 @@ service:
   # externalTrafficPolicy: Local
 env:
   AMBASSADOR_LEGACY_MODE: false
+
+redis:
+  resources:
+    limits:
+      cpu: 100m
+      memory: 128Mi
+    requests:
+      cpu: 100m
+      memory: 128Mi
