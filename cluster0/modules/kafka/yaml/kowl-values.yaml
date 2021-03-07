@@ -1,0 +1,16 @@
+# https://github.com/cloudhut/charts
+secret:
+  existingSecret: ${kowlSecret}
+kowl:
+  config:
+    kafka:
+      brokers:
+        - ${broker}
+
+resources:
+  limits:
+    cpu: 100m
+    memory: 64Mi
+  requests:
+    cpu: 100m
+    memory: 64Mi

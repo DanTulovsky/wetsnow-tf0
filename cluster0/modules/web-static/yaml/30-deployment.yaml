@@ -1,5 +1,3 @@
-resource "kubectl_manifest" "deployment_frontend" {
-  yaml_body = <<YAML
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -34,6 +32,7 @@ spec:
               "/data/hosts",
               "--enable_logging",
               "--enable_tracing",
+              "--kafka_broker=kafka0-headless.kafka:9092",
             ]
           resources:
             limits:
@@ -63,5 +62,3 @@ spec:
                   value: readiness
             periodSeconds: 5
             initialDelaySeconds: 5
-YAML
-}

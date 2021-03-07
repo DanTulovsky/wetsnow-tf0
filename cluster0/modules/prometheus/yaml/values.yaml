@@ -1,5 +1,5 @@
 # https://github.com/bitnami/charts/tree/master/bitnami/kube-prometheus
-fullnameOverride: prometheus0
+# fullnameOverride: prometheus0
 operator:
   service:
     type: ClusterIP
@@ -47,7 +47,7 @@ prometheus:
     clusterIP: None
   persistence:
     enabled: true
-    size: 32G
+    size: 8G
   volumes:
     - name: lightstep-config-volume
       secret:
@@ -59,7 +59,7 @@ prometheus:
       args:
         - --config-file=/etc/lightstep/config.yaml
       volumeMounts:
-        - name: prometheus-kube-prometheus-prometheus-db
+        - name: prometheus-prom0-kube-prometheus-prometheus-db
           mountPath: /prometheus
           subPath: prometheus-db
         - name: lightstep-config-volume

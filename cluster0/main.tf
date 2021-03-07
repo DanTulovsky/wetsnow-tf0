@@ -8,6 +8,9 @@ terraform {
       source  = "gavinbunney/kubectl"
       version = ">= 1.7.0"
     }
+    # kafka = {
+    #   source = "Mongey/kafka"
+    # }
   }
 }
 
@@ -28,6 +31,9 @@ provider "helm" {
   }
 }
 
+# provider "kafka" {
+#   bootstrap_servers = ["kafk0.kafka:9092"]
+# }
 provider "kubectl" {
   # config_path = "~/.kube/config"  # don't use this...
   load_config_file       = false

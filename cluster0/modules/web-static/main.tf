@@ -10,3 +10,14 @@ terraform {
     }
   }
 }
+
+resource "kubectl_manifest" "service_static_web_frontend" {
+  yaml_body = file("${path.module}/yaml/20-service.yaml")
+}
+resource "kubectl_manifest" "deployment_frontend" {
+  yaml_body = file("${path.module}/yaml/30-deployment.yaml")
+}
+
+resource "kubectl_manifest" "servicemonitor_static_web_monitor" {
+  yaml_body = file("${path.module}/yaml/00-monitoring-prom.yaml")
+}

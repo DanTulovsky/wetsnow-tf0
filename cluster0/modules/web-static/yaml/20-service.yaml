@@ -1,5 +1,3 @@
-resource "kubectl_manifest" "service_static_web_frontend" {
-  yaml_body = <<YAML
 apiVersion: v1
 kind: Service
 metadata:
@@ -23,5 +21,3 @@ spec:
   sessionAffinity: None # or ClientIP
   type: ClusterIP
   clusterIP: None # headless service
-YAML
-}

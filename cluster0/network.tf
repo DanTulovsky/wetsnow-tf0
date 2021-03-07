@@ -2,7 +2,6 @@
 resource "google_compute_network" "vpc_network" {
   name = var.cluster_info.vpc_name
 }
-
 resource "google_compute_global_address" "private_ip_block" {
   name          = "private-ip-block"
   purpose       = "VPC_PEERING"

@@ -2,18 +2,30 @@
 
 resource "helm_release" "prometheus" {
   depends_on = [kubernetes_secret.lightstep-config]
-  name       = "prometheus"
+  name       = "prom0"
   namespace  = "monitoring"
   repository = "https://charts.bitnami.com/bitnami"
   chart      = "kube-prometheus"
   #   version    = "4.1.2"
   wait         = true
-  force_update = true
+  force_update = false
 
   values = [templatefile("${path.module}/yaml/values.yaml", {})]
 }
 
+# resource "helm_release" "prometheus" {
+#   depends_on   = [kubernetes_secret.lightstep-config]
+#   name         = "prom0"
+#   namespace    = "monitoring"
+#   repository   = "https://prometheus-community.github.io/helm-charts"
+#   chart        = "kube-prometheus-stack"
+#   wait         = true
+#   force_update = false
+
+#   values = [templatefile("${path.module}/yaml/values.yaml", {})]
+# }
 resource "helm_release" "prometheus-pushgateway" {
+  depends_on = [helm_release.prometheus]
   name       = "prometheus-pushgateway"
   namespace  = "monitoring"
   repository = "https://prometheus-community.github.io/helm-charts"

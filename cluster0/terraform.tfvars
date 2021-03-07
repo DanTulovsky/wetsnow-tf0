@@ -14,6 +14,6 @@ machine_types = {
 
 cluster_info = ({
   name = "cluster0"
-  size = 4
+  size = 6
   vpc_name = "vpc0"
 })

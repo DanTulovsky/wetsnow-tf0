@@ -2,16 +2,30 @@
 
 module "common" {
   source     = "./modules/common"
-  depends_on = [module.gke.name]
+  depends_on = [module.gke]
 }
 
+module "kafka" {
+  source     = "./modules/kafka"
+  depends_on = [module.gke, module.common, module.prometheus]
+}
+
+module "grafana" {
+  source     = "./modules/grafana"
+  depends_on = [module.gke, module.common, module.prometheus]
+}
+
+module "keycloak" {
+  source     = "./modules/keycloak"
+  depends_on = [module.gke, module.common, module.prometheus]
+}
 module "prometheus" {
   source     = "./modules/prometheus"
-  depends_on = [module.gke.nameb]
+  depends_on = [module.gke, module.common]
 }
 
 module "web-static" {
   source     = "./modules/web-static"
-  depends_on = [module.gke.name, module.common.namespace_web, module.prometheus.name]
+  depends_on = [module.gke, module.common, module.prometheus, module.kafka]
 }
 

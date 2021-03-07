@@ -5,7 +5,7 @@ resource "google_sql_database_instance" "master" {
   database_version    = "POSTGRES_13"
   region              = "us-central1"
   project             = var.project
-  deletion_protection = true
+  deletion_protection = false
   depends_on          = [google_service_networking_connection.private_vpc_connection]
 
 
@@ -18,6 +18,12 @@ resource "google_sql_database_instance" "master" {
     # disk_autoresize   = true
     disk_type = "PD_HDD"
     disk_size = 20
+    insights_config {
+      query_insights_enabled  = true
+      query_string_length     = 1024
+      record_application_tags = true
+      record_client_address   = true
+    }
     database_flags {
       name  = "max_connections"
       value = 1000
