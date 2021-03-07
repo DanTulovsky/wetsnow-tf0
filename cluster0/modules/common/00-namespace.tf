@@ -30,6 +30,11 @@ resource "kubernetes_namespace" "observability" {
     name = "observability"
   }
 }
+resource "kubernetes_namespace" "vector" {
+  metadata {
+    name = "vector"
+  }
+}
 resource "kubernetes_namespace" "web" {
   metadata {
     name = "web"

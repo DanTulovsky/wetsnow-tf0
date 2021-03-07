@@ -36,6 +36,10 @@ module "prometheus" {
   source     = "./modules/prometheus"
   depends_on = [module.gke, module.common]
 }
+module "vector" {
+  source     = "./modules/vector"
+  depends_on = [module.gke, module.common, module.prometheus, module.kafka]
+}
 module "web-static" {
   source     = "./modules/web-static"
   depends_on = [module.gke, module.common, module.prometheus, module.kafka]

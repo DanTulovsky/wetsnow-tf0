@@ -21,17 +21,13 @@ resource "kubernetes_config_map" "otel-collector-conf" {
   }
 }
 
-resource "kubectl_manifest" "account-otel" {
-  yaml_body = file("${path.module}/yaml/00-account.yaml")
-}
-resource "kubectl_manifest" "service-otel" {
-  yaml_body = file("${path.module}/yaml/20-service.yaml")
-}
-resource "kubectl_manifest" "deployment-otel" {
-  depends_on = [kubernetes_config_map.otel-collector-conf]
-  yaml_body  = file("${path.module}/yaml/30-deployment.yaml")
-}
-resource "kubectl_manifest" "sampling-config" {
-  yaml_body = file("${path.module}/yaml/40-sampling-config.yaml")
+data "kubectl_path_documents" "manifests" {
+  pattern = "${path.module}/yaml/k8s/*.yaml"
 }
 
+resource "kubectl_manifest" "otel-yaml" {
+  depends_on = [kubernetes_config_map.otel-collector-conf]
+  # count      = length(data.kubectl_path_documents.manifests.documents)
+  count     = 7
+  yaml_body = element(data.kubectl_path_documents.manifests.documents, count.index)
+}

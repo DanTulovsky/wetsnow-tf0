@@ -1,5 +1,6 @@
 
 # https://github.com/Mongey/terraform-provider-kafka
+# This requires a direct connection to kafka from the machine running terraform
 # resource "kafka_topic" "otlp_metrics" {
 #   provider           = kafka
 #   depends_on         = [helm_release.kafka]
