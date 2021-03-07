@@ -4,6 +4,11 @@ resource "kubernetes_namespace" "auth" {
   }
 }
 
+resource "kubernetes_namespace" "db" {
+  metadata {
+    name = "db"
+  }
+}
 resource "kubernetes_namespace" "kafka" {
   metadata {
     name = "kafka"
@@ -13,6 +18,11 @@ resource "kubernetes_namespace" "kafka" {
 resource "kubernetes_namespace" "monitoring" {
   metadata {
     name = "monitoring"
+  }
+}
+resource "kubernetes_namespace" "observability" {
+  metadata {
+    name = "observability"
   }
 }
 resource "kubernetes_namespace" "web" {

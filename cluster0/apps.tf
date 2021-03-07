@@ -19,6 +19,14 @@ module "keycloak" {
   source     = "./modules/keycloak"
   depends_on = [module.gke, module.common, module.prometheus]
 }
+module "open-telemetry" {
+  source     = "./modules/open-telemetry"
+  depends_on = [module.gke, module.common]
+}
+module "postgres" {
+  source     = "./modules/postgres"
+  depends_on = [module.gke, module.common]
+}
 module "prometheus" {
   source     = "./modules/prometheus"
   depends_on = [module.gke, module.common]

@@ -1,0 +1,43 @@
+---
+# otel-config in configMap (1password)
+apiVersion: v1
+kind: Service
+metadata:
+  name: otel-collector
+  namespace: observability
+  labels:
+    app: opentelemetry
+    component: otel-collector
+    service: otel-collector
+spec:
+  ports:
+    - name: opencensus # Default endpoint for OpenTelemetry legacy grpc receiver.
+      port: 55678
+      protocol: TCP
+      targetPort: 55678
+    - name: otlp-leg-grpc # Default endpoint for OpenTelemetry legacy grpc receiver.
+      port: 55680
+      protocol: TCP
+      targetPort: 55680
+    - name: otlp-http
+      port: 55681 # Default endpoint for OpenTelemetry http receiver.
+      targetPort: 55681
+    - name: otlp-grpc # Default endpoint for OpenTelemetry grpc receiver
+      port: 4317
+      targetPort: 4317
+    - name: jaeger-grpc # Default endpoint for Jaeger gRPC receiver
+      port: 14250
+    - name: jaeger-thrift-http # Default endpoint for Jaeger HTTP receiver.
+      port: 14268
+    - name: zipkin # Default endpoint for Zipkin receiver.
+      port: 9411
+    - name: metrics # Default endpoint for querying metrics.
+      port: 8888
+    - name: thrift-binary
+      port: 6832
+      protocol: UDP
+    - name: thrift-compact
+      port: 6831
+      protocol: UDP
+  selector:
+    component: otel-collector

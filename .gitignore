@@ -27,7 +27,10 @@ override.tf.json
 
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 # example: *tfplan*
+**/.secret/*
 cluster0/modules/prometheus/.secret/*
 cluster0/modules/kafka/.secret/*
 cluster0/modules/grafana/.secret/*
 cluster0/modules/keycloak/.secret/*
+cluster0/modules/postgres/.secret/*
+cluster0/modules/open-telemetry/.secret/*

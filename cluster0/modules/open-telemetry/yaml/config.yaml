@@ -1,0 +1,61 @@
+receivers:
+  otlp:
+    protocols:
+      grpc:
+      http:
+  opencensus:
+  jaeger:
+    protocols:
+      grpc:
+      thrift_http:
+      thrift_compact:
+      thrift_binary:
+    remote_sampling:
+      strategy_file: "/etc/jaeger/jaeger-sampling-config.json"
+      # Doesn't work
+      # fetch_endpoint: "jaeger-collector.observability:5778"
+  zipkin:
+  # k8s_cluster:
+    # auth_type: "serviceAccount"
+    # collection_interval: 10s
+    # node_conditions_to_report: [Ready, MemoryPressure, DiskPressure, PIDPressure, NetworkUnavailable]
+processors:
+  batch:
+  memory_limiter:
+    # Same as --mem-ballast-size-mib CLI argument
+    ballast_size_mib: 683
+    # 80% of maximum memory up to 2G
+    limit_mib: 1500
+    # 25% of limit up to 2G
+    spike_limit_mib: 512
+    check_interval: 5s
+  k8s_tagger:
+    passthrough: true
+extensions:
+  health_check: {}
+  # https://github.com/open-telemetry/opentelemetry-specification/blob/main/experimental/trace/zpages.md
+  zpages: {}
+  pprof: {}
+exporters:
+  otlp/lightstep:
+    endpoint: "ingest.lightstep.com:443"
+    headers: {"lightstep-access-token": ${lightstepAccessToken}}
+  # jaeger_thrift:
+    #   url: "http://jaeger-collector.observability:14268/api/traces"
+  logging:
+    loglevel: info
+  kafka:
+    protocol_version: 2.0.0
+    brokers:
+      - "kafka0-headless.kafka:9092"
+service:
+  extensions: [health_check, zpages, pprof]
+  pipelines:
+    metrics:
+      receivers: [otlp, opencensus]
+      processors: [memory_limiter, batch]
+      exporters: [otlp/lightstep, kafka]
+    traces/1:
+      receivers: [otlp, zipkin, jaeger]
+      processors: [memory_limiter, batch, k8s_tagger]
+      exporters: [otlp/lightstep, kafka]
