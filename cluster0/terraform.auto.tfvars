@@ -1,4 +1,3 @@
-credentials_file = "/Users/dant/Downloads/snowcloud-1006f5f25962.json"
 
 project = "snowcloud-01"
 region = "us-central1"
