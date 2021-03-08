@@ -17,7 +17,7 @@ resource "helm_release" "ambassador" {
   force_update = false
 
   values = [templatefile("${path.module}/yaml/values.yaml", {
-    licenseKey = chomp(file("${path.module}/.secret/licenseKey.txt"))
+    licenseKey = var.license_key
   })]
 }
 
@@ -40,7 +40,7 @@ resource "kubernetes_secret" "ambassador-keycloak-secret" {
   }
 
   data = {
-    "oauth2-client-secret" = chomp(file("${path.module}/.secret/ambassador-keycloak-secret.txt"))
+    "oauth2-client-secret" = var.ambassador_keycloak_secret
   }
 
   type = "Opaque"
@@ -53,7 +53,7 @@ resource "kubernetes_secret" "pepper-poker-keycloak-secret" {
   }
 
   data = {
-    "oauth2-client-secret" = chomp(file("${path.module}/.secret/pepper-poker-keycloak-secret.txt"))
+    "oauth2-client-secret" = var.pepper_poker_keycloak_secret
   }
 
   type = "Opaque"
@@ -66,7 +66,7 @@ resource "kubernetes_secret" "default-keycloak-secret" {
   }
 
   data = {
-    "oauth2-client-secret" = chomp(file("${path.module}/.secret/default-keycloak-secret.txt"))
+    "oauth2-client-secret" = var.default_keycloak_secret
   }
 
   type = "Opaque"

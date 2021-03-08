@@ -7,6 +7,6 @@ resource "helm_release" "pgadmin4" {
   force_update = false
 
   values = [templatefile("${path.module}/yaml/pgadmin4-values.yaml", {
-    pgadminPassword = chomp(file("${path.module}/.secret/pgadmin-password.yaml"))
+    pgadminPassword = var.admin_password
   })]
 }

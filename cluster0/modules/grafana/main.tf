@@ -23,8 +23,8 @@ resource "kubernetes_secret" "grafana-env-secret" {
 
   data = {
     GF_AUTH_GENERIC_OAUTH_CLIENT_ID : "grafana.wetsnow.com"
-    GF_AUTH_GENERIC_OAUTH_CLIENT_SECRET : chomp(file("${path.module}/.secret/grafana-admin-oauth-secret.txt"))
-    GF_DATABASE_PASSWORD : chomp(file("${path.module}/.secret/grafana-admin-db-password.txt"))
+    GF_AUTH_GENERIC_OAUTH_CLIENT_SECRET : var.oauth_secret
+    GF_DATABASE_PASSWORD : var.db_password
   }
 
   type = "Opaque"
@@ -37,7 +37,7 @@ resource "kubernetes_secret" "grafana-admin" {
   }
 
   data = {
-    admin-password : chomp(file("${path.module}/.secret/grafana-admin-password.txt"))
+    admin-password : var.admin_password
     admin-user : "admin"
   }
 
@@ -51,7 +51,7 @@ resource "kubernetes_secret" "grafana-smtp" {
   }
 
   data = {
-    password : chomp(file("${path.module}/.secret/smtp-password.txt"))
+    password : var.smtp_password
     user : "apikey"
   }
   type = "Opaque"

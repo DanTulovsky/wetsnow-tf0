@@ -50,7 +50,7 @@ resource "kubernetes_secret" "kowl" {
     kafka-tls-cert : ""
     kafka-tls-key : ""
     kafka-tls-passphrase : ""
-    cloudhut-license-token : file("${path.module}/.secret/cloudhut-license-token.yaml")
+    cloudhut-license-token : var.cloudhut_license
     login-jwt-secret : ""
     login-google-oauth-client-secret : ""
     "login-google-groups-service-account.json" : ""

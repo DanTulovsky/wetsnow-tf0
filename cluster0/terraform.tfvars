@@ -17,3 +17,4 @@ cluster_info = ({
   size = 6
   vpc_name = "vpc0"
 })
+

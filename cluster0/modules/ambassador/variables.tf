@@ -1,17 +1,17 @@
-variable "db_password" {
-  type      = string
-  sensitive = true
-}
 
-variable "oauth_secret" {
+variable "ambassador_keycloak_secret" {
   type      = string
   sensitive = true
 }
-variable "admin_password" {
+variable "default_keycloak_secret" {
   type      = string
   sensitive = true
 }
-variable "smtp_password" {
+variable "license_key" {
+  type      = string
+  sensitive = true
+}
+variable "pepper_poker_keycloak_secret" {
   type      = string
   sensitive = true
 }

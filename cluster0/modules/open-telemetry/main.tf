@@ -16,7 +16,7 @@ resource "kubernetes_config_map" "otel-collector-conf" {
 
   data = {
     "otel-collector-config" = templatefile("${path.module}/yaml/config.yaml", {
-      lightstepAccessToken = chomp(file("${path.module}/.secret/lightstep-access-token.txt"))
+      lightstepAccessToken = var.lightstep_access_token
     })
   }
 }

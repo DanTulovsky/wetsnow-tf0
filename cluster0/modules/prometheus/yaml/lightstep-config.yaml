@@ -1,0 +1,6 @@
+destination:
+  endpoint: https://ingest.lightstep.com:443
+  headers:
+    lightstep-access-token: ${accessToken}
+prometheus:
+  wal: /prometheus/wal
