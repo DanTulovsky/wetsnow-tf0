@@ -1,4 +1,3 @@
-
 provider "google" {
   credentials = var.credentials
   project     = var.project
@@ -13,10 +12,6 @@ provider "helm" {
     cluster_ca_certificate = base64decode(module.gke.ca_certificate)
   }
 }
-
-# provider "kafka" {
-#   bootstrap_servers = ["kafk0.kafka:9092"]
-# }
 
 provider "kubectl" {
   # config_path = "~/.kube/config"  # don't use this...

@@ -15,3 +15,7 @@ variable "pepper_poker_keycloak_secret" {
   type      = string
   sensitive = true
 }
+
+variable "namespace" {
+  type = string
+}

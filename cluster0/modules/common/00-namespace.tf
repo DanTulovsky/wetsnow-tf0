@@ -1,4 +1,3 @@
-
 resource "kubernetes_namespace" "namespaces" {
   for_each = var.namespaces
 
@@ -6,3 +5,4 @@ resource "kubernetes_namespace" "namespaces" {
     name = each.key
   }
 }
+

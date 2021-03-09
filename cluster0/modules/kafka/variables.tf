@@ -7,3 +7,7 @@ variable "cloudhut_license" {
   type      = string
   sensitive = true
 }
+
+variable "namespace" {
+  type = string
+}

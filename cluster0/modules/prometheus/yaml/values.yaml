@@ -67,10 +67,10 @@ prometheus:
       resources:
         limits:
           cpu: 100m
-          memory: 512Mi
+          memory: 1024Gi
         requests:
           cpu: 100m
-          memory: 256Mi
+          memory: 512Mi
 alertmanager:
   enabled: false
 node-exporter:
