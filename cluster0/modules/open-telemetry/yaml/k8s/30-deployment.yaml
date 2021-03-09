@@ -97,7 +97,7 @@ apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
   name: otel-collector-monitor
-  namespace: observability
+  namespace: ${namespace}
   labels:
     release: prometheus
 spec:

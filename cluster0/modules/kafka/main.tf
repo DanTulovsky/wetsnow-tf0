@@ -1,7 +1,7 @@
 
 resource "helm_release" "kafka" {
   name         = "kafka0"
-  namespace    = "kafka"
+  namespace    = var.namespace
   repository   = "https://charts.bitnami.com/bitnami"
   chart        = "kafka"
   wait         = true
@@ -13,7 +13,7 @@ resource "helm_release" "kafka" {
 resource "helm_release" "kowl" {
   depends_on   = [helm_release.kafka]
   name         = "kowl"
-  namespace    = "kafka"
+  namespace    = var.namespace
   repository   = "https://raw.githubusercontent.com/cloudhut/charts/master/archives"
   chart        = "kowl"
   wait         = true
@@ -28,7 +28,7 @@ resource "helm_release" "kowl" {
 resource "kubernetes_secret" "kowl" {
   metadata {
     name      = "kowl"
-    namespace = "kafka"
+    namespace = var.namespace
   }
 
   data = {

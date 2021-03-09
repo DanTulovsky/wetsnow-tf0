@@ -1,6 +1,6 @@
 resource "helm_release" "ambassador" {
   name         = "ambassador"
-  namespace    = "ambassador"
+  namespace    = var.namespace
   repository   = "https://getambassador.io"
   chart        = "ambassador"
   wait         = true
@@ -13,6 +13,9 @@ resource "helm_release" "ambassador" {
 
 data "kubectl_path_documents" "manifests" {
   pattern = "${path.module}/yaml/k8s/*.yaml"
+  vars = {
+    namespace = var.namespace
+  }
 }
 
 resource "kubectl_manifest" "ambassador-yaml" {
@@ -26,7 +29,7 @@ resource "kubectl_manifest" "ambassador-yaml" {
 resource "kubernetes_secret" "ambassador-keycloak-secret" {
   metadata {
     name      = "ambassador-keycloak-secret"
-    namespace = "ambassador"
+    namespace = var.namespace
   }
 
   data = {
@@ -39,7 +42,7 @@ resource "kubernetes_secret" "ambassador-keycloak-secret" {
 resource "kubernetes_secret" "pepper-poker-keycloak-secret" {
   metadata {
     name      = "pepper-poker-keycloak-secret"
-    namespace = "ambassador"
+    namespace = var.namespace
   }
 
   data = {
@@ -52,7 +55,7 @@ resource "kubernetes_secret" "pepper-poker-keycloak-secret" {
 resource "kubernetes_secret" "default-keycloak-secret" {
   metadata {
     name      = "default-keycloak-secret"
-    namespace = "ambassador"
+    namespace = var.namespace
   }
 
   data = {

@@ -11,7 +11,6 @@ variable "management_password" {
   sensitive = true
 }
 
-
 variable "namespace" {
   type = string
 }

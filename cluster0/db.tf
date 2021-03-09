@@ -5,8 +5,6 @@ resource "google_sql_database_instance" "master" {
   region              = var.region
   project             = var.project
   deletion_protection = true
-  depends_on          = [google_service_networking_connection.private_vpc_connection]
-
 
   settings {
     # Second-generation instance tiers are based on the machine

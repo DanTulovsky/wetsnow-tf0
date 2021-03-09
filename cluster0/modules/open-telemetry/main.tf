@@ -2,7 +2,7 @@
 resource "kubernetes_config_map" "otel-collector-conf" {
   metadata {
     name      = "otel-collector-conf"
-    namespace = "observability"
+    namespace = var.namespace
   }
 
   data = {
@@ -14,6 +14,9 @@ resource "kubernetes_config_map" "otel-collector-conf" {
 
 data "kubectl_path_documents" "manifests" {
   pattern = "${path.module}/yaml/k8s/*.yaml"
+  vars = {
+    namespace = var.namespace
+  }
 }
 
 resource "kubectl_manifest" "otel-yaml" {

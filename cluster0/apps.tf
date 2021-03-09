@@ -1,5 +1,10 @@
 # https://www.terraform.io/docs/language/modules/syntax.html
 
+module "common" {
+  source     = "./modules/common"
+  depends_on = [module.gke]
+  namespaces = var.cluster_info.namespaces
+}
 module "ambassador" {
   source                       = "./modules/ambassador"
   depends_on                   = [module.gke, module.prometheus]
@@ -9,15 +14,10 @@ module "ambassador" {
   license_key                  = var.ambassador_secrets.license_key
   namespace                    = module.common.namespaces.ambassador
 }
-module "common" {
-  source     = "./modules/common"
-  depends_on = [module.gke]
-  namespaces = var.cluster_info.namespaces
-}
 module "http-ingress" {
   source     = "./modules/http-ingress"
   depends_on = [module.gke, module.ambassador]
-  namespace  = module.common.namespaces.web
+  namespace  = module.common.namespaces.ambassador
 }
 module "kafka" {
   source           = "./modules/kafka"

@@ -2,6 +2,6 @@ kind: ConfigMap
 apiVersion: v1
 metadata:
   name: jaeger-sampling-configuration
-  namespace: observability
+  namespace: ${namespace}
 data:
   sampling: '{"default_strategy":{"param":1,"type":"probabilistic"}}'

@@ -2,7 +2,7 @@
 resource "helm_release" "keycloak" {
   #   depends_on   = [kubernetes_secret.keycloak-db-secret]
   name         = "keycloak"
-  namespace    = "auth"
+  namespace    = var.namespace
   repository   = "https://charts.bitnami.com/bitnami"
   chart        = "keycloak"
   wait         = true

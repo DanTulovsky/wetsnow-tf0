@@ -4,7 +4,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: otel-collector
-  namespace: observability
+  namespace: ${namespace}
   labels:
     app: opentelemetry
     component: otel-collector

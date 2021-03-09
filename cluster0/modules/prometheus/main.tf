@@ -3,7 +3,7 @@
 resource "helm_release" "prometheus" {
   depends_on = [kubernetes_secret.lightstep-config]
   name       = "prom0"
-  namespace  = "monitoring"
+  namespace  = var.namespace
   repository = "https://charts.bitnami.com/bitnami"
   chart      = "kube-prometheus"
   #   version    = "4.1.2"
@@ -16,7 +16,7 @@ resource "helm_release" "prometheus" {
 resource "helm_release" "prometheus-pushgateway" {
   depends_on = [helm_release.prometheus]
   name       = "prometheus-pushgateway"
-  namespace  = "monitoring"
+  namespace  = var.namespace
   repository = "https://prometheus-community.github.io/helm-charts"
   chart      = "prometheus-pushgateway"
   #   version    = "4.1.2"
@@ -28,7 +28,7 @@ resource "helm_release" "prometheus-pushgateway" {
 resource "kubernetes_secret" "lightstep-config" {
   metadata {
     name      = "lightstep-config"
-    namespace = "monitoring"
+    namespace = var.namespace
   }
 
   data = {

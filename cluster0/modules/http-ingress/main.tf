@@ -7,7 +7,7 @@ resource "kubernetes_ingress" "ambassador" {
   wait_for_load_balancer = true
   metadata {
     name      = "wetsnow-ingress"
-    namespace = "ambassador"
+    namespace = var.namespace
     annotations = {
       "kubernetes.io/ingress.global-static-ip-name" : google_compute_global_address.default.name
       # https://github.com/hashicorp/terraform-provider-kubernetes/issues/446

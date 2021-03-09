@@ -1,7 +1,6 @@
-
 resource "helm_release" "vector" {
   name      = "vector"
-  namespace = "vector"
+  namespace = var.namespace
   # repository   = "https://packages.timber.io/helm/latest"
   repository = "https://packages.timber.io/helm/nightly"
   chart      = "vector-agent"
@@ -19,5 +18,7 @@ resource "helm_release" "vector" {
 
 resource "kubectl_manifest" "vector-yaml" {
   depends_on = [helm_release.vector]
-  yaml_body  = file("${path.module}/yaml/k8s/00-monitoring-prom.yaml")
+  yaml_body = templatefile("${path.module}/yaml/k8s/00-monitoring-prom.yaml", {
+    namespace = var.namespace
+  })
 }

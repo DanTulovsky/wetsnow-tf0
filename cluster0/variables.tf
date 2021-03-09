@@ -1,3 +1,7 @@
+variable "service_account" {
+  type    = string
+  default = "wetsnow-tf0"
+}
 variable "project" {
   type = string
 }

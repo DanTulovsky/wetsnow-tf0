@@ -1,6 +1,6 @@
 resource "helm_release" "pgadmin4" {
   name         = "pgadmin4"
-  namespace    = "db"
+  namespace    = var.namespace
   repository   = "https://helm.runix.net"
   chart        = "pgadmin4"
   wait         = true

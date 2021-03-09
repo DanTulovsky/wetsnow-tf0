@@ -3,7 +3,7 @@ apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
   name: static-web-monitor
-  namespace: web
+  namespace: ${namespace}
   labels:
     release: prometheus
 spec:

@@ -36,9 +36,9 @@ module "gke" {
       auto_repair        = true
       auto_upgrade       = true
       autoscaling        = false
-      service_account    = "wetsnow-tf0@${var.project}.iam.gserviceaccount.com"
+      service_account    = "${var.service_account}@${var.project}.iam.gserviceaccount.com"
       preemptible        = false
-      initial_node_count = 3
+      initial_node_count = 1
     },
   ]
 

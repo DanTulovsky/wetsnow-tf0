@@ -6,7 +6,7 @@ resource "helm_release" "grafana" {
     kubernetes_secret.grafana-smtp,
   ]
   name         = "grafana0"
-  namespace    = "monitoring"
+  namespace    = var.namespace
   repository   = "https://grafana.github.io/helm-charts"
   chart        = "grafana"
   wait         = true
@@ -18,7 +18,7 @@ resource "helm_release" "grafana" {
 resource "kubernetes_secret" "grafana-env-secret" {
   metadata {
     name      = "grafana-env-secret"
-    namespace = "monitoring"
+    namespace = var.namespace
   }
 
   data = {
@@ -33,7 +33,7 @@ resource "kubernetes_secret" "grafana-env-secret" {
 resource "kubernetes_secret" "grafana-admin" {
   metadata {
     name      = "grafana-admin"
-    namespace = "monitoring"
+    namespace = var.namespace
   }
 
   data = {
@@ -47,7 +47,7 @@ resource "kubernetes_secret" "grafana-admin" {
 resource "kubernetes_secret" "grafana-smtp" {
   metadata {
     name      = "grafana-smtp"
-    namespace = "monitoring"
+    namespace = var.namespace
   }
 
   data = {
