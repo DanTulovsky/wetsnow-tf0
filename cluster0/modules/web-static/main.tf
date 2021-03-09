@@ -1,22 +1,9 @@
-terraform {
-  required_providers {
-    google = {
-      source  = "hashicorp/google"
-      version = "3.58.0"
-    }
-    kubectl = {
-      source  = "gavinbunney/kubectl"
-      version = ">= 1.7.0"
-    }
-  }
+data "kubectl_path_documents" "manifests" {
+  pattern = "${path.module}/yaml/k8s/*.yaml"
 }
 
-# data "kubectl_path_documents" "manifests" {
-#   pattern = "${path.module}/yaml/k8s/*.yaml"
-# }
-
 # resource "kubectl_manifest" "web-yaml" {
-#   count     = length(data.kubectl_path_documents.manifests.documents)
+#   count     = length(ata.kubectl_path_documents.manifests.documents)
 #   yaml_body = element(data.kubectl_path_documents.manifests.documents, count.index)
 # }
 

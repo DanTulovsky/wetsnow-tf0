@@ -1,5 +1,4 @@
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/sql_database_instance
-
 resource "google_sql_database_instance" "master" {
   # name                = "db2"  # random name, since if deleted, can't be re-used for a week
   database_version    = "POSTGRES_13"

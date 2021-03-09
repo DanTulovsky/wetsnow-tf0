@@ -11,6 +11,7 @@ module "ambassador" {
 module "common" {
   source     = "./modules/common"
   depends_on = [module.gke]
+  namespaces = var.cluster_info.namespaces
 }
 module "http-ingress" {
   source     = "./modules/http-ingress"

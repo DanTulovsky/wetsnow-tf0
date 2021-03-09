@@ -1,13 +1,4 @@
 
-terraform {
-  required_providers {
-    kubectl = {
-      source  = "gavinbunney/kubectl"
-      version = ">= 1.7.0"
-    }
-  }
-}
-
 resource "helm_release" "vector" {
   name      = "vector"
   namespace = "vector"

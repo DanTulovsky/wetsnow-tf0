@@ -1,13 +1,4 @@
 
-terraform {
-  required_providers {
-    kubectl = {
-      source  = "gavinbunney/kubectl"
-      version = ">= 1.7.0"
-    }
-  }
-}
-
 resource "kubernetes_config_map" "otel-collector-conf" {
   metadata {
     name      = "otel-collector-conf"
@@ -31,3 +22,11 @@ resource "kubectl_manifest" "otel-yaml" {
   count     = 7
   yaml_body = element(data.kubectl_path_documents.manifests.documents, count.index)
 }
+
+# resource "kubectl_manifest" "otel-yaml" {
+#   depends_on = [kubernetes_config_map.otel-collector-conf]
+
+#   for_each = toset(data.kubectl_path_documents.manifests.documents)
+
+#   yaml_body = each.key
+# }

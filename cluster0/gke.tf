@@ -1,4 +1,3 @@
-
 module "gke" {
   depends_on = [google_sql_database_instance.master]
 
