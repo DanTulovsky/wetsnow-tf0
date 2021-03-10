@@ -29,3 +29,4 @@ override.tf.json
 # example: *tfplan*
 **/.secret/*
 cluster0/sensitive.auto.tfvars
+cluster0/.gcloud_credentials

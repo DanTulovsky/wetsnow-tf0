@@ -1,7 +1,7 @@
 provider "google" {
-  credentials = var.credentials
-  project     = var.project
-  region      = var.region
+  # export GOOGLE_CREDENTIALS=/Users/dant/github/wetsnow-tf0/cluster0/.gcloud_credentials
+  project = var.project
+  region  = var.region
   #   zone    = var.zone
 }
 

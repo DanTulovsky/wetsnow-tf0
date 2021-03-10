@@ -52,6 +52,8 @@ resource "kubernetes_secret" "pepper-poker-keycloak-secret" {
   type = "Opaque"
 }
 
+
+
 resource "kubernetes_secret" "default-keycloak-secret" {
   metadata {
     name      = "default-keycloak-secret"
