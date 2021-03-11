@@ -26,11 +26,12 @@ resource "google_sql_database_instance" "master" {
       value = 1000
     }
     backup_configuration {
-      enabled = true
+      enabled  = true
+      location = "us"
     }
 
     ip_configuration {
-      ipv4_enabled    = false
+      ipv4_enabled    = true // external IP
       private_network = google_compute_network.vpc_network.self_link
     }
   }
@@ -55,4 +56,14 @@ resource "google_sql_user" "postgres" {
   name     = "grafana"
   instance = google_sql_database_instance.master.name
   password = var.db_users["postgres"]
+}
+
+resource "google_sql_database" "grafana" {
+  name     = "grafana"
+  instance = google_sql_database_instance.master.name
+}
+
+resource "google_sql_database" "bitnami_keycloak" {
+  name     = "bitnami_keycloak"
+  instance = google_sql_database_instance.master.name
 }
