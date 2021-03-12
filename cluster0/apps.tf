@@ -69,6 +69,6 @@ module "web-static" {
   source      = "./modules/web-static"
   depends_on  = [module.gke, module.prometheus, module.kafka]
   namespace   = module.common.namespaces.web
-  app_version = "0.0.1"
+  app_version = var.web_static.app_version
 }
 

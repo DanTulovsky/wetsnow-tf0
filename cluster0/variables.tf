@@ -89,3 +89,10 @@ variable "kafka_secrets" {
     cloudhut_license = string
   })
 }
+
+# App versions
+variable "web_static" {
+  type = object({
+    app_version = string
+  })
+}
