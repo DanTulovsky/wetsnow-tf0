@@ -6,7 +6,8 @@ metadata:
   namespace: ambassador
 spec:
   # service: "otel-collector.observability:9411"
-  service: "otel-collector.observability:4317" # otlp receiver
+  # service: "otel-collector.observability:4317" # otlp receiver
+  service: "ingest.lightstep.com:443"
   # driver: zipkin
   # config: {}
   driver: lightstep
