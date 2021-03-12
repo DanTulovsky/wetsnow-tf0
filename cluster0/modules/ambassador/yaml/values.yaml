@@ -1,3 +1,5 @@
+# https://github.com/datawire/ambassador-chart
+
 licenseKey:
   value: ${licenseKey}
   annotations: {}
@@ -7,6 +9,15 @@ metrics:
     enabled: true
 
 replicaCount: 1
+
+volumes:
+  - name: lightstep-secret-volume
+    secret:
+      secretName: lightstep-access-token
+
+volumeMounts:
+  - name: lightstep-secret-volume
+    mountPath: /etc/lightstep-access-token/token.txt
 
 resources:
   limits:

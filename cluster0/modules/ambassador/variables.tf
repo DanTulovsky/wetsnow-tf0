@@ -16,6 +16,10 @@ variable "pepper_poker_keycloak_secret" {
   sensitive = true
 }
 
+variable "lightstep_access_token" {
+  type      = string
+  sensitive = true
+}
 variable "namespace" {
   type = string
 }

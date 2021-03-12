@@ -5,10 +5,12 @@ metadata:
   name: tracing
   namespace: ambassador
 spec:
-  service: "otel-collector.observability:9411"
-  # service: "jaeger-collector.observability:9411"
-  driver: zipkin
-  config: {}
+  # service: "otel-collector.observability:9411"
+  service: "otel-collector.observability:4317" # otlp receiver
+  # driver: zipkin
+  # config: {}
+  driver: lightstep
+  config: { access_token_file: /etc/lightstep-access-token/token.txt }
   tag_headers:
     - ":authority"
     - ":path"

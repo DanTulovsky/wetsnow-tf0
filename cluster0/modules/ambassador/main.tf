@@ -53,6 +53,19 @@ resource "kubernetes_secret" "pepper-poker-keycloak-secret" {
 }
 
 
+resource "kubernetes_secret" "lightstep-access-token" {
+  metadata {
+    name      = "lightstep-access-token"
+    namespace = var.namespace
+  }
+
+  data = {
+    "token.txt" = var.lightstep_access_token
+  }
+
+  type = "Opaque"
+}
+
 
 resource "kubernetes_secret" "default-keycloak-secret" {
   metadata {
