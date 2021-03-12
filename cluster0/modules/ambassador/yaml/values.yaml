@@ -17,7 +17,7 @@ volumes:
 
 volumeMounts:
   - name: lightstep-secret-volume
-    mountPath: /etc/lightstep-access-token/token.txt
+    mountPath: /etc/lightstep-access-token
 
 resources:
   limits:
