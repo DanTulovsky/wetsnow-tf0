@@ -159,6 +159,10 @@ dashboards:
       gnetId: 741
       revision: 1
       datasource: Prometheus
+    k8s-app-metrics:
+      gnetId: 1471
+      revision: 1
+      datasource: Prometheus
     # postgres-overview:
     #   gnetId: 455
     #   revision: 2
