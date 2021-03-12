@@ -66,8 +66,9 @@ module "vector" {
   namespace  = module.common.namespaces.vector
 }
 module "web-static" {
-  source     = "./modules/web-static"
-  depends_on = [module.gke, module.prometheus, module.kafka]
-  namespace  = module.common.namespaces.web
+  source      = "./modules/web-static"
+  depends_on  = [module.gke, module.prometheus, module.kafka]
+  namespace   = module.common.namespaces.web
+  app_version = "0.0.1"
 }
 

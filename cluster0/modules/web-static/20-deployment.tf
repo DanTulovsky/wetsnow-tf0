@@ -27,8 +27,8 @@ resource "kubernetes_deployment" "frontend" {
       spec {
         container {
           name  = "frontend"
-          image = "ghcr.io/dantulovsky/web-static/frontend"
-          args  = ["--data_dir", "/data/hosts", "--enable_logging", "--enable_tracing"]
+          image = "ghcr.io/dantulovsky/web-static/frontend:${var.app_version}"
+          args  = ["--data_dir", "/data/hosts", "--enable_logging", "--enable_tracing", "--version=${var.app_version}"]
 
           port {
             name           = "http"
