@@ -13,7 +13,7 @@ machine_types = {
 
 cluster_info = ({
   name = "cluster0"
-  size = 6
+  size = 7
   vpc_name = "vpc0"
   namespaces = ["ambassador", "auth", "db", "kafka", "monitoring", "observability", "vector", "web"]
 })
