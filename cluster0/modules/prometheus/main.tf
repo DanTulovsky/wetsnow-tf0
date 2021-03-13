@@ -13,17 +13,17 @@ resource "helm_release" "prometheus" {
   values = [templatefile("${path.module}/yaml/values.yaml", {})]
 }
 
-resource "helm_release" "prometheus-pushgateway" {
-  depends_on = [helm_release.prometheus]
-  name       = "prometheus-pushgateway"
-  namespace  = var.namespace
-  repository = "https://prometheus-community.github.io/helm-charts"
-  chart      = "prometheus-pushgateway"
-  #   version    = "4.1.2"
-  wait = true
+# resource "helm_release" "prometheus-pushgateway" {
+#   depends_on = [helm_release.prometheus]
+#   name       = "prometheus-pushgateway"
+#   namespace  = var.namespace
+#   repository = "https://prometheus-community.github.io/helm-charts"
+#   chart      = "prometheus-pushgateway"
+#   #   version    = "4.1.2"
+#   wait = true
 
-  values = [templatefile("${path.module}/yaml/pushgateway-values.yaml", {})]
-}
+#   values = [templatefile("${path.module}/yaml/pushgateway-values.yaml", {})]
+# }
 
 resource "kubernetes_secret" "lightstep-config" {
   metadata {
