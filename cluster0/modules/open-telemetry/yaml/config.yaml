@@ -23,9 +23,9 @@ processors:
   batch:
   memory_limiter:
     # Same as --mem-ballast-size-mib CLI argument
-    ballast_size_mib: 128
+    # ballast_size_mib: 128
     # 80% of maximum memory up to 2G
-    limit_mib: 512
+    limit_mib: 450
     # 25% of limit up to 2G
     spike_limit_mib: 128
     check_interval: 5s
