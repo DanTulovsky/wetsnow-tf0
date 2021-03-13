@@ -58,7 +58,7 @@ resource "kubernetes_deployment" "otel_collector" {
         container {
           name    = "otel-collector"
           image   = "otel/opentelemetry-collector-contrib:0.19.0"
-          command = ["/otelcontribcol", "--config=/conf/otel-collector-config.yaml", "--mem-ballast-size-mib=683"]
+          command = ["/otelcontribcol", "--config=/conf/otel-collector-config.yaml"]
 
           port {
             name           = "opencensus"
