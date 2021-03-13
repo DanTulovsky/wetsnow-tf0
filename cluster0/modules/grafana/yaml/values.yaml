@@ -115,10 +115,10 @@ dashboards:
     #       $RAW_JSON
     #   custom-dashboard:
     #     file: dashboards/custom-dashboard.json
-    ambassador:
-      gnetId: 10434
-      revision: 1
-      datasource: Prometheus
+    # ambassador:
+    #   gnetId: 10434
+    #   revision: 1
+    #   datasource: Prometheus
     helm-exporter:
       gnetId: 9367
       revision: 2

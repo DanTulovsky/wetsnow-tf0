@@ -5,3 +5,8 @@ variable "namespace" {
 variable "app_version" {
   type = string
 }
+
+variable "lightstep_access_token" {
+  sensitive = true
+  type      = string
+}

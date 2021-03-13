@@ -28,11 +28,16 @@ resource "kubernetes_deployment" "frontend" {
         container {
           name  = "frontend"
           image = "ghcr.io/dantulovsky/web-static/frontend:${var.app_version}"
-          args  = ["--data_dir", "/data/hosts", "--enable_logging", "--enable_tracing", "--version=${var.app_version}", "--kafka_broker=kafka0.kafka"]
+          args  = ["--data_dir", "/data/hosts", "--enable_logging", "--enable_tracing", "--version=${var.app_version}", "--enable_kafka", "--kafka_broker=kafka0.kafka"]
 
           port {
             name           = "http"
             container_port = 8080
+          }
+
+          env {
+            name  = "LS_ACCESS_TOKEN"
+            value = var.lightstep_access_token
           }
 
           resources {

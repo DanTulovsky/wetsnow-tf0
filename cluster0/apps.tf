@@ -67,9 +67,10 @@ module "vector" {
   namespace  = module.common.namespaces.vector
 }
 module "web-static" {
-  source      = "./modules/web-static"
-  depends_on  = [module.gke, module.prometheus, module.kafka]
-  namespace   = module.common.namespaces.web
-  app_version = var.web_static.app_version
+  source                 = "./modules/web-static"
+  depends_on             = [module.gke, module.prometheus, module.kafka]
+  namespace              = module.common.namespaces.web
+  app_version            = var.web_static.app_version
+  lightstep_access_token = var.lightstep_secrets.access_token
 }
 
