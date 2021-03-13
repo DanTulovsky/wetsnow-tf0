@@ -25,10 +25,27 @@ module "gke" {
   node_pools = [
     {
       name         = "pool0"
-      machine_type = var.machine_types[var.environment]
+      machine_type = "e2-medium"
       #   min_count          = 3
       #   max_count          = 3
-      node_count         = var.cluster_info.size
+      node_count         = 3
+      local_ssd_count    = 0
+      disk_size_gb       = 100
+      disk_type          = "pd-standard"
+      image_type         = "COS"
+      auto_repair        = true
+      auto_upgrade       = true
+      autoscaling        = false
+      service_account    = "${var.service_account}@${var.project}.iam.gserviceaccount.com"
+      preemptible        = false
+      initial_node_count = 1
+    },
+    {
+      name         = "pool1"
+      machine_type = "f1-micro"
+      #   min_count          = 3
+      #   max_count          = 3
+      node_count         = 6
       local_ssd_count    = 0
       disk_size_gb       = 100
       disk_type          = "pd-standard"

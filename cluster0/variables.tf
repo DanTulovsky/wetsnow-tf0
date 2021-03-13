@@ -28,7 +28,6 @@ variable "machine_types" {
 variable "cluster_info" {
   type = object({
     name       = string
-    size       = number
     vpc_name   = string
     namespaces = set(string)
   })

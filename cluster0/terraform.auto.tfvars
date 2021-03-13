@@ -5,6 +5,7 @@ zones = ["us-central1-c"]
 
 environment = "dev"
 
+# not used
 machine_types = {
   dev  = "e2-medium"
   test = "e2-medium"
@@ -13,7 +14,6 @@ machine_types = {
 
 cluster_info = ({
   name = "cluster0"
-  size = 7
   vpc_name = "vpc0"
   namespaces = ["ambassador", "auth", "db", "kafka", "monitoring", "observability", "vector", "web"]
 })
