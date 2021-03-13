@@ -16,7 +16,7 @@ exporters:
   node-exporter:
     enabled: true
   kube-state-metrics:
-    enabled: true
+    enabled: false
 kubeControllerManager:
   enabled: false
   service:
@@ -26,21 +26,21 @@ kubeScheduler:
     enabled: false
 coreDns:
   service:
-    enabled: true
+    enabled: false
 kubeProxy:
   service:
-    enabled: true
+    enabled: false
 kubelet:
-  enabled: true
+  enabled: false
 prometheus:
   retention: 30d
   resources:
     limits:
-      cpu: 500m
-      memory: 1.6Gi
+      cpu: 250m
+      memory: 1.4Gi
     requests:
       cpu: 200m
-      memory: 1.6Gi
+      memory: 1.4Gi
   service:
     type: ClusterIP
     port: 9090
