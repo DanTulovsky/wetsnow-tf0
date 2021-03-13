@@ -20,12 +20,12 @@ module "http-ingress" {
   depends_on = [module.gke, module.ambassador]
   namespace  = module.common.namespaces.ambassador
 }
-module "kafka" {
-  source           = "./modules/kafka"
-  depends_on       = [module.gke, module.prometheus]
-  cloudhut_license = var.kafka_secrets.cloudhut_license
-  namespace        = module.common.namespaces.kafka
-}
+# module "kafka" {
+#   source           = "./modules/kafka"
+#   depends_on       = [module.gke, module.prometheus]
+#   cloudhut_license = var.kafka_secrets.cloudhut_license
+#   namespace        = module.common.namespaces.kafka
+# }
 module "grafana" {
   source         = "./modules/grafana"
   depends_on     = [module.gke, module.prometheus]
@@ -68,7 +68,7 @@ module "prometheus" {
 # }
 module "web-static" {
   source                 = "./modules/web-static"
-  depends_on             = [module.gke, module.prometheus, module.kafka]
+  depends_on             = [module.gke, module.prometheus]
   namespace              = module.common.namespaces.web
   app_version            = var.web_static.app_version
   lightstep_access_token = var.lightstep_secrets.access_token
