@@ -49,23 +49,23 @@ module "open-telemetry" {
   lightstep_access_token = var.lightstep_secrets.access_token
   namespace              = module.common.namespaces.observability
 }
-module "postgres" {
-  source         = "./modules/postgres"
-  depends_on     = [module.gke]
-  admin_password = var.pgadmin_secrets.admin_password
-  namespace      = module.common.namespaces.db
-}
+# module "postgres" {
+#   source         = "./modules/postgres"
+#   depends_on     = [module.gke]
+#   admin_password = var.pgadmin_secrets.admin_password
+#   namespace      = module.common.namespaces.db
+# }
 module "prometheus" {
   source                 = "./modules/prometheus"
   depends_on             = [module.gke]
   lightstep_access_token = var.lightstep_secrets.access_token
   namespace              = module.common.namespaces.monitoring
 }
-module "vector" {
-  source     = "./modules/vector"
-  depends_on = [module.gke, module.prometheus, module.kafka]
-  namespace  = module.common.namespaces.vector
-}
+# module "vector" {
+#   source     = "./modules/vector"
+#   depends_on = [module.gke, module.prometheus, module.kafka]
+#   namespace  = module.common.namespaces.vector
+# }
 module "web-static" {
   source                 = "./modules/web-static"
   depends_on             = [module.gke, module.prometheus, module.kafka]
