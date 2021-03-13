@@ -42,7 +42,7 @@ module "gke" {
     },
     {
       name         = "pool1"
-      machine_type = "e2-micro"
+      machine_type = "e2-small"
       #   min_count          = 3
       #   max_count          = 3
       node_count         = 6
