@@ -23,11 +23,11 @@ processors:
   batch:
   memory_limiter:
     # Same as --mem-ballast-size-mib CLI argument
-    ballast_size_mib: 683
+    ballast_size_mib: 128
     # 80% of maximum memory up to 2G
-    limit_mib: 1500
+    limit_mib: 324
     # 25% of limit up to 2G
-    spike_limit_mib: 512
+    spike_limit_mib: 128
     check_interval: 5s
   k8s_tagger:
     passthrough: true
@@ -54,8 +54,8 @@ service:
     metrics:
       receivers: [otlp, opencensus]
       processors: [memory_limiter, batch]
-      exporters: [otlp/lightstep, kafka]
+      exporters: [otlp/lightstep]
     traces/1:
       receivers: [otlp, zipkin, jaeger]
       processors: [memory_limiter, batch, k8s_tagger]
-      exporters: [otlp/lightstep, kafka]
+      exporters: [otlp/lightstep]
