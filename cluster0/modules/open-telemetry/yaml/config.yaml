@@ -925,12 +925,6 @@ receivers:
           - __tmp_hash
           regex: 0
           action: keep
-      alerting:
-        alert_relabel_configs:
-        - action: labeldrop
-          regex: prometheus_replica
-        alertmanagers: []
-
   # k8s_cluster:
   # auth_type: "serviceAccount"
   # collection_interval: 10s
