@@ -61,6 +61,7 @@ env:
   AMBASSADOR_LEGACY_MODE: false
   STATSD_ENABLED: true
   DOGSTATSD: true
+  STATSD_HOST: "localhost"
 
 redis:
   resources:
