@@ -63,6 +63,12 @@ env:
   DOGSTATSD: true
   STATSD_HOST: "localhost"
 
+envRaw:
+  - name: STATSD_HOST
+    valueFrom:
+      fieldRef:
+        fieldPath: status.podIP
+
 redis:
   resources:
     limits:
