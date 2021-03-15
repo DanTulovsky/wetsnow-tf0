@@ -75,6 +75,12 @@ variable "lightstep_secrets" {
   })
 }
 
+variable "datadog_secrets" {
+  sensitive = true
+  type = object({
+    api_key = string
+  })
+}
 variable "pgadmin_secrets" {
   sensitive = true
   type = object({

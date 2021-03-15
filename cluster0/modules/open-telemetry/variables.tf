@@ -3,6 +3,10 @@ variable "lightstep_access_token" {
   type      = string
 }
 
+variable "datadog_api_key" {
+  sensitive = true
+  type      = string
+}
 variable "namespace" {
   type = string
 }

@@ -47,6 +47,7 @@ module "open-telemetry" {
   source                 = "./modules/open-telemetry"
   depends_on             = [module.gke]
   lightstep_access_token = var.lightstep_secrets.access_token
+  datadog_api_key        = var.datadog_secrets.api_key
   namespace              = module.common.namespaces.observability
 }
 # module "postgres" {
