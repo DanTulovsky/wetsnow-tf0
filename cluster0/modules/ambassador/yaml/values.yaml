@@ -59,6 +59,8 @@ service:
   # externalTrafficPolicy: Local
 env:
   AMBASSADOR_LEGACY_MODE: false
+  STATSD_ENABLED: true
+  DOGSTATSD: true
 
 redis:
   resources:
