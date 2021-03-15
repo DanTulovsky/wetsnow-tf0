@@ -1,4 +1,3 @@
-
 resource "kubernetes_config_map" "otel-collector-conf" {
   metadata {
     name      = "otel-collector-conf"
@@ -18,16 +17,16 @@ resource "kubectl_manifest" "servicemonitor_static_web_monitor" {
   })
 }
 
-# data "kubectl_path_documents" "manifests" {
-#   pattern = "${path.module}/yaml/k8s/*.yaml"
-#   vars = {
-#     namespace = var.namespace
-#   }
-# }
+resource "helm_release" "ddog-agent" {
+  name       = "ddog-agent"
+  namespace  = var.namespace
+  repository = "https://helm.datadoghq.com"
+  chart      = "datadog"
+  #   version    = "4.1.2"
+  wait         = true
+  force_update = false
 
-# resource "kubectl_manifest" "otel-yaml" {
-#   depends_on = [kubernetes_config_map.otel-collector-conf]
-#   # count      = length(data.kubectl_path_documents.manifests.documents)
-#   count     = 7
-#   yaml_body = element(data.kubectl_path_documents.manifests.documents, count.index)
-# }
+  values = [templatefile("${path.module}/yaml/ddog-values.yaml", {
+    lightstepAccessToken = var.lightstep_access_token
+  })]
+}
