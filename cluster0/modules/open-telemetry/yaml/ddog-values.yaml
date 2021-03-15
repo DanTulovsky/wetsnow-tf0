@@ -3,7 +3,7 @@
 datadog:
   # api_key: ${lightstepAccessToken}
   api_key: ${datadogApiKey}
-  dd_url: "https://metricingest.lightstep.com"
+  # dd_url: "https://metricingest.lightstep.com"
   logLevel: INFO
 
   processAgent:
