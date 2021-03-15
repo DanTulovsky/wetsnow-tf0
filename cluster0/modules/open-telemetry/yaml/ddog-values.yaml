@@ -1,8 +1,8 @@
 # Send only to Lightstep
 
 datadog:
-  # api_key: ${lightstepAccessToken}
-  api_key: ${datadogApiKey}
+  # apiKey: ${lightstepAccessToken}
+  apiKey: ${datadogApiKey}
   # dd_url: "https://metricingest.lightstep.com"
   logLevel: INFO
 
