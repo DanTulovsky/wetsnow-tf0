@@ -3,3 +3,4 @@
 datadog:
   api_key: ${lightstepAccessToken}
   dd_url: "https://metricingest.lightstep.com"
+  logLevel: DEBUG
