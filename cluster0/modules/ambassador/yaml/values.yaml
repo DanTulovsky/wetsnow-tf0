@@ -58,7 +58,7 @@ service:
   # externalTrafficPolicy: Cluster
   # externalTrafficPolicy: Local
 env:
-  AMBASSADOR_LEGACY_MODE: true
+  AMBASSADOR_LEGACY_MODE: false
   # https://docs.datadoghq.com/integrations/ambassador/
   STATSD_ENABLED: true
   DOGSTATSD: true
