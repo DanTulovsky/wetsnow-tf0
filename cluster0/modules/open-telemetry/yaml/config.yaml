@@ -36,14 +36,14 @@ receivers:
             - __meta_kubernetes_endpoint_address_target_name
             separator: ;
             regex: Node;(.*)
-            replacement: $${1}
+            replacement: $$\{1\}
             target_label: node
           - source_labels:
             - __meta_kubernetes_endpoint_address_target_kind
             - __meta_kubernetes_endpoint_address_target_name
             separator: ;
             regex: Pod;(.*)
-            replacement: $${1}
+            replacement: $$\{1\}
             target_label: pod
           - source_labels:
             - __meta_kubernetes_namespace
@@ -60,7 +60,7 @@ receivers:
           - source_labels:
             - __meta_kubernetes_service_name
             target_label: job
-            replacement: $${1}
+            replacement: $$\{1\}
           - target_label: endpoint
             replacement: http
           - source_labels:
