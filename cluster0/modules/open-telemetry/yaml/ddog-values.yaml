@@ -8,3 +8,7 @@ datadog:
 
   processAgent:
     enabled: false
+
+  logs:
+    enabled: true
+    containerCollectAll: true
