@@ -109,7 +109,7 @@ service:
   extensions: [health_check, zpages, pprof]
   pipelines:
     metrics:
-      receivers: [otlp, opencensus]
+      receivers: [otlp, opencensus, prometheus]
       processors: [memory_limiter, batch]
       exporters: [otlp/lightstep]
     traces/1:
