@@ -68,7 +68,7 @@ envRaw:
   - name: STATSD_HOST
     valueFrom:
       fieldRef:
-        fieldPath: status.podIP
+        fieldPath: status.hostIP
 
 redis:
   resources:
