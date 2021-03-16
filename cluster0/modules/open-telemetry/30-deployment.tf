@@ -159,7 +159,8 @@ resource "kubernetes_deployment" "otel_collector" {
           }
         }
 
-        service_account_name = "otelcontribcol"
+        service_account_name         = "otelcontribcol"
+        automountServiceAccountToken = true
       }
     }
 
