@@ -18,23 +18,19 @@ receivers:
   prometheus:
     config:
       scrape_configs:
-        - job_name: ambassador/ambassador/0
+        - job_name: web/static-web-monitor/0
           honor_labels: false
           kubernetes_sd_configs:
           - role: endpoints
-            namespaces:
-              names:
-              - ambassador
-          metrics_path: /metrics
           relabel_configs:
           - action: keep
             source_labels:
             - __meta_kubernetes_service_label_service
-            regex: ambassador-admin
+            regex: static-web-frontend
           - action: keep
             source_labels:
             - __meta_kubernetes_endpoint_port_name
-            regex: ambassador-admin
+            regex: http
           - source_labels:
             - __meta_kubernetes_endpoint_address_target_kind
             - __meta_kubernetes_endpoint_address_target_name
@@ -66,7 +62,7 @@ receivers:
             target_label: job
             replacement: $${1}
           - target_label: endpoint
-            replacement: ambassador-admin
+            replacement: http
           - source_labels:
             - __address__
             target_label: __tmp_hash
