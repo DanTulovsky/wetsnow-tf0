@@ -63,6 +63,8 @@ receivers:
             replacement: $${1}
           - target_label: endpoint
             replacement: http
+          - target_label: instance
+            replacement: instance1
           - source_labels:
             - __address__
             target_label: __tmp_hash
