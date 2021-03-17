@@ -30,3 +30,5 @@ override.tf.json
 **/.secret/*
 **/sensitive.*
 cluster0/.gcloud_credentials
+kind0/sensitive.auto.tfvars
+cluster0/sensitive.auto.tfvars
