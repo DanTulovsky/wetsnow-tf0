@@ -6,7 +6,7 @@ licenseKey:
   createSecret: true
 metrics:
   serviceMonitor:
-    enabled: true
+    enabled: false
 
 replicaCount: 1
 

@@ -20,11 +20,16 @@ data "kubectl_path_documents" "manifests" {
 
 resource "kubectl_manifest" "ambassador-yaml" {
   depends_on = [helm_release.ambassador]
-  # count      = length(data.kubectl_path_documents.manifests.documents)
-  count     = 25
+  count      = length(data.kubectl_path_documents.manifests.documents)
+  # count     = 25
   yaml_body = element(data.kubectl_path_documents.manifests.documents, count.index)
 }
 
+resource "kubectl_manifest" "ambassador-backend-config" {
+  depends_on = [helm_release.ambassador]
+  count      = var.gke ? 1 : 0
+  yaml_body  = file("${path.module}/yaml/k8s-gcp/backend-config.yaml")
+}
 
 resource "kubernetes_secret" "ambassador-keycloak-secret" {
   metadata {

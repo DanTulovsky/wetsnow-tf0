@@ -9,10 +9,8 @@ resource "kubernetes_deployment" "otel_collector" {
       component = "otel-collector"
     }
   }
-
   spec {
     replicas = 1
-
     selector {
       match_labels = {
         app       = "opentelemetry"
@@ -123,12 +121,12 @@ resource "kubernetes_deployment" "otel_collector" {
           }
 
           resources {
-            limits {
+            limits = {
               cpu    = "0.2"
               memory = "512Mi"
             }
 
-            requests {
+            requests = {
               cpu    = "0.2"
               memory = "512Mi"
             }

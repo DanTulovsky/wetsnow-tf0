@@ -23,3 +23,9 @@ variable "lightstep_access_token" {
 variable "namespace" {
   type = string
 }
+
+variable "gke" {
+  description = "set to true on gke"
+  type        = bool
+  default     = false
+}

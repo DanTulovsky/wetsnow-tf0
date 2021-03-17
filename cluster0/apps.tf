@@ -14,6 +14,7 @@ module "ambassador" {
   license_key                  = var.ambassador_secrets.license_key
   lightstep_access_token       = var.lightstep_secrets.access_token
   namespace                    = module.common.namespaces.ambassador
+  gke                          = true
 }
 module "http-ingress" {
   source     = "./modules/http-ingress"
