@@ -7,26 +7,31 @@ provider "google" {
 
 provider "helm" {
   kubernetes {
-    host                   = "https://${module.gke.endpoint}"
-    token                  = data.google_client_config.default.access_token
-    cluster_ca_certificate = base64decode(module.gke.ca_certificate)
+    host  = "https://${data.google_container_cluster.cluster0.endpoint}"
+    token = data.google_client_config.default.access_token
+    cluster_ca_certificate = base64decode(
+      data.google_container_cluster.cluster0.master_auth[0].cluster_ca_certificate,
+    )
   }
 }
 
 provider "kubectl" {
   # config_path = "~/.kube/config"  # don't use this...
-  load_config_file       = false
-  host                   = "https://${module.gke.endpoint}"
-  token                  = data.google_client_config.default.access_token
-  cluster_ca_certificate = base64decode(module.gke.ca_certificate)
-  apply_retry_count      = 5
+  load_config_file = false
+  host             = "https://${data.google_container_cluster.cluster0.endpoint}"
+  token            = data.google_client_config.default.access_token
+  cluster_ca_certificate = base64decode(
+    data.google_container_cluster.cluster0.master_auth[0].cluster_ca_certificate,
+  )
+  apply_retry_count = 5
 }
 
 provider "kubernetes" {
-  load_config_file       = false
-  host                   = "https://${module.gke.endpoint}"
-  token                  = data.google_client_config.default.access_token
-  cluster_ca_certificate = base64decode(module.gke.ca_certificate)
+  host  = "https://${data.google_container_cluster.cluster0.endpoint}"
+  token = data.google_client_config.default.access_token
+  cluster_ca_certificate = base64decode(
+    data.google_container_cluster.cluster0.master_auth[0].cluster_ca_certificate,
+  )
 }
 # provider "kubernetes-alpha" {
 #   server_side_planning = false

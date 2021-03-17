@@ -20,11 +20,6 @@ variable "environment" {
   default = "dev"
 }
 
-variable "machine_types" {
-  type = map(string)
-}
-
-
 variable "cluster_info" {
   type = object({
     name       = string

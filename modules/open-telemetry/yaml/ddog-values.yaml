@@ -1,0 +1,22 @@
+# Send only to Lightstep
+
+# https://github.com/DataDog/helm-charts
+
+datadog:
+  apiKey: ${lightstepAccessToken}
+  # apiKey: ${datadogApiKey}
+  dd_url: "https://metricingest.lightstep.com"
+  logLevel: INFO
+
+  processAgent:
+    enabled: false
+
+  logs:
+    enabled: false
+    containerCollectAll: false
+
+  dogstatsd:
+    useHostPort: true
+
+  kubelet:
+    tlsVerify: ${gke}

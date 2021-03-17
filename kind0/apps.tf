@@ -1,12 +1,12 @@
 # https://www.terraform.io/docs/language/modules/syntax.html
 
 module "common" {
-  source = "../cluster0/modules/common"
+  source = "../modules/common"
   # depends_on = [module.gke]
   namespaces = var.cluster_info.namespaces
 }
 module "ambassador" {
-  source                       = "../cluster0/modules/ambassador"
+  source                       = "../modules/ambassador"
   depends_on                   = [module.common]
   ambassador_keycloak_secret   = var.ambassador_secrets.ambassador_keycloak_secret
   default_keycloak_secret      = var.ambassador_secrets.default_keycloak_secret
@@ -14,18 +14,21 @@ module "ambassador" {
   license_key                  = var.ambassador_secrets.license_key
   lightstep_access_token       = var.lightstep_secrets.access_token
   namespace                    = module.common.namespaces.ambassador
+  prom_enabled                 = false
 }
 # module "http-ingress" {
 #   source     = "./modules/http-ingress"
 #   depends_on = [module.gke, module.ambassador]
 #   namespace  = module.common.namespaces.ambassador
 # }
-# # module "kafka" {
-# #   source           = "./modules/kafka"
-# #   depends_on       = [module.gke, module.prometheus]
-# #   cloudhut_license = var.kafka_secrets.cloudhut_license
-# #   namespace        = module.common.namespaces.kafka
-# # }
+module "kafka" {
+  source = "../modules/kafka"
+  # depends_on       = [module.gke, module.prometheus]
+  cloudhut_license    = var.kafka_secrets.cloudhut_license
+  namespace           = module.common.namespaces.kafka
+  prom_enabled        = false
+  kafka_replica_count = 1
+}
 # module "grafana" {
 #   source         = "./modules/grafana"
 #   depends_on     = [module.gke]
@@ -44,7 +47,7 @@ module "ambassador" {
 #   namespace           = module.common.namespaces.auth
 # }
 module "open-telemetry" {
-  source                 = "../cluster0/modules/open-telemetry"
+  source                 = "../modules/open-telemetry"
   depends_on             = [module.common]
   lightstep_access_token = var.lightstep_secrets.access_token
   datadog_api_key        = var.datadog_secrets.api_key
@@ -56,19 +59,20 @@ module "open-telemetry" {
 # #   admin_password = var.pgadmin_secrets.admin_password
 # #   namespace      = module.common.namespaces.db
 # # }
-# module "prometheus" {
-#   source                 = "../cluster0/modules/prometheus"
-#   depends_on             = [module.common]
-#   lightstep_access_token = var.lightstep_secrets.access_token
-#   namespace              = module.common.namespaces.monitoring
-# }
+module "prometheus" {
+  source                 = "../modules/prometheus"
+  depends_on             = [module.common]
+  lightstep_access_token = var.lightstep_secrets.access_token
+  namespace              = module.common.namespaces.monitoring
+  enabled                = false
+}
 # # module "vector" {
 # #   source     = "./modules/vector"
 # #   depends_on = [module.gke, module.prometheus, module.kafka]
 # #   namespace  = module.common.namespaces.vector
 # # }
 module "web-static" {
-  source                 = "../cluster0/modules/web-static"
+  source                 = "../modules/web-static"
   depends_on             = [module.common]
   namespace              = module.common.namespaces.web
   app_version            = var.web_static.app_version

@@ -4,7 +4,7 @@ terraform {
   required_providers {
     google = {
       source  = "hashicorp/google"
-      version = "3.58.0"
+      version = ">= 3.58.0"
     }
     kubectl = {
       source  = "gavinbunney/kubectl"
@@ -24,6 +24,11 @@ terraform {
       name = "wetsnow-tf0"
     }
   }
+}
+
+data "google_container_cluster" "cluster0" {
+  name     = var.cluster_info.name
+  location = var.zones[0]
 }
 
 data "google_client_config" "default" {}

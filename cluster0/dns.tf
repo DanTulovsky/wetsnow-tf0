@@ -7,7 +7,8 @@ module "dns-private-zone" {
   domain     = "gke-internal.wetsnow.com."
 
   private_visibility_config_networks = [
-    google_compute_network.vpc_network.self_link,
+    # google_compute_network.vpc_network.self_link,
+    "projects/snowcloud-01/global/networks/vpc0",
   ]
 
   recordsets = [

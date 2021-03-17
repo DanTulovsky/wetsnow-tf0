@@ -31,8 +31,9 @@ resource "google_sql_database_instance" "master" {
     }
 
     ip_configuration {
-      ipv4_enabled    = true // external IP
-      private_network = google_compute_network.vpc_network.self_link
+      ipv4_enabled = true // external IP
+      # private_network = google_compute_network.vpc_network.self_link
+      private_network = "projects/snowcloud-01/global/networks/vpc0"
     }
   }
 }
