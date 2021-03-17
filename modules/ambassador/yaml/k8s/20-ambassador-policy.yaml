@@ -149,7 +149,6 @@ spec:
               # required scopes
               - "email"
               - "profile"
-              - "poker"
     # - host: "pepper-poker-grpc.wetsnow.com"
     # note that "/" only protects "/" and not "/foo"
     # path: "*"
