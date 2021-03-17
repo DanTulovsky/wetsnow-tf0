@@ -141,7 +141,7 @@ spec:
   rules:
     - host: "www.wetsnow.com"
       # note that "/" only protects "/" and not "/foo"
-      path: "/auth/*"
+      path: "/auth*"
       filters:
         - name: keycloak-wetsnow-com-filter ## Enter the Filter name from above
           arguments:

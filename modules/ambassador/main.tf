@@ -21,8 +21,8 @@ data "kubectl_path_documents" "manifests" {
 
 resource "kubectl_manifest" "ambassador-yaml" {
   depends_on = [helm_release.ambassador]
-  # count      = length(data.kubectl_path_documents.manifests.documents)
-  count     = 24
+  count      = length(data.kubectl_path_documents.manifests.documents)
+  # count     = 26
   yaml_body = element(data.kubectl_path_documents.manifests.documents, count.index)
 }
 
