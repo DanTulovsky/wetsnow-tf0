@@ -6,8 +6,8 @@ module "common" {
   namespaces = var.cluster_info.namespaces
 }
 module "ambassador" {
-  source                       = "./modules/ambassador"
-  depends_on                   = [module.gke]
+  source = "./modules/ambassador"
+  # depends_on                   = [module.gke]
   ambassador_keycloak_secret   = var.ambassador_secrets.ambassador_keycloak_secret
   default_keycloak_secret      = var.ambassador_secrets.default_keycloak_secret
   pepper_poker_keycloak_secret = var.ambassador_secrets.pepper_poker_keycloak_secret
@@ -18,7 +18,7 @@ module "ambassador" {
 }
 module "http-ingress" {
   source     = "./modules/http-ingress"
-  depends_on = [module.gke, module.ambassador]
+  depends_on = [module.ambassador]
   namespace  = module.common.namespaces.ambassador
 }
 # module "kafka" {
@@ -28,8 +28,8 @@ module "http-ingress" {
 #   namespace        = module.common.namespaces.kafka
 # }
 module "grafana" {
-  source         = "./modules/grafana"
-  depends_on     = [module.gke]
+  source = "./modules/grafana"
+  # depends_on     = [module.gke]
   db_password    = var.db_users["grafana"]
   oauth_secret   = var.grafana_secrets.oauth_secret
   admin_password = var.grafana_secrets.admin_password
@@ -37,16 +37,16 @@ module "grafana" {
   namespace      = module.common.namespaces.monitoring
 }
 module "keycloak" {
-  source              = "./modules/keycloak"
-  depends_on          = [module.gke]
+  source = "./modules/keycloak"
+  # depends_on          = [module.gke]
   db_password         = var.db_users["bn_keycloak"]
   admin_password      = var.keycloak_secrets.admin_password
   management_password = var.keycloak_secrets.management_password
   namespace           = module.common.namespaces.auth
 }
 module "open-telemetry" {
-  source                 = "./modules/open-telemetry"
-  depends_on             = [module.gke]
+  source = "./modules/open-telemetry"
+  # depends_on             = [module.gke]
   lightstep_access_token = var.lightstep_secrets.access_token
   datadog_api_key        = var.datadog_secrets.api_key
   namespace              = module.common.namespaces.observability
@@ -69,8 +69,8 @@ module "open-telemetry" {
 #   namespace  = module.common.namespaces.vector
 # }
 module "web-static" {
-  source                 = "./modules/web-static"
-  depends_on             = [module.gke]
+  source = "./modules/web-static"
+  # depends_on             = [module.gke]
   namespace              = module.common.namespaces.web
   app_version            = var.web_static.app_version
   lightstep_access_token = var.lightstep_secrets.access_token
