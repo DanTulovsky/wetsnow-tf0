@@ -81,3 +81,15 @@ redis:
 
 agent:
   enabled: false
+
+%{ if !gke  }
+nodeSelector:
+  # kind cluster
+  ingress-ready: "true"
+
+# allow running on master node in kind cluster
+tolerations:
+  - key: "node-role.kubernetes.io/master"
+    effect: "NoSchedule"
+    operator: "Exists"
+%{ endif }

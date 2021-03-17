@@ -7,7 +7,7 @@
 
 provider "helm" {
   kubernetes {
-    config_path = "~/.kube/config" # don't use this...
+    config_path = "~/.kube/kind-config" # don't use this...
     # host                   = "https://${module.gke.endpoint}"
     # token                  = data.google_client_config.default.access_token
     # cluster_ca_certificate = base64decode(module.gke.ca_certificate)
@@ -15,7 +15,7 @@ provider "helm" {
 }
 
 provider "kubectl" {
-  config_path = "~/.kube/config" # don't use this...
+  config_path = "~/.kube/kind-config" # don't use this...
   # load_config_file       = false
   # host                   = "https://${module.gke.endpoint}"
   # token                  = data.google_client_config.default.access_token
@@ -24,7 +24,7 @@ provider "kubectl" {
 }
 
 provider "kubernetes" {
-  config_path = "~/.kube/config" # don't use this...
+  config_path = "~/.kube/kind-config" # don't use this...
   # load_config_file       = false
   # host                   = "https://${module.gke.endpoint}"
   # token                  = data.google_client_config.default.access_token

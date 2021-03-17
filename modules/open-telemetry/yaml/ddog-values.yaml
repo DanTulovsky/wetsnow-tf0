@@ -20,3 +20,10 @@ datadog:
 
   kubelet:
     tlsVerify: ${gke}
+
+agents:
+  # for kind cluster
+  tolerations:
+    - key: "node-role.kubernetes.io/master"
+      effect: "NoSchedule"
+      operator: "Exists"
