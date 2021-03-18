@@ -5,7 +5,7 @@ resource "helm_release" "vector" {
   repository = "https://packages.timber.io/helm/nightly"
   chart      = "vector-agent"
   # for metrics export
-  version      = "0.12.0-nightly-2021-03-07"
+  version      = "0.13.0-nightly-2021-03-17"
   wait         = true
   force_update = false
 

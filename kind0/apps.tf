@@ -1,8 +1,7 @@
 # https://www.terraform.io/docs/language/modules/syntax.html
 
 module "common" {
-  source = "../modules/common"
-  # depends_on = [module.gke]
+  source     = "../modules/common"
   namespaces = var.cluster_info.namespaces
 }
 module "ambassador" {
@@ -22,8 +21,7 @@ module "ambassador" {
 #   namespace  = module.common.namespaces.ambassador
 # }
 module "kafka" {
-  source = "../modules/kafka"
-  # depends_on       = [module.gke, module.prometheus]
+  source              = "../modules/kafka"
   cloudhut_license    = var.kafka_secrets.cloudhut_license
   namespace           = module.common.namespaces.kafka
   prom_enabled        = false
@@ -62,12 +60,12 @@ module "open-telemetry" {
 
   }
 }
-# # module "postgres" {
-# #   source         = "./modules/postgres"
-# #   depends_on     = [module.gke]
-# #   admin_password = var.pgadmin_secrets.admin_password
-# #   namespace      = module.common.namespaces.db
-# # }
+# module "postgres" {
+#   source         = "./modules/postgres"
+#   depends_on     = [module.gke]
+#   admin_password = var.pgadmin_secrets.admin_password
+#   namespace      = module.common.namespaces.db
+# }
 module "prometheus" {
   source                 = "../modules/prometheus"
   depends_on             = [module.common]
@@ -75,11 +73,11 @@ module "prometheus" {
   namespace              = module.common.namespaces.monitoring
   enabled                = false
 }
-# # module "vector" {
-# #   source     = "./modules/vector"
-# #   depends_on = [module.gke, module.prometheus, module.kafka]
-# #   namespace  = module.common.namespaces.vector
-# # }
+module "vector" {
+  source     = "../modules/vector"
+  depends_on = [module.kafka]
+  namespace  = module.common.namespaces.vector
+}
 module "web-static" {
   source                 = "../modules/web-static"
   depends_on             = [module.common]
