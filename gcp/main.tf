@@ -16,14 +16,14 @@ terraform {
     }
   }
 
-  # backend "remote" {
-  #   # hostname     = "app.terraform.io"
-  #   organization = "Wetsnow"
+  backend "remote" {
+    # hostname     = "app.terraform.io"
+    organization = "Wetsnow"
 
-  #   workspaces {
-  #     name = "wetsnow-tf0"
-  #   }
-  # }
+    workspaces {
+      name = "wetsnow-tf0-gcp"
+    }
+  }
 }
 
 data "google_client_config" "default" {}
