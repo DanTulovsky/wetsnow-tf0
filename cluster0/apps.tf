@@ -29,15 +29,15 @@ module "http-ingress" {
 #   namespace        = module.common.namespaces.kafka
 #   kafka_replica_count = 1
 # }
-module "grafana" {
-  source = "../modules/grafana"
-  # depends_on     = [module.gke]
-  db_password    = var.db_users["grafana"]
-  oauth_secret   = var.grafana_secrets.oauth_secret
-  admin_password = var.grafana_secrets.admin_password
-  smtp_password  = var.grafana_secrets.smtp_password
-  namespace      = module.common.namespaces.monitoring
-}
+# module "grafana" {
+#   source = "../modules/grafana"
+#   # depends_on     = [module.gke]
+#   db_password    = var.db_users["grafana"]
+#   oauth_secret   = var.grafana_secrets.oauth_secret
+#   admin_password = var.grafana_secrets.admin_password
+#   smtp_password  = var.grafana_secrets.smtp_password
+#   namespace      = module.common.namespaces.monitoring
+# }
 module "keycloak" {
   source = "../modules/keycloak"
   # depends_on          = [module.gke]
