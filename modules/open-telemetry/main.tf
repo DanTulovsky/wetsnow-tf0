@@ -7,6 +7,12 @@ resource "kubernetes_config_map" "otel-collector-conf" {
   data = {
     "otel-collector-config" = templatefile("${path.module}/yaml/config.yaml", {
       lightstepAccessToken = var.lightstep_access_token
+      metricsReceivers     = var.kafka.metrics_receivers
+      metricsProcessors    = var.kafka.metrics_processors
+      metricsExporters     = var.kafka.metrics_exporters
+      traceReceivers       = var.kafka.trace_receivers
+      traceProcessors      = var.kafka.trace_processors
+      traceExporters       = var.kafka.trace_exporters
     })
   }
 }

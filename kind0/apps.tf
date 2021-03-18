@@ -52,6 +52,15 @@ module "open-telemetry" {
   lightstep_access_token = var.lightstep_secrets.access_token
   datadog_api_key        = var.datadog_secrets.api_key
   namespace              = module.common.namespaces.observability
+  kafka = {
+    metrics_receivers  = "[otlp, k8s_cluster]"
+    metrics_processors = "[memory_limiter, batch]"
+    metrics_exporters  = "[otlp/lightstep, kafka]"
+    trace_receivers    = "[otlp, zipkin, jaeger]"
+    trace_processors   = "[memory_limiter, batch, k8s_tagger]"
+    trace_exporters    = "[otlp/lightstep, kafka]"
+
+  }
 }
 # # module "postgres" {
 # #   source         = "./modules/postgres"

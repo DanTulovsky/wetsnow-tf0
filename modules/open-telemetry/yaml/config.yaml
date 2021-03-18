@@ -73,10 +73,10 @@ receivers:
             - __tmp_hash
             regex: 0
             action: keep
-  # k8s_cluster:
-  # auth_type: "serviceAccount"
-  # collection_interval: 10s
-  # node_conditions_to_report: [Ready, MemoryPressure, DiskPressure, PIDPressure, NetworkUnavailable]
+  k8s_cluster:
+    auth_type: "serviceAccount"
+    collection_interval: 10s
+    node_conditions_to_report: [Ready, MemoryPressure, DiskPressure, PIDPressure, NetworkUnavailable]
 processors:
   batch:
   memory_limiter:
@@ -110,10 +110,10 @@ service:
   extensions: [health_check, zpages, pprof]
   pipelines:
     metrics:
-      receivers: [otlp, opencensus, prometheus]
-      processors: [memory_limiter, batch]
-      exporters: [otlp/lightstep]
+      receivers: ${metricsReceivers}
+      processors: ${metricsProcessors}
+      exporters: ${metricsExporters}
     traces/1:
-      receivers: [otlp, zipkin, jaeger]
-      processors: [memory_limiter, batch, k8s_tagger]
-      exporters: [otlp/lightstep]
+      receivers: ${traceReceivers}
+      processors: ${traceProcessors}
+      exporters: ${traceExporters}

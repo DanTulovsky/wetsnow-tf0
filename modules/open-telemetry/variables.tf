@@ -20,3 +20,15 @@ variable "gke" {
   type    = bool
   default = false
 }
+
+variable "kafka" {
+  type = map(string)
+  default = {
+    metrics_receivers  = "[otlp, k8s_cluster]"
+    metrics_processors = "[memory_limiter, batch]"
+    metrics_exporters  = "[otlp/lightstep]"
+    trace_receivers    = "[otlp, zipkin, jaeger]"
+    trace_processors   = "[memory_limiter, batch, k8s_tagger]"
+    trace_exporters    = "[otlp/lightstep]"
+  }
+}
