@@ -1,6 +1,6 @@
 
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_managed_ssl_certificate
-resource "google_compute_managed_ssl_certificate" "wetsnow-com" {
+resource "google_compute_managed_ssl_certificate" "wetsnow-com-20210319" {
   name = "wetsnow-cert"
 
   managed {
