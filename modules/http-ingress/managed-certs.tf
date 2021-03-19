@@ -15,6 +15,8 @@ resource "google_compute_managed_ssl_certificate" "wetsnow-com" {
       "pgadmin.wetsnow.com.",
       "kafka-ui.wetsnow.com.",
       "dusselskolk.com.",
+      "scope.wetsnow.com",
+      "weave-scope.wetsnow.com",
       "www.dusselskolk.com.",
     ]
   }

@@ -171,6 +171,32 @@ spec:
 apiVersion: getambassador.io/v2
 kind: Mapping
 metadata:
+  name: scope.wetsnow.com
+  namespace: ambassador
+spec:
+  prefix: /
+  host: scope.wetsnow.com
+  resolver: endpoint
+  service: weave-scope-app:80
+  allow_upgrade:
+    - websocket
+---
+apiVersion: getambassador.io/v2
+kind: Mapping
+metadata:
+  name: weave-scope.wetsnow.com
+  namespace: ambassador
+spec:
+  prefix: /
+  host: weave-scope.wetsnow.com
+  resolver: endpoint
+  service: weave-scope-app:80
+  allow_upgrade:
+    - websocket
+---
+apiVersion: getambassador.io/v2
+kind: Mapping
+metadata:
   name: "404-fallback"
   namespace: ambassador
 spec:

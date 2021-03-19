@@ -36,6 +36,36 @@ spec:
               - "email"
               - "profile"
               - "default"
+---
+apiVersion: getambassador.io/v2
+kind: FilterPolicy
+metadata:
+  name: scope-policy
+  namespace: ambassador
+spec:
+  rules:
+    - host: "scope.wetsnow.com"
+      # note that "/" only protects "/" and not "/foo"
+      path: "*"
+      filters:
+        - name: keycloak-scope-filter ## Enter the Filter name from above
+          arguments:
+            scope:
+              # required scopes
+              - "email"
+              - "profile"
+              - "default"
+    - host: "weave-scope.wetsnow.com"
+      # note that "/" only protects "/" and not "/foo"
+      path: "*"
+      filters:
+        - name: keycloak-scope-filter ## Enter the Filter name from above
+          arguments:
+            scope:
+              # required scopes
+              - "email"
+              - "profile"
+              - "default"
 # ---
 # apiVersion: getambassador.io/v2
 # kind: FilterPolicy
@@ -149,6 +179,7 @@ spec:
               # required scopes
               - "email"
               - "profile"
+              - "default"
     # - host: "pepper-poker-grpc.wetsnow.com"
     # note that "/" only protects "/" and not "/foo"
     # path: "*"
