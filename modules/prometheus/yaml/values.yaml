@@ -16,24 +16,24 @@ exporters:
   node-exporter:
     enabled: true
   kube-state-metrics:
-    enabled: false
+    enabled: true
 kubeControllerManager:
-  enabled: false
+  enabled: true
   service:
-    enabled: false
+    enabled: true
 kubeScheduler:
   service:
-    enabled: false
+    enabled: true
 coreDns:
   service:
-    enabled: false
+    enabled: true
 kubeProxy:
   service:
-    enabled: false
+    enabled: true
 kubelet:
-  enabled: false
+  enabled: true
 prometheus:
-  retention: 30d
+  retention: 7d
   resources:
     limits:
       cpu: 250m

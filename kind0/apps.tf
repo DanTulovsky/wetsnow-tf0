@@ -73,6 +73,10 @@ module "prometheus" {
   namespace              = module.common.namespaces.monitoring
   enabled                = false
 }
+module "scope" {
+  source    = "../modules/scope"
+  namespace = module.common.namespaces.weave
+}
 module "vector" {
   source     = "../modules/vector"
   depends_on = [module.kafka]
