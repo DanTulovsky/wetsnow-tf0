@@ -81,7 +81,7 @@ spec:
   OAuth2:
     authorizationURL: https://login.wetsnow.com/auth/realms/wetsnow
     clientID: default.wetsnow.com
-    secretName: default-scope-secret
+    secretName: default-keycloak-secret
     # These are simply authorized_callbacks!
     protectedOrigins:
       - origin: https://scope.wetsnow.com
