@@ -27,12 +27,9 @@ resource "google_compute_managed_ssl_certificate" "wetsnow-com" {
 resource "google_compute_managed_ssl_certificate" "wetsnow-com-next" {
   name = "wetsnow-cert-20210319"
   managed {
-    domains = [
-      "wetsnow.com.",
-      "www.wetsnow.com.",
-      "ambassador-admin.wetsnow.com.",
+    domains = concat(local.domains, [
       "scope.wetsnow.com",
       "weave-scope.wetsnow.com",
-    ]
+    ])
   }
 }
