@@ -177,7 +177,7 @@ spec:
   prefix: /
   host: scope.wetsnow.com
   resolver: endpoint
-  service: weave-scope-app:80
+  service: weave-scope-app.weave:80
   allow_upgrade:
     - websocket
 ---
@@ -190,7 +190,7 @@ spec:
   prefix: /
   host: weave-scope.wetsnow.com
   resolver: endpoint
-  service: weave-scope-app:80
+  service: weave-scope-app.weave:80
   allow_upgrade:
     - websocket
 ---
