@@ -328,9 +328,9 @@ items:
               imagePullPolicy: IfNotPresent
               resources:
                 limits:
-                  memory: 100Mi
+                  memory: 2000Mi
                 requests:
-                  cpu: 100m
+                  cpu: 50m
                   memory: 100Mi
               securityContext:
                 privileged: true
