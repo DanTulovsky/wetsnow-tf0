@@ -31,7 +31,7 @@ resource "kubernetes_deployment" "frontend" {
           when_unsatisfiable = "DoNotSchedule"
           label_selector {
             match_labels = {
-              app       = "static_web"
+              app       = "static-web"
               component = "frontend"
               tier      = "production"
             }
@@ -43,7 +43,7 @@ resource "kubernetes_deployment" "frontend" {
           when_unsatisfiable = "DoNotSchedule"
           label_selector {
             match_labels = {
-              app       = "static_web"
+              app       = "static-web"
               component = "frontend"
               tier      = "production"
             }
