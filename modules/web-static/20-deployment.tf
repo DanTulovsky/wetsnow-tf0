@@ -5,7 +5,7 @@ resource "kubernetes_deployment" "frontend" {
   }
 
   spec {
-    replicas = 1
+    replicas = 5
 
     selector {
       match_labels = {
@@ -25,6 +25,30 @@ resource "kubernetes_deployment" "frontend" {
       }
 
       spec {
+        topology_spread_constraint {
+          max_skew           = 1
+          topology_key       = "topology.kubernetes.io/zone"
+          when_unsatisfiable = "DoNotSchedule"
+          label_selector {
+            match_labels = {
+              app       = "static_web"
+              component = "frontend"
+              tier      = "production"
+            }
+          }
+        }
+        topology_spread_constraint {
+          max_skew           = 1
+          topology_key       = "topology.kubernetes.io/hostname"
+          when_unsatisfiable = "DoNotSchedule"
+          label_selector {
+            match_labels = {
+              app       = "static_web"
+              component = "frontend"
+              tier      = "production"
+            }
+          }
+        }
         container {
           name  = "frontend"
           image = "ghcr.io/dantulovsky/web-static/frontend:${var.app_version}"

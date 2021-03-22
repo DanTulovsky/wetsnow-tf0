@@ -16,7 +16,7 @@ resources:
     memory: 1.0Gi
 
 livenessProbe:
-  initialDelaySeconds: 300 # java is slow to startup
+  initialDelaySeconds: 300 # java is slow to startup, but this should be a startupProbe
 
 metrics:
   kafka:

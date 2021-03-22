@@ -71,7 +71,7 @@ module "prometheus" {
   depends_on             = [module.common]
   lightstep_access_token = var.lightstep_secrets.access_token
   namespace              = module.common.namespaces.monitoring
-  enabled                = false
+  enabled                = true
 }
 module "scope" {
   source    = "../modules/scope"
