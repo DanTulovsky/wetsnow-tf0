@@ -5,7 +5,7 @@ resource "kubernetes_deployment" "frontend" {
   }
 
   spec {
-    replicas = 5
+    replicas = 2
 
     selector {
       match_labels = {
