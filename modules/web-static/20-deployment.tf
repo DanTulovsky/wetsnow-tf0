@@ -39,7 +39,7 @@ resource "kubernetes_deployment" "frontend" {
         }
         topology_spread_constraint {
           max_skew           = 1
-          topology_key       = "topology.kubernetes.io/hostname"
+          topology_key       = "kubernetes.io/hostname"
           when_unsatisfiable = "DoNotSchedule"
           label_selector {
             match_labels = {
