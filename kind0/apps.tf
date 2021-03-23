@@ -73,6 +73,14 @@ module "prometheus" {
   namespace              = module.common.namespaces.monitoring
   enabled                = true
 }
+module "quote-server" {
+  source                 = "../modules/quote-server"
+  depends_on             = [module.common]
+  namespace              = module.common.namespaces.web
+  app_version            = var.quote_server.app_version
+  lightstep_access_token = var.lightstep_secrets.access_token
+}
+
 module "scope" {
   source    = "../modules/scope"
   namespace = module.common.namespaces.weave

@@ -84,6 +84,11 @@ variable "kafka_secrets" {
 }
 
 # App versions
+variable "quote_server" {
+  type = object({
+    app_version = string
+  })
+}
 variable "web_static" {
   type = object({
     app_version = string

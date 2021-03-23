@@ -67,6 +67,13 @@ module "prometheus" {
   namespace              = module.common.namespaces.monitoring
   enabled                = false
 }
+module "quote-server" {
+  source                 = "../modules/quote-server"
+  depends_on             = [module.common]
+  namespace              = module.common.namespaces.web
+  app_version            = var.quote_server.app_version
+  lightstep_access_token = var.lightstep_secrets.access_token
+}
 # module "vector" {
 #   source     = "./modules/vector"
 #   depends_on = [module.gke, module.prometheus, module.kafka]

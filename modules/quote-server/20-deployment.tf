@@ -1,16 +1,20 @@
-resource "kubernetes_deployment" "frontend" {
+locals {
+  release = "release"
+}
+
+resource "kubernetes_deployment" "quote_server_http" {
   metadata {
-    name      = "frontend"
+    name      = "quote-server-http"
     namespace = var.namespace
   }
 
   spec {
-    replicas = 2
+    replicas = 1
 
     selector {
       match_labels = {
-        app       = "static-web"
-        component = "frontend"
+        app       = "quote"
+        component = "server-http"
         tier      = "production"
       }
     }
@@ -18,8 +22,8 @@ resource "kubernetes_deployment" "frontend" {
     template {
       metadata {
         labels = {
-          app       = "static-web"
-          component = "frontend"
+          app       = "quote"
+          component = "server-http"
           tier      = "production"
         }
       }
@@ -37,8 +41,8 @@ resource "kubernetes_deployment" "frontend" {
           when_unsatisfiable = "DoNotSchedule"
           label_selector {
             match_labels = {
-              app       = "static-web"
-              component = "frontend"
+              app       = "quote"
+              component = "server-http"
               tier      = "production"
             }
           }
@@ -49,34 +53,35 @@ resource "kubernetes_deployment" "frontend" {
           when_unsatisfiable = "DoNotSchedule"
           label_selector {
             match_labels = {
-              app       = "static-web"
-              component = "frontend"
+              app       = "quote"
+              component = "server-http"
               tier      = "production"
             }
           }
         }
         container {
-          name  = "frontend"
-          image = "ghcr.io/dantulovsky/web-static/frontend:${var.app_version}"
-          args = [
-            "--data_dir",
-            "/data/hosts",
-            "--enable_logging",
-            "--enable_metrics",
-            "--version=${var.app_version}",
-            "--enable_kafka=false",
-            "--kafka_broker=kafka0.kafka",
-            "--quote_server=quote-server-http:8080"
-          ]
+          name  = "server-http"
+          image = "ghcr.io/dantulovsky/quote-server/server:${var.app_version}"
+          args  = ["--enable_metrics", "--version=${var.app_version}"]
 
           port {
             name           = "http"
-            container_port = 8080
+            container_port = var.port_http
           }
 
           env {
             name  = "LS_ACCESS_TOKEN"
             value = var.lightstep_access_token
+          }
+
+          env {
+            name  = "PORT"
+            value = var.port_http
+          }
+
+          env {
+            name  = "GIN_MODE"
+            value = local.release
           }
 
           resources {
@@ -94,7 +99,7 @@ resource "kubernetes_deployment" "frontend" {
           liveness_probe {
             http_get {
               path = "/healthz"
-              port = "8080"
+              port = var.port_http
 
               http_header {
                 name  = "X-Healthz-Prober"
@@ -109,7 +114,7 @@ resource "kubernetes_deployment" "frontend" {
           readiness_probe {
             http_get {
               path = "/servez"
-              port = "8080"
+              port = var.port_http
 
               http_header {
                 name  = "X-Healthz-Prober"
