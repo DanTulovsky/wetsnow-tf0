@@ -75,6 +75,11 @@ resource "kubernetes_deployment" "quote_server_http" {
           }
 
           env {
+            name  = "LS_SERVICE_VERSION"
+            value = var.app_version
+          }
+
+          env {
             name  = "PORT"
             value = var.port_http
           }
