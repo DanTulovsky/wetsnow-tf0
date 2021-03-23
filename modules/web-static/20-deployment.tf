@@ -66,7 +66,7 @@ resource "kubernetes_deployment" "frontend" {
             "--version=${var.app_version}",
             "--enable_kafka=false",
             "--kafka_broker=kafka0.kafka",
-            "--quote_server=quote-server-http:8080"
+            "--quote_server=http://quote-server-http:8080"
           ]
 
           port {
