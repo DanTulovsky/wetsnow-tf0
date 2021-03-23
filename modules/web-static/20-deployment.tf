@@ -79,17 +79,17 @@ resource "kubernetes_deployment" "frontend" {
             value = var.lightstep_access_token
           }
 
-          # resources {
-          #   limits = {
-          #     cpu    = "50m"
-          #     memory = "200Mi"
-          #   }
+          resources {
+            limits = {
+              cpu    = "50m"
+              memory = "200Mi"
+            }
 
-          #   requests = {
-          #     cpu    = "50m"
-          #     memory = "200Mi"
-          #   }
-          # }
+            requests = {
+              cpu    = "50m"
+              memory = "200Mi"
+            }
+          }
 
           liveness_probe {
             http_get {
