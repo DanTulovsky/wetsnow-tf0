@@ -74,10 +74,10 @@ resource "kubernetes_deployment" "quote_server_http" {
             value = var.lightstep_access_token
           }
 
-          env {
-            name  = "LS_SERVICE_VERSION"
-            value = var.app_version
-          }
+          # env {
+          #   name  = "LS_SERVICE_VERSION"
+          #   value = var.app_version
+          # }
 
           env {
             name  = "PORT"
