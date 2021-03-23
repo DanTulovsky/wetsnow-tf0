@@ -89,17 +89,17 @@ resource "kubernetes_deployment" "quote_server_http" {
             value = local.release
           }
 
-          resources {
-            limits = {
-              cpu    = "20m"
-              memory = "200Mi"
-            }
+          # resources {
+          #   limits = {
+          #     cpu    = "20m"
+          #     memory = "200Mi"
+          #   }
 
-            requests = {
-              cpu    = "20m"
-              memory = "200Mi"
-            }
-          }
+          #   requests = {
+          #     cpu    = "20m"
+          #     memory = "200Mi"
+          #   }
+          # }
 
           liveness_probe {
             http_get {
