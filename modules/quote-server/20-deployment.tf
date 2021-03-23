@@ -36,7 +36,7 @@ resource "kubernetes_deployment" "quote_server_http" {
           operator = "Exists"
         }
         topology_spread_constraint {
-          max_skew           = 1
+          max_skew           = 2
           topology_key       = "topology.kubernetes.io/zone"
           when_unsatisfiable = "DoNotSchedule"
           label_selector {
@@ -47,18 +47,18 @@ resource "kubernetes_deployment" "quote_server_http" {
             }
           }
         }
-        topology_spread_constraint {
-          max_skew           = 1
-          topology_key       = "kubernetes.io/hostname"
-          when_unsatisfiable = "DoNotSchedule"
-          label_selector {
-            match_labels = {
-              app       = "quote"
-              component = "server-http"
-              tier      = "production"
-            }
-          }
-        }
+        # topology_spread_constraint {
+        #   max_skew           = 1
+        #   topology_key       = "kubernetes.io/hostname"
+        #   when_unsatisfiable = "DoNotSchedule"
+        #   label_selector {
+        #     match_labels = {
+        #       app       = "quote"
+        #       component = "server-http"
+        #       tier      = "production"
+        #     }
+        #   }
+        # }
         container {
           name  = "server-http"
           image = "ghcr.io/dantulovsky/quote-server/server:${var.app_version}"
