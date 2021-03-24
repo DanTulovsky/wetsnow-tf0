@@ -22,61 +22,62 @@ receivers:
         - job_name: static-web-frontend
           honor_labels: false
           kubernetes_sd_configs:
-          - role: endpoints
+            - role: endpoints
           relabel_configs:
-          - action: keep
-            source_labels:
-            - __meta_kubernetes_service_label_service
-            regex: static-web-frontend
-          - action: keep
-            source_labels:
-            - __meta_kubernetes_endpoint_port_name
-            regex: http
-          - source_labels:
-            - __meta_kubernetes_endpoint_address_target_kind
-            - __meta_kubernetes_endpoint_address_target_name
-            separator: ;
-            regex: Node;(.*)
-            replacement: $${1}
-            target_label: node
-          - source_labels:
-            - __meta_kubernetes_endpoint_address_target_kind
-            - __meta_kubernetes_endpoint_address_target_name
-            separator: ;
-            regex: Pod;(.*)
-            replacement: $${1}
-            target_label: pod
-          - source_labels:
-            - __meta_kubernetes_namespace
-            target_label: namespace
-          - source_labels:
-            - __meta_kubernetes_service_name
-            target_label: service
-          - source_labels:
-            - __meta_kubernetes_pod_name
-            target_label: pod
-          - source_labels:
-            - __meta_kubernetes_pod_container_name
-            target_label: container
-          - source_labels:
-            - __meta_kubernetes_service_name
-            target_label: job
-            replacement: $${1}
-          - target_label: endpoint
-            replacement: http
-          - source_labels:
-            - __address__
-            target_label: __tmp_hash
-            modulus: 1
-            action: hashmod
-          - source_labels:
-            - __tmp_hash
-            regex: 0
-            action: keep
+            - action: keep
+              source_labels:
+                - __meta_kubernetes_service_label_service
+              regex: static-web-frontend
+            - action: keep
+              source_labels:
+                - __meta_kubernetes_endpoint_port_name
+              regex: http
+            - source_labels:
+                - __meta_kubernetes_endpoint_address_target_kind
+                - __meta_kubernetes_endpoint_address_target_name
+              separator: ;
+              regex: Node;(.*)
+              replacement: $${1}
+              target_label: node
+            - source_labels:
+                - __meta_kubernetes_endpoint_address_target_kind
+                - __meta_kubernetes_endpoint_address_target_name
+              separator: ;
+              regex: Pod;(.*)
+              replacement: $${1}
+              target_label: pod
+            - source_labels:
+                - __meta_kubernetes_namespace
+              target_label: namespace
+            - source_labels:
+                - __meta_kubernetes_service_name
+              target_label: service
+            - source_labels:
+                - __meta_kubernetes_pod_name
+              target_label: pod
+            - source_labels:
+                - __meta_kubernetes_pod_container_name
+              target_label: container
+            - source_labels:
+                - __meta_kubernetes_service_name
+              target_label: job
+              replacement: $${1}
+            - target_label: endpoint
+              replacement: http
+            - source_labels:
+                - __address__
+              target_label: __tmp_hash
+              modulus: 1
+              action: hashmod
+            - source_labels:
+                - __tmp_hash
+              regex: 0
+              action: keep
   k8s_cluster:
     auth_type: "serviceAccount"
     collection_interval: 10s
-    node_conditions_to_report: [Ready, MemoryPressure, DiskPressure, PIDPressure, NetworkUnavailable]
+    node_conditions_to_report:
+      [Ready, MemoryPressure, DiskPressure, PIDPressure, NetworkUnavailable]
 processors:
   batch:
   memory_limiter:
@@ -97,9 +98,7 @@ extensions:
 exporters:
   otlp/lightstep:
     endpoint: "ingest.lightstep.com:443"
-    headers: {"lightstep-access-token": ${lightstepAccessToken}}
-  # jaeger_thrift:
-  #   url: "http://jaeger-collector.observability:14268/api/traces"
+    headers: { "lightstep-access-token": "${lightstepAccessToken}" }
   logging:
     loglevel: info
   kafka:
