@@ -1,21 +1,22 @@
 module "gke" {
   # depends_on = [google_sql_database_instance.master]
 
-  source                     = "terraform-google-modules/kubernetes-engine/google"
-  version                    = "14.0.1"
-  project_id                 = var.project
-  name                       = var.cluster_info.name
-  region                     = var.region
-  regional                   = false
-  release_channel            = "RAPID"
-  zones                      = var.zones
-  network                    = var.cluster_info.vpc_name
-  subnetwork                 = var.cluster_info.vpc_name
-  enable_shielded_nodes      = true
-  ip_range_pods              = "" # defaults
-  ip_range_services          = "" # defaults
-  http_load_balancing        = true
-  horizontal_pod_autoscaling = false
+  source                          = "terraform-google-modules/kubernetes-engine/google"
+  version                         = "14.0.1"
+  project_id                      = var.project
+  name                            = var.cluster_info.name
+  region                          = var.region
+  regional                        = false
+  release_channel                 = "RAPID"
+  zones                           = var.zones
+  network                         = var.cluster_info.vpc_name
+  subnetwork                      = var.cluster_info.vpc_name
+  enable_shielded_nodes           = true
+  ip_range_pods                   = "" # defaults
+  ip_range_services               = "" # defaults
+  http_load_balancing             = true
+  horizontal_pod_autoscaling      = false
+  enable_vertical_pod_autoscaling = false
   # logging_service            = "logging.googleapis.com/kubernetes"
   logging_service          = "none"
   monitoring_service       = "monitoring.googleapis.com/kubernetes"
@@ -29,7 +30,7 @@ module "gke" {
       machine_type = "e2-medium"
       #   min_count          = 3
       #   max_count          = 3
-      node_count         = 3
+      node_count         = 0
       local_ssd_count    = 0
       disk_size_gb       = 100
       disk_type          = "pd-standard"
@@ -46,7 +47,7 @@ module "gke" {
       machine_type = "e2-small"
       #   min_count          = 3
       #   max_count          = 3
-      node_count         = 1
+      node_count         = 3
       local_ssd_count    = 0
       disk_size_gb       = 100
       disk_type          = "pd-standard"
