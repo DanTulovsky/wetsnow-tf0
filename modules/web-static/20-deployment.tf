@@ -81,7 +81,7 @@ resource "kubernetes_deployment" "frontend" {
 
           resources {
             limits = {
-              cpu    = "50m"
+              cpu    = "4"
               memory = "200Mi"
             }
 
