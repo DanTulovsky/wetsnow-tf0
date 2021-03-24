@@ -16,11 +16,12 @@ module "gke" {
   ip_range_services          = "" # defaults
   http_load_balancing        = true
   horizontal_pod_autoscaling = false
-  logging_service            = "logging.googleapis.com/kubernetes"
-  monitoring_service         = "monitoring.googleapis.com/kubernetes"
-  network_policy             = true
-  remove_default_node_pool   = true
-  initial_node_count         = 1
+  # logging_service            = "logging.googleapis.com/kubernetes"
+  logging_service          = "none"
+  monitoring_service       = "monitoring.googleapis.com/kubernetes"
+  network_policy           = true
+  remove_default_node_pool = true
+  initial_node_count       = 1
 
   node_pools = [
     {
