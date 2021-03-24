@@ -9,7 +9,15 @@ resource "kubernetes_deployment" "quote_server_http" {
   }
 
   spec {
-    replicas = 1
+    replicas                  = 1
+    progress_deadline_seconds = 300
+    revision_history_limit    = 5
+    min_ready_seconds         = 20
+    strategy {
+      type = "RollingUpdate"
+
+    }
+
 
     selector {
       match_labels = {

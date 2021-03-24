@@ -5,7 +5,8 @@ resource "kubernetes_deployment" "frontend" {
   }
 
   spec {
-    replicas = 1
+    replicas                  = 1
+    progress_deadline_seconds = 300
 
     selector {
       match_labels = {
