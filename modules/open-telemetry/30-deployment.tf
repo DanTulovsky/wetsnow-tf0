@@ -122,13 +122,13 @@ resource "kubernetes_deployment" "otel_collector" {
 
           resources {
             limits = {
-              cpu    = "0.1"
+              cpu    = "100m"
               memory = "512Mi"
             }
 
             requests = {
-              cpu    = "0.1"
-              memory = "512Mi"
+              cpu    = "10m"
+              memory = "256Mi"
             }
           }
 

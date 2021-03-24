@@ -12,8 +12,8 @@ resources:
     cpu: 200m
     memory: 1.0Gi
   requests:
-    cpu: 200m
-    memory: 1.0Gi
+    cpu: 20m
+    memory: 512Mi
 
 livenessProbe:
   initialDelaySeconds: 300 # java is slow to startup, but this should be a startupProbe

@@ -8,9 +8,9 @@ operator:
   resources:
     limits:
       cpu: 100m
-      memory: 128Mi
+      memory: 256Mi
     requests:
-      cpu: 100m
+      cpu: 10m
       memory: 128Mi
 exporters:
   node-exporter:
@@ -37,10 +37,10 @@ prometheus:
   resources:
     limits:
       cpu: 250m
-      memory: 1.4Gi
+      memory: 1.5Gi
     requests:
-      cpu: 200m
-      memory: 1.4Gi
+      cpu: 20m
+      memory: 1.0Gi
   service:
     type: ClusterIP
     port: 9090

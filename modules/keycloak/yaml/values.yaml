@@ -48,8 +48,8 @@ resources:
     cpu: 300m
     memory: 1Gi
   requests:
-    cpu: 100m
-    memory: 1Gi
+    cpu: 20m
+    memory: 512Mi
 
 rbac:
   create: true

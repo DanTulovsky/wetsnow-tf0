@@ -24,8 +24,8 @@ resources:
     cpu: 300m
     memory: 512Mi
   requests:
-    cpu: 300m
-    memory: 512Mi
+    cpu: 20m
+    memory: 256Mi
 adminService:
   annotations: {}
   create: true
@@ -76,7 +76,7 @@ redis:
       cpu: 100m
       memory: 128Mi
     requests:
-      cpu: 100m
+      cpu: 20m
       memory: 128Mi
 
 agent:

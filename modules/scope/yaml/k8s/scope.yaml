@@ -270,9 +270,10 @@ items:
                   protocol: TCP
               resources:
                 limits:
+                  cpu: 200m
                   memory: 1000Mi
                 requests:
-                  # cpu: 25m
+                  cpu: 10m
                   memory: 80Mi
           serviceAccountName: weave-scope
   - apiVersion: apps/v1
@@ -329,8 +330,9 @@ items:
               resources:
                 limits:
                   memory: 2000Mi
+                  cpu: 200m
                 requests:
-                  # cpu: 50m
+                  cpu: 10m
                   memory: 100Mi
               securityContext:
                 privileged: true
