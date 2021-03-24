@@ -1,0 +1,18 @@
+# Doesn't work right now...
+apiVersion: scalingpolicy.kope.io/v1alpha1
+kind: ScalingPolicy
+metadata:
+  name: fluentd-gcp-scaling-policy
+  namespace: kube-system
+spec:
+  containers:
+  - name: fluentbit-gke
+    resources:
+      requests:
+      - resource: cpu
+        base: 20
+      - resource: memory
+        base: 200
+      limits:
+      - resource: memory
+        base: 300
