@@ -18,7 +18,6 @@ resource "kubernetes_deployment" "quote_server_http" {
 
     }
 
-
     selector {
       match_labels = {
         app       = "quote"
@@ -140,10 +139,6 @@ resource "kubernetes_deployment" "quote_server_http" {
           }
         }
       }
-    }
-
-    strategy {
-      type = "RollingUpdate"
     }
   }
 }
