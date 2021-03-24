@@ -35,7 +35,7 @@ containerPorts:
 
 ## Keycloak containers' liveness and readiness probes.
 livenessProbe:
-  initialDelaySeconds: 1200 # java is slow to startup
+  initialDelaySeconds: 1800 # java is slow to startup
 
 service:
   type: ClusterIP
