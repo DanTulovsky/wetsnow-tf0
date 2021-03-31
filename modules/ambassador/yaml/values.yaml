@@ -1,4 +1,4 @@
-# https://github.com/datawire/ambassador-chart
+# https://github.com/datawire/ambassador/tree/master/charts/ambassador
 
 licenseKey:
   value: ${licenseKey}
@@ -7,6 +7,11 @@ licenseKey:
 metrics:
   serviceMonitor:
     enabled: ${promEnabled}
+
+image:
+  repository: docker.io/datawire/aes
+  tag: 1.12.2
+  pullPolicy: IfNotPresent
 
 replicaCount: 1
 

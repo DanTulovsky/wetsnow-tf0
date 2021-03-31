@@ -17,6 +17,7 @@ resource "kubernetes_ingress" "ambassador" {
     }
   }
   spec {
+    # send everything to ambassador, because we cannot send a across namespaces
     backend {
       service_name = "ambassador"
       service_port = 8080
