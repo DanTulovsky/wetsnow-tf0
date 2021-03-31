@@ -25,7 +25,7 @@ resource "kubernetes_network_policy" "quote_server" {
       }
 
       from {
-        namespace_selector {
+        pod_selector {
           match_labels = {
             app       = "static-web"
             component = "frontend"
