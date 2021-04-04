@@ -73,6 +73,7 @@ module "quote-server" {
   namespace              = module.common.namespaces.web
   app_version            = var.quote_server.app_version
   lightstep_access_token = var.lightstep_secrets.access_token
+  priority_class         = module.common.priority_class.high0
 }
 # module "vector" {
 #   source     = "./modules/vector"
