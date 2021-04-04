@@ -1,4 +1,4 @@
 # https://github.com/kyverno/kyverno/tree/main/charts/kyverno
 namespace: ${namespace}
 extraArgs:
-  - "--v=6"
+  - "--v=2"
