@@ -27,6 +27,10 @@ module "kafka" {
   prom_enabled        = false
   kafka_replica_count = 1
 }
+module "kyverno" {
+  source    = "../modules/kyverno"
+  namespace = module.common.namespaces.kyverno
+}
 # module "grafana" {
 #   source         = "./modules/grafana"
 #   depends_on     = [module.gke]
@@ -57,7 +61,6 @@ module "open-telemetry" {
     trace_receivers    = "[otlp, zipkin, jaeger]"
     trace_processors   = "[memory_limiter, batch, k8s_tagger]"
     trace_exporters    = "[otlp/lightstep, kafka]"
-
   }
 }
 # module "postgres" {
@@ -79,6 +82,7 @@ module "quote-server" {
   namespace              = module.common.namespaces.web
   app_version            = var.quote_server.app_version
   lightstep_access_token = var.lightstep_secrets.access_token
+  priority_class         = module.common.priority_class.high0
 }
 
 module "scope" {

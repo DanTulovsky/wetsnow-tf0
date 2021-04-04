@@ -41,6 +41,10 @@ prometheus:
     requests:
       cpu: 20m
       memory: 1.0Gi
+  tolerations:
+    - key: "node-role.kubernetes.io/master"
+      effect: "NoSchedule"
+      operator: "Exists"
   service:
     type: ClusterIP
     port: 9090

@@ -20,3 +20,8 @@ variable "port_http" {
   type    = number
   default = 8080
 }
+
+variable "priority_class" {
+  type    = string
+  default = ""
+}

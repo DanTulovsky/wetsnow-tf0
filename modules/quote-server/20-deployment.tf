@@ -66,6 +66,8 @@ resource "kubernetes_deployment" "quote_server_http" {
         #     }
         #   }
         # }
+        priority_class_name = var.priority_class
+
         container {
           name  = "server-http"
           image = "ghcr.io/dantulovsky/quote-server/server:${var.app_version}"
