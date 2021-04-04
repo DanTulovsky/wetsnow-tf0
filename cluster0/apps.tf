@@ -38,6 +38,10 @@ module "http-ingress" {
 #   smtp_password  = var.grafana_secrets.smtp_password
 #   namespace      = module.common.namespaces.monitoring
 # }
+module "kyverno" {
+  source    = "../modules/kyverno"
+  namespace = module.common.namespaces.kyverno
+}
 module "keycloak" {
   source = "../modules/keycloak"
   # depends_on          = [module.gke]
