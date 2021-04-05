@@ -2,3 +2,7 @@
 namespace: ${namespace}
 extraArgs:
   - "--v=2"
+
+image:
+  # https://github.com/kyverno/kyverno/issues/1764
+  tag: v1.3.5-rc2-dev-1-g3ab75095

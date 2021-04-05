@@ -237,3 +237,7 @@ spec:
   acmeProvider:
     authority: none
   # The default insecure action is Redirect, which is fine.
+  # https://www.getambassador.io/docs/edge-stack/latest/topics/running/tls/cleartext-redirection/#http---https-redirection
+  requestPolicy:
+    insecure:
+      action: Redirect
