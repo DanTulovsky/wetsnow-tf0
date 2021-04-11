@@ -9,6 +9,7 @@ resource "kubernetes_deployment" "quote_server_http" {
   }
 
   spec {
+    # enforced by kyverno policy on name
     replicas                  = 1
     progress_deadline_seconds = 300
     revision_history_limit    = 5

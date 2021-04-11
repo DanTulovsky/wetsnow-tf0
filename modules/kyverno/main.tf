@@ -23,3 +23,8 @@ resource "kubectl_manifest" "x-namespace-secrets-yaml" {
   depends_on = [helm_release.kyverno]
   yaml_body  = file("${path.module}/policies/x-namespace-secrets.yaml")
 }
+
+resource "kubectl_manifest" "quote-server-max-pods" {
+  depends_on = [helm_release.kyverno]
+  yaml_body  = file("${path.module}/policies/quote-server-max-pods.yaml")
+}
