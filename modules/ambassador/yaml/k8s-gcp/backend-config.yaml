@@ -24,6 +24,6 @@ spec:
     type: HTTP
     requestPath: /ambassador/v0/check_alive
   iap:
-    enabled: true
+    enabled: false # set to true to enable oauth for everything behind amabassador
     oauthclientCredentials:
       secretName: iap
