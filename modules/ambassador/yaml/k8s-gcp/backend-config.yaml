@@ -23,3 +23,7 @@ spec:
     port: 8877
     type: HTTP
     requestPath: /ambassador/v0/check_alive
+  iap:
+    enabled: true
+    oauthclientCredentials:
+      secretName: iap
