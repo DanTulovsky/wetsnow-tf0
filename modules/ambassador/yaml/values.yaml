@@ -10,7 +10,7 @@ metrics:
 
 image:
   repository: docker.io/datawire/aes
-  tag: 1.12.2
+  tag: 1.12.3
   pullPolicy: IfNotPresent
 
 replicaCount: 1
