@@ -4,7 +4,7 @@ resource "google_sql_database_instance" "master" {
   database_version    = "POSTGRES_13"
   region              = var.region
   project             = var.project
-  deletion_protection = true
+  deletion_protection = false
 
   settings {
     # Second-generation instance tiers are based on the machine
