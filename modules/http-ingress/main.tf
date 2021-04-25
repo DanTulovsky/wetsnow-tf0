@@ -18,10 +18,11 @@ resource "kubernetes_ingress" "ambassador" {
   }
   spec {
     # send everything to ambassador, because we cannot send a across namespaces
-//    backend {
-//      service_name = "ambassador"
-//      service_port = 8080
-//    }
+    backend {
+      # default to IAP
+      service_name = "ambassador-iap"
+      service_port = 8080
+    }
     rule {
       host = "www.wetsnow.com"
       http {
@@ -43,11 +44,11 @@ resource "kubernetes_ingress" "ambassador" {
       }
     }
     rule {
-      host = "login.wetsnow.com"
+      host = "www.dusselskolk.com"
       http {
         path {
           backend {
-            service_name = "ambassador-iap"
+            service_name = "ambassador"
             service_port = 8080
           }
         }

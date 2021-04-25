@@ -61,7 +61,6 @@ service:
   # externalTrafficPolicy: Local
 env:
   AMBASSADOR_LEGACY_MODE: false
-  AMBASSADOR_ID: "${id}"
   # https://docs.datadoghq.com/integrations/ambassador/
   STATSD_ENABLED: true
   DOGSTATSD: true

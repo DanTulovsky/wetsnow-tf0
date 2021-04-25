@@ -13,7 +13,6 @@ resource "helm_release" "ambassador" {
     gke         = var.gke
     backendConfig = var.backend_config
     name          = var.name
-    id            = var.id
   })]
 }
 
@@ -24,29 +23,11 @@ data "kubectl_path_documents" "manifests" {
   }
 }
 
-data "kubectl_path_documents" "manifests-iap" {
-  pattern = "${path.module}/yaml/k8s-iap/*.yaml"
-  vars = {
-    namespace = var.namespace
-  }
-}
-
-# these are open to the internet
 resource "kubectl_manifest" "ambassador-yaml" {
   depends_on = [helm_release.ambassador]
   # This doesn't work on the first install
-  # count      = var.id == "default" ? length(data.kubectl_path_documents.manifests.documents) : 0
-  count     = var.id == "default" ? 30 : 0
+  count      = length(data.kubectl_path_documents.manifests.documents)
   yaml_body = element(data.kubectl_path_documents.manifests.documents, count.index)
-}
-
-# these are behind IAP
-resource "kubectl_manifest" "ambassador-iap-yaml" {
-  depends_on = [helm_release.ambassador]
-  # This doesn't work on the first install
-  # count      = var.id == "iap" ? length(data.kubectl_path_documents.manifests.documents) : 0
-  count     = var.id == "iap" ? 30 : 0
-  yaml_body = element(data.kubectl_path_documents.manifests-iap.documents, count.index)
 }
 
 resource "kubectl_manifest" "ambassador-backend-config" {
@@ -55,14 +36,44 @@ resource "kubectl_manifest" "ambassador-backend-config" {
   yaml_body  = file("${path.module}/yaml/k8s-gcp/backend-config.yaml")
 }
 
+// IAP
 resource "kubectl_manifest" "ambassador-backend-config-iap" {
   depends_on = [helm_release.ambassador]
   count      = var.gke ? 1 : 0
   yaml_body  = file("${path.module}/yaml/k8s-gcp/backend-config-iap.yaml")
 }
 
+resource "kubernetes_service" "example" {
+  metadata {
+    name = "ambassador-iap"
+    annotations = {
+      cloud.google.com/neg: '{"ingress": true}'
+      cloud.google.com/backend-config: '{"default": "${kubectl_manifest.ambassador-backend-config-iap}"}'
+      cloud.google.com/app-protocols: '{"grpc": "HTTP2"}'
+    }
+  }
+  spec {
+    selector = {
+      app.kubernetes.io/instance = "ambassador"
+      app.kubernetes.io/name = "ambassador"
+    }
+    port {
+      port        = 8080
+      target_port = 8080
+      name = "http"
+    }
+    port {
+      port        = 8443
+      target_port = 8443
+      name = "grpc"
+    }
+
+    type = "NodePort"
+  }
+}
+
+
 resource "kubernetes_secret" "ambassador-keycloak-secret" {
-  count     = var.id == "iap" ? 1 : 0
   metadata {
     name      = "ambassador-keycloak-secret"
     namespace = var.namespace
@@ -76,7 +87,6 @@ resource "kubernetes_secret" "ambassador-keycloak-secret" {
 }
 
 resource "kubernetes_secret" "pepper-poker-keycloak-secret" {
-  count     = var.id == "iap" ? 1 : 0
   metadata {
     name      = "pepper-poker-keycloak-secret"
     namespace = var.namespace
@@ -92,7 +102,7 @@ resource "kubernetes_secret" "pepper-poker-keycloak-secret" {
 
 resource "kubernetes_secret" "lightstep-access-token" {
   metadata {
-    name      = "lightstep-access-token-${var.id}"
+    name      = "lightstep-access-token"
     namespace = var.namespace
   }
 
@@ -105,7 +115,6 @@ resource "kubernetes_secret" "lightstep-access-token" {
 
 
 resource "kubernetes_secret" "default-keycloak-secret" {
-  count     = var.id == "iap" ? 1 : 0
   metadata {
     name      = "default-keycloak-secret"
     namespace = var.namespace
