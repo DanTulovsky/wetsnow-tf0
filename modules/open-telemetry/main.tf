@@ -37,5 +37,6 @@ resource "helm_release" "ddog-agent" {
     lightstepAccessToken = var.lightstep_access_token
     datadogApiKey        = var.datadog_api_key
     gke                  = var.gke
+    clusterName          = var.cluster_name
   })]
 }

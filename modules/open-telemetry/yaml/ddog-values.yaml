@@ -37,6 +37,10 @@ agents:
       effect: "NoSchedule"
       operator: "Exists"
 
+env:
+  - name: DD_TAGS
+    value: cluster_name:${clusterName}
+
 containers:
   agent:
     resources:

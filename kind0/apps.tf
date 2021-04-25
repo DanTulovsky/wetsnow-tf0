@@ -46,6 +46,7 @@ module "open-telemetry" {
     trace_processors   = "[memory_limiter, batch, k8s_tagger]"
     trace_exporters    = "[otlp/lightstep, kafka]"
   }
+  cluster_name         = "kind0"
 }
 # module "postgres" {
 #   source         = "./modules/postgres"

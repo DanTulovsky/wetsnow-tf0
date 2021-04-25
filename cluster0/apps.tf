@@ -59,6 +59,7 @@ module "open-telemetry" {
   datadog_api_key        = var.datadog_secrets.api_key
   namespace              = module.common.namespaces.observability
   gke                    = true
+  cluster_name           = "cluster0"
 }
 # module "postgres" {
 #   source         = "./modules/postgres"
