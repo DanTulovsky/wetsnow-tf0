@@ -39,6 +39,12 @@ resource "kubectl_manifest" "ambassador-backend-config-iap" {
 }
 
 resource "kubernetes_service" "ambassador-iap" {
+  lifecycle {
+    ignore_changes = [
+      metadata[0].annotations,
+      metadata[0].annotations["cloud.google.com/neg-status"]
+    ]
+  }
   metadata {
     name = "ambassador-iap"
     namespace = var.namespace
