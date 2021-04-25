@@ -4,24 +4,6 @@ module "common" {
   source     = "../modules/common"
   namespaces = var.cluster_info.namespaces
 }
-module "ambassador" {
-  source                       = "../modules/ambassador"
-  depends_on                   = [module.common]
-  ambassador_keycloak_secret   = var.ambassador_secrets.ambassador_keycloak_secret
-  default_keycloak_secret      = var.ambassador_secrets.default_keycloak_secret
-  pepper_poker_keycloak_secret = var.ambassador_secrets.pepper_poker_keycloak_secret
-  license_key                  = var.ambassador_secrets.license_key
-  lightstep_access_token       = var.lightstep_secrets.access_token
-  namespace                    = module.common.namespaces.ambassador
-  prom_enabled                 = false
-  backend_config               = "ambassador-hc-config"
-  name                         = "ambassador"
-}
-# module "http-ingress" {
-#   source     = "./modules/http-ingress"
-#   depends_on = [module.gke, module.ambassador]
-#   namespace  = module.common.namespaces.ambassador
-# }
 module "kafka" {
   source              = "../modules/kafka"
   cloudhut_license    = var.kafka_secrets.cloudhut_license

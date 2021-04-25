@@ -44,14 +44,14 @@ module "kyverno" {
   source    = "../modules/kyverno"
   namespace = module.common.namespaces.kyverno
 }
-module "keycloak" {
-  source = "../modules/keycloak"
-  # depends_on          = [module.gke]
-  db_password         = var.db_users["bn_keycloak"]
-  admin_password      = var.keycloak_secrets.admin_password
-  management_password = var.keycloak_secrets.management_password
-  namespace           = module.common.namespaces.auth
-}
+//module "keycloak" {
+//  source = "../modules/keycloak"
+//  # depends_on          = [module.gke]
+//  db_password         = var.db_users["bn_keycloak"]
+//  admin_password      = var.keycloak_secrets.admin_password
+//  management_password = var.keycloak_secrets.management_password
+//  namespace           = module.common.namespaces.auth
+//}
 module "open-telemetry" {
   source = "../modules/open-telemetry"
   # depends_on             = [module.gke]
