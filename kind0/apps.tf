@@ -15,6 +15,7 @@ module "kyverno" {
   source    = "../modules/kyverno"
   namespace = module.common.namespaces.kyverno
 }
+
 # module "grafana" {
 #   source         = "./modules/grafana"
 #   depends_on     = [module.gke]
@@ -24,14 +25,7 @@ module "kyverno" {
 #   smtp_password  = var.grafana_secrets.smtp_password
 #   namespace      = module.common.namespaces.monitoring
 # }
-# module "keycloak" {
-#   source              = "./modules/keycloak"
-#   depends_on          = [module.gke]
-#   db_password         = var.db_users["bn_keycloak"]
-#   admin_password      = var.keycloak_secrets.admin_password
-#   management_password = var.keycloak_secrets.management_password
-#   namespace           = module.common.namespaces.auth
-# }
+
 module "open-telemetry" {
   source                 = "../modules/open-telemetry"
   depends_on             = [module.common]
@@ -48,12 +42,7 @@ module "open-telemetry" {
   }
   cluster_name         = "kind0"
 }
-# module "postgres" {
-#   source         = "./modules/postgres"
-#   depends_on     = [module.gke]
-#   admin_password = var.pgadmin_secrets.admin_password
-#   namespace      = module.common.namespaces.db
-# }
+
 module "prometheus" {
   source                 = "../modules/prometheus"
   depends_on             = [module.common]
@@ -61,6 +50,7 @@ module "prometheus" {
   namespace              = module.common.namespaces.monitoring
   enabled                = true
 }
+
 module "quote-server" {
   source                 = "../modules/quote-server"
   depends_on             = [module.common]
