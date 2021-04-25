@@ -18,6 +18,7 @@ module "ambassador" {
   prom_enabled                 = false
   backend_config               = "ambassador-hc-config"
   name                         = "ambassador"
+  id                           = "default"
 }
 
 module "ambassador-iap" {
@@ -32,6 +33,7 @@ module "ambassador-iap" {
   prom_enabled                 = false
   backend_config               = "ambassador-hc-config-iap"
   name                         = "ambassador-iap"
+  id                           = "iap"
 }
 
 module "http-ingress" {
