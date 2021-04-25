@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="rename second ambassador module">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="add id.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kind0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/kind0/apps.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ambassador/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/main.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/ambassador/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/variables.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/ambassador/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/yaml/values.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +68,7 @@
     <MESSAGE value="add iap backendconfig" />
     <MESSAGE value="second ambassador with iap" />
     <MESSAGE value="rename second ambassador module" />
-    <option name="LAST_COMMIT_MESSAGE" value="rename second ambassador module" />
+    <MESSAGE value="add id." />
+    <option name="LAST_COMMIT_MESSAGE" value="add id." />
   </component>
 </project>

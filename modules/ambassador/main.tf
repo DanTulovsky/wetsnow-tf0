@@ -12,6 +12,7 @@ resource "helm_release" "ambassador" {
     gke         = var.gke
     backendConfig = var.backend_config
     name          = var.name
+    id            = var.id
   })]
 }
 
