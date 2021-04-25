@@ -11,7 +11,7 @@ resource "helm_release" "prometheus" {
   wait         = true
   force_update = false
 
-  values = [templatefile("${path.module}/yaml/values.yaml", {})]
+  values = [templatefile("${path.module}/values.yaml", {})]
 }
 
 # resource "helm_release" "prometheus-pushgateway" {
