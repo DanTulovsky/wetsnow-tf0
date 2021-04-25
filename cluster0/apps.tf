@@ -30,6 +30,7 @@ module "ambassador-iap" {
   license_key                  = var.ambassador_secrets.license_key
   lightstep_access_token       = var.lightstep_secrets.access_token
   namespace                    = module.common.namespaces.ambassador
+  gke                          = true
   prom_enabled                 = false
   backend_config               = "ambassador-hc-config-iap"
   name                         = "ambassador-iap"
