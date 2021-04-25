@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix prom">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="grafana deployment strategy">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/grafana/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/grafana/yaml/values.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +71,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="remove keycloak" />
     <MESSAGE value="ignore neg-status" />
     <MESSAGE value="remove auth namespace" />
     <MESSAGE value="allow delete" />
@@ -95,6 +95,7 @@
     <MESSAGE value="otel sidecar" />
     <MESSAGE value="fix grafana" />
     <MESSAGE value="fix prom" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix prom" />
+    <MESSAGE value="grafana deployment strategy" />
+    <option name="LAST_COMMIT_MESSAGE" value="grafana deployment strategy" />
   </component>
 </project>

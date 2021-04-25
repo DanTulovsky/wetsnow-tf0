@@ -106,13 +106,13 @@ dashboardProviders:
         editable: true
         options:
           path: /var/lib/grafana/dashboards/default
-## Configure grafana dashboard to import
-## NOTE: To use dashboards you must also enable/configure dashboardProviders
-## ref: https://grafana.com/dashboards
-##
-## dashboards per provider, use provider name as key.
-##
-#dashboards:
+# Configure grafana dashboard to import
+# NOTE: To use dashboards you must also enable/configure dashboardProviders
+# ref: https://grafana.com/dashboards
+#
+# dashboards per provider, use provider name as key.
+#
+dashboards:
 #  default:
     #   some-dashboard:
     #     json: |
@@ -127,46 +127,46 @@ dashboardProviders:
 #      gnetId: 9367
 #      revision: 2
 #      datasource: Prometheus
-#    node-exporter:
-#      gnetId: 1860
-#      revision: 21
-#      datasource: Prometheus
-#    k8s-11454:
-#      gnetId: 11454
-#      revision: 14
-#      datasource: Prometheus
-#    k8s-11455:
-#      gnetId: 11455
-#      revision: 6
-#      datasource: Prometheus
-#    k8s-cluster:
-#      gnetId: 7249
-#      revision: 1
-#      datasource: Prometheus
-#    k8s-cluster-3:
-#      gnetId: 6417
-#      revision: 1
-#      datasource: Prometheus
-#    k8s-cluster-pods:
-#      gnetId: 6663
-#      revision: 1
-#      datasource: Prometheus
-#    k8s-cluster-resources:
-#      gnetId: 7187
-#      revision: 1
-#      datasource: Prometheus
-#    k8s-cluster-pv:
-#      gnetId: 6739
-#      revision: 1
-#      datasource: Prometheus
-#    k8s-deployment:
-#      gnetId: 741
-#      revision: 1
-#      datasource: Prometheus
-#    k8s-app-metrics:
-#      gnetId: 1471
-#      revision: 1
-#      datasource: Prometheus
+    node-exporter:
+      gnetId: 1860
+      revision: 21
+      datasource: Prometheus
+    k8s-11454:
+      gnetId: 11454
+      revision: 14
+      datasource: Prometheus
+    k8s-11455:
+      gnetId: 11455
+      revision: 6
+      datasource: Prometheus
+    k8s-cluster:
+      gnetId: 7249
+      revision: 1
+      datasource: Prometheus
+    k8s-cluster-3:
+      gnetId: 6417
+      revision: 1
+      datasource: Prometheus
+    k8s-cluster-pods:
+      gnetId: 6663
+      revision: 1
+      datasource: Prometheus
+    k8s-cluster-resources:
+      gnetId: 7187
+      revision: 1
+      datasource: Prometheus
+    k8s-cluster-pv:
+      gnetId: 6739
+      revision: 1
+      datasource: Prometheus
+    k8s-deployment:
+      gnetId: 741
+      revision: 1
+      datasource: Prometheus
+    k8s-app-metrics:
+      gnetId: 1471
+      revision: 1
+      datasource: Prometheus
 #    # postgres-overview:
 #    #   gnetId: 455
 #    #   revision: 2
@@ -179,23 +179,23 @@ dashboardProviders:
 #    #   gnetId: 10521
 #    #   revision: 1
 #    #   datasource: Prometheus
-#    prometheus-overview:
-#      gnetId: 3662
-#      revision: 2
-#      datasource: Prometheus
-#      tag: prometheus
-#    prometheus-am:
-#      gnetId: 9578
-#      revision: 4
-#      datasource: Prometheus
+    prometheus-overview:
+      gnetId: 3662
+      revision: 2
+      datasource: Prometheus
+      tag: prometheus
+    prometheus-am:
+      gnetId: 9578
+      revision: 4
+      datasource: Prometheus
 #    keycloak:
 #      gnetId: 10441
 #      revision: 1
 #      datasource: Prometheus
-#    otel-collector:
-#      gnetId: 12553
-#      revision: 1
-#      datasource: Prometheus
+    otel-collector:
+      gnetId: 12553
+      revision: 1
+      datasource: Prometheus
 ## Grafana's primary configuration
 ## NOTE: values in map will be converted to ini format
 ## ref: http://docs.grafana.org/installation/configuration/
