@@ -50,7 +50,6 @@ resource "kubernetes_ingress" "ambassador" {
             service_name = "ambassador-iap"
             service_port = 8080
           }
-          path = "/*"
         }
       }
     }
