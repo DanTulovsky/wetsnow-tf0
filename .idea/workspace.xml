@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fewer nodes">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="otel">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kind0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/kind0/apps.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/20-service.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/20-service.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/variables.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/yaml/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/yaml/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/prometheus/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/prometheus/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/prometheus/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/prometheus/variables.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/prometheus/yaml/lightstep-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/prometheus/yaml/lightstep-config.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +72,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="RESTORE" />
     <MESSAGE value="delete db" />
     <MESSAGE value="remove db ip address" />
     <MESSAGE value="wetsnow.com/auth path?" />
@@ -105,6 +96,7 @@
     <MESSAGE value="fix" />
     <MESSAGE value="fix limit" />
     <MESSAGE value="fewer nodes" />
-    <option name="LAST_COMMIT_MESSAGE" value="fewer nodes" />
+    <MESSAGE value="otel" />
+    <option name="LAST_COMMIT_MESSAGE" value="otel" />
   </component>
 </project>

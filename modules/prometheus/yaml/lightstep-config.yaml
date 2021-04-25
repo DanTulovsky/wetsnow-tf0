@@ -3,7 +3,7 @@ destination:
   compression: snappy
   headers:
     lightstep-access-token: ${accessToken}
-  attribute: cluster_name:${clusterName}
+  attribute: cluster_name=${clusterName}
 prometheus:
   wal: /prometheus/wal
 opentelemetry:
