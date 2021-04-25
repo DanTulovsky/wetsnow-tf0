@@ -12,31 +12,6 @@ operator:
     requests:
       cpu: 10m
       memory: 128Mi
-exporters:
-  node-exporter:
-    enabled: false
-  kube-state-metrics:
-    enabled: false
-kubeControllerManager:
-  enabled: false
-  service:
-    enabled: true
-    port: 10257
-    targetPort: 10257
-  serviceMonitor:
-    https: true
-    insecureSkipVerify: true
-kubeScheduler:
-  service:
-    enabled: false
-    port: 10259
-    targetPort: 10259
-  serviceMonitor:
-    https: true
-    insecureSkipVerify: true
-coreDns:
-  service:
-    enabled: false
 prometheus:
   retention: 7d
   resources:
@@ -82,9 +57,37 @@ prometheus:
           memory: 512Mi
 alertmanager:
   enabled: false
+exporters:
+  node-exporter:
+    enabled: false
+  kube-state-metrics:
+    enabled: false
+kubeControllerManager:
+  enabled: false
+  service:
+    enabled: false
+  serviceMonitor:
+    https: true
+    insecureSkipVerify: true
+kubeScheduler:
+  enabled: false
+  service:
+    enabled: false
+    port: 10259
+    targetPort: 10259
+  serviceMonitor:
+    https: true
+    insecureSkipVerify: true
+coreDns:
+  enabled: false
+  service:
+    enabled: false
+kube-state-metrics:
+  serviceMonitor:
+    enabled: false
 node-exporter:
   serviceMonitor:
-    enabled: true
+    enabled: false
     jobLabel: jobLabel
     relabelings:
       - action: replace
@@ -98,6 +101,8 @@ node-exporter:
     collector.filesystem.ignored-fs-types: "^(autofs|binfmt_misc|cgroup|configfs|debugfs|devpts|devtmpfs|fusectl|hugetlbfs|mqueue|overlay|proc|procfs|pstore|rpc_pipefs|securityfs|sysfs|tracefs)$"
     collector.systemd:
     collector.processes:
+kubeApiServer:
+  enabled: false
 kubeProxy:
   enabled: false
 kubelet:
