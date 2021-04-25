@@ -1,5 +1,5 @@
 resource "helm_release" "ambassador" {
-  depends_on = [kubernetes_secret.lightstep-access-token]
+  depends_on = [kubernetes_secret.lightstep-access-token, kubectl_manifest.ambassador-backend-config, kubectl_manifest.ambassador-backend-config-iap]
   name         = var.name
   namespace    = var.namespace
   repository   = "https://getambassador.io"
