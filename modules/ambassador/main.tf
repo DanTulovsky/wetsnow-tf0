@@ -61,6 +61,7 @@ resource "kubectl_manifest" "ambassador-backend-config-iap" {
 }
 
 resource "kubernetes_secret" "ambassador-keycloak-secret" {
+  count     = var.id == "iap" ? 1 : 0
   metadata {
     name      = "ambassador-keycloak-secret"
     namespace = var.namespace
@@ -74,6 +75,7 @@ resource "kubernetes_secret" "ambassador-keycloak-secret" {
 }
 
 resource "kubernetes_secret" "pepper-poker-keycloak-secret" {
+  count     = var.id == "iap" ? 1 : 0
   metadata {
     name      = "pepper-poker-keycloak-secret"
     namespace = var.namespace
@@ -102,6 +104,7 @@ resource "kubernetes_secret" "lightstep-access-token" {
 
 
 resource "kubernetes_secret" "default-keycloak-secret" {
+  count     = var.id == "iap" ? 1 : 0
   metadata {
     name      = "default-keycloak-secret"
     namespace = var.namespace
