@@ -11,7 +11,7 @@ module "ambassador" {
   license_key                  = var.ambassador_secrets.license_key
   lightstep_access_token       = var.lightstep_secrets.access_token
   namespace                    = module.common.namespaces.ambassador
-  prom_enabled                 = false
+  prom_enabled                 = true
   backend_config               = "ambassador-hc-config"
   name                         = "ambassador"
 }
