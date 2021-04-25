@@ -59,7 +59,7 @@ spec:
 #   resolver: endpoint
 #   load_balancer:
 #     policy: least_request
- ---
+---
  apiVersion: getambassador.io/v2
  kind: Mapping
  metadata:
