@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix grafana">
-      <change beforePath="$PROJECT_DIR$/modules/prometheus/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/prometheus/values.yaml" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix prom">
+      <change beforePath="$PROJECT_DIR$/modules/grafana/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/grafana/yaml/values.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +70,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="proper namespace for second service" />
     <MESSAGE value="remove keycloak" />
     <MESSAGE value="ignore neg-status" />
     <MESSAGE value="remove auth namespace" />
@@ -95,6 +94,7 @@
     <MESSAGE value="fix grafana values.yaml" />
     <MESSAGE value="otel sidecar" />
     <MESSAGE value="fix grafana" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix grafana" />
+    <MESSAGE value="fix prom" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix prom" />
   </component>
 </project>

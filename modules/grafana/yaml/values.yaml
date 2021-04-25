@@ -9,6 +9,9 @@ podDisruptionBudget:
 # #   sha: ""
 # #   tag: 7.4.3
 
+deploymentStrategy:
+  type: "Recreate"
+
 resources:
   limits:
     cpu: 100m
