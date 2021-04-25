@@ -38,12 +38,12 @@ resource "google_sql_database_instance" "master" {
   }
 }
 
-//resource "google_sql_user" "bn_keycloak" {
-//  project  = var.project
-//  name     = "bn_keycloak"
-//  instance = google_sql_database_instance.master.name
-//  password = var.db_users["bn_keycloak"]
-//}
+resource "google_sql_user" "bn_keycloak" {
+  project  = var.project
+  name     = "bn_keycloak"
+  instance = google_sql_database_instance.master.name
+  password = var.db_users["bn_keycloak"]
+}
 
 resource "google_sql_user" "grafana" {
   project  = var.project
@@ -64,7 +64,7 @@ resource "google_sql_database" "grafana" {
   instance = google_sql_database_instance.master.name
 }
 
-//resource "google_sql_database" "bitnami_keycloak" {
-//  name     = "bitnami_keycloak"
-//  instance = google_sql_database_instance.master.name
-//}
+resource "google_sql_database" "bitnami_keycloak" {
+  name     = "bitnami_keycloak"
+  instance = google_sql_database_instance.master.name
+}
