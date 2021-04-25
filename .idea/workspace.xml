@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="do not create secrets">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="proper deps">
       <change beforePath="$PROJECT_DIR$/modules/ambassador/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/main.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,6 +88,7 @@
     <MESSAGE value="more fixes" />
     <MESSAGE value="set deps" />
     <MESSAGE value="do not create secrets" />
-    <option name="LAST_COMMIT_MESSAGE" value="do not create secrets" />
+    <MESSAGE value="proper deps" />
+    <option name="LAST_COMMIT_MESSAGE" value="proper deps" />
   </component>
 </project>

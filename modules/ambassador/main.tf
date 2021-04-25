@@ -41,6 +41,7 @@ resource "kubectl_manifest" "ambassador-backend-config-iap" {
 resource "kubernetes_service" "ambassador-iap" {
   metadata {
     name = "ambassador-iap"
+    namespace = "${var.namespace}"
     annotations = {
       "cloud.google.com/neg": "{\"ingress\": true}"
       "cloud.google.com/backend-config": "{\"default\": \"${kubectl_manifest.ambassador-backend-config-iap.name}\"}"
