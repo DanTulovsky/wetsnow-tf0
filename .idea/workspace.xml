@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix yaml">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="grafana on">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
     </list>
@@ -70,7 +70,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="iap" />
     <MESSAGE value="fixes" />
     <MESSAGE value="more fixes" />
     <MESSAGE value="set deps" />
@@ -95,6 +94,7 @@
     <MESSAGE value="updates" />
     <MESSAGE value="add grafana" />
     <MESSAGE value="fix yaml" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix yaml" />
+    <MESSAGE value="grafana on" />
+    <option name="LAST_COMMIT_MESSAGE" value="grafana on" />
   </component>
 </project>

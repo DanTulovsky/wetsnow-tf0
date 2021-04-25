@@ -68,7 +68,7 @@ module "prometheus" {
   # depends_on             = [module.gke]
   lightstep_access_token = var.lightstep_secrets.access_token
   namespace              = module.common.namespaces.monitoring
-  enabled                = false
+  enabled                = true
 }
 module "quote-server" {
   source                 = "../modules/quote-server"
