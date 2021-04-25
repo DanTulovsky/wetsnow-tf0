@@ -10,6 +10,6 @@ machine_types = {
 cluster_info = ({
   name = "kind0"
   vpc_name = "vpc0"
-  namespaces = ["ambassador", "auth", "db", "kafka", "kyverno", "monitoring", "observability", "vector", "weave", "web"]
+  namespaces = ["ambassador", "db", "kafka", "kyverno", "monitoring", "observability", "vector", "weave", "web"]
 })
 
