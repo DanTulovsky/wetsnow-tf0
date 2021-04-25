@@ -32,10 +32,6 @@ variable "name" {
   type= string
 }
 
-variable "id" {
-  type= string
-}
-
 variable "gke" {
   description = "set to true on gke"
   type        = bool

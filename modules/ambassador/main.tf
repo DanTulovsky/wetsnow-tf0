@@ -47,15 +47,15 @@ resource "kubernetes_service" "example" {
   metadata {
     name = "ambassador-iap"
     annotations = {
-      cloud.google.com/neg: '{"ingress": true}'
-      cloud.google.com/backend-config: '{"default": "${kubectl_manifest.ambassador-backend-config-iap}"}'
-      cloud.google.com/app-protocols: '{"grpc": "HTTP2"}'
+      "cloud.google.com/neg": "{\"ingress\": true}"
+      "cloud.google.com/backend-config": "{\"default\": \"${kubectl_manifest.ambassador-backend-config-iap}\"}"
+      "cloud.google.com/app-protocols": "{\"grpc\": \"HTTP2\"}"
     }
   }
   spec {
     selector = {
-      app.kubernetes.io/instance = "ambassador"
-      app.kubernetes.io/name = "ambassador"
+      "app.kubernetes.io/instance" = "ambassador"
+      "app.kubernetes.io/name" = "ambassador"
     }
     port {
       port        = 8080

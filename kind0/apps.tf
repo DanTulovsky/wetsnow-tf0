@@ -16,7 +16,6 @@ module "ambassador" {
   prom_enabled                 = false
   backend_config               = "ambassador-hc-config"
   name                         = "ambassador"
-  id                           = "default"
 }
 # module "http-ingress" {
 #   source     = "./modules/http-ingress"
