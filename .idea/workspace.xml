@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="disable extra stuff">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="ambassador prom enable">
       <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +71,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="remove db ip address" />
     <MESSAGE value="wetsnow.com/auth path?" />
     <MESSAGE value="fix pattern" />
     <MESSAGE value="set cluster_name on ddog metrics" />
@@ -97,6 +95,7 @@
     <MESSAGE value="otel" />
     <MESSAGE value="fix" />
     <MESSAGE value="disable extra stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="disable extra stuff" />
+    <MESSAGE value="ambassador prom enable" />
+    <option name="LAST_COMMIT_MESSAGE" value="ambassador prom enable" />
   </component>
 </project>

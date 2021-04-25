@@ -56,6 +56,7 @@ module "open-telemetry" {
   namespace              = module.common.namespaces.observability
   gke                    = true
   cluster_name           = "cluster0"
+  prom_enabled           = true
 }
 # module "postgres" {
 #   source         = "./modules/postgres"
