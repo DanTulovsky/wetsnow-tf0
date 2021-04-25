@@ -2,7 +2,7 @@
 apiVersion: cloud.google.com/v1
 kind: BackendConfig
 metadata:
-  name: ambassador-hc-config
+  name: ambassador-hc-config-iap
   namespace: ambassador
 spec:
   # https://cloud.google.com/kubernetes-engine/docs/how-to/ingress-features
@@ -24,6 +24,6 @@ spec:
     type: HTTP
     requestPath: /ambassador/v0/check_alive
   iap:
-    enabled: false # set to true to enable oauth for everything behind amabassador
+    enabled: true
     oauthclientCredentials:
       secretName: iap

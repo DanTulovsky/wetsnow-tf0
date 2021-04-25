@@ -28,6 +28,10 @@ variable "backend_config" {
   type= string
 }
 
+variable "name" {
+  type= string
+}
+
 variable "gke" {
   description = "set to true on gke"
   type        = bool

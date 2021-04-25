@@ -1,4 +1,5 @@
 # https://github.com/datawire/ambassador/tree/master/charts/ambassador
+nameOverride: "${name}"
 
 licenseKey:
   value: ${licenseKey}

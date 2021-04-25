@@ -11,6 +11,7 @@ resource "helm_release" "ambassador" {
     promEnabled = var.prom_enabled
     gke         = var.gke
     backendConfig = var.backend_config
+    name          = var.name
   })]
 }
 
@@ -33,6 +34,12 @@ resource "kubectl_manifest" "ambassador-backend-config" {
   depends_on = [helm_release.ambassador]
   count      = var.gke ? 1 : 0
   yaml_body  = file("${path.module}/yaml/k8s-gcp/backend-config.yaml")
+}
+
+resource "kubectl_manifest" "ambassador-backend-config-iap" {
+  depends_on = [helm_release.ambassador]
+  count      = var.gke ? 1 : 0
+  yaml_body  = file("${path.module}/yaml/k8s-gcp/backend-config-iap.yaml")
 }
 
 resource "kubernetes_secret" "ambassador-keycloak-secret" {
