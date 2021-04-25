@@ -11,3 +11,6 @@ variable "enabled" {
   default = false
   type    = bool
 }
+variable "cluster_name" {
+  type = string
+}

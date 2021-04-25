@@ -35,6 +35,7 @@ resource "kubernetes_secret" "lightstep-config" {
   data = {
     "config.yaml" = templatefile("${path.module}/yaml/lightstep-config.yaml", {
       accessToken = var.lightstep_access_token
+      clusterName = var.cluster_name
     })
   }
 

@@ -30,7 +30,7 @@ module "open-telemetry" {
   lightstep_access_token = var.lightstep_secrets.access_token
   datadog_api_key        = var.datadog_secrets.api_key
   namespace              = module.common.namespaces.observability
-  kafka = {
+  otel = {
     metrics_receivers  = "[otlp, k8s_cluster]"
     metrics_processors = "[memory_limiter, batch]"
     metrics_exporters  = "[otlp/lightstep, kafka]"
@@ -47,6 +47,7 @@ module "prometheus" {
   lightstep_access_token = var.lightstep_secrets.access_token
   namespace              = module.common.namespaces.monitoring
   enabled                = true
+  cluster_name           = "kind0"
 }
 
 module "quote-server" {

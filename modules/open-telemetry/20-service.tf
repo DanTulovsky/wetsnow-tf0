@@ -5,9 +5,7 @@ resource "kubernetes_service" "otel_collector" {
 
     labels = {
       app = "opentelemetry"
-
       component = "otel-collector"
-
       service = "otel-collector"
     }
   }

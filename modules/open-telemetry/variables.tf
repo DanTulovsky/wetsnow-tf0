@@ -25,7 +25,7 @@ variable "gke" {
   default = false
 }
 
-variable "kafka" {
+variable "otel" {
   type = map(string)
   default = {
     metrics_receivers  = "[otlp, k8s_cluster]"

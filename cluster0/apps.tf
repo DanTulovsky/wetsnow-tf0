@@ -69,6 +69,7 @@ module "prometheus" {
   lightstep_access_token = var.lightstep_secrets.access_token
   namespace              = module.common.namespaces.monitoring
   enabled                = true
+  cluster_name           = "cluster0"
 }
 module "quote-server" {
   source                 = "../modules/quote-server"
