@@ -20,7 +20,7 @@ module "ambassador" {
   name                         = "ambassador"
 }
 
-module "ambassador" {
+module "ambassador-iap" {
   source                       = "../modules/ambassador"
   depends_on                   = [module.common]
   ambassador_keycloak_secret   = var.ambassador_secrets.ambassador_keycloak_secret
