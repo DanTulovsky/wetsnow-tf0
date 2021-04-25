@@ -40,7 +40,7 @@ service:
   annotations:
     # kubernetes.io/ingress.global-static-ip-name: "ambassador"
     cloud.google.com/neg: '{"ingress": true}'
-    cloud.google.com/backend-config: '{"default": "ambassador-hc-config"}'
+    cloud.google.com/backend-config: '{"default": "${backendConfig}"}'
     cloud.google.com/app-protocols: '{"grpc": "HTTP2"}'
   externalIPs: []
   ports:
