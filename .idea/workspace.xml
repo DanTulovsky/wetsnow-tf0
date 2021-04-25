@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/prometheus/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/prometheus/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/prometheus/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/prometheus/yaml/values.yaml" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix limit">
+      <change beforePath="$PROJECT_DIR$/gcp/gke.tf" beforeDir="false" afterPath="$PROJECT_DIR$/gcp/gke.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +71,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="remove auth namespace" />
     <MESSAGE value="allow delete" />
     <MESSAGE value="RESTORE" />
     <MESSAGE value="delete db" />
@@ -98,6 +95,7 @@
     <MESSAGE value="grafana deployment strategy" />
     <MESSAGE value="dashboards" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="fix limit" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix limit" />
   </component>
 </project>
