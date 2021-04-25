@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="proper env">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="cluster_name">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/open-telemetry/yaml/ddog-values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/yaml/ddog-values.yaml" afterDir="false" />
     </list>
@@ -69,7 +69,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="gke true" />
     <MESSAGE value="secrets" />
     <MESSAGE value="token" />
     <MESSAGE value="dep" />
@@ -94,6 +93,7 @@
     <MESSAGE value="fix pattern" />
     <MESSAGE value="set cluster_name on ddog metrics" />
     <MESSAGE value="proper env" />
-    <option name="LAST_COMMIT_MESSAGE" value="proper env" />
+    <MESSAGE value="cluster_name" />
+    <option name="LAST_COMMIT_MESSAGE" value="cluster_name" />
   </component>
 </project>
