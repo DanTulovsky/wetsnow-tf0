@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="cluster_name">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/yaml/ddog-values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/yaml/ddog-values.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kind0/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/kind0/variables.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +39,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/cluster0/sensitive.auto.tfvars" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/modules/ambassador/yaml/k8s-iap" />
@@ -81,7 +83,6 @@
     <MESSAGE value="do not create secrets" />
     <MESSAGE value="proper deps" />
     <MESSAGE value="proper namespace for second service" />
-    <MESSAGE value="fix" />
     <MESSAGE value="remove keycloak" />
     <MESSAGE value="ignore neg-status" />
     <MESSAGE value="remove auth namespace" />
@@ -94,6 +95,7 @@
     <MESSAGE value="set cluster_name on ddog metrics" />
     <MESSAGE value="proper env" />
     <MESSAGE value="cluster_name" />
-    <option name="LAST_COMMIT_MESSAGE" value="cluster_name" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
 </project>
