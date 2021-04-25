@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="grafana on">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="enable prometheus">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/grafana/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/grafana/yaml/values.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/main.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +71,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixes" />
     <MESSAGE value="more fixes" />
     <MESSAGE value="set deps" />
     <MESSAGE value="do not create secrets" />
@@ -95,6 +95,7 @@
     <MESSAGE value="add grafana" />
     <MESSAGE value="fix yaml" />
     <MESSAGE value="grafana on" />
-    <option name="LAST_COMMIT_MESSAGE" value="grafana on" />
+    <MESSAGE value="enable prometheus" />
+    <option name="LAST_COMMIT_MESSAGE" value="enable prometheus" />
   </component>
 </project>
