@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="allow delete">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="RESTORE">
       <change beforePath="$PROJECT_DIR$/cluster0/db.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/db.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +68,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="second ambassador with iap" />
     <MESSAGE value="rename second ambassador module" />
     <MESSAGE value="add id." />
     <MESSAGE value="fix id" />
@@ -93,6 +92,7 @@
     <MESSAGE value="ignore neg-status" />
     <MESSAGE value="remove auth namespace" />
     <MESSAGE value="allow delete" />
-    <option name="LAST_COMMIT_MESSAGE" value="allow delete" />
+    <MESSAGE value="RESTORE" />
+    <option name="LAST_COMMIT_MESSAGE" value="RESTORE" />
   </component>
 </project>
