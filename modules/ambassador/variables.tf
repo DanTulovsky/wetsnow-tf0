@@ -32,12 +32,6 @@ variable "name" {
   type= string
 }
 
-variable "gke" {
-  description = "set to true on gke"
-  type        = bool
-  default     = false
-}
-
 variable "prom_enabled" {
   type    = bool
   default = false

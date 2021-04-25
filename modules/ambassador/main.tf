@@ -10,7 +10,6 @@ resource "helm_release" "ambassador" {
   values = [templatefile("${path.module}/yaml/values.yaml", {
     licenseKey  = var.license_key
     promEnabled = var.prom_enabled
-    gke         = var.gke
     backendConfig = var.backend_config
     name          = var.name
   })]
@@ -32,23 +31,21 @@ resource "kubectl_manifest" "ambassador-yaml" {
 
 resource "kubectl_manifest" "ambassador-backend-config" {
   depends_on = [helm_release.ambassador]
-  count      = var.gke ? 1 : 0
   yaml_body  = file("${path.module}/yaml/k8s-gcp/backend-config.yaml")
 }
 
 // IAP
 resource "kubectl_manifest" "ambassador-backend-config-iap" {
   depends_on = [helm_release.ambassador]
-  count      = var.gke ? 1 : 0
   yaml_body  = file("${path.module}/yaml/k8s-gcp/backend-config-iap.yaml")
 }
 
-resource "kubernetes_service" "example" {
+resource "kubernetes_service" "ambassador-iap" {
   metadata {
     name = "ambassador-iap"
     annotations = {
       "cloud.google.com/neg": "{\"ingress\": true}"
-      "cloud.google.com/backend-config": "{\"default\": \"${kubectl_manifest.ambassador-backend-config-iap}\"}"
+      "cloud.google.com/backend-config": "{\"default\": \"${kubectl_manifest.ambassador-backend-config-iap.name}\"}"
       "cloud.google.com/app-protocols": "{\"grpc\": \"HTTP2\"}"
     }
   }
