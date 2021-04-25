@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="add grafana">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix yaml">
       <change beforePath="$PROJECT_DIR$/modules/ambassador/yaml/k8s/10-ambassador-maps.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/yaml/k8s/10-ambassador-maps.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +69,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix path for login" />
     <MESSAGE value="iap" />
     <MESSAGE value="fixes" />
     <MESSAGE value="more fixes" />
@@ -94,6 +93,7 @@
     <MESSAGE value="cleanup 2" />
     <MESSAGE value="updates" />
     <MESSAGE value="add grafana" />
-    <option name="LAST_COMMIT_MESSAGE" value="add grafana" />
+    <MESSAGE value="fix yaml" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix yaml" />
   </component>
 </project>
