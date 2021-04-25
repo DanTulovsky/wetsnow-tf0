@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix pattern">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="set cluster_name on ddog metrics">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kind0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/kind0/apps.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/http-ingress/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/http-ingress/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/variables.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/open-telemetry/yaml/ddog-values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/yaml/ddog-values.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +69,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="try iap" />
     <MESSAGE value="helm chart name var" />
     <MESSAGE value="gke true" />
     <MESSAGE value="secrets" />
@@ -99,6 +93,7 @@
     <MESSAGE value="remove db ip address" />
     <MESSAGE value="wetsnow.com/auth path?" />
     <MESSAGE value="fix pattern" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix pattern" />
+    <MESSAGE value="set cluster_name on ddog metrics" />
+    <option name="LAST_COMMIT_MESSAGE" value="set cluster_name on ddog metrics" />
   </component>
 </project>

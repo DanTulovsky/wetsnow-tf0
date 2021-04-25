@@ -21,6 +21,10 @@ datadog:
   kubelet:
     tlsVerify: ${gke}
 
+  env:
+    - name: DD_TAGS
+      value: cluster_name:${clusterName}
+
 clusterAgent:
   resources:
   requests:
@@ -29,6 +33,9 @@ clusterAgent:
   limits:
     cpu: 200m
     memory: 256Mi
+  env:
+    - name: DD_CLUSTER_CHECKS_EXTRA_TAGS
+      value: cluster_name:${clusterName}
 
 agents:
   # for kind cluster
@@ -36,10 +43,6 @@ agents:
     - key: "node-role.kubernetes.io/master"
       effect: "NoSchedule"
       operator: "Exists"
-
-env:
-  - name: DD_TAGS
-    value: cluster_name:${clusterName}
 
 containers:
   agent:
