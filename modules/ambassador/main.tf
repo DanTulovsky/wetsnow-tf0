@@ -1,5 +1,5 @@
 resource "helm_release" "ambassador" {
-  name         = "ambassador"
+  name         = var.name
   namespace    = var.namespace
   repository   = "https://getambassador.io"
   chart        = "ambassador"
@@ -34,7 +34,7 @@ data "kubectl_path_documents" "manifests-iap" {
 resource "kubectl_manifest" "ambassador-yaml" {
   depends_on = [helm_release.ambassador]
   # This doesn't work on the first install
-  # count      = length(data.kubectl_path_documents.manifests.documents)
+  # count      = var.id == "default" ? length(data.kubectl_path_documents.manifests.documents) : 0
   count     = var.id == "default" ? 30 : 0
   yaml_body = element(data.kubectl_path_documents.manifests.documents, count.index)
 }
@@ -43,7 +43,7 @@ resource "kubectl_manifest" "ambassador-yaml" {
 resource "kubectl_manifest" "ambassador-iap-yaml" {
   depends_on = [helm_release.ambassador]
   # This doesn't work on the first install
-  # count      = length(data.kubectl_path_documents.manifests.documents)
+  # count      = var.id == "iap" ? length(data.kubectl_path_documents.manifests.documents) : 0
   count     = var.id == "iap" ? 30 : 0
   yaml_body = element(data.kubectl_path_documents.manifests-iap.documents, count.index)
 }
