@@ -20,13 +20,13 @@ module "dns-private-zone" {
         "127.0.0.1",
       ]
     },
-    {
-      name = "db1"
-      type = "A"
-      ttl  = 300
-      records = [
-        google_sql_database_instance.master.private_ip_address
-      ]
-    },
+//    {
+//      name = "db1"
+//      type = "A"
+//      ttl  = 300
+//      records = [
+//        google_sql_database_instance.master.private_ip_address
+//      ]
+//    },
   ]
 }
