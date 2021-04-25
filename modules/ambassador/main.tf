@@ -30,13 +30,11 @@ resource "kubectl_manifest" "ambassador-yaml" {
 }
 
 resource "kubectl_manifest" "ambassador-backend-config" {
-  depends_on = [helm_release.ambassador]
   yaml_body  = file("${path.module}/yaml/k8s-gcp/backend-config.yaml")
 }
 
 // IAP
 resource "kubectl_manifest" "ambassador-backend-config-iap" {
-  depends_on = [helm_release.ambassador]
   yaml_body  = file("${path.module}/yaml/k8s-gcp/backend-config-iap.yaml")
 }
 
