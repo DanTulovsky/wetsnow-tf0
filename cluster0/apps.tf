@@ -8,9 +8,6 @@ module "common" {
 module "ambassador" {
   source = "../modules/ambassador"
   # depends_on                   = [module.gke]
-  ambassador_keycloak_secret   = var.ambassador_secrets.ambassador_keycloak_secret
-  default_keycloak_secret      = var.ambassador_secrets.default_keycloak_secret
-  pepper_poker_keycloak_secret = var.ambassador_secrets.pepper_poker_keycloak_secret
   license_key                  = var.ambassador_secrets.license_key
   lightstep_access_token       = var.lightstep_secrets.access_token
   namespace                    = module.common.namespaces.ambassador
