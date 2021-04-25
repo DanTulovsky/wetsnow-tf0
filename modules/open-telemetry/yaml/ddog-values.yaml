@@ -23,7 +23,9 @@ datadog:
 
   env:
     - name: DD_TAGS
-      value: cluster_name:${clusterName}
+      value: cluster:${clusterName}
+    - name: DD_CLUSTER_NAME
+      value: ${clusterName}
 
 clusterAgent:
   resources:
@@ -35,7 +37,9 @@ clusterAgent:
     memory: 256Mi
   env:
     - name: DD_CLUSTER_CHECKS_EXTRA_TAGS
-      value: cluster_name:${clusterName}
+      value: cluster:${clusterName}
+    - name: DD_CLUSTER_NAME
+      value: ${clusterName}
 
 agents:
   # for kind cluster
