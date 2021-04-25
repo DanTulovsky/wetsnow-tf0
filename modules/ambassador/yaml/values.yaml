@@ -19,7 +19,7 @@ replicaCount: 1
 volumes:
   - name: lightstep-secret-volume
     secret:
-      secretName: lightstep-access-token
+      secretName: lightstep-access-token-${id}
 
 volumeMounts:
   - name: lightstep-secret-volume

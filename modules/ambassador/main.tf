@@ -91,7 +91,7 @@ resource "kubernetes_secret" "pepper-poker-keycloak-secret" {
 
 resource "kubernetes_secret" "lightstep-access-token" {
   metadata {
-    name      = "lightstep-access-token"
+    name      = "lightstep-access-token-${var.id}"
     namespace = var.namespace
   }
 
