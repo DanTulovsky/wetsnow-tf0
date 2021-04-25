@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="delete db">
-      <change beforePath="$PROJECT_DIR$/cluster0/dns.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/dns.tf" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="remove db ip address">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/http-ingress/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/http-ingress/main.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +69,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add id." />
     <MESSAGE value="fix id" />
     <MESSAGE value="fix ignore" />
     <MESSAGE value="try iap" />
@@ -93,6 +93,7 @@
     <MESSAGE value="allow delete" />
     <MESSAGE value="RESTORE" />
     <MESSAGE value="delete db" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete db" />
+    <MESSAGE value="remove db ip address" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove db ip address" />
   </component>
 </project>
