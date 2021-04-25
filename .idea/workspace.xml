@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="otel">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/prometheus/yaml/lightstep-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/prometheus/yaml/lightstep-config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/prometheus/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/prometheus/yaml/values.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,10 +93,10 @@
     <MESSAGE value="fix prom" />
     <MESSAGE value="grafana deployment strategy" />
     <MESSAGE value="dashboards" />
-    <MESSAGE value="fix" />
     <MESSAGE value="fix limit" />
     <MESSAGE value="fewer nodes" />
     <MESSAGE value="otel" />
-    <option name="LAST_COMMIT_MESSAGE" value="otel" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
 </project>

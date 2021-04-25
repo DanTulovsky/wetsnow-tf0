@@ -14,11 +14,11 @@ operator:
       memory: 128Mi
 exporters:
   node-exporter:
-    enabled: true
+    enabled: false
   kube-state-metrics:
-    enabled: true
+    enabled: false
 kubeControllerManager:
-  enabled: true
+  enabled: false
   service:
     enabled: true
     port: 10257
@@ -28,7 +28,7 @@ kubeControllerManager:
     insecureSkipVerify: true
 kubeScheduler:
   service:
-    enabled: true
+    enabled: false
     port: 10259
     targetPort: 10259
   serviceMonitor:
@@ -36,7 +36,7 @@ kubeScheduler:
     insecureSkipVerify: true
 coreDns:
   service:
-    enabled: true
+    enabled: false
 prometheus:
   retention: 7d
   resources:
@@ -99,9 +99,9 @@ node-exporter:
     collector.systemd:
     collector.processes:
 kubeProxy:
-  enabled: true
+  enabled: false
 kubelet:
-  enabled: true
+  enabled: false
   namespace: kube-system
   serviceMonitor:
     metricRelabelings:
