@@ -5,6 +5,7 @@ metadata:
   name: pgadmin-policy
   namespace: ambassador
 spec:
+  ambassador_id: iap
   rules:
     - host: "pgadmin.wetsnow.com"
       # note that "/" only protects "/" and not "/foo"
@@ -24,6 +25,7 @@ metadata:
   name: kowl-policy
   namespace: ambassador
 spec:
+  ambassador_id: iap
   rules:
     - host: "kafka-ui.wetsnow.com"
       # note that "/" only protects "/" and not "/foo"
@@ -43,6 +45,7 @@ metadata:
   name: scope-policy
   namespace: ambassador
 spec:
+  ambassador_id: iap
   rules:
     - host: "scope.wetsnow.com"
       # note that "/" only protects "/" and not "/foo"
@@ -92,6 +95,7 @@ metadata:
   name: prometheus-policy
   namespace: ambassador
 spec:
+  ambassador_id: iap
   rules:
     - host: "prometheus.wetsnow.com"
       # note that "/" only protects "/" and not "/foo"
@@ -149,6 +153,7 @@ metadata:
   name: pepper-poker-policy
   namespace: ambassador
 spec:
+  ambassador_id: iap
   rules:
     - host: "pepper-poker.wetsnow.com"
       # note that "/" only protects "/" and not "/foo"
@@ -168,6 +173,7 @@ metadata:
   name: wetsnow-com-policy
   namespace: ambassador
 spec:
+  ambassador_id: iap
   rules:
     - host: "www.wetsnow.com"
       # note that "/" only protects "/" and not "/foo"

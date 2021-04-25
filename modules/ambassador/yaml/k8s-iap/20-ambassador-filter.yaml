@@ -5,6 +5,7 @@ metadata:
   name: keycloak-pgadmin-filter
   namespace: ambassador
 spec:
+  ambassador_id: iap
   OAuth2:
     authorizationURL: https://login.wetsnow.com/auth/realms/wetsnow
     clientID: default.wetsnow.com
@@ -19,6 +20,7 @@ metadata:
   name: keycloak-kowl-filter
   namespace: ambassador
 spec:
+  ambassador_id: iap
   OAuth2:
     authorizationURL: https://login.wetsnow.com/auth/realms/wetsnow
     clientID: default.wetsnow.com
@@ -33,6 +35,7 @@ metadata:
   name: keycloak-prometheus-filter
   namespace: ambassador
 spec:
+  ambassador_id: iap
   OAuth2:
     authorizationURL: https://login.wetsnow.com/auth/realms/wetsnow
     clientID: default.wetsnow.com
@@ -47,6 +50,7 @@ metadata:
   name: keycloak-pepper-poker-filter
   namespace: ambassador
 spec:
+  ambassador_id: iap
   OAuth2:
     authorizationURL: https://login.wetsnow.com/auth/realms/wetsnow
     clientID: pepper-poker.wetsnow.com
@@ -61,6 +65,7 @@ metadata:
   name: keycloak-wetsnow-com-filter
   namespace: ambassador
 spec:
+  ambassador_id: iap
   OAuth2:
     authorizationURL: https://login.wetsnow.com/auth/realms/wetsnow
     injectRequestHeaders:
@@ -78,6 +83,7 @@ metadata:
   name: keycloak-scope-filter
   namespace: ambassador
 spec:
+  ambassador_id: iap
   OAuth2:
     authorizationURL: https://login.wetsnow.com/auth/realms/wetsnow
     clientID: default.wetsnow.com

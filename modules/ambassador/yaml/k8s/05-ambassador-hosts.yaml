@@ -232,6 +232,7 @@ metadata:
   name: l7-redirect
   namespace: ambassador
 spec:
+  ambassador_id: [ "default", "iap" ]
   # hostname: www.wetsnow.com
   # TLS happens at the LB, so disable it here.
   acmeProvider:

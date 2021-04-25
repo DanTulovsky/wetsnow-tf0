@@ -23,12 +23,29 @@ data "kubectl_path_documents" "manifests" {
   }
 }
 
+data "kubectl_path_documents" "manifests-iap" {
+  pattern = "${path.module}/yaml/k8s-iap/*.yaml"
+  vars = {
+    namespace = var.namespace
+  }
+}
+
+# these are open to the internet
 resource "kubectl_manifest" "ambassador-yaml" {
   depends_on = [helm_release.ambassador]
   # This doesn't work on the first install
   # count      = length(data.kubectl_path_documents.manifests.documents)
-  count     = 30
+  count     = var.id == "default" ? 30 : 0
   yaml_body = element(data.kubectl_path_documents.manifests.documents, count.index)
+}
+
+# these are behind IAP
+resource "kubectl_manifest" "ambassador-iap-yaml" {
+  depends_on = [helm_release.ambassador]
+  # This doesn't work on the first install
+  # count      = length(data.kubectl_path_documents.manifests.documents)
+  count     = var.id == "iap" ? 30 : 0
+  yaml_body = element(data.kubectl_path_documents.manifests-iap.documents, count.index)
 }
 
 resource "kubectl_manifest" "ambassador-backend-config" {

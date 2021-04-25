@@ -5,6 +5,7 @@ metadata:
   name: admin-mapping
   namespace: ambassador
 spec:
+  ambassador_id: [ "default", "iap" ]
   host: ambassador-admin.wetsnow.com
   prefix: /edge_stack/
   rewrite: /edge_stack_ui/edge_stack/
@@ -80,6 +81,7 @@ metadata:
   name: login
   namespace: ambassador
 spec:
+  ambassador_id: iap
   prefix: /
   host: login.wetsnow.com
   resolver: endpoint
@@ -91,6 +93,7 @@ metadata:
   name: wetsnow.com
   namespace: ambassador
 spec:
+  ambassador_id: default
   prefix: /
   host: wetsnow.com
   resolver: endpoint
@@ -102,6 +105,7 @@ metadata:
   name: www.wetsnow.com
   namespace: ambassador
 spec:
+  ambassador_id: default
   prefix: /
   host: www.wetsnow.com
   resolver: endpoint
@@ -113,6 +117,7 @@ metadata:
   name: www.dusselskolk.com
   namespace: ambassador
 spec:
+  ambassador_id: default
   prefix: /
   host: www.dusselskolk.com
   resolver: endpoint
@@ -124,6 +129,7 @@ metadata:
   name: dusselskolk.com
   namespace: ambassador
 spec:
+  ambassador_id: default
   prefix: /
   host: dusselskolk.com
   resolver: endpoint
@@ -174,6 +180,7 @@ metadata:
   name: scope.wetsnow.com
   namespace: ambassador
 spec:
+  ambassador_id: iap
   prefix: /
   host: scope.wetsnow.com
   resolver: endpoint
@@ -187,6 +194,7 @@ metadata:
   name: weave-scope.wetsnow.com
   namespace: ambassador
 spec:
+  ambassador_id: iap
   prefix: /
   host: weave-scope.wetsnow.com
   resolver: endpoint
@@ -200,6 +208,7 @@ metadata:
   name: "404-fallback"
   namespace: ambassador
 spec:
+  ambassador_id: [ "default", "iap"]
   prefix: "/"
   rewrite: "/404/" # This must not map to any existing prefix!
   service: localhost:8500
