@@ -16,15 +16,13 @@ module "kyverno" {
   namespace = module.common.namespaces.kyverno
 }
 
-# module "grafana" {
-#   source         = "./modules/grafana"
-#   depends_on     = [module.gke]
-#   db_password    = var.db_users["grafana"]
-#   oauth_secret   = var.grafana_secrets.oauth_secret
-#   admin_password = var.grafana_secrets.admin_password
-#   smtp_password  = var.grafana_secrets.smtp_password
-#   namespace      = module.common.namespaces.monitoring
-# }
+module "grafana" {
+  source         = "../modules/grafana"
+  oauth_secret   = var.grafana_secrets.oauth_secret
+  admin_password = var.grafana_secrets.admin_password
+  smtp_password  = var.grafana_secrets.smtp_password
+  namespace      = module.common.namespaces.monitoring
+}
 
 module "open-telemetry" {
   source                 = "../modules/open-telemetry"

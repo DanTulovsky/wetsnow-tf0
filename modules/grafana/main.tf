@@ -1,7 +1,6 @@
 
 resource "helm_release" "grafana" {
   depends_on = [
-    kubernetes_secret.grafana-env-secret,
     kubernetes_secret.grafana-admin,
     kubernetes_secret.grafana-smtp,
   ]
@@ -17,20 +16,20 @@ resource "helm_release" "grafana" {
   })]
 }
 
-resource "kubernetes_secret" "grafana-env-secret" {
-  metadata {
-    name      = "grafana-env-secret"
-    namespace = var.namespace
-  }
-
-  data = {
-    GF_AUTH_GENERIC_OAUTH_CLIENT_ID : "grafana.wetsnow.com"
-    GF_AUTH_GENERIC_OAUTH_CLIENT_SECRET : var.oauth_secret
-    GF_DATABASE_PASSWORD : var.db_password
-  }
-
-  type = "Opaque"
-}
+//resource "kubernetes_secret" "grafana-env-secret" {
+//  metadata {
+//    name      = "grafana-env-secret"
+//    namespace = var.namespace
+//  }
+//
+//  data = {
+////    GF_AUTH_GENERIC_OAUTH_CLIENT_ID : "grafana.wetsnow.com"
+////    GF_AUTH_GENERIC_OAUTH_CLIENT_SECRET : var.oauth_secret
+////    GF_DATABASE_PASSWORD : var.db_password
+//  }
+//
+//  type = "Opaque"
+//}
 
 resource "kubernetes_secret" "grafana-admin" {
   metadata {

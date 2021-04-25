@@ -1,8 +1,3 @@
-variable "db_password" {
-  type      = string
-  sensitive = true
-}
-
 variable "oauth_secret" {
   type      = string
   sensitive = true
