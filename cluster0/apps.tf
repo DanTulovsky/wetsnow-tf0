@@ -28,15 +28,14 @@ module "http-ingress" {
 #   namespace        = module.common.namespaces.kafka
 #   kafka_replica_count = 1
 # }
-# module "grafana" {
-#   source = "../modules/grafana"
-#   # depends_on     = [module.gke]
-#   db_password    = var.db_users["grafana"]
-#   oauth_secret   = var.grafana_secrets.oauth_secret
-#   admin_password = var.grafana_secrets.admin_password
-#   smtp_password  = var.grafana_secrets.smtp_password
-#   namespace      = module.common.namespaces.monitoring
-# }
+module "grafana" {
+  source = "../modules/grafana"
+//  depends_on     = [module.gke]
+  admin_password = var.grafana_secrets.admin_password
+  smtp_password  = var.grafana_secrets.smtp_password
+  namespace      = module.common.namespaces.monitoring
+  oauth_secret = ""
+}
 module "kyverno" {
   source    = "../modules/kyverno"
   namespace = module.common.namespaces.kyverno
