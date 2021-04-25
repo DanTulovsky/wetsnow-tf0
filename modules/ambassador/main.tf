@@ -10,6 +10,7 @@ resource "helm_release" "ambassador" {
     licenseKey  = var.license_key
     promEnabled = var.prom_enabled
     gke         = var.gke
+    backendConfig = var.backend_config
   })]
 }
 

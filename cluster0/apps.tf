@@ -16,6 +16,7 @@ module "ambassador" {
   namespace                    = module.common.namespaces.ambassador
   gke                          = true
   prom_enabled                 = false
+  backend_config               = "ambassador-hc-config"
 }
 module "http-ingress" {
   source     = "../modules/http-ingress"

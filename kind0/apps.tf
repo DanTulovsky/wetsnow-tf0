@@ -14,6 +14,7 @@ module "ambassador" {
   lightstep_access_token       = var.lightstep_secrets.access_token
   namespace                    = module.common.namespaces.ambassador
   prom_enabled                 = false
+  backend_config               = "ambassador-hc-config"
 }
 # module "http-ingress" {
 #   source     = "./modules/http-ingress"
