@@ -58,10 +58,29 @@ prometheus:
 alertmanager:
   enabled: false
 exporters:
+  kube-state-metrics:
+    enabled: true
   node-exporter:
     enabled: false
-  kube-state-metrics:
+kube-state-metrics:
+  serviceMonitor:
+    enabled: true
+node-exporter:
+  serviceMonitor:
     enabled: false
+    jobLabel: jobLabel
+    relabelings:
+      - action: replace
+        regex: (.*)
+        replacement: $1
+        sourceLabels:
+          - __meta_kubernetes_pod_node_name
+        targetLabel: kubernetes_node
+  extraArgs:
+    collector.filesystem.ignored-mount-points: "^/(dev|proc|sys|var/lib/docker/.+)($|/)"
+    collector.filesystem.ignored-fs-types: "^(autofs|binfmt_misc|cgroup|configfs|debugfs|devpts|devtmpfs|fusectl|hugetlbfs|mqueue|overlay|proc|procfs|pstore|rpc_pipefs|securityfs|sysfs|tracefs)$"
+    collector.systemd:
+    collector.processes:
 kubeControllerManager:
   enabled: false
   service:
@@ -82,25 +101,6 @@ coreDns:
   enabled: false
   service:
     enabled: false
-kube-state-metrics:
-  serviceMonitor:
-    enabled: false
-node-exporter:
-  serviceMonitor:
-    enabled: false
-    jobLabel: jobLabel
-    relabelings:
-      - action: replace
-        regex: (.*)
-        replacement: $1
-        sourceLabels:
-          - __meta_kubernetes_pod_node_name
-        targetLabel: kubernetes_node
-  extraArgs:
-    collector.filesystem.ignored-mount-points: "^/(dev|proc|sys|var/lib/docker/.+)($|/)"
-    collector.filesystem.ignored-fs-types: "^(autofs|binfmt_misc|cgroup|configfs|debugfs|devpts|devtmpfs|fusectl|hugetlbfs|mqueue|overlay|proc|procfs|pstore|rpc_pipefs|securityfs|sysfs|tracefs)$"
-    collector.systemd:
-    collector.processes:
 kubeApiServer:
   enabled: false
 kubeProxy:

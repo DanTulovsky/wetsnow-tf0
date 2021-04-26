@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="ambassador prom enable">
-      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="otel prom enabled">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/prometheus/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/prometheus/yaml/values.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +72,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="wetsnow.com/auth path?" />
     <MESSAGE value="fix pattern" />
     <MESSAGE value="set cluster_name on ddog metrics" />
     <MESSAGE value="proper env" />
@@ -96,6 +96,7 @@
     <MESSAGE value="fix" />
     <MESSAGE value="disable extra stuff" />
     <MESSAGE value="ambassador prom enable" />
-    <option name="LAST_COMMIT_MESSAGE" value="ambassador prom enable" />
+    <MESSAGE value="otel prom enabled" />
+    <option name="LAST_COMMIT_MESSAGE" value="otel prom enabled" />
   </component>
 </project>
