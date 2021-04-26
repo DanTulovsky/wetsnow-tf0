@@ -81,6 +81,15 @@ node-exporter:
     collector.filesystem.ignored-fs-types: "^(autofs|binfmt_misc|cgroup|configfs|debugfs|devpts|devtmpfs|fusectl|hugetlbfs|mqueue|overlay|proc|procfs|pstore|rpc_pipefs|securityfs|sysfs|tracefs)$"
     collector.systemd:
     collector.processes:
+kubelet:
+  enabled: true
+  namespace: kube-system
+  serviceMonitor:
+    metricRelabelings:
+      - action: replace
+        sourceLabels:
+          - node
+        targetLabel: instance
 kubeControllerManager:
   enabled: false
   service:
@@ -105,12 +114,3 @@ kubeApiServer:
   enabled: false
 kubeProxy:
   enabled: false
-kubelet:
-  enabled: false
-  namespace: kube-system
-  serviceMonitor:
-    metricRelabelings:
-      - action: replace
-        sourceLabels:
-          - node
-        targetLabel: instance
