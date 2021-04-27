@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="proper escape">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="more permissions">
       <change beforePath="$PROJECT_DIR$/modules/open-telemetry/00-account.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/00-account.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +72,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="cleanup" />
     <MESSAGE value="cleanup 2" />
     <MESSAGE value="updates" />
     <MESSAGE value="add grafana" />
@@ -98,6 +96,7 @@
     <MESSAGE value="kubeletstats" />
     <MESSAGE value="fix" />
     <MESSAGE value="proper escape" />
-    <option name="LAST_COMMIT_MESSAGE" value="proper escape" />
+    <MESSAGE value="more permissions" />
+    <option name="LAST_COMMIT_MESSAGE" value="more permissions" />
   </component>
 </project>

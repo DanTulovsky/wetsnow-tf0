@@ -21,7 +21,7 @@ resource "kubernetes_cluster_role" "otelcontribcol" {
   rule {
     verbs      = ["get", "list", "watch"]
     api_groups = [""]
-    resources  = ["endpoints", "events", "namespaces", "namespaces/status", "nodes", "nodes/spec", "nodes/stats", "pods", "pods/status", "replicationcontrollers", "replicationcontrollers/status", "resourcequotas", "services"]
+    resources  = ["endpoints", "events", "namespaces", "namespaces/status", "nodes", "nodes/proxy", "nodes/spec", "nodes/stats", "pods", "pods/status", "replicationcontrollers", "replicationcontrollers/status", "resourcequotas", "services"]
   }
 
   rule {
