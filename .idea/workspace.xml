@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="kubeletstats">
-      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/30-deployment.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/30-deployment.tf" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix">
+      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/yaml/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/yaml/config.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,13 +89,13 @@
     <MESSAGE value="fix limit" />
     <MESSAGE value="fewer nodes" />
     <MESSAGE value="otel" />
-    <MESSAGE value="fix" />
     <MESSAGE value="disable extra stuff" />
     <MESSAGE value="ambassador prom enable" />
     <MESSAGE value="otel prom enabled" />
     <MESSAGE value="enable kube-state-metrics" />
     <MESSAGE value="enable kubelet (cadvisor)" />
     <MESSAGE value="kubeletstats" />
-    <option name="LAST_COMMIT_MESSAGE" value="kubeletstats" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
 </project>
