@@ -78,6 +78,16 @@ receivers:
     collection_interval: 10s
     node_conditions_to_report:
       [Ready, MemoryPressure, DiskPressure, PIDPressure, NetworkUnavailable]
+  kubeletstats:
+    collection_interval: 20s
+    auth_type: "serviceAccount"
+    endpoint: "${K8S_NODE_NAME}:10250"
+    insecure_skip_verify: true
+    extra_metadata_labels:
+      - container.id
+      - k8s.volume.type
+    k8s_api_config:
+      auth_type: serviceAccount
 processors:
   batch:
   memory_limiter:

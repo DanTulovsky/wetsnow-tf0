@@ -58,6 +58,14 @@ resource "kubernetes_deployment" "otel_collector" {
           image   = "otel/opentelemetry-collector-contrib:0.23.0"
           command = ["/otelcontribcol", "--config=/conf/otel-collector-config.yaml"]
 
+          env {
+            name = K8S_NODE_NAME
+            value_from {
+              field_ref {
+                field_path = "spec.nodeName"
+              }
+            }
+          }
           port {
             name           = "opencensus"
             container_port = 55678

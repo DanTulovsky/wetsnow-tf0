@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="enable kube-state-metrics">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="enable kubelet (cadvisor)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/prometheus/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/prometheus/yaml/values.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/30-deployment.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/30-deployment.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/yaml/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/yaml/config.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +74,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="set cluster_name on ddog metrics" />
     <MESSAGE value="proper env" />
     <MESSAGE value="cluster_name" />
     <MESSAGE value="cleanup" />
@@ -97,6 +98,7 @@
     <MESSAGE value="ambassador prom enable" />
     <MESSAGE value="otel prom enabled" />
     <MESSAGE value="enable kube-state-metrics" />
-    <option name="LAST_COMMIT_MESSAGE" value="enable kube-state-metrics" />
+    <MESSAGE value="enable kubelet (cadvisor)" />
+    <option name="LAST_COMMIT_MESSAGE" value="enable kubelet (cadvisor)" />
   </component>
 </project>
