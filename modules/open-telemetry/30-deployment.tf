@@ -59,7 +59,7 @@ resource "kubernetes_deployment" "otel_collector" {
           command = ["/otelcontribcol", "--config=/conf/otel-collector-config.yaml"]
 
           env {
-            name = K8S_NODE_NAME
+            name = "K8S_NODE_NAME"
             value_from {
               field_ref {
                 field_path = "spec.nodeName"
