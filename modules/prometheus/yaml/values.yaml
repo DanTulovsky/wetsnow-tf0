@@ -61,13 +61,13 @@ exporters:
   kube-state-metrics:
     enabled: true
   node-exporter:
-    enabled: false
+    enabled: true
 kube-state-metrics:
   serviceMonitor:
     enabled: true
 node-exporter:
   serviceMonitor:
-    enabled: false
+    enabled: true
     jobLabel: jobLabel
     relabelings:
       - action: replace
@@ -82,7 +82,7 @@ node-exporter:
     collector.systemd:
     collector.processes:
 kubelet:
-  enabled: false
+  enabled: true
   namespace: kube-system
   serviceMonitor:
     metricRelabelings:
@@ -90,6 +90,10 @@ kubelet:
         sourceLabels:
           - node
         targetLabel: instance
+coreDns:
+  enabled: true
+  service:
+    enabled: true
 kubeControllerManager:
   enabled: false
   service:
@@ -106,10 +110,6 @@ kubeScheduler:
   serviceMonitor:
     https: true
     insecureSkipVerify: true
-coreDns:
-  enabled: false
-  service:
-    enabled: false
 kubeApiServer:
   enabled: false
 kubeProxy:
