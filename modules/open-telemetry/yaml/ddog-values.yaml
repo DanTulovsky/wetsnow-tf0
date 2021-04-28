@@ -22,7 +22,9 @@ datadog:
     tlsVerify: ${gke}
 
   env:
-    - name: DD_TAGS
+#    - name: DD_TAGS
+#      value: cluster:${clusterName}
+    - name: DD_DOGSTATSD_TAGS
       value: cluster:${clusterName}
     - name: DD_CLUSTER_NAME
       value: ${clusterName}

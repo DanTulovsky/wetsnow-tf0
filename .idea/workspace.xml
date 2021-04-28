@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix port name">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="switch metrics to prom">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/yaml/ddog-values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/yaml/ddog-values.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/prometheus/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/prometheus/yaml/values.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +74,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix yaml" />
     <MESSAGE value="grafana on" />
     <MESSAGE value="enable prometheus" />
     <MESSAGE value="remove ddog" />
@@ -99,6 +98,7 @@
     <MESSAGE value="disable kubelet" />
     <MESSAGE value="enable kubeletstats" />
     <MESSAGE value="fix port name" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix port name" />
+    <MESSAGE value="switch metrics to prom" />
+    <option name="LAST_COMMIT_MESSAGE" value="switch metrics to prom" />
   </component>
 </project>
