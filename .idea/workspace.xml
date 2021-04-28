@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="switch metrics to prom">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/yaml/ddog-values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/yaml/ddog-values.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/prometheus/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/prometheus/yaml/values.yaml" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="switch back to dogstatsd">
+      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/main.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +18,14 @@
       </GitPushTagMode>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="KubernetesApiPersistence">
     <option name="context" value="kind-kind" />
@@ -74,7 +80,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="grafana on" />
     <MESSAGE value="enable prometheus" />
     <MESSAGE value="remove ddog" />
     <MESSAGE value="fix grafana values.yaml" />
@@ -99,6 +104,7 @@
     <MESSAGE value="enable kubeletstats" />
     <MESSAGE value="fix port name" />
     <MESSAGE value="switch metrics to prom" />
-    <option name="LAST_COMMIT_MESSAGE" value="switch metrics to prom" />
+    <MESSAGE value="switch back to dogstatsd" />
+    <option name="LAST_COMMIT_MESSAGE" value="switch back to dogstatsd" />
   </component>
 </project>
