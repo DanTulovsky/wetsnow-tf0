@@ -107,7 +107,7 @@ resource "kubernetes_deployment" "otel_collector" {
           }
 
           port {
-            name           = "zpikin"
+            name           = "zipkin"
             container_port = 9411
           }
 
