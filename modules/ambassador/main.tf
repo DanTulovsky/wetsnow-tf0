@@ -28,9 +28,7 @@ resource "kubectl_manifest" "ambassador-maps" {
 resource "kubectl_manifest" "ambassador-tracing" {
   yaml_body  = file("${path.module}/yaml/k8s/30-ambassador-tracing.yaml")
 }
-resource "kubectl_manifest" "ambassador-global" {
-  yaml_body  = file("${path.module}/yaml/k8s/00-ambassador-global.yaml")
-}
+
 resource "kubectl_manifest" "ambassador-backend-config" {
   yaml_body  = file("${path.module}/yaml/k8s-gcp/backend-config.yaml")
 }
