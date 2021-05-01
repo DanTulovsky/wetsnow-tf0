@@ -10,9 +10,3 @@ spec:
     envoy_log_type: json
     diagnostics:
       enabled: true
----
-apiVersion: getambassador.io/v2
-kind: KubernetesEndpointResolver
-metadata:
-  name: endpoint
-  namespace: ambassador

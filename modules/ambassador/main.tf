@@ -19,14 +19,14 @@ resource "kubectl_manifest" "ambassador-global" {
   depends_on = [helm_release.ambassador]
   yaml_body  = file("${path.module}/yaml/k8s/00-ambassador-global.yaml")
 }
+resource "kubectl_manifest" "ambassador-endpoint" {
+  depends_on = [helm_release.ambassador]
+  yaml_body  = file("${path.module}/yaml/k8s/00-ambassador-endpoint.yaml")
+}
 resource "kubectl_manifest" "ambassador-hosts" {
   depends_on = [helm_release.ambassador]
   yaml_body  = file("${path.module}/yaml/k8s/05-ambassador-hosts.yaml")
 }
-//resource "kubectl_manifest" "ambassador-maps" {
-//  depends_on = [helm_release.ambassador]
-//  yaml_body  = file("${path.module}/yaml/k8s/10-ambassador-maps.yaml")
-//}
 resource "kubectl_manifest" "ambassador-tracing" {
   depends_on = [helm_release.ambassador]
   yaml_body  = file("${path.module}/yaml/k8s/30-ambassador-tracing.yaml")
@@ -34,6 +34,16 @@ resource "kubectl_manifest" "ambassador-tracing" {
 
 resource "kubectl_manifest" "ambassador-backend-config" {
   yaml_body  = file("${path.module}/yaml/k8s-gcp/backend-config.yaml")
+}
+
+# Maps
+data "kubectl_file_documents" "ambassador-maps" {
+  content = file("${path.module}/yaml/k8s/10-ambassador-maps.yaml")
+}
+
+resource "kubectl_manifest" "test" {
+  count     = length(data.kubectl_file_documents.ambassador-maps.documents)
+  yaml_body = element(data.kubectl_file_documents.ambassador-maps.documents, count.index)
 }
 
 // IAP

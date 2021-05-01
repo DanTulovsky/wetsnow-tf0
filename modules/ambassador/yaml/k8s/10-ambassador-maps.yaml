@@ -9,56 +9,6 @@ spec:
   prefix: /edge_stack/
   rewrite: /edge_stack_ui/edge_stack/
   service: localhost:8500
-# ---
-# apiVersion: getambassador.io/v2
-# kind: Mapping
-# metadata:
-#   name: pepper-poker-grpc-server-mapping
-#   namespace: ambassador
-# spec:
-#   prefix: /poker.PokerServer/
-#   rewrite: /poker.PokerServer/
-#   service: https://pepper-poker-grpc-service.poker:8443
-#   # https://github.com/datawire/ambassador/issues/3154
-#   # timeout_ms: 3600000 # required for steaming grpc; 1 hr; 0 is broken!
-#   timeout_ms: 0 # required for steaming grpc; 1 hr; 0 is broken!
-#   grpc: True
-#   headers:
-#     :authority: pepper-poker-grpc.wetsnow.com
-#   resolver: endpoint
-#   load_balancer:
-#     policy: least_request
-#   host: "pepper-poker-grpc.wetsnow.com"
-# ---
-# apiVersion: getambassador.io/v2
-# kind: Mapping
-# metadata:
-#   name: pepper-poker-grpcreflect
-#   namespace: ambassador
-# spec:
-#   grpc: true
-#   prefix: /grpc.
-#   rewrite: /grpc.
-#   service: https://pepper-poker-grpc-service.poker:8443
-#   headers:
-#     :authority: pepper-poker-grpc.wetsnow.com
-#   resolver: endpoint
-#   load_balancer:
-#     policy: least_request
-#   host: "pepper-poker-grpc.wetsnow.com"
-# ---
-# apiVersion: getambassador.io/v2
-# kind: Mapping
-# metadata:
-#   name: pepper-poker-http-server-mapping
-#   namespace: ambassador
-# spec:
-#   prefix: /
-#   service: pepper-poker-http-service.poker:8081
-#   host: "pepper-poker.wetsnow.com"
-#   resolver: endpoint
-#   load_balancer:
-#     policy: least_request
 ---
 apiVersion: getambassador.io/v2
 kind: Mapping
@@ -130,32 +80,6 @@ spec:
   service: prom0-kube-prometheus-prometheus.monitoring:9090
   allow_upgrade:
     - websocket
-# ---
-# apiVersion: getambassador.io/v2
-# kind: Mapping
-# metadata:
-#   name: pgadmin.wetsnow.com
-#   namespace: ambassador
-# spec:
-#   prefix: /
-#   host: pgadmin.wetsnow.com
-#   resolver: endpoint
-#   service: pgadmin4.db:80
-#   allow_upgrade:
-#     - websocket
-# ---
-# apiVersion: getambassador.io/v2
-# kind: Mapping
-# metadata:
-#   name: kafka-ui.wetsnow.com
-#   namespace: ambassador
-# spec:
-#   prefix: /
-#   host: kafka-ui.wetsnow.com
-#   resolver: endpoint
-#   service: kowl.kafka:80
-#   allow_upgrade:
-#     - websocket
 ---
 apiVersion: getambassador.io/v2
 kind: Mapping
@@ -192,3 +116,79 @@ spec:
   prefix: "/"
   rewrite: "/404/" # This must not map to any existing prefix!
   service: localhost:8500
+# ---
+# apiVersion: getambassador.io/v2
+# kind: Mapping
+# metadata:
+#   name: pgadmin.wetsnow.com
+#   namespace: ambassador
+# spec:
+#   prefix: /
+#   host: pgadmin.wetsnow.com
+#   resolver: endpoint
+#   service: pgadmin4.db:80
+#   allow_upgrade:
+#     - websocket
+# ---
+# apiVersion: getambassador.io/v2
+# kind: Mapping
+# metadata:
+#   name: kafka-ui.wetsnow.com
+#   namespace: ambassador
+# spec:
+#   prefix: /
+#   host: kafka-ui.wetsnow.com
+#   resolver: endpoint
+#   service: kowl.kafka:80
+#   allow_upgrade:
+#     - websocket
+# ---
+# apiVersion: getambassador.io/v2
+# kind: Mapping
+# metadata:
+#   name: pepper-poker-grpc-server-mapping
+#   namespace: ambassador
+# spec:
+#   prefix: /poker.PokerServer/
+#   rewrite: /poker.PokerServer/
+#   service: https://pepper-poker-grpc-service.poker:8443
+#   # https://github.com/datawire/ambassador/issues/3154
+#   # timeout_ms: 3600000 # required for steaming grpc; 1 hr; 0 is broken!
+#   timeout_ms: 0 # required for steaming grpc; 1 hr; 0 is broken!
+#   grpc: True
+#   headers:
+#     :authority: pepper-poker-grpc.wetsnow.com
+#   resolver: endpoint
+#   load_balancer:
+#     policy: least_request
+#   host: "pepper-poker-grpc.wetsnow.com"
+# ---
+# apiVersion: getambassador.io/v2
+# kind: Mapping
+# metadata:
+#   name: pepper-poker-grpcreflect
+#   namespace: ambassador
+# spec:
+#   grpc: true
+#   prefix: /grpc.
+#   rewrite: /grpc.
+#   service: https://pepper-poker-grpc-service.poker:8443
+#   headers:
+#     :authority: pepper-poker-grpc.wetsnow.com
+#   resolver: endpoint
+#   load_balancer:
+#     policy: least_request
+#   host: "pepper-poker-grpc.wetsnow.com"
+# ---
+# apiVersion: getambassador.io/v2
+# kind: Mapping
+# metadata:
+#   name: pepper-poker-http-server-mapping
+#   namespace: ambassador
+# spec:
+#   prefix: /
+#   service: pepper-poker-http-service.poker:8081
+#   host: "pepper-poker.wetsnow.com"
+#   resolver: endpoint
+#   load_balancer:
+#     policy: least_request
