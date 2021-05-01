@@ -75,33 +75,6 @@ resource "kubernetes_service" "ambassador-iap" {
 }
 
 
-//resource "kubernetes_secret" "ambassador-keycloak-secret" {
-//  metadata {
-//    name      = "ambassador-keycloak-secret"
-//    namespace = var.namespace
-//  }
-//
-//  data = {
-//    "oauth2-client-secret" = var.ambassador_keycloak_secret
-//  }
-//
-//  type = "Opaque"
-//}
-//
-//resource "kubernetes_secret" "pepper-poker-keycloak-secret" {
-//  metadata {
-//    name      = "pepper-poker-keycloak-secret"
-//    namespace = var.namespace
-//  }
-//
-//  data = {
-//    "oauth2-client-secret" = var.pepper_poker_keycloak_secret
-//  }
-//
-//  type = "Opaque"
-//}
-
-
 resource "kubernetes_secret" "lightstep-access-token" {
   metadata {
     name      = "lightstep-access-token"
@@ -114,17 +87,3 @@ resource "kubernetes_secret" "lightstep-access-token" {
 
   type = "Opaque"
 }
-
-
-//resource "kubernetes_secret" "default-keycloak-secret" {
-//  metadata {
-//    name      = "default-keycloak-secret"
-//    namespace = var.namespace
-//  }
-//
-//  data = {
-//    "oauth2-client-secret" = var.default_keycloak_secret
-//  }
-//
-//  type = "Opaque"
-//}
