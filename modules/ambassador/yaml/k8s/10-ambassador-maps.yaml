@@ -128,19 +128,19 @@ spec:
   host: dusselskolk.com
   resolver: endpoint
   service: static-web-frontend.web:8080
- ---
- apiVersion: getambassador.io/v2
- kind: Mapping
- metadata:
-   name: prometheus.wetsnow.com
-   namespace: ambassador
- spec:
-   prefix: /
-   host: prometheus.wetsnow.com
-   resolver: endpoint
-   service: prom0-kube-prometheus-prometheus.monitoring:9090
-   allow_upgrade:
-     - websocket
+---
+apiVersion: getambassador.io/v2
+kind: Mapping
+metadata:
+  name: prometheus.wetsnow.com
+  namespace: ambassador
+spec:
+  prefix: /
+  host: prometheus.wetsnow.com
+  resolver: endpoint
+  service: prom0-kube-prometheus-prometheus.monitoring:9090
+  allow_upgrade:
+    - websocket
 # ---
 # apiVersion: getambassador.io/v2
 # kind: Mapping
