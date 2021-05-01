@@ -23,10 +23,10 @@ resource "kubectl_manifest" "ambassador-hosts" {
   depends_on = [helm_release.ambassador]
   yaml_body  = file("${path.module}/yaml/k8s/05-ambassador-hosts.yaml")
 }
-resource "kubectl_manifest" "ambassador-maps" {
-  depends_on = [helm_release.ambassador]
-  yaml_body  = file("${path.module}/yaml/k8s/10-ambassador-maps.yaml")
-}
+//resource "kubectl_manifest" "ambassador-maps" {
+//  depends_on = [helm_release.ambassador]
+//  yaml_body  = file("${path.module}/yaml/k8s/10-ambassador-maps.yaml")
+//}
 resource "kubectl_manifest" "ambassador-tracing" {
   depends_on = [helm_release.ambassador]
   yaml_body  = file("${path.module}/yaml/k8s/30-ambassador-tracing.yaml")
