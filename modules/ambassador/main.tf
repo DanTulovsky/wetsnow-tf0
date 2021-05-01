@@ -33,7 +33,6 @@ resource "kubectl_manifest" "ambassador-tracing" {
 }
 
 resource "kubectl_manifest" "ambassador-backend-config" {
-  depends_on = [helm_release.ambassador]
   yaml_body  = file("${path.module}/yaml/k8s-gcp/backend-config.yaml")
 }
 
