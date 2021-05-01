@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="expose prometheus 2">
-      <change afterPath="$PROJECT_DIR$/.idea/kubernetes-settings.xml" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="project configs">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/wetsnow-tf0.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wetsnow.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ambassador/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ambassador/yaml/k8s/20-ambassador-filter.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ambassador/yaml/k8s/20-ambassador-policy.yaml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +54,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="com.intellij.kubernetes.config.KubernetesConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -63,6 +68,44 @@
       <recent name="$PROJECT_DIR$/modules/ambassador/yaml/k8s" />
       <recent name="$PROJECT_DIR$/modules/ambassador/yaml/k8s-iap" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="wetsnow" />
+      <working_directory value="$PROJECT_DIR$/../web-static" />
+      <go_parameters value="-i" />
+      <kind value="PACKAGE" />
+      <package value="github.com/DanTulovsky/web-static" />
+      <directory value="$PROJECT_DIR$/../web-static" />
+      <filePath value="$PROJECT_DIR$/../web-static" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="wetsnow" />
+      <working_directory value="$PROJECT_DIR$/../web-static" />
+      <go_parameters value="-i" />
+      <kind value="DIRECTORY" />
+      <package value="github.com/DanTulovsky/web-static" />
+      <directory value="$PROJECT_DIR$/../web-static" />
+      <filePath value="$PROJECT_DIR$/../web-static" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
+    <configuration name="gobench web-static" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="wetsnow" />
+      <working_directory value="$PROJECT_DIR$/../web-static" />
+      <kind value="DIRECTORY" />
+      <package value="github.com/DanTulovsky/web-static" />
+      <directory value="$PROJECT_DIR$/../web-static" />
+      <filePath value="$PROJECT_DIR$/../web-static" />
+      <framework value="gobench" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.gobench web-static" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
@@ -81,7 +124,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix grafana" />
     <MESSAGE value="fix prom" />
     <MESSAGE value="grafana deployment strategy" />
     <MESSAGE value="dashboards" />
@@ -106,6 +148,7 @@
     <MESSAGE value="proper tags" />
     <MESSAGE value="expose prometheus" />
     <MESSAGE value="expose prometheus 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="expose prometheus 2" />
+    <MESSAGE value="project configs" />
+    <option name="LAST_COMMIT_MESSAGE" value="project configs" />
   </component>
 </project>
