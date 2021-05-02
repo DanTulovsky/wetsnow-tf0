@@ -8,6 +8,6 @@ environment = "dev"
 cluster_info = ({
   name = "cluster0"
   vpc_name = "vpc0"
-  namespaces = ["ambassador", "db", "kafka", "kyverno", "monitoring", "observability", "vector", "weave", "web"]
+  namespaces = ["ambassador", "db", "kafka", "kyverno", "monitoring", "observability", "traefik", "vector", "web"]
 })
 
