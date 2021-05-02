@@ -14,6 +14,7 @@ locals {
     "kafka-ui.wetsnow.com.",
     "dusselskolk.com.",
     "www.dusselskolk.com.",
+    "traefik.wetsnow.com.",
   ]
 }
 
