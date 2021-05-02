@@ -20,6 +20,7 @@ replicaCount: 1
 podLabels:
   # match the span service.name
   service.name: "ambassador-ambassador"
+  service.version: 1.12.3  # match the image tag
 
 volumes:
   - name: lightstep-secret-volume
