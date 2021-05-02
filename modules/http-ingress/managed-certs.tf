@@ -14,7 +14,6 @@ locals {
     "kafka-ui.wetsnow.com.",
     "dusselskolk.com.",
     "www.dusselskolk.com.",
-    "traefik.wetsnow.com.",
   ]
 }
 
@@ -25,12 +24,16 @@ resource "google_compute_managed_ssl_certificate" "wetsnow-com" {
   }
 }
 
-resource "google_compute_managed_ssl_certificate" "wetsnow-com-next" {
+# to add a cert, update the date in the name, add a new cert and
+# update kubernetes_ingress.ambassador in main.tf
+# this causes downtime!!
+resource "google_compute_managed_ssl_certificate" "wetsnow-com-20200502" {
   name = "wetsnow-cert-20210319"
   managed {
     domains = concat(local.domains, [
       "scope.wetsnow.com",
       "weave-scope.wetsnow.com",
+      "traefik.wetsnow.com",
     ])
   }
 }
