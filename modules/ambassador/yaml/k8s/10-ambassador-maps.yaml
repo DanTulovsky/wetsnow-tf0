@@ -110,6 +110,19 @@ spec:
 apiVersion: getambassador.io/v2
 kind: Mapping
 metadata:
+  name: traefik.wetsnow.com
+  namespace: ambassador
+spec:
+  prefix: /
+  host: traefik.wetsnow.com
+  resolver: endpoint
+  service: traefik-mesh-api.traefik:8080
+  allow_upgrade:
+    - websocket
+---
+apiVersion: getambassador.io/v2
+kind: Mapping
+metadata:
   name: "404-fallback"
   namespace: ambassador
 spec:
