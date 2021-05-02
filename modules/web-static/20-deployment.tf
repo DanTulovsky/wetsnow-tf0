@@ -19,11 +19,11 @@ resource "kubernetes_deployment" "frontend" {
     template {
       metadata {
         labels = {
-          app       = "static-web"
-          component = "frontend"
-          tier      = "production"
-          service.name = "web-static"
-          service.version = "${var.app_version}"
+          "app"       = "static-web"
+          "component" = "frontend"
+          "tier"      = "production"
+          "service.name" = "web-static"
+          "service.version" = "${var.app_version}"
         }
       }
 
