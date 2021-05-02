@@ -15,6 +15,7 @@ resource "helm_release" "ambassador" {
   })]
 }
 
+# BEGIN: All of these files must have exactly 1 manifest in them
 resource "kubectl_manifest" "ambassador-global" {
   depends_on = [helm_release.ambassador]
   yaml_body  = file("${path.module}/yaml/k8s/00-ambassador-global.yaml")
@@ -31,10 +32,14 @@ resource "kubectl_manifest" "ambassador-tracing" {
   depends_on = [helm_release.ambassador]
   yaml_body  = file("${path.module}/yaml/k8s/30-ambassador-tracing.yaml")
 }
-
+resource "kubectl_manifest" "ambassador-tracing" {
+  depends_on = [helm_release.ambassador]
+  yaml_body  = file("${path.module}/yaml/k8s/40-ambassador-monitor.yaml")
+}
 resource "kubectl_manifest" "ambassador-backend-config" {
   yaml_body  = file("${path.module}/yaml/k8s-gcp/backend-config.yaml")
 }
+# END: All of these files must have exactly 1 manifest in them
 
 # Maps
 data "kubectl_file_documents" "ambassador-maps" {
