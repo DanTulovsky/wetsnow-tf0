@@ -153,11 +153,11 @@ metrics:
   deploy: false
   prometheus:
     # whether to expose Prometheus metrics
-    enabled: false
+    enabled: true
     # (Optional)
-    # addEntrypointsLabels: true
+    addEntrypointsLabels: true
     # (Optional)
-    # addServiceLabels: true
+    addServiceLabels: true
     # (Optional)
     # buckets: 0.100000, 0.300000, 1.200000, 5.000000
     ## you can override values of the metrics subchart here.
