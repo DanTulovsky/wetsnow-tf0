@@ -14,3 +14,7 @@ spec:
       service: static-web-frontend
   endpoints:
     - port: http
+  podTargetLabels:
+    # prometheus converts . to _
+    - service.name
+    - service.version

@@ -19,5 +19,6 @@ spec:
     matchLabels:
       service: ambassador-admin
   podTargetLabels:
+    # prometheus converts . to _
     - service.name
     - service.version

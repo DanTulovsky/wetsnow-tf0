@@ -14,3 +14,7 @@ spec:
       service: quote-server-http
   endpoints:
     - port: http
+  podTargetLabels:
+    # prometheus converts . to _
+    - service.name
+    - service.version
