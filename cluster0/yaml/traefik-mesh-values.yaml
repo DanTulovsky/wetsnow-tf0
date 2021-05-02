@@ -88,7 +88,7 @@ proxy:
       cpu: 200m
     request:
       mem: 50Mi
-      cpu: 50m
+      cpu: 10m
 
   # Added so we can launch on nodes with restrictions.
   nodeSelector: {}
