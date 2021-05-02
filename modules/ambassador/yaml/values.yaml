@@ -36,7 +36,7 @@ resources:
     cpu: 300m
     memory: 512Mi
   requests:
-    cpu: 20m
+    cpu: 10m
     memory: 256Mi
 adminService:
   annotations: {}
@@ -81,10 +81,10 @@ envRaw:
 redis:
   resources:
     limits:
-      cpu: 500m
+      cpu: 300m
       memory: 256Mi
     requests:
-      cpu: 50m
+      cpu: 10m
       memory: 128Mi
 
 agent:

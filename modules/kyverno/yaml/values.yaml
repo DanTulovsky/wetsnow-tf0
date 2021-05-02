@@ -6,3 +6,11 @@ extraArgs:
 image:
   # https://github.com/kyverno/kyverno/issues/1764
   tag: v1.3.5-rc2-dev-1-g3ab75095
+
+resources:
+  limits:
+    cpu: 100m
+    memory: 256Mi
+  requests:
+    cpu: 30m
+    memory: 50Mi
