@@ -22,6 +22,8 @@ resource "kubernetes_deployment" "frontend" {
           app       = "static-web"
           component = "frontend"
           tier      = "production"
+          service.name = "web-static"
+          service.version = "${var.app_version}"
         }
       }
 
