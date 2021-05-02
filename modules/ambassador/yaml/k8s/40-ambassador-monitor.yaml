@@ -18,6 +18,6 @@ spec:
   selector:
     matchLabels:
       service: ambassador-admin
-  targetLabels:
+  podTargetLabels:
     - service.name
     - service.version
