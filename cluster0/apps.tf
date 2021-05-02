@@ -86,10 +86,10 @@ module "quote-server" {
 #   depends_on = [module.gke, module.prometheus, module.kafka]
 #   namespace  = module.common.namespaces.vector
 # }
-module "scope" {
-  source    = "../modules/scope"
-  namespace = module.common.namespaces.weave
-}
+//module "scope" {
+//  source    = "../modules/scope"
+//  namespace = module.common.namespaces.weave
+//}
 module "web-static" {
   source = "../modules/web-static"
   # depends_on             = [module.gke]
