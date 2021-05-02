@@ -30,9 +30,11 @@ resource "kubernetes_deployment" "quote_server_http" {
     template {
       metadata {
         labels = {
-          app       = "quote"
-          component = "server-http"
-          tier      = "production"
+          "app"       = "quote"
+          "component" = "server-http"
+          "tier"      = "production"
+          "service.name" = "quote"
+          "service.version" = "${var.app_version}"
         }
       }
 
