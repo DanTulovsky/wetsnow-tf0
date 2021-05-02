@@ -34,6 +34,7 @@ module "grafana" {
   admin_password = var.grafana_secrets.admin_password
   smtp_password  = var.grafana_secrets.smtp_password
   namespace      = module.common.namespaces.monitoring
+  prom_enabled = true
   oauth_secret = ""
 }
 module "kyverno" {

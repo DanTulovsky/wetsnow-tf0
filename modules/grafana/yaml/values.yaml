@@ -1,16 +1,22 @@
+# https://github.com/grafana/helm-charts/tree/main/charts/grafana
 replicas: 1
 
 podDisruptionBudget:
   minAvailable: 1
 
-# # image:
-# #   pullPolicy: IfNotPresent
-# #   repository: grafana/grafana
-# #   sha: ""
-# #   tag: 7.4.3
+image:
+  pullPolicy: IfNotPresent
+  repository: grafana/grafana
+  sha: ""
+  tag: 7.5.5
 
 deploymentStrategy:
   type: "Recreate"
+
+podLabels:
+  # match the span service.name
+  service.name: "grafana"
+  service.version: 7.5.5  # match the image tag
 
 resources:
   limits:
@@ -29,6 +35,7 @@ service:
   annotations: {}
   labels: { "service": "grafana" }
   portName: service
+
 serviceMonitor:
   ## If true, a ServiceMonitor CRD is created for a prometheus operator
   ## https://github.com/coreos/prometheus-operator
