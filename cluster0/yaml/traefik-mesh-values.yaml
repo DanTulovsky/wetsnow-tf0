@@ -80,8 +80,8 @@ proxy:
   #   - configMapRef:
   #       name: config
 
-  # additionalArguments:
-  #   - "--name=value"
+  additionalArguments:
+    - "--api.dashboard=true"
 
   resources:
     limit:
