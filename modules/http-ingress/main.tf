@@ -14,6 +14,7 @@ resource "kubernetes_ingress" "ambassador" {
       #   "networking.gke.io/managed-certificates" : google_compute_managed_ssl_certificate.wetsnow-com.name
       "ingress.gcp.kubernetes.io/pre-shared-cert" : google_compute_managed_ssl_certificate.wetsnow-com-20200502.name
       "kubernetes.io/ingress.class" : "gce"
+      "kubernetes.io/ingress.global-static-ip-name": "global-ip0"
     }
   }
   spec {
