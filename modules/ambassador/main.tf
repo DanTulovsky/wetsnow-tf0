@@ -32,7 +32,7 @@ resource "kubectl_manifest" "ambassador-tracing" {
   depends_on = [helm_release.ambassador]
   yaml_body  = file("${path.module}/yaml/k8s/30-ambassador-tracing.yaml")
 }
-resource "kubectl_manifest" "ambassador-tracing" {
+resource "kubectl_manifest" "ambassador-monitor" {
   depends_on = [helm_release.ambassador]
   yaml_body  = file("${path.module}/yaml/k8s/40-ambassador-monitor.yaml")
 }
