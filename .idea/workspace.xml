@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="add traefik to certs">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="ssl certs update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/http-ingress/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/http-ingress/main.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/http-ingress/managed-certs.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/http-ingress/managed-certs.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -122,7 +121,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="quotes" />
     <MESSAGE value="quote labels" />
     <MESSAGE value="more labels." />
     <MESSAGE value="datadog extract service.name from pods and set as service_name tag (label)." />
@@ -147,6 +145,7 @@
     <MESSAGE value="add service." />
     <MESSAGE value="add traefikt o ambassador" />
     <MESSAGE value="add traefik to certs" />
-    <option name="LAST_COMMIT_MESSAGE" value="add traefik to certs" />
+    <MESSAGE value="ssl certs update" />
+    <option name="LAST_COMMIT_MESSAGE" value="ssl certs update" />
   </component>
 </project>

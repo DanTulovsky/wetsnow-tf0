@@ -28,7 +28,7 @@ resource "google_compute_managed_ssl_certificate" "wetsnow-com" {
 # update kubernetes_ingress.ambassador in main.tf
 # this causes downtime!!
 resource "google_compute_managed_ssl_certificate" "wetsnow-com-20200502" {
-  name = "wetsnow-cert-20210319"
+  name = "wetsnow-cert-20210502"
   managed {
     domains = concat(local.domains, [
       "scope.wetsnow.com",
