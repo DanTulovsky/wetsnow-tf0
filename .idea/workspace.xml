@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="grafana 2">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="grafana 3">
+      <change afterPath="$PROJECT_DIR$/cluster0/traefik-mesh.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cluster0/yaml/traefik-mesh-values.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/grafana/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/grafana/main.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +122,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="switch back to dogstatsd" />
     <MESSAGE value="enable dogstatsd" />
     <MESSAGE value="proper tags" />
     <MESSAGE value="expose prometheus" />
@@ -146,6 +146,7 @@
     <MESSAGE value="fix" />
     <MESSAGE value="grafana" />
     <MESSAGE value="grafana 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="grafana 2" />
+    <MESSAGE value="grafana 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="grafana 3" />
   </component>
 </project>
