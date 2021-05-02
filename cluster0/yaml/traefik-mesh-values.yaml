@@ -41,7 +41,7 @@ controller:
       cpu: 200m
     request:
       mem: 50Mi
-      cpu: 100m
+      cpu: 50m
 
   # Added so we can launch on nodes with restrictions.
   nodeSelector: {}
@@ -88,7 +88,7 @@ proxy:
       cpu: 200m
     request:
       mem: 50Mi
-      cpu: 100m
+      cpu: 50m
 
   # Added so we can launch on nodes with restrictions.
   nodeSelector: {}
