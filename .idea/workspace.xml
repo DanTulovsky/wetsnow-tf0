@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="remove scope">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="less traefik cpu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/yaml/traefik-mesh-values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/yaml/traefik-mesh-values.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ambassador/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/yaml/values.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +121,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="expose prometheus" />
     <MESSAGE value="expose prometheus 2" />
     <MESSAGE value="project configs" />
     <MESSAGE value="fix ambassador." />
@@ -146,6 +145,7 @@
     <MESSAGE value="grafana 3" />
     <MESSAGE value="traefik-mesh" />
     <MESSAGE value="remove scope" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove scope" />
+    <MESSAGE value="less traefik cpu" />
+    <option name="LAST_COMMIT_MESSAGE" value="less traefik cpu" />
   </component>
 </project>
