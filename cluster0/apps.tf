@@ -37,10 +37,10 @@ module "grafana" {
   prom_enabled = true
   oauth_secret = ""
 }
-module "kyverno" {
-  source    = "../modules/kyverno"
-  namespace = module.common.namespaces.kyverno
-}
+//module "kyverno" {
+//  source    = "../modules/kyverno"
+//  namespace = module.common.namespaces.kyverno
+//}
 //module "keycloak" {
 //  source = "../modules/keycloak"
 //  # depends_on          = [module.gke]

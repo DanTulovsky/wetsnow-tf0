@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="lower prom cpu">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="lower cpu request">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/ambassador/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/yaml/values.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/grafana/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/grafana/yaml/values.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/kyverno/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/kyverno/yaml/values.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/quote-server/20-deployment.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/20-deployment.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +121,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="remove" />
     <MESSAGE value="maps" />
     <MESSAGE value="ambassador; set service.name and export to prometheus." />
     <MESSAGE value="fix." />
@@ -149,6 +145,7 @@
     <MESSAGE value="more cpu for controller" />
     <MESSAGE value="enable kubedns" />
     <MESSAGE value="lower prom cpu" />
-    <option name="LAST_COMMIT_MESSAGE" value="lower prom cpu" />
+    <MESSAGE value="lower cpu request" />
+    <option name="LAST_COMMIT_MESSAGE" value="lower cpu request" />
   </component>
 </project>
