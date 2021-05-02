@@ -1,8 +1,9 @@
+# https://github.com/traefik/mesh-helm-chart/tree/master/mesh
 # Default values for Traefik Mesh.
 
 # acl: true
 
-# kubedns: true
+kubedns: true
 
 # clusterDomain: cluster.local
 
