@@ -105,7 +105,7 @@ proxy:
 # Tracing configuration.
 #
 tracing:
-  deploy: true
+  deploy: false
   jaeger:
     enabled: true
     # (Optional)
