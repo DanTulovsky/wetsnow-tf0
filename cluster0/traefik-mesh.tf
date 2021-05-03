@@ -10,6 +10,10 @@ resource "helm_release" "traefik-mesh" {
   })]
 }
 
+resource "kubectl_manifest" "traefik-monitor" {
+  depends_on = [helm_release.traefik-mesh]
+  yaml_body  = file("${path.module}/yaml/k8s/traefik-monitor.yaml")
+}
 
 resource "kubernetes_service" "traefik-maesh-service" {
   depends_on = [helm_release.traefik-mesh]
