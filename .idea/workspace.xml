@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="traefik monitor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/traefik-mesh.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/traefik-mesh.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/yaml/traefik-monitor.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/yaml/k8s/traefik-monitor.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +61,7 @@
       <recent name="$PROJECT_DIR$/modules/ambassador/yaml/k8s-gcp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cluster0/yaml/k8s" />
       <recent name="$PROJECT_DIR$/modules/prometheus/yaml" />
       <recent name="$PROJECT_DIR$/modules/prometheus" />
       <recent name="$PROJECT_DIR$/modules/ambassador/yaml/k8s" />
