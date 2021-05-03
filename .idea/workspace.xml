@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="acl false">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/ambassador/yaml/k8s/10-ambassador-maps.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/yaml/k8s/10-ambassador-maps.yaml" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="Add annotations">
       <change beforePath="$PROJECT_DIR$/modules/web-static/10-service.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/web-static/10-service.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -124,7 +122,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="lower ambassador cpu" />
     <MESSAGE value="lower traefik cpu" />
     <MESSAGE value="namespace for traefik" />
     <MESSAGE value="don't disable monitoring stack" />
@@ -149,6 +146,7 @@
     <MESSAGE value="2.4.8" />
     <MESSAGE value="traefik monitor" />
     <MESSAGE value="acl false" />
-    <option name="LAST_COMMIT_MESSAGE" value="acl false" />
+    <MESSAGE value="Add annotations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add annotations" />
   </component>
 </project>
