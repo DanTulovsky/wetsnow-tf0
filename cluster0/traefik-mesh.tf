@@ -1,6 +1,6 @@
 resource "helm_release" "traefik-mesh" {
   name         = "traefik-mesh"
-  namespace    = module.common.namespaces.traefik
+//  namespace    = module.common.namespaces.traefik
   repository   = "https://helm.traefik.io/mesh"
   chart        = "traefik-mesh"
   wait         = true
@@ -20,7 +20,7 @@ resource "kubernetes_service" "traefik-maesh-service" {
 
   metadata {
     name      = "traefik-mesh-api"
-    namespace    = module.common.namespaces.traefik
+//    namespace    = module.common.namespaces.traefik
 
     labels = {
       app       = "maesh"
