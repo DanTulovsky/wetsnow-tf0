@@ -202,7 +202,7 @@ metrics:
     # (Optional)
     addEntrypointsLabels: true
     # (Optional)
-    # addServiceLabels: true
+    addServicesLabels: true
     # (Optional)
     pushInterval: 10s
     # (Optional)
