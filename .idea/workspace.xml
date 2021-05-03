@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="statsd">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="2.4.8">
+      <change afterPath="$PROJECT_DIR$/cluster0/yaml/traefik-monitor.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cluster0/yaml/traefik-mesh-values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/yaml/traefik-mesh-values.yaml" afterDir="false" />
     </list>
@@ -49,12 +50,13 @@
     <property name="add_unversioned_files" value="$PROJECT_DIR$/cluster0/sensitive.auto.tfvars" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/modules/ambassador/yaml/k8s" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cluster0/yaml" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="com.intellij.kubernetes.config.KubernetesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cluster0/yaml" />
       <recent name="$PROJECT_DIR$/modules/ambassador/yaml/k8s" />
       <recent name="$PROJECT_DIR$/modules/ambassador/yaml/k8s-iap" />
       <recent name="$PROJECT_DIR$/modules/ambassador/yaml/k8s-gcp" />
@@ -121,7 +123,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="traefik-mesh" />
     <MESSAGE value="remove scope" />
     <MESSAGE value="less traefik cpu" />
     <MESSAGE value="lower ambassador cpu" />
@@ -146,6 +147,7 @@
     <MESSAGE value="test" />
     <MESSAGE value="disable" />
     <MESSAGE value="statsd" />
-    <option name="LAST_COMMIT_MESSAGE" value="statsd" />
+    <MESSAGE value="2.4.8" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.4.8" />
   </component>
 </project>

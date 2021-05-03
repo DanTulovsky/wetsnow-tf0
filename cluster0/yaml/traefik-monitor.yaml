@@ -1,0 +1,16 @@
+apiVersion: monitoring.coreos.com/v1
+kind: PodMonitor
+metadata:
+  name: traefik-monitor
+  namespace: traefik
+  labels:
+    release: prometheus
+spec:
+  namespaceSelector:
+    any: true
+  selector:
+    matchLabels:
+      app: maesh
+      component: maesh-mesh
+  podMetricsEndpoints:
+    - port: api

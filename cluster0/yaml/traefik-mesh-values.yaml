@@ -197,13 +197,13 @@ metrics:
     # addServiceLabels: true
     # (Optional)
     # pushInterval: 10s
-  statsd:
-    address: "otel-collector.observability:8125"
-    # (Optional)
-    addEntrypointsLabels: true
-    # (Optional)
-    addServicesLabels: true
-    # (Optional)
-    pushInterval: 10s
-    # (Optional)
-    # prefix: traefik
+#  statsd:
+#    address: "otel-collector.observability:8125"
+#    # (Optional)
+#    addEntrypointsLabels: true
+#    # (Optional)
+#    addServicesLabels: true
+#    # (Optional)
+#    pushInterval: 10s
+#    # (Optional)
+#    # prefix: traefik
