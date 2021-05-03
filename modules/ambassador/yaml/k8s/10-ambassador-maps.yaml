@@ -116,7 +116,7 @@ spec:
   prefix: /
   host: traefik.wetsnow.com
   resolver: endpoint
-  service: traefik-mesh-api.traefik:8080
+  service: traefik-mesh-api.default:8080
   allow_upgrade:
     - websocket
 ---
