@@ -44,7 +44,7 @@ spec:
   prefix: /
   host: www.wetsnow.com
   resolver: endpoint
-  service: static-web-frontend.web:8080
+  service: static-web-frontend.web.traefik.mesh:8080
 ---
 apiVersion: getambassador.io/v2
 kind: Mapping
