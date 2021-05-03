@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="send metrics via datadog agent">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="also expose prom metrics (for humans)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cluster0/yaml/traefik-mesh-values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/yaml/traefik-mesh-values.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/yaml/ddog-values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/yaml/ddog-values.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +122,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix" />
     <MESSAGE value="grafana" />
     <MESSAGE value="grafana 2" />
     <MESSAGE value="grafana 3" />
@@ -145,6 +146,7 @@
     <MESSAGE value="set global ip" />
     <MESSAGE value="certs" />
     <MESSAGE value="send metrics via datadog agent" />
-    <option name="LAST_COMMIT_MESSAGE" value="send metrics via datadog agent" />
+    <MESSAGE value="also expose prom metrics (for humans)" />
+    <option name="LAST_COMMIT_MESSAGE" value="also expose prom metrics (for humans)" />
   </component>
 </project>

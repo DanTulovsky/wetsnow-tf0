@@ -17,6 +17,7 @@ datadog:
 
   dogstatsd:
     useHostPort: true
+    nonLocalTraffic: true
 
   kubelet:
     tlsVerify: ${gke}
