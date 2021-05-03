@@ -69,6 +69,12 @@ resource "kubernetes_service" "otel_collector" {
       port     = 6831
     }
 
+    port {
+      name     = "statsd"
+      protocol = "UDP"
+      port     = 8125
+    }
+
     selector = {
       component = "otel-collector"
     }

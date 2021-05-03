@@ -128,6 +128,12 @@ resource "kubernetes_deployment" "otel_collector" {
             protocol       = "UDP"
           }
 
+          port {
+            name           = "statsd"
+            container_port = 8125
+            protocol       = "UDP"
+          }
+
           resources {
             limits = {
               cpu    = "100m"

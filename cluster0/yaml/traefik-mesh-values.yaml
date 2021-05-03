@@ -172,12 +172,12 @@ metrics:
     #     request:
     #       mem: "200Mi"
     #       cpu: "200m"
-  datadog:
-    address: "127.0.0.1:8125"
+  #datadog:
+    # address: "127.0.0.1:8125"
     # (Optional)
-    addEntrypointsLabels: true
+    #addEntrypointsLabels: true
     # (Optional)
-    addServiceLabels: true
+    # addServiceLabels: true
     # (Optional)
     # pushInterval: 10s
     # influxdb:
@@ -197,13 +197,13 @@ metrics:
     # addServiceLabels: true
     # (Optional)
     # pushInterval: 10s
-    # statsd:
-    # address: "127.0.0.1:8125"
+  statsd:
+    address: "otel-collector.observability:8125"
     # (Optional)
-    # addEntrypointsLabels: true
+    addEntrypointsLabels: true
     # (Optional)
-    # addServiceLabels: true
+    addServiceLabels: true
     # (Optional)
-    # pushInterval: 10s
+    pushInterval: 10s
     # (Optional)
     # prefix: traefik
