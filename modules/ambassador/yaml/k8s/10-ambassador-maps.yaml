@@ -22,7 +22,7 @@ spec:
   host: grafana.wetsnow.com
   resolver: endpoint
   timeout_ms: 80000 # some dashboards load slow?
-  service: grafana0.monitoring:80
+  service: grafana0.monitoring.traefik.mesh:80
 ---
 apiVersion: getambassador.io/v2
 kind: Mapping

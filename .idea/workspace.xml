@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="name">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="disable kyverno">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ambassador/yaml/k8s/10-ambassador-maps.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/yaml/k8s/10-ambassador-maps.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/web-static/20-deployment.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/web-static/20-deployment.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +125,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add service." />
     <MESSAGE value="add traefikt o ambassador" />
     <MESSAGE value="add traefik to certs" />
     <MESSAGE value="ssl certs update" />
@@ -147,6 +149,7 @@
     <MESSAGE value="aenable kyverno" />
     <MESSAGE value="update kyverno" />
     <MESSAGE value="name" />
-    <option name="LAST_COMMIT_MESSAGE" value="name" />
+    <MESSAGE value="disable kyverno" />
+    <option name="LAST_COMMIT_MESSAGE" value="disable kyverno" />
   </component>
 </project>
