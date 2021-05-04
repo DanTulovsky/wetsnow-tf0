@@ -22,7 +22,7 @@ spec:
   host: grafana.wetsnow.com
   resolver: endpoint
   timeout_ms: 80000 # some dashboards load slow?
-  service: grafana0.monitoring.traefik.mesh:80
+  service: grafana0.monitoring:80
 ---
 apiVersion: getambassador.io/v2
 kind: Mapping
@@ -44,7 +44,7 @@ spec:
   prefix: /
   host: www.wetsnow.com
   resolver: endpoint
-  service: static-web-frontend.web.traefik.mesh:8080
+  service: static-web-frontend.web:8080
 ---
 apiVersion: getambassador.io/v2
 kind: Mapping
@@ -110,25 +110,25 @@ spec:
 apiVersion: getambassador.io/v2
 kind: Mapping
 metadata:
-  name: traefik.wetsnow.com
-  namespace: ambassador
-spec:
-  prefix: /
-  host: traefik.wetsnow.com
-  resolver: endpoint
-  service: traefik-mesh-api.default:8080
-  allow_upgrade:
-    - websocket
----
-apiVersion: getambassador.io/v2
-kind: Mapping
-metadata:
   name: "404-fallback"
   namespace: ambassador
 spec:
   prefix: "/"
   rewrite: "/404/" # This must not map to any existing prefix!
   service: localhost:8500
+#---
+#apiVersion: getambassador.io/v2
+#kind: Mapping
+#metadata:
+#  name: traefik.wetsnow.com
+#  namespace: ambassador
+#spec:
+#  prefix: /
+#  host: traefik.wetsnow.com
+#  resolver: endpoint
+#  service: traefik-mesh-api.default:8080
+#  allow_upgrade:
+#    - websocket
 # ---
 # apiVersion: getambassador.io/v2
 # kind: Mapping

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="disable kyverno">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="update grafana and web -&gt; quote server to go through traefik">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/traefik-mesh.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/traefik-mesh.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/ambassador/yaml/k8s/10-ambassador-maps.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/yaml/k8s/10-ambassador-maps.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/web-static/10-service.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/web-static/10-service.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/web-static/20-deployment.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/web-static/20-deployment.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,7 +126,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add traefikt o ambassador" />
     <MESSAGE value="add traefik to certs" />
     <MESSAGE value="ssl certs update" />
     <MESSAGE value="set global ip" />
@@ -150,6 +150,7 @@
     <MESSAGE value="update kyverno" />
     <MESSAGE value="name" />
     <MESSAGE value="disable kyverno" />
-    <option name="LAST_COMMIT_MESSAGE" value="disable kyverno" />
+    <MESSAGE value="update grafana and web -&gt; quote server to go through traefik" />
+    <option name="LAST_COMMIT_MESSAGE" value="update grafana and web -&gt; quote server to go through traefik" />
   </component>
 </project>
