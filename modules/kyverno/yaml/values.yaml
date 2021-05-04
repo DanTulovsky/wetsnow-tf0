@@ -1,5 +1,6 @@
 # https://github.com/kyverno/kyverno/tree/main/charts/kyverno
 namespace: ${namespace}
+fullnameOverride: kyverno
 extraArgs:
   - "--v=2"
 

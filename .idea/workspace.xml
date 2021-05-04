@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="aenable kyverno">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="update kyverno">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/kyverno/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/kyverno/yaml/values.yaml" afterDir="false" />
     </list>
@@ -123,7 +123,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add med node and remove small" />
     <MESSAGE value="enable api" />
     <MESSAGE value="add service." />
     <MESSAGE value="add traefikt o ambassador" />
@@ -148,6 +147,7 @@
     <MESSAGE value="updates" />
     <MESSAGE value="add label" />
     <MESSAGE value="aenable kyverno" />
-    <option name="LAST_COMMIT_MESSAGE" value="aenable kyverno" />
+    <MESSAGE value="update kyverno" />
+    <option name="LAST_COMMIT_MESSAGE" value="update kyverno" />
   </component>
 </project>
