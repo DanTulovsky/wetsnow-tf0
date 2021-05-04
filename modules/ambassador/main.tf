@@ -57,6 +57,7 @@ resource "kubectl_manifest" "ambassador-backend-config-iap" {
 }
 
 resource "kubernetes_service" "ambassador-iap" {
+  depends_on = [helm_release.ambassador]
   lifecycle {
     ignore_changes = [
       metadata[0].annotations,
