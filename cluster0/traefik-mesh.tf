@@ -26,6 +26,7 @@ resource "kubernetes_service" "traefik-maesh-service" {
     labels = {
       "app"       = "maesh"
       "component" = "maesh-mesh"
+      "release": "traefik-mesh"
       "service"   = "traefik-maesh"
       "service.name" = "traefik"
     }
