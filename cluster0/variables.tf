@@ -73,6 +73,12 @@ variable "kafka_secrets" {
   })
 }
 
+variable "traefik_secrets" {
+  sensitive = true
+  type = object({
+    token                  = string
+  })
+}
 variable "quote_server" {
   type = object({
     app_version = string

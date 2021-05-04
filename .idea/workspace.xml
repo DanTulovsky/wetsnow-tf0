@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="ratelimit">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="trafic token">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/traefik-mesh.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/traefik-mesh.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/yaml/traefik-mesh-values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/yaml/traefik-mesh-values.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/variables.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +123,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="enable kubedns" />
     <MESSAGE value="lower prom cpu" />
     <MESSAGE value="lower cpu request" />
     <MESSAGE value="disable kyverno" />
@@ -149,6 +147,7 @@
     <MESSAGE value="updates" />
     <MESSAGE value="repoint at correct traefik" />
     <MESSAGE value="ratelimit" />
-    <option name="LAST_COMMIT_MESSAGE" value="ratelimit" />
+    <MESSAGE value="trafic token" />
+    <option name="LAST_COMMIT_MESSAGE" value="trafic token" />
   </component>
 </project>
