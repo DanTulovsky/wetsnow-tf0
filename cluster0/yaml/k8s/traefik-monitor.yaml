@@ -1,5 +1,5 @@
 apiVersion: monitoring.coreos.com/v1
-kind: PodMonitor
+kind: ServiceMonitor
 metadata:
   name: traefik-monitor
 #  namespace: traefik
@@ -11,6 +11,9 @@ spec:
   selector:
     matchLabels:
       app: maesh
-      component: maesh-mesh
-  podMetricsEndpoints:
+      service: traefik-mesh
+  endpoints:
     - port: api
+  targetLabels:
+    # prometheus converts . to _
+    - service.name

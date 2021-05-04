@@ -24,15 +24,16 @@ resource "kubernetes_service" "traefik-maesh-service" {
 //    namespace    = module.common.namespaces.traefik
 
     labels = {
-      app       = "maesh"
-      component = "maesh-mesh"
-      service   = "traefik-maesh"
+      "app"       = "maesh"
+      "component" = "maesh-mesh"
+      "service"   = "traefik-maesh"
+      "service.name" = "traefik"
     }
   }
 
   spec {
     port {
-      name        = "http"
+      name        = "api"
       protocol    = "TCP"
       port        = 8080
     }
