@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="repoint at correct traefik">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="ratelimit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/web-static/10-service.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/web-static/10-service.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/traefik-mesh.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/traefik-mesh.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/yaml/traefik-mesh-values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/yaml/traefik-mesh-values.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +124,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="more cpu for controller" />
     <MESSAGE value="enable kubedns" />
     <MESSAGE value="lower prom cpu" />
     <MESSAGE value="lower cpu request" />
@@ -148,6 +148,7 @@
     <MESSAGE value="quotes" />
     <MESSAGE value="updates" />
     <MESSAGE value="repoint at correct traefik" />
-    <option name="LAST_COMMIT_MESSAGE" value="repoint at correct traefik" />
+    <MESSAGE value="ratelimit" />
+    <option name="LAST_COMMIT_MESSAGE" value="ratelimit" />
   </component>
 </project>

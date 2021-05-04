@@ -82,6 +82,7 @@ proxy:
 
   additionalArguments:
     - "--api.dashboard=true"
+    - "--pilot.token=${traefikToken}"
 
   resources:
     limit:

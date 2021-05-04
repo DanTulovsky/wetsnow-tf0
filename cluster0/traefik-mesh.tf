@@ -7,6 +7,7 @@ resource "helm_release" "traefik-mesh" {
   force_update = false
 
   values = [templatefile("${path.module}/yaml/traefik-mesh-values.yaml", {
+    traefikToken = var.traefik_secrets.token
   })]
 }
 
