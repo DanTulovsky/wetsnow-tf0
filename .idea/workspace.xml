@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="remove traefik.  DNS keeps breaking.">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="dep">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/ambassador/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/terraform.auto.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/terraform.auto.tfvars" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +123,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ssl certs update" />
     <MESSAGE value="set global ip" />
     <MESSAGE value="certs" />
     <MESSAGE value="send metrics via datadog agent" />
@@ -148,6 +147,7 @@
     <MESSAGE value="disable kyverno" />
     <MESSAGE value="update grafana and web -&gt; quote server to go through traefik" />
     <MESSAGE value="remove traefik.  DNS keeps breaking." />
-    <option name="LAST_COMMIT_MESSAGE" value="remove traefik.  DNS keeps breaking." />
+    <MESSAGE value="dep" />
+    <option name="LAST_COMMIT_MESSAGE" value="dep" />
   </component>
 </project>
