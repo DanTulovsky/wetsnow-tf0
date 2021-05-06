@@ -5,6 +5,7 @@ resource "kubectl_manifest" "servicemonitor_static_web_monitor" {
   })
 }
 
+# https://argoproj.github.io/argo-rollouts/migrating/
 resource "kubectl_manifest" "ambassador-tracing" {
   depends_on = [kubernetes_deployment.quote_server_http]
   yaml_body  = file("${path.module}/yaml/k8s/rollout.yaml")

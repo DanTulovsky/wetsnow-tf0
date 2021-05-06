@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="run 3 quote servers">
-      <change afterPath="$PROJECT_DIR$/modules/quote-server/yaml/k8s/rollout.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/quote-server/20-deployment.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/20-deployment.tf" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="add rollout">
       <change beforePath="$PROJECT_DIR$/modules/quote-server/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/main.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -129,7 +126,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test" />
     <MESSAGE value="disable" />
     <MESSAGE value="statsd" />
     <MESSAGE value="2.4.8" />
@@ -154,7 +150,8 @@
     <MESSAGE value="lower prom memory" />
     <MESSAGE value="node reshuffle" />
     <MESSAGE value="run 3 quote servers" />
-    <option name="LAST_COMMIT_MESSAGE" value="run 3 quote servers" />
+    <MESSAGE value="add rollout" />
+    <option name="LAST_COMMIT_MESSAGE" value="add rollout" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
