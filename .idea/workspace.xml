@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="cleanup">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="lower prom memory">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/prometheus/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/prometheus/yaml/values.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gcp/gke.tf" beforeDir="false" afterPath="$PROJECT_DIR$/gcp/gke.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +127,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="certs" />
     <MESSAGE value="send metrics via datadog agent" />
     <MESSAGE value="also expose prom metrics (for humans)" />
     <MESSAGE value="test" />
@@ -152,7 +151,8 @@
     <MESSAGE value="remove traefik.  DNS keeps breaking." />
     <MESSAGE value="dep" />
     <MESSAGE value="cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleanup" />
+    <MESSAGE value="lower prom memory" />
+    <option name="LAST_COMMIT_MESSAGE" value="lower prom memory" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
