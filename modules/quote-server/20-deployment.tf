@@ -9,8 +9,7 @@ resource "kubernetes_deployment" "quote_server_http" {
   }
 
   spec {
-    # enforced by kyverno policy on name
-    replicas                  = 1
+    replicas                  = 3
     progress_deadline_seconds = 300
     revision_history_limit    = 5
     min_ready_seconds         = 20
@@ -109,7 +108,7 @@ resource "kubernetes_deployment" "quote_server_http" {
 
             requests = {
               cpu    = "10m"
-              memory = "100Mi"
+              memory = "40Mi"
             }
           }
 
