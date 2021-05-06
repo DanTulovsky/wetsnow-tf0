@@ -103,7 +103,7 @@ resource "kubernetes_deployment" "quote_server_http" {
 
           resources {
             limits = {
-              cpu    = "100m"
+              cpu    = "50m"
               memory = "200Mi"
             }
 
