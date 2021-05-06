@@ -4,3 +4,8 @@ resource "kubectl_manifest" "servicemonitor_static_web_monitor" {
     namespace = var.namespace
   })
 }
+
+resource "kubectl_manifest" "ambassador-tracing" {
+  depends_on = [kubernetes_deployment.quote_server_http]
+  yaml_body  = file("${path.module}/yaml/k8s/rollout.yaml")
+}

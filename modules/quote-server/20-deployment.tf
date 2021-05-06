@@ -9,7 +9,8 @@ resource "kubernetes_deployment" "quote_server_http" {
   }
 
   spec {
-    replicas                  = 3
+    # managed by Argo Rollouts (yaml/k8s/rollout.yaml)
+    replicas                  = 0
     progress_deadline_seconds = 300
     revision_history_limit    = 5
     min_ready_seconds         = 20
@@ -33,7 +34,7 @@ resource "kubernetes_deployment" "quote_server_http" {
           "component" = "server-http"
           "tier"      = "production"
           "service.name" = "quote"
-          "service.version" = "${var.app_version}"
+          "service.version" = var.app_version
         }
       }
 
