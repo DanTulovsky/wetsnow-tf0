@@ -26,9 +26,8 @@ datadog:
 #    - name: DD_TAGS
 #      value: cluster:${clusterName}
     - name: DD_KUBERNETES_POD_LABELS_AS_TAGS
-      # lightstep expects "service_name"; some weirdness with otel-sidecar which inserts itself into service.name
       # '{"<POD_LABEL>": "<TAG_KEY>"}'
-      value: "{\"service.name\":\"service_name\"}"
+      value: "{\"service.name\":\"service.name\"}"
     - name: DD_DOGSTATSD_TAGS
       value: "[\"cluster:${clusterName}\"]"
     - name: DD_CLUSTER_NAME
