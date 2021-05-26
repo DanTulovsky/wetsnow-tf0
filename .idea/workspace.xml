@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="update otel" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="update otel">
+      <change afterPath="$PROJECT_DIR$/modules/argo/main.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/argo/providers.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/argo/variables.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/argo/yaml/values.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,12 +56,13 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cluster0/yaml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/modules/argo" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="com.intellij.kubernetes.config.KubernetesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/modules/argo" />
       <recent name="$PROJECT_DIR$/cluster0/yaml" />
       <recent name="$PROJECT_DIR$/modules/ambassador/yaml/k8s" />
       <recent name="$PROJECT_DIR$/modules/ambassador/yaml/k8s-iap" />
