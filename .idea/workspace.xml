@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="update otel">
-      <change afterPath="$PROJECT_DIR$/modules/argo/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/argo/providers.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/argo/variables.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/argo/yaml/values.yaml" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="argo helm chart">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/terraform.auto.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/terraform.auto.tfvars" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +129,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="acl false" />
     <MESSAGE value="Add annotations" />
     <MESSAGE value="quotes" />
     <MESSAGE value="repoint at correct traefik" />
@@ -156,7 +153,8 @@
     <MESSAGE value="update service.name" />
     <MESSAGE value="cleanup" />
     <MESSAGE value="update otel" />
-    <option name="LAST_COMMIT_MESSAGE" value="update otel" />
+    <MESSAGE value="argo helm chart" />
+    <option name="LAST_COMMIT_MESSAGE" value="argo helm chart" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

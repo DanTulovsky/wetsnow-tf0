@@ -16,6 +16,11 @@ module "ambassador" {
   name                         = "ambassador"
 }
 
+module "argo" {
+  source = "../modules/argo"
+  namespace                    = module.common.namespaces.argo-rollouts
+}
+
 module "http-ingress" {
   source     = "../modules/http-ingress"
   depends_on = [module.ambassador]
