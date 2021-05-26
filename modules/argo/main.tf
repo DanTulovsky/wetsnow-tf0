@@ -7,6 +7,6 @@ resource "helm_release" "argo-rollouts" {
   force_update = false
 
   values = [templatefile("${path.module}/yaml/values.yaml", {
-    tag: "v1.0.0"
+    tag: "v1.0.1"
   })]
 }
