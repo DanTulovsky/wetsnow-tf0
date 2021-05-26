@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="cleanup">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/30-deployment.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/30-deployment.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/quote-server/yaml/k8s/rollout.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/yaml/k8s/rollout.yaml" afterDir="false" />
-    </list>
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="update otel" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -128,7 +124,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="traefik monitor" />
     <MESSAGE value="acl false" />
     <MESSAGE value="Add annotations" />
     <MESSAGE value="quotes" />
@@ -153,7 +148,8 @@
     <MESSAGE value="lower cpu limit" />
     <MESSAGE value="update service.name" />
     <MESSAGE value="cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleanup" />
+    <MESSAGE value="update otel" />
+    <option name="LAST_COMMIT_MESSAGE" value="update otel" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
