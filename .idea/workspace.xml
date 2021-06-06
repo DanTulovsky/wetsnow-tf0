@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix file">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="argo helm">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo/yaml/k8s/argo.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo/yaml/k8s/argo.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/argo/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo/yaml/values.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +130,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="trafic token 2" />
     <MESSAGE value="updates" />
     <MESSAGE value="add label" />
     <MESSAGE value="aenable kyverno" />
@@ -157,7 +154,8 @@
     <MESSAGE value="downgrade argo" />
     <MESSAGE value="replace argo with yaml manifest" />
     <MESSAGE value="fix file" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix file" />
+    <MESSAGE value="argo helm" />
+    <option name="LAST_COMMIT_MESSAGE" value="argo helm" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

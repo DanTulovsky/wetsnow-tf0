@@ -1,5 +1,0 @@
-#controller:
-#  name: argo-rollouts
-#  image:
-#    repository: quay.io/argoproj/argo-rollouts
-#    tag: ${tag}
