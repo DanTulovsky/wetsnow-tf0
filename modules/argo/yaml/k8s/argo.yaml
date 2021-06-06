@@ -12792,7 +12792,7 @@ roleRef:
 subjects:
   - kind: ServiceAccount
     name: argo-rollouts
-    namespace: ${namespace}
+    namespace: argo-rollouts
 ---
 apiVersion: v1
 kind: Service
