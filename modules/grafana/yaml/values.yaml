@@ -191,6 +191,10 @@ grafana.ini:
     # The full public facing url you use in browser, used for redirects and emails
     root_url: https://grafana.wetsnow.com
     enable_gzip: true
+  plugins:
+    allow_loading_unsigned_plugins: "grafana-lightstep-datasource,grafana-lightstep-graph,lightstep-metrics-datasource,lightstep-app,grafana-kubernetes-datasource,prometheus-kubernetes-nodeinfo-panel,prometheus-kubernetes-podnav-panel,grafana-kubernetes-app"
+    plugin_admin_enabled: true
+    enable_alpha: true
 #  auth:
 #    oauth_auto_login: false
 #    signout_redirect_url: "https://login.wetsnow.com/auth/realms/wetsnow/protocol/openid-connect/logout?redirect_uri=https%3A%2F%2Flogin.wetsnow.com%2Fauth%2Frealms%2Fwetsnow%2Faccount%2F%23%2F"
