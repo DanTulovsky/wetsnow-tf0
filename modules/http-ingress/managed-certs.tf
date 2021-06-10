@@ -17,26 +17,7 @@ locals {
   ]
 }
 
-resource "google_compute_managed_ssl_certificate" "wetsnow-com" {
-  name = "wetsnow-cert"
-  managed {
-    domains = local.domains
-  }
-}
-
-resource "google_compute_managed_ssl_certificate" "wetsnow-com-next" {
-  name = "wetsnow-cert-20210319"
-  managed {
-    domains = concat(local.domains, [
-      "scope.wetsnow.com",
-      "weave-scope.wetsnow.com",
-    ])
-  }
-}
-# to add a cert, update the date in the name, add a new cert and
-# update kubernetes_ingress.ambassador in main.tf
-# then remove the previous instance
-# this causes downtime!!
+# old
 resource "google_compute_managed_ssl_certificate" "wetsnow-com-20200502" {
   name = "wetsnow-cert-20210502"
   managed {
@@ -44,6 +25,21 @@ resource "google_compute_managed_ssl_certificate" "wetsnow-com-20200502" {
       "scope.wetsnow.com",
       "weave-scope.wetsnow.com",
       "traefik.wetsnow.com",
+    ])
+  }
+}
+
+# to add a cert, update the date in the name, add a new cert and
+# update kubernetes_ingress.ambassador in main.tf
+# then remove the previous instance
+# this causes downtime!!
+resource "google_compute_managed_ssl_certificate" "wetsnow-com-20210610" {
+  name = "wetsnow-cert-20210502"
+  managed {
+    domains = concat(local.domains, [
+      "scope.wetsnow.com",
+      "weave-scope.wetsnow.com",
+      "rollouts.wetsnow.com",
     ])
   }
 }
