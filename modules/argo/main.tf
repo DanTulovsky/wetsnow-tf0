@@ -25,11 +25,13 @@ resource "kubectl_manifest" "dashboard-cluster-role-binding" {
 resource "kubectl_manifest" "dashboard-deployment" {
   depends_on = [helm_release.argo-rollouts]
   yaml_body = templatefile("${path.module}/yaml/k8s/dashboard/deployment.yaml", {
+    namespace = var.namespace
   })
 }
 resource "kubectl_manifest" "dashboard-service" {
   depends_on = [helm_release.argo-rollouts]
   yaml_body = templatefile("${path.module}/yaml/k8s/dashboard/service.yaml", {
+    namespace = var.namespace
   })
 }
 resource "kubectl_manifest" "dashboard-service-account" {
