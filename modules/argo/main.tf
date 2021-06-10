@@ -11,3 +11,9 @@ resource "helm_release" "argo-rollouts" {
   })]
 }
 
+resource "kubectl_manifest" "argo-dashboard" {
+  depends_on = [helm_release.argo-rollouts]
+  yaml_body = templatefile("${path.module}/yaml/k8s/dashboard.yaml", {
+    namespace = var.namespace
+  })
+}
