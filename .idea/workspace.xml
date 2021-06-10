@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="dashboard for argo">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="add missing provider">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/argo/providers.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo/providers.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -129,7 +130,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="name" />
     <MESSAGE value="disable kyverno" />
     <MESSAGE value="update grafana and web -&gt; quote server to go through traefik" />
     <MESSAGE value="remove traefik.  DNS keeps breaking." />
@@ -154,7 +154,8 @@
     <MESSAGE value="Upgrade grafana to 8.0.0" />
     <MESSAGE value="grafana plugin settings." />
     <MESSAGE value="dashboard for argo" />
-    <option name="LAST_COMMIT_MESSAGE" value="dashboard for argo" />
+    <MESSAGE value="add missing provider" />
+    <option name="LAST_COMMIT_MESSAGE" value="add missing provider" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
