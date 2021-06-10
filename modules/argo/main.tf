@@ -37,5 +37,6 @@ resource "kubectl_manifest" "dashboard-service" {
 resource "kubectl_manifest" "dashboard-service-account" {
   depends_on = [helm_release.argo-rollouts]
   yaml_body = templatefile("${path.module}/yaml/k8s/dashboard/service_account.yaml", {
+    namespace = var.namespace
   })
 }

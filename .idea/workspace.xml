@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="add yaml files">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="add namespace">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/argo/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo/yaml/k8s/dashboard/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo/yaml/k8s/dashboard/deployment.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo/yaml/k8s/dashboard/service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo/yaml/k8s/dashboard/service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/argo/yaml/k8s/dashboard/service_account.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo/yaml/k8s/dashboard/service_account.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +131,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="remove traefik.  DNS keeps breaking." />
     <MESSAGE value="dep" />
     <MESSAGE value="lower prom memory" />
     <MESSAGE value="node reshuffle" />
@@ -157,7 +155,8 @@
     <MESSAGE value="add missing provider" />
     <MESSAGE value="fix providers again." />
     <MESSAGE value="add yaml files" />
-    <option name="LAST_COMMIT_MESSAGE" value="add yaml files" />
+    <MESSAGE value="add namespace" />
+    <option name="LAST_COMMIT_MESSAGE" value="add namespace" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
