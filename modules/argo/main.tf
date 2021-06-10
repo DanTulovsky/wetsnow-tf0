@@ -11,9 +11,29 @@ resource "helm_release" "argo-rollouts" {
   })]
 }
 
-resource "kubectl_manifest" "argo-dashboard" {
+resource "kubectl_manifest" "dashboard-cluster-role" {
   depends_on = [helm_release.argo-rollouts]
-  yaml_body = templatefile("${path.module}/yaml/k8s/dashboard.yaml", {
+  yaml_body = templatefile("${path.module}/yaml/k8s/dashboard/cluster_role.yaml", {
+  })
+}
+resource "kubectl_manifest" "dashboard-cluster-role-binding" {
+  depends_on = [helm_release.argo-rollouts]
+  yaml_body = templatefile("${path.module}/yaml/k8s/dashboard/cluster_role_binding.yaml", {
     namespace = var.namespace
+  })
+}
+resource "kubectl_manifest" "dashboard-deployment" {
+  depends_on = [helm_release.argo-rollouts]
+  yaml_body = templatefile("${path.module}/yaml/k8s/dashboard/deployment.yaml", {
+  })
+}
+resource "kubectl_manifest" "dashboard-service" {
+  depends_on = [helm_release.argo-rollouts]
+  yaml_body = templatefile("${path.module}/yaml/k8s/dashboard/service.yaml", {
+  })
+}
+resource "kubectl_manifest" "dashboard-service-account" {
+  depends_on = [helm_release.argo-rollouts]
+  yaml_body = templatefile("${path.module}/yaml/k8s/dashboard/service_account.yaml", {
   })
 }

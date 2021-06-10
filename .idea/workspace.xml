@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="add missing provider">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix providers again.">
+      <change afterPath="$PROJECT_DIR$/modules/argo/yaml/k8s/dashboard/cluster_role.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/argo/yaml/k8s/dashboard/cluster_role_binding.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/argo/yaml/k8s/dashboard/deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/argo/yaml/k8s/dashboard/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/argo/yaml/k8s/dashboard/service_account.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo/providers.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo/providers.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/argo/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/argo/yaml/k8s/dashboard.yaml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +136,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="disable kyverno" />
     <MESSAGE value="update grafana and web -&gt; quote server to go through traefik" />
     <MESSAGE value="remove traefik.  DNS keeps breaking." />
     <MESSAGE value="dep" />
@@ -155,7 +160,8 @@
     <MESSAGE value="grafana plugin settings." />
     <MESSAGE value="dashboard for argo" />
     <MESSAGE value="add missing provider" />
-    <option name="LAST_COMMIT_MESSAGE" value="add missing provider" />
+    <MESSAGE value="fix providers again." />
+    <option name="LAST_COMMIT_MESSAGE" value="fix providers again." />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
