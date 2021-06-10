@@ -110,6 +110,19 @@ spec:
 apiVersion: getambassador.io/v2
 kind: Mapping
 metadata:
+  name: rollouts.wetsnow.com
+  namespace: ambassador
+spec:
+  prefix: /
+  host: rollouts.wetsnow.com
+  resolver: endpoint
+  service: argo-rollouts-dashboard.argo-rollouts:3100
+  allow_upgrade:
+    - websocket
+---
+apiVersion: getambassador.io/v2
+kind: Mapping
+metadata:
   name: "404-fallback"
   namespace: ambassador
 spec:

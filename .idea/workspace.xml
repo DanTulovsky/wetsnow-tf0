@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="add namespace">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="namespace for service_account.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo/yaml/k8s/dashboard/service_account.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo/yaml/k8s/dashboard/service_account.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ambassador/yaml/k8s/10-ambassador-maps.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/yaml/k8s/10-ambassador-maps.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +130,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="dep" />
     <MESSAGE value="lower prom memory" />
     <MESSAGE value="node reshuffle" />
     <MESSAGE value="run 3 quote servers" />
@@ -156,7 +154,8 @@
     <MESSAGE value="fix providers again." />
     <MESSAGE value="add yaml files" />
     <MESSAGE value="add namespace" />
-    <option name="LAST_COMMIT_MESSAGE" value="add namespace" />
+    <MESSAGE value="namespace for service_account." />
+    <option name="LAST_COMMIT_MESSAGE" value="namespace for service_account." />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
