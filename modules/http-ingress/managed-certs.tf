@@ -34,7 +34,7 @@ resource "google_compute_managed_ssl_certificate" "wetsnow-com-20200502" {
 # then remove the previous instance
 # this causes downtime!!
 resource "google_compute_managed_ssl_certificate" "wetsnow-com-20210610" {
-  name = "wetsnow-cert-20210502"
+  name = "wetsnow-cert-20210610"
   managed {
     domains = concat(local.domains, [
       "scope.wetsnow.com",
