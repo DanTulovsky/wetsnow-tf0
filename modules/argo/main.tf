@@ -8,6 +8,7 @@ resource "helm_release" "argo-rollouts" {
   version      = var.argo_version
 
   values = [templatefile("${path.module}/yaml/values.yaml", {
+    argo_version = var.argo_version
   })]
 }
 
