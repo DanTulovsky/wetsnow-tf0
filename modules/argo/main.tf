@@ -5,7 +5,7 @@ resource "helm_release" "argo-rollouts" {
   chart        = "argo-rollouts"
   wait         = true
   force_update = false
-  version      = var.version
+  version      = var.argo_version
 
   values = [templatefile("${path.module}/yaml/values.yaml", {
   })]
@@ -26,7 +26,7 @@ resource "kubectl_manifest" "dashboard-deployment" {
   depends_on = [helm_release.argo-rollouts]
   yaml_body = templatefile("${path.module}/yaml/k8s/dashboard/deployment.yaml", {
     namespace    = var.namespace
-    argo_version = var.version
+    argo_version = var.argo_version
   })
 }
 resource "kubectl_manifest" "dashboard-service" {
