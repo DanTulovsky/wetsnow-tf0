@@ -19,6 +19,7 @@ module "ambassador" {
 module "argo" {
   source = "../modules/argo"
   namespace                    = module.common.namespaces.argo-rollouts
+  version = "1.0.3"
 }
 
 module "http-ingress" {

@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix cert name">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="Upgrade argo to 1.0.3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/argo/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/argo/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/argo/yaml/k8s/dashboard/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo/yaml/k8s/dashboard/deployment.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +138,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add rollout" />
     <MESSAGE value="add comment" />
     <MESSAGE value="lower cpu limit" />
     <MESSAGE value="update service.name" />
@@ -160,7 +162,8 @@
     <MESSAGE value="add rollouts.wetsnow.com to ambassador." />
     <MESSAGE value="add rollouts.wetsnow.com to cert." />
     <MESSAGE value="fix cert name" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix cert name" />
+    <MESSAGE value="Upgrade argo to 1.0.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upgrade argo to 1.0.3" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
