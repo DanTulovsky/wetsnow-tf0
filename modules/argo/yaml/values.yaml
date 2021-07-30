@@ -3,3 +3,6 @@ controller:
     enabled: true
     serviceMonitor:
       enabled: true
+
+  image:
+    tag: ${argo_version}
