@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="Upgrade argo to 1.0.3">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="rework argo version as variable.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/argo/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo/variables.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo/yaml/k8s/dashboard/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo/yaml/k8s/dashboard/deployment.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +135,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add comment" />
     <MESSAGE value="lower cpu limit" />
     <MESSAGE value="update service.name" />
     <MESSAGE value="cleanup" />
@@ -163,7 +159,8 @@
     <MESSAGE value="add rollouts.wetsnow.com to cert." />
     <MESSAGE value="fix cert name" />
     <MESSAGE value="Upgrade argo to 1.0.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Upgrade argo to 1.0.3" />
+    <MESSAGE value="rework argo version as variable." />
+    <option name="LAST_COMMIT_MESSAGE" value="rework argo version as variable." />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
