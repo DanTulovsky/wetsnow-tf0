@@ -5,7 +5,7 @@ resource "helm_release" "argo-rollouts" {
   chart        = "argo-rollouts"
   wait         = true
   force_update = false
-  version = "1.0.1"
+  version = "1.0.3"
 
   values = [templatefile("${path.module}/yaml/values.yaml", {
   })]
