@@ -12,7 +12,7 @@ metrics:
 
 image:
   repository: docker.io/datawire/aes
-  tag: 1.12.3
+  tag: 1.13.10
   pullPolicy: IfNotPresent
 
 replicaCount: 1
@@ -20,7 +20,7 @@ replicaCount: 1
 podLabels:
   # match the span service.name
   service.name: "ambassador-ambassador"
-  service.version: 1.12.3  # match the image tag
+  service.version: 1.13.10 # match the image tag
 
 volumes:
   - name: lightstep-secret-volume

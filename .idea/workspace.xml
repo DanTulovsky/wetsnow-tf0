@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="Fix">
-      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="Fix argo version">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ambassador/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/yaml/values.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +135,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="argo helm chart" />
     <MESSAGE value="add argo" />
     <MESSAGE value="argo upgrade" />
     <MESSAGE value="downgrade argo" />
@@ -159,7 +159,8 @@
     <MESSAGE value="fix" />
     <MESSAGE value="set image tag." />
     <MESSAGE value="Fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix" />
+    <MESSAGE value="Fix argo version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix argo version" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
