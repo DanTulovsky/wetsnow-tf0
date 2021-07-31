@@ -8,7 +8,7 @@ image:
   pullPolicy: IfNotPresent
   repository: grafana/grafana
   sha: ""
-  tag: 8.0.6
+  tag: 8.1.0-beta3
 
 deploymentStrategy:
   type: "Recreate"
@@ -16,7 +16,7 @@ deploymentStrategy:
 podLabels:
   # match the span service.name
   service.name: "grafana"
-  service.version: 8.0.6  # match the image tag
+  service.version: 8.1.0-beta3  # match the image tag
 
 resources:
   limits:
