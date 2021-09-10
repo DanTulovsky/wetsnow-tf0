@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="enable neg on quote server">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix quotes">
       <change beforePath="$PROJECT_DIR$/modules/quote-server/10-service.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/10-service.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631239567193</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix quotes">
+      <created>1631239624693</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1631239624693</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,7 +159,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix file" />
     <MESSAGE value="argo helm" />
     <MESSAGE value="argo monitor" />
     <MESSAGE value="Upgrade grafana to 8.0.0" />
@@ -177,7 +183,8 @@
     <MESSAGE value="update grafana" />
     <MESSAGE value="update otel" />
     <MESSAGE value="enable neg on quote server" />
-    <option name="LAST_COMMIT_MESSAGE" value="enable neg on quote server" />
+    <MESSAGE value="fix quotes" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix quotes" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
