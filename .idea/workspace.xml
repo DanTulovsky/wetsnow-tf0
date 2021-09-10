@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="new quote server version">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="ignore annotation">
       <change beforePath="$PROJECT_DIR$/modules/quote-server/10-service.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/10-service.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -204,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631305991129</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="ignore annotation">
+      <created>1631306347522</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1631306347522</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,7 +229,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add missing provider" />
     <MESSAGE value="fix providers again." />
     <MESSAGE value="add yaml files" />
     <MESSAGE value="add namespace" />
@@ -249,7 +253,8 @@
     <MESSAGE value="set proper neg annotation" />
     <MESSAGE value="implement grpc server" />
     <MESSAGE value="new quote server version" />
-    <option name="LAST_COMMIT_MESSAGE" value="new quote server version" />
+    <MESSAGE value="ignore annotation" />
+    <option name="LAST_COMMIT_MESSAGE" value="ignore annotation" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

@@ -17,7 +17,7 @@ resource "kubernetes_service" "quote_server_http" {
 
   lifecycle {
     ignore_changes = [
-      metadata.0.annotations["cloud.google.com/neg"]
+      metadata.0.annotations["cloud.google.com/neg-status"]
     ]
   }
 
