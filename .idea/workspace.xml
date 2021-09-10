@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="update otel">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="enable neg on quote server">
       <change beforePath="$PROJECT_DIR$/modules/quote-server/10-service.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/10-service.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,6 +125,14 @@
       <option name="presentableId" value="Default" />
       <updated>1628909558379</updated>
     </task>
+    <task id="LOCAL-00001" summary="enable neg on quote server">
+      <created>1631239567193</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1631239567193</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,7 +152,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="replace argo with yaml manifest" />
     <MESSAGE value="fix file" />
     <MESSAGE value="argo helm" />
     <MESSAGE value="argo monitor" />
@@ -170,7 +176,8 @@
     <MESSAGE value="upgrade ambassador" />
     <MESSAGE value="update grafana" />
     <MESSAGE value="update otel" />
-    <option name="LAST_COMMIT_MESSAGE" value="update otel" />
+    <MESSAGE value="enable neg on quote server" />
+    <option name="LAST_COMMIT_MESSAGE" value="enable neg on quote server" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

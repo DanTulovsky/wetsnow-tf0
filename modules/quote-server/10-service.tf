@@ -12,7 +12,7 @@ resource "kubernetes_service" "quote_server_http" {
     }
 
     annotations = {
-      cloud.google.com/neg: '{"ingress": true}'
+      cloud.google.com/neg: "{\"ingress\": true}"
     }
   }
 
