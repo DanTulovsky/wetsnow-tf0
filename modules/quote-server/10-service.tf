@@ -10,6 +10,10 @@ resource "kubernetes_service" "quote_server_http" {
       service   = "quote-server-http"
       tier      = "production"
     }
+
+    annotations = {
+      "cloud.google.com/neg": "{\"ingress\": true}"
+    }
   }
 
   spec {

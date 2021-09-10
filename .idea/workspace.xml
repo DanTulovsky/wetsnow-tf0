@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix quotes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="not an ingress">
       <change beforePath="$PROJECT_DIR$/modules/quote-server/10-service.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/10-service.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -147,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631239733186</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="not an ingress">
+      <created>1631239898998</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1631239898998</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,7 +173,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="argo helm" />
     <MESSAGE value="argo monitor" />
     <MESSAGE value="Upgrade grafana to 8.0.0" />
     <MESSAGE value="grafana plugin settings." />
@@ -192,7 +197,8 @@
     <MESSAGE value="update otel" />
     <MESSAGE value="enable neg on quote server" />
     <MESSAGE value="fix quotes" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix quotes" />
+    <MESSAGE value="not an ingress" />
+    <option name="LAST_COMMIT_MESSAGE" value="not an ingress" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
