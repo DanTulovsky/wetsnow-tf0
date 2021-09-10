@@ -21,6 +21,11 @@ variable "port_http" {
   default = 8080
 }
 
+variable "port_grpc" {
+  type    = number
+  default = 8081
+}
+
 variable "priority_class" {
   type    = string
   default = ""

@@ -30,10 +30,10 @@ resource "kubernetes_deployment" "quote_server_http" {
     template {
       metadata {
         labels = {
-          "app"       = "quote"
-          "component" = "server-http"
-          "tier"      = "production"
-          "service.name" = "quote"
+          "app"             = "quote"
+          "component"       = "server-http"
+          "tier"            = "production"
+          "service.name"    = "quote"
           "service.version" = var.app_version
         }
       }
@@ -74,11 +74,18 @@ resource "kubernetes_deployment" "quote_server_http" {
         container {
           name  = "server-http"
           image = "ghcr.io/dantulovsky/quote-server/server:${var.app_version}"
-          args  = ["--enable_metrics", "--version=${var.app_version}"]
+          args = [
+            "--enable_metrics",
+          "--version=${var.app_version}"]
 
           port {
             name           = "http"
             container_port = var.port_http
+          }
+
+          port {
+            name           = "grpc"
+            container_port = var.port_grpc
           }
 
           env {
