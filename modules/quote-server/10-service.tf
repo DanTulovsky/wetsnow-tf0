@@ -1,4 +1,3 @@
-
 resource "kubernetes_service" "quote_server_http" {
   metadata {
     name      = "quote-server-http"
@@ -12,8 +11,14 @@ resource "kubernetes_service" "quote_server_http" {
     }
 
     annotations = {
-      "cloud.google.com/neg": "{\"exposed_ports\":{\"${var.port_http}\":{}}}"
+      "cloud.google.com/neg" : "{\"exposed_ports\":{\"${var.port_http}\":{}}}"
     }
+  }
+
+  lifecycle {
+    ignore_changes = [
+      metadata.0.annotations["cloud.google.com/neg"]
+    ]
   }
 
   spec {
