@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="not an ingress">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="service neg">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/quote-server/10-service.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/10-service.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -153,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631239898998</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="service neg">
+      <created>1631240068286</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1631240068286</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,7 +181,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="argo monitor" />
     <MESSAGE value="Upgrade grafana to 8.0.0" />
     <MESSAGE value="grafana plugin settings." />
     <MESSAGE value="dashboard for argo" />
@@ -198,7 +205,8 @@
     <MESSAGE value="enable neg on quote server" />
     <MESSAGE value="fix quotes" />
     <MESSAGE value="not an ingress" />
-    <option name="LAST_COMMIT_MESSAGE" value="not an ingress" />
+    <MESSAGE value="service neg" />
+    <option name="LAST_COMMIT_MESSAGE" value="service neg" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
