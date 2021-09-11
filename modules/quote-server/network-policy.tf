@@ -17,7 +17,8 @@ resource "kubernetes_network_policy" "quote_server" {
         key      = "component"
         operator = "In"
         values = [
-        "server-http"]
+          "server-http"
+        ]
       }
     }
 
