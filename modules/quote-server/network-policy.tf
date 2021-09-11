@@ -9,18 +9,24 @@ resource "kubernetes_network_policy" "quote_server" {
       match_expressions {
         key      = "app"
         operator = "In"
-        values   = ["quote"]
+        values = [
+        "quote"]
       }
       match_expressions {
         key      = "component"
         operator = "In"
-        values   = ["server-http"]
+        values = [
+        "server-http"]
       }
     }
 
     ingress {
       ports {
         port     = "http"
+        protocol = "TCP"
+      }
+      ports {
+        port     = "grpc"
         protocol = "TCP"
       }
 
@@ -34,8 +40,11 @@ resource "kubernetes_network_policy" "quote_server" {
       }
     }
 
-    egress {} # single empty rule to allow all egress traffic
+    egress {}
+    # single empty rule to allow all egress traffic
 
-    policy_types = ["Ingress", "Egress"]
+    policy_types = [
+      "Ingress",
+    "Egress"]
   }
 }
