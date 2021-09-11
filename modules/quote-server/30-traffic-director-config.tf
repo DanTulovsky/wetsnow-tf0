@@ -106,6 +106,7 @@ resource "google_compute_global_forwarding_rule" "quote-server-forwarding-rule" 
   port_range            = "8000"
   target                = google_compute_target_grpc_proxy.quote-server-grpc-proxy.id
   ip_address            = "0.0.0.0"
+  ip_protocol           = "TCP"
   # TODO: Automate
   //  network    = "vpc0"
   //  # required for grpc proxy
