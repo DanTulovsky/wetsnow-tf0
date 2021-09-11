@@ -111,4 +111,5 @@ resource "google_compute_global_forwarding_rule" "quote-server-forwarding-rule" 
   ip_protocol = "TCP"
   # TODO: Automate
   network = "vpc0"
+  project = "snowcloud-01"
 }
