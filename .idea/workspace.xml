@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="enable xds">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="enable xds initContainer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/quote-server/20-deployment.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/20-deployment.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -140,13 +139,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628909558379</updated>
-    </task>
-    <task id="LOCAL-00008" summary="new quote server version">
-      <created>1631305893164</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1631305893164</updated>
     </task>
     <task id="LOCAL-00009" summary="new quote server version">
       <created>1631305991129</created>
@@ -484,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631396703298</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="enable xds initContainer">
+      <created>1631397341461</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1631397341461</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,7 +503,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="tags" />
     <MESSAGE value="firewall rule" />
     <MESSAGE value="backend service" />
     <MESSAGE value="rename backend" />
@@ -529,7 +527,8 @@
     <MESSAGE value="beta provider" />
     <MESSAGE value="set project" />
     <MESSAGE value="enable xds" />
-    <option name="LAST_COMMIT_MESSAGE" value="enable xds" />
+    <MESSAGE value="enable xds initContainer" />
+    <option name="LAST_COMMIT_MESSAGE" value="enable xds initContainer" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

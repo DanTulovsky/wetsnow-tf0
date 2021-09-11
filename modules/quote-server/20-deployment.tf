@@ -4,16 +4,16 @@ locals {
 
 resource "kubernetes_deployment" "quote_server_http" {
   metadata {
-    name = "quote-server-http"
+    name      = "quote-server-http"
     namespace = var.namespace
   }
 
   spec {
     # managed by Argo Rollouts (yaml/k8s/rollout.yaml)
-    replicas = 0
+    replicas                  = 0
     progress_deadline_seconds = 300
-    revision_history_limit = 5
-    min_ready_seconds = 20
+    revision_history_limit    = 5
+    min_ready_seconds         = 20
     strategy {
       type = "RollingUpdate"
 
@@ -21,19 +21,19 @@ resource "kubernetes_deployment" "quote_server_http" {
 
     selector {
       match_labels = {
-        app = "quote"
+        app       = "quote"
         component = "server-http"
-        tier = "production"
+        tier      = "production"
       }
     }
 
     template {
       metadata {
         labels = {
-          "app" = "quote"
-          "component" = "server-http"
-          "tier" = "production"
-          "service.name" = "quote"
+          "app"             = "quote"
+          "component"       = "server-http"
+          "tier"            = "production"
+          "service.name"    = "quote"
           "service.version" = var.app_version
         }
       }
@@ -41,19 +41,19 @@ resource "kubernetes_deployment" "quote_server_http" {
       spec {
         share_process_namespace = true
         toleration {
-          key = "node-role.kubernetes.io/master"
-          effect = "NoSchedule"
+          key      = "node-role.kubernetes.io/master"
+          effect   = "NoSchedule"
           operator = "Exists"
         }
         topology_spread_constraint {
-          max_skew = 2
-          topology_key = "topology.kubernetes.io/zone"
+          max_skew           = 2
+          topology_key       = "topology.kubernetes.io/zone"
           when_unsatisfiable = "DoNotSchedule"
           label_selector {
             match_labels = {
-              app = "quote"
+              app       = "quote"
               component = "server-http"
-              tier = "production"
+              tier      = "production"
             }
           }
         }
@@ -78,21 +78,21 @@ resource "kubernetes_deployment" "quote_server_http" {
             "--output",
             "/tmp/bootstrap/td-grpc-bootstrap.json"
           ]
-          image: "gcr.io/trafficdirector-prod/td-grpc-bootstrap:0.11.0"
-          imagePullPolicy: IfNotPresent
+          image           = "gcr.io/trafficdirector-prod/td-grpc-bootstrap:0.11.0"
+          imagePullPolicy = IfNotPresent
           resources {
             limits = {
-              cpu:"100m"
-              memory: "100Mi"
+              cpu    = "100m"
+              memory = "100Mi"
             }
             requests = {
-              cpu:"100m"
-              memory: "100Mi"
+              cpu    = "100m"
+              memory = "100Mi"
             }
           }
           volume_mount {
             mount_path = "/tmp/bootstrap/"
-            name = "grpc-td-conf"
+            name       = "grpc-td-conf"
           }
         }
 
@@ -104,7 +104,7 @@ resource "kubernetes_deployment" "quote_server_http" {
         }
 
         container {
-          name = "server-http"
+          name  = "server-http"
           image = "ghcr.io/dantulovsky/quote-server/server:${var.app_version}"
           args = [
             "--enable_metrics",
@@ -113,23 +113,23 @@ resource "kubernetes_deployment" "quote_server_http" {
           ]
 
           port {
-            name = "http"
+            name           = "http"
             container_port = var.port_http
           }
 
           port {
-            name = "grpc"
+            name           = "grpc"
             container_port = var.port_grpc
           }
 
           env {
             # Points at the bootstrap file created by the initContainer
-            name = "GRPC_XDS_BOOTSTRAP"
-            value: "/tmp/grpc-xds/td-grpc-bootstrap.json"
+            name  = "GRPC_XDS_BOOTSTRAP"
+            value = "/tmp/grpc-xds/td-grpc-bootstrap.json"
           }
 
           env {
-            name = "LS_ACCESS_TOKEN"
+            name  = "LS_ACCESS_TOKEN"
             value = var.lightstep_access_token
           }
 
@@ -139,30 +139,30 @@ resource "kubernetes_deployment" "quote_server_http" {
           # }
 
           env {
-            name = "PORT"
+            name  = "PORT"
             value = var.port_http
           }
 
           env {
-            name = "GIN_MODE"
+            name  = "GIN_MODE"
             value = local.release
           }
 
           resources {
             limits = {
-              cpu = "50m"
+              cpu    = "50m"
               memory = "200Mi"
             }
 
             requests = {
-              cpu = "10m"
+              cpu    = "10m"
               memory = "40Mi"
             }
           }
 
           volume_mount {
             mount_path = "grpc-td-conf"
-            name = "/tmp/grpc-xds/"
+            name       = "/tmp/grpc-xds/"
           }
 
           liveness_probe {
@@ -171,13 +171,13 @@ resource "kubernetes_deployment" "quote_server_http" {
               port = var.port_http
 
               http_header {
-                name = "X-Healthz-Prober"
+                name  = "X-Healthz-Prober"
                 value = "liveliness"
               }
             }
 
             initial_delay_seconds = 5
-            period_seconds = 5
+            period_seconds        = 5
           }
 
           readiness_probe {
@@ -186,13 +186,13 @@ resource "kubernetes_deployment" "quote_server_http" {
               port = var.port_http
 
               http_header {
-                name = "X-Healthz-Prober"
+                name  = "X-Healthz-Prober"
                 value = "readiness"
               }
             }
 
             initial_delay_seconds = 5
-            period_seconds = 5
+            period_seconds        = 5
           }
         }
       }
