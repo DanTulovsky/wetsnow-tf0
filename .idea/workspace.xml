@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="beta provider">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="correct resource">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/quote-server/30-traffic-director-config.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/30-traffic-director-config.tf" afterDir="false" />
     </list>
@@ -139,13 +139,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628909558379</updated>
-    </task>
-    <task id="LOCAL-00001" summary="enable neg on quote server">
-      <created>1631239567193</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1631239567193</updated>
     </task>
     <task id="LOCAL-00002" summary="fix quotes">
       <created>1631239624693</created>
@@ -483,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631386860896</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="correct resource">
+      <created>1631387018675</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1631387018675</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,7 +503,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="don't block" />
     <MESSAGE value="update network policy" />
     <MESSAGE value="format" />
     <MESSAGE value="remove bad defer" />
@@ -528,7 +527,8 @@
     <MESSAGE value="forwarding rule" />
     <MESSAGE value="rename" />
     <MESSAGE value="beta provider" />
-    <option name="LAST_COMMIT_MESSAGE" value="beta provider" />
+    <MESSAGE value="correct resource" />
+    <option name="LAST_COMMIT_MESSAGE" value="correct resource" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

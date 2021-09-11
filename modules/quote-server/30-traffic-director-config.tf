@@ -105,9 +105,9 @@ resource "google_compute_global_forwarding_rule" "quote-server-forwarding-rule" 
   load_balancing_scheme = "INTERNAL_SELF_MANAGED"
   port_range            = "8000"
   target                = google_compute_target_grpc_proxy.quote-server-grpc-proxy.id
+  ip_address            = "0.0.0.0"
   # TODO: Automate
   //  network    = "vpc0"
-  //  ip_address = "0.0.0.0"
   //  # required for grpc proxy
   //  //  subnetwork   = google_compute_subnetwork.ilb_subnet.id
   //  network_tier = "PREMIUM"
