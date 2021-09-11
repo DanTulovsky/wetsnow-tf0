@@ -78,8 +78,9 @@ resource "kubernetes_deployment" "quote_server_http" {
             "--output",
             "/tmp/bootstrap/td-grpc-bootstrap.json"
           ]
-          image           = "gcr.io/trafficdirector-prod/td-grpc-bootstrap:0.11.0"
-          imagePullPolicy = "IfNotPresent"
+          image             = "gcr.io/trafficdirector-prod/td-grpc-bootstrap:0.11.0"
+          image_pull_policy = "IfNotPresent"
+
           resources {
             limits = {
               cpu    = "100m"
