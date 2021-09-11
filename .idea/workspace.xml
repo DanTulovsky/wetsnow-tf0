@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="set status">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="new release">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/quote-server/30-traffic-director-config.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/30-traffic-director-config.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -434,7 +434,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631384926572</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="new release">
+      <created>1631385089397</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1631385089397</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -464,7 +471,6 @@
     <MESSAGE value="update network policy" />
     <MESSAGE value="format" />
     <MESSAGE value="remove bad defer" />
-    <MESSAGE value="new release" />
     <MESSAGE value="Don't block" />
     <MESSAGE value="health check" />
     <MESSAGE value="tags" />
@@ -479,7 +485,8 @@
     <MESSAGE value="enable health server" />
     <MESSAGE value="new release with health server" />
     <MESSAGE value="set status" />
-    <option name="LAST_COMMIT_MESSAGE" value="set status" />
+    <MESSAGE value="new release" />
+    <option name="LAST_COMMIT_MESSAGE" value="new release" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

@@ -61,4 +61,28 @@ resource "google_compute_backend_service" "quote-server-backend-service" {
   }
 }
 
-# Add the backend NEGs to the backend service.
+# url-map
+resource "google_compute_url_map" "urlmap" {
+  name            = "quote-server-urlmap"
+  description     = "quote server grpc url map"
+  default_service = google_compute_backend_service.quote-server-backend-service.id
+
+  host_rule {
+    hosts = [
+      # arbitrary name and port used by the client to lookup this mapping
+      "quote-server-gke:8000"
+    ]
+    path_matcher = "grpc-gke-path-matcher"
+  }
+  path_matcher {
+    name            = "grpc-gke-path-matcher"
+    default_service = google_compute_backend_service.quote-server-backend-service.id
+
+    path_rule {
+      paths = [
+        "/"
+      ]
+      //      route_action {}
+    }
+  }
+}
