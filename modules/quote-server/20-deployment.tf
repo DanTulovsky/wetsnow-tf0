@@ -71,46 +71,12 @@ resource "kubernetes_deployment" "quote_server_http" {
         # }
         priority_class_name = var.priority_class
 
-        init_container {
-          # traffic director required bootstrap file
-          name = "grpc-td-init"
-          args = [
-            "--output",
-            "/tmp/bootstrap/td-grpc-bootstrap.json"
-          ]
-          image             = "gcr.io/trafficdirector-prod/td-grpc-bootstrap:0.11.0"
-          image_pull_policy = "IfNotPresent"
-
-          resources {
-            limits = {
-              cpu    = "100m"
-              memory = "100Mi"
-            }
-            requests = {
-              cpu    = "100m"
-              memory = "100Mi"
-            }
-          }
-          volume_mount {
-            mount_path = "/tmp/bootstrap/"
-            name       = "grpc-td-conf"
-          }
-        }
-
-        volume {
-          name = "grpc-td-conf"
-          empty_dir {
-            medium = "Memory"
-          }
-        }
-
         container {
           name  = "server-http"
           image = "ghcr.io/dantulovsky/quote-server/server:${var.app_version}"
           args = [
             "--enable_metrics",
             "--version=${var.app_version}",
-            "--quote_server_grpc=xds:///quote-server-gke:8000"
           ]
 
           port {
@@ -121,12 +87,6 @@ resource "kubernetes_deployment" "quote_server_http" {
           port {
             name           = "grpc"
             container_port = var.port_grpc
-          }
-
-          env {
-            # Points at the bootstrap file created by the initContainer
-            name  = "GRPC_XDS_BOOTSTRAP"
-            value = "/tmp/grpc-xds/td-grpc-bootstrap.json"
           }
 
           env {
@@ -159,11 +119,6 @@ resource "kubernetes_deployment" "quote_server_http" {
               cpu    = "10m"
               memory = "40Mi"
             }
-          }
-
-          volume_mount {
-            mount_path = "grpc-td-conf"
-            name       = "/tmp/grpc-xds/"
           }
 
           liveness_probe {
