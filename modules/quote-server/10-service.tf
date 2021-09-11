@@ -44,6 +44,7 @@ resource "kubernetes_service" "quote_server_grpc" {
     }
 
     annotations = {
+      # configure for traffic director; allows sending traffic directly to the pods, bypassing the node
       "cloud.google.com/neg" : "{\"exposed_ports\":{\"${var.port_grpc}\":{}}}"
     }
   }
