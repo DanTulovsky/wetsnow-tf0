@@ -67,6 +67,7 @@ module "gke" {
     all = [
       "https://www.googleapis.com/auth/logging.write",
       "https://www.googleapis.com/auth/monitoring",
+      # required for traffic director
       "https://www.googleapis.com/auth/cloud-platform",
     ]
 

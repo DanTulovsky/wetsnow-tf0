@@ -1,3 +1,5 @@
+# Health check
+# https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_health_check
 resource "google_compute_health_check" "quote-server-grpc-health-check" {
   name = "quote-server-grpc-health-check"
 
@@ -6,7 +8,37 @@ resource "google_compute_health_check" "quote-server-grpc-health-check" {
 
   grpc_health_check {
     //    port_name          = "health-check-port"
-    port_specification = "USE_SERVING_PORT"
     //    grpc_service_name  = "Quote"
+    port_specification = "USE_SERVING_PORT"
   }
+}
+
+# Firewall rule
+# https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_firewall
+resource "google_compute_firewall" "quote-server-grpc-gke-allow-health-checks" {
+  # TODO: set automatically
+  project = "snowcloud-01"
+  name    = "grpc-gke-allow-health-checks"
+  # TODO: set automatically
+  network     = "vpc0"
+  description = "Creates firewall rule targeting tagged instances"
+  direction   = "INGRESS"
+
+  source_ranges = [
+    "35.191.0.0/16",
+    "130.211.0.0/22"
+  ]
+
+  allow {
+    protocol = "tcp"
+    ports = [
+      # TODO: set automatically
+      "8081",
+    ]
+  }
+
+  target_tags = [
+    # Set on nodes via gke.tf
+    "allow-health-checks"
+  ]
 }
