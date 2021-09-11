@@ -76,7 +76,8 @@ resource "kubernetes_deployment" "quote_server_http" {
           image = "ghcr.io/dantulovsky/quote-server/server:${var.app_version}"
           args = [
             "--enable_metrics",
-            "--version=${var.app_version}"
+            "--version=${var.app_version}",
+            "--quote_server_grpc=xds:///quote-server-gke:8000"
           ]
 
           port {

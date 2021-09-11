@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="beta provider">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="set project">
+      <change beforePath="$PROJECT_DIR$/../web-static/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../web-static/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../web-static/server/wetsnow_quote.go" beforeDir="false" afterPath="$PROJECT_DIR$/../web-static/server/wetsnow_quote.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/quote-server/30-traffic-director-config.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/30-traffic-director-config.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/quote-server/20-deployment.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/20-deployment.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +30,7 @@
         <option name="title" value="All" />
       </GitPushTagMode>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../web-static" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -140,13 +141,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628909558379</updated>
-    </task>
-    <task id="LOCAL-00006" summary="set proper neg annotation">
-      <created>1631240612064</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1631240612064</updated>
     </task>
     <task id="LOCAL-00007" summary="implement grpc server">
       <created>1631305080426</created>
@@ -484,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631387264535</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="set project">
+      <created>1631387449268</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1631387449268</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,7 +505,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Don't block" />
     <MESSAGE value="health check" />
     <MESSAGE value="tags" />
     <MESSAGE value="firewall rule" />
@@ -529,7 +529,8 @@
     <MESSAGE value="protocol" />
     <MESSAGE value="network" />
     <MESSAGE value="beta provider" />
-    <option name="LAST_COMMIT_MESSAGE" value="beta provider" />
+    <MESSAGE value="set project" />
+    <option name="LAST_COMMIT_MESSAGE" value="set project" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
