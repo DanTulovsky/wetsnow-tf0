@@ -52,4 +52,12 @@ resource "google_compute_backend_service" "quote-server-backend-service" {
   ]
   load_balancing_scheme = "INTERNAL_SELF_MANAGED"
   protocol              = "GRPC"
+  backend {
+    # TODO: Automate; get from neg-status annotation on Service
+    group                 = "k8s1-c5c88bb8-web-quote-server-grpc-8081-dde5610f"
+    balancing_mode        = "RATE"
+    max_rate_per_endpoint = 5
+  }
 }
+
+# Add the backend NEGs to the backend service.
