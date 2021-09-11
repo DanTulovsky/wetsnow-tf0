@@ -136,8 +136,8 @@ resource "kubernetes_deployment" "frontend" {
           }
 
           volume_mount {
-            mount_path = "grpc-td-conf"
-            name       = "/tmp/grpc-xds/"
+            name       = "grpc-td-conf"
+            mount_path = "/tmp/grpc-xds/"
           }
 
           liveness_probe {
