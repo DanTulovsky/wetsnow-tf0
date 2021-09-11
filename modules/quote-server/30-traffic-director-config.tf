@@ -9,7 +9,10 @@ resource "google_compute_health_check" "quote-server-grpc-health-check" {
   grpc_health_check {
     //    port_name          = "health-check-port"
     //    grpc_service_name  = "Quote"
-    port_specification = "USE_SERVING_PORT"
+    port_specification = "USE_FIXED_PORT"
+    port_name          = ""
+    # TODO: Automate
+    port = 8081
   }
 }
 

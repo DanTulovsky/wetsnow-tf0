@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="attach backend to neg">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fqdn for network endpoint group">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/quote-server/30-traffic-director-config.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/30-traffic-director-config.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -370,7 +371,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631380201479</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="fqdn for network endpoint group">
+      <created>1631380443978</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1631380443978</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,7 +398,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="not an ingress" />
     <MESSAGE value="service neg" />
     <MESSAGE value="set proper neg annotation" />
     <MESSAGE value="implement grpc server" />
@@ -415,7 +422,8 @@
     <MESSAGE value="backend service" />
     <MESSAGE value="rename backend" />
     <MESSAGE value="attach backend to neg" />
-    <option name="LAST_COMMIT_MESSAGE" value="attach backend to neg" />
+    <MESSAGE value="fqdn for network endpoint group" />
+    <option name="LAST_COMMIT_MESSAGE" value="fqdn for network endpoint group" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
