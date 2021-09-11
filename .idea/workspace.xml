@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="set project">
-      <change beforePath="$PROJECT_DIR$/../web-static/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../web-static/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-static/server/wetsnow_quote.go" beforeDir="false" afterPath="$PROJECT_DIR$/../web-static/server/wetsnow_quote.go" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="enable xds">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/quote-server/20-deployment.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/20-deployment.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +29,7 @@
         <option name="title" value="All" />
       </GitPushTagMode>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../web-static" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -141,13 +140,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628909558379</updated>
-    </task>
-    <task id="LOCAL-00007" summary="implement grpc server">
-      <created>1631305080426</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1631305080426</updated>
     </task>
     <task id="LOCAL-00008" summary="new quote server version">
       <created>1631305893164</created>
@@ -485,7 +477,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631387449268</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="enable xds">
+      <created>1631396703298</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1631396703298</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -505,7 +504,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="health check" />
     <MESSAGE value="tags" />
     <MESSAGE value="firewall rule" />
     <MESSAGE value="backend service" />
@@ -530,7 +528,8 @@
     <MESSAGE value="network" />
     <MESSAGE value="beta provider" />
     <MESSAGE value="set project" />
-    <option name="LAST_COMMIT_MESSAGE" value="set project" />
+    <MESSAGE value="enable xds" />
+    <option name="LAST_COMMIT_MESSAGE" value="enable xds" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
