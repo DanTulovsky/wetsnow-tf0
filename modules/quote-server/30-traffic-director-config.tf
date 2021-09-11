@@ -91,8 +91,30 @@ resource "google_compute_url_map" "quote-server-urlmap" {
 }
 
 #  target gRPC proxy
+# https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_target_grpc_proxy
 resource "google_compute_target_grpc_proxy" "quote-server-grpc-proxy" {
   name                   = "proxy"
   url_map                = google_compute_url_map.quote-server-urlmap.id
   validate_for_proxyless = true
+}
+
+# forwarding rule
+# https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_forwarding_rule
+resource "google_compute_forwarding_rule" "google_compute_forwarding_rule" {
+  name = "l7-ilb-forwarding-rule"
+  //  provider = google-beta
+  //  region   = "europe-west1"
+  //  depends_on = [
+  //    google_compute_subnetwork.proxy_subnet
+  //  ]
+  ip_protocol           = "TCP"
+  load_balancing_scheme = "INTERNAL_SELF_MANAGED"
+  port_range            = "8000"
+  target                = google_compute_target_grpc_proxy.quote-server-grpc-proxy.id
+  # TODO: Automate
+  network    = "vpc0"
+  ip_address = "0.0.0.0"
+  # required for grpc proxy
+  //  subnetwork   = google_compute_subnetwork.ilb_subnet.id
+  network_tier = "PREMIUM"
 }
