@@ -101,8 +101,8 @@ resource "google_compute_target_grpc_proxy" "quote-server-grpc-proxy" {
 # forwarding rule
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_forwarding_rule
 resource "google_compute_forwarding_rule" "quote-server-forwarding-rule" {
-  name = "quote-server-l7-forwarding-rule"
-  //  provider = google-beta
+  name     = "quote-server-l7-forwarding-rule"
+  provider = google-beta
   //  region   = "europe-west1"
   //  depends_on = [
   //    google_compute_subnetwork.proxy_subnet
