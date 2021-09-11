@@ -19,10 +19,10 @@ resource "kubernetes_deployment" "frontend" {
     template {
       metadata {
         labels = {
-          "app"       = "static-web"
-          "component" = "frontend"
-          "tier"      = "production"
-          "service.name" = "web-static"
+          "app"             = "static-web"
+          "component"       = "frontend"
+          "tier"            = "production"
+          "service.name"    = "web-static"
           "service.version" = "${var.app_version}"
         }
       }
@@ -69,7 +69,8 @@ resource "kubernetes_deployment" "frontend" {
             "--version=${var.app_version}",
             "--enable_kafka=false",
             "--kafka_broker=kafka0.kafka",
-            "--quote_server=http://quote-server-http.web:8080"
+            "--quote_server=http://quote-server-http.web:8080",
+            "--quote_server_grpc=quote-server-grpc.web:8081"
           ]
 
           port {
