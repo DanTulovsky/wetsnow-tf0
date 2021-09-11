@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="ignore annotation">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="service for grpc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/quote-server/20-deployment.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/20-deployment.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/quote-server/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/quote-server/10-service.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/10-service.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631306590479</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="set port">
+      <created>1631306762964</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1631306762964</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,8 +245,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix providers again." />
-    <MESSAGE value="add yaml files" />
     <MESSAGE value="add namespace" />
     <MESSAGE value="namespace for service_account." />
     <MESSAGE value="add rollouts.wetsnow.com to ambassador." />
@@ -263,7 +268,9 @@
     <MESSAGE value="implement grpc server" />
     <MESSAGE value="new quote server version" />
     <MESSAGE value="ignore annotation" />
-    <option name="LAST_COMMIT_MESSAGE" value="ignore annotation" />
+    <MESSAGE value="set port" />
+    <MESSAGE value="service for grpc" />
+    <option name="LAST_COMMIT_MESSAGE" value="service for grpc" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
