@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="firewall rule">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="backend service">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/quote-server/30-traffic-director-config.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/30-traffic-director-config.tf" afterDir="false" />
     </list>
@@ -350,7 +350,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631379221621</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="backend service">
+      <created>1631379708390</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1631379708390</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,7 +377,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="update otel" />
     <MESSAGE value="enable neg on quote server" />
     <MESSAGE value="fix quotes" />
     <MESSAGE value="not an ingress" />
@@ -395,7 +401,8 @@
     <MESSAGE value="health check" />
     <MESSAGE value="tags" />
     <MESSAGE value="firewall rule" />
-    <option name="LAST_COMMIT_MESSAGE" value="firewall rule" />
+    <MESSAGE value="backend service" />
+    <option name="LAST_COMMIT_MESSAGE" value="backend service" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

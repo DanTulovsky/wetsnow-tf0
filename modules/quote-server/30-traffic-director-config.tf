@@ -46,7 +46,7 @@ resource "google_compute_firewall" "quote-server-grpc-gke-allow-health-checks" {
 # Backend service
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_backend_service
 resource "google_compute_backend_service" "quote-server-backend-service" {
-  name = "backend-service"
+  name = "quote-server-grpc-backend-service"
   health_checks = [
     google_compute_health_check.quote-server-grpc-health-check.id
   ]
