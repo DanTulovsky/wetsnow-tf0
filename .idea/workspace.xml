@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="target grpc proxy">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="forwarding rule">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/quote-server/30-traffic-director-config.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/30-traffic-director-config.tf" afterDir="false" />
     </list>
@@ -462,7 +462,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631386209792</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="forwarding rule">
+      <created>1631386755788</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1631386755788</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -482,7 +489,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix err" />
     <MESSAGE value="handle errors" />
     <MESSAGE value="fix flag" />
     <MESSAGE value="don't block" />
@@ -507,7 +513,8 @@
     <MESSAGE value="url map" />
     <MESSAGE value="service" />
     <MESSAGE value="target grpc proxy" />
-    <option name="LAST_COMMIT_MESSAGE" value="target grpc proxy" />
+    <MESSAGE value="forwarding rule" />
+    <option name="LAST_COMMIT_MESSAGE" value="forwarding rule" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
