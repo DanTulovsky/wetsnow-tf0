@@ -70,6 +70,7 @@ resource "google_compute_url_map" "urlmap" {
   host_rule {
     hosts = [
       # arbitrary name and port used by the client to lookup this mapping
+      # TODO: Automate to share with client
       "quote-server-gke:8000"
     ]
     path_matcher = "grpc-gke-path-matcher"
@@ -79,6 +80,7 @@ resource "google_compute_url_map" "urlmap" {
     default_service = google_compute_backend_service.quote-server-backend-service.id
 
     path_rule {
+      service = google_compute_backend_service.quote-server-backend-service.id
       paths = [
         "/"
       ]
