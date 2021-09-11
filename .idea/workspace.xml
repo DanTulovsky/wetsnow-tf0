@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="remove bad defer">
-      <change beforePath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="new release">
+      <change beforePath="$PROJECT_DIR$/../web-static/server/wetsnow_quote.go" beforeDir="false" afterPath="$PROJECT_DIR$/../web-static/server/wetsnow_quote.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +28,7 @@
         <option name="title" value="All" />
       </GitPushTagMode>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../web-static" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -314,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631327731291</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="new release">
+      <created>1631327753724</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1631327753724</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,11 +363,11 @@
     <MESSAGE value="handle errors" />
     <MESSAGE value="fix flag" />
     <MESSAGE value="don't block" />
-    <MESSAGE value="new release" />
     <MESSAGE value="update network policy" />
     <MESSAGE value="format" />
     <MESSAGE value="remove bad defer" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove bad defer" />
+    <MESSAGE value="new release" />
+    <option name="LAST_COMMIT_MESSAGE" value="new release" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
