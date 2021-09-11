@@ -21,7 +21,7 @@ resource "google_compute_firewall" "quote-server-grpc-gke-allow-health-checks" {
   name    = "grpc-gke-allow-health-checks"
   # TODO: set automatically
   network     = "vpc0"
-  description = "Creates firewall rule targeting tagged instances"
+  description = "Allow health checks to grpc port 8081"
   direction   = "INGRESS"
 
   source_ranges = [
@@ -41,4 +41,15 @@ resource "google_compute_firewall" "quote-server-grpc-gke-allow-health-checks" {
     # Set on nodes via gke.tf
     "allow-health-checks"
   ]
+}
+
+# Backend service
+# https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_backend_service
+resource "google_compute_backend_service" "quote-server-backend-service" {
+  name = "backend-service"
+  health_checks = [
+    google_compute_health_check.quote-server-grpc-health-check.id
+  ]
+  load_balancing_scheme = "INTERNAL_SELF_MANAGED"
+  protocol              = "GRPC"
 }
