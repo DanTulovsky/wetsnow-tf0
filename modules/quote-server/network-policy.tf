@@ -10,7 +10,8 @@ resource "kubernetes_network_policy" "quote_server" {
         key      = "app"
         operator = "In"
         values = [
-        "quote"]
+          "quote"
+        ]
       }
       match_expressions {
         key      = "component"
@@ -22,11 +23,11 @@ resource "kubernetes_network_policy" "quote_server" {
 
     ingress {
       ports {
-        port     = "http"
+        port     = var.port_http
         protocol = "TCP"
       }
       ports {
-        port     = "grpc"
+        port     = var.port_grpc
         protocol = "TCP"
       }
 
