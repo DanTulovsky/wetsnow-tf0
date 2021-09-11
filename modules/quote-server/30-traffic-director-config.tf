@@ -101,15 +101,14 @@ resource "google_compute_target_grpc_proxy" "quote-server-grpc-proxy" {
 # forwarding rule
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_global_forwarding_rule
 resource "google_compute_global_forwarding_rule" "quote-server-forwarding-rule" {
+  provider              = google-beta
   name                  = "quote-server-l7-forwarding-rule"
   load_balancing_scheme = "INTERNAL_SELF_MANAGED"
   port_range            = "8000"
   target                = google_compute_target_grpc_proxy.quote-server-grpc-proxy.id
-  ip_address            = "0.0.0.0"
-  ip_protocol           = "TCP"
+  # required for grpc proxy
+  ip_address  = "0.0.0.0"
+  ip_protocol = "TCP"
   # TODO: Automate
   network = "vpc0"
-  //  # required for grpc proxy
-  //  //  subnetwork   = google_compute_subnetwork.ilb_subnet.id
-  //  network_tier = "PREMIUM"
 }

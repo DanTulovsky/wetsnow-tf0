@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="protocol">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="network">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/quote-server/30-traffic-director-config.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/30-traffic-director-config.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -138,13 +139,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628909558379</updated>
-    </task>
-    <task id="LOCAL-00004" summary="not an ingress">
-      <created>1631239898998</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1631239898998</updated>
     </task>
     <task id="LOCAL-00005" summary="service neg">
       <created>1631240068286</created>
@@ -482,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631387105548</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="network">
+      <created>1631387157636</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1631387157636</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -502,7 +503,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="remove bad defer" />
     <MESSAGE value="Don't block" />
     <MESSAGE value="health check" />
     <MESSAGE value="tags" />
@@ -527,7 +527,8 @@
     <MESSAGE value="correct resource" />
     <MESSAGE value="ip address" />
     <MESSAGE value="protocol" />
-    <option name="LAST_COMMIT_MESSAGE" value="protocol" />
+    <MESSAGE value="network" />
+    <option name="LAST_COMMIT_MESSAGE" value="network" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
