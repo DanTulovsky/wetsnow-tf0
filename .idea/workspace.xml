@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="new releases">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="handle errors">
+      <change beforePath="$PROJECT_DIR$/../web-static/server/wetsnow_quote.go" beforeDir="false" afterPath="$PROJECT_DIR$/../web-static/server/wetsnow_quote.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/quote-server/20-deployment.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/20-deployment.tf" afterDir="false" />
     </list>
@@ -28,7 +29,7 @@
         <option name="title" value="All" />
       </GitPushTagMode>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../web-static" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -231,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631324180455</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="format">
+      <created>1631324593077</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1631324593077</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,13 +259,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="namespace for service_account." />
-    <MESSAGE value="add rollouts.wetsnow.com to ambassador." />
-    <MESSAGE value="add rollouts.wetsnow.com to cert." />
     <MESSAGE value="fix cert name" />
     <MESSAGE value="Upgrade argo to 1.0.3" />
     <MESSAGE value="rework argo version as variable." />
-    <MESSAGE value="format" />
     <MESSAGE value="fix" />
     <MESSAGE value="set image tag." />
     <MESSAGE value="Fix" />
@@ -276,7 +280,11 @@
     <MESSAGE value="set port" />
     <MESSAGE value="service for grpc" />
     <MESSAGE value="new releases" />
-    <option name="LAST_COMMIT_MESSAGE" value="new releases" />
+    <MESSAGE value="format" />
+    <MESSAGE value="grpc behind flag" />
+    <MESSAGE value="fix err" />
+    <MESSAGE value="handle errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="handle errors" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
