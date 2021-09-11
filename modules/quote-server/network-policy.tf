@@ -47,6 +47,7 @@ resource "kubernetes_network_policy" "quote_server" {
 
     policy_types = [
       "Ingress",
-    "Egress"]
+      "Egress"
+    ]
   }
 }
