@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="put container in the right binary">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix volume_mount">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/web-static/20-deployment.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/web-static/20-deployment.tf" afterDir="false" />
     </list>
@@ -139,13 +139,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628909558379</updated>
-    </task>
-    <task id="LOCAL-00013" summary="new releases">
-      <created>1631324180455</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1631324180455</updated>
     </task>
     <task id="LOCAL-00014" summary="format">
       <created>1631324593077</created>
@@ -483,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631397900290</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="fix volume_mount">
+      <created>1631398351354</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1631398351354</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,7 +503,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="rename backend" />
     <MESSAGE value="attach backend to neg" />
     <MESSAGE value="fqdn for network endpoint group" />
     <MESSAGE value="fix ports" />
@@ -528,7 +527,8 @@
     <MESSAGE value="enable xds initContainer" />
     <MESSAGE value="Fix config" />
     <MESSAGE value="put container in the right binary" />
-    <option name="LAST_COMMIT_MESSAGE" value="put container in the right binary" />
+    <MESSAGE value="fix volume_mount" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix volume_mount" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
