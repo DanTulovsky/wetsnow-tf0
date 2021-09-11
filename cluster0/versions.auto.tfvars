@@ -6,5 +6,5 @@ web_static = {
 
 quote_server = {
   # git tag -a v0.0.15 -m "new release"
-  app_version = "0.0.16"
+  app_version = "0.0.17"
 }

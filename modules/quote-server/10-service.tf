@@ -60,7 +60,7 @@ resource "kubernetes_service" "quote_server_grpc" {
       name        = "grpc"
       protocol    = "TCP"
       port        = var.port_grpc
-      target_port = "http"
+      target_port = var.port_grpc
     }
 
     selector = {
