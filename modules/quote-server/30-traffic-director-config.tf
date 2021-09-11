@@ -108,7 +108,7 @@ resource "google_compute_global_forwarding_rule" "quote-server-forwarding-rule" 
   ip_address            = "0.0.0.0"
   ip_protocol           = "TCP"
   # TODO: Automate
-  //  network    = "vpc0"
+  network = "vpc0"
   //  # required for grpc proxy
   //  //  subnetwork   = google_compute_subnetwork.ilb_subnet.id
   //  network_tier = "PREMIUM"

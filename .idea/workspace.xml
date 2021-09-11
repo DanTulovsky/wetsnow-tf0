@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="ip address">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="protocol">
       <change beforePath="$PROJECT_DIR$/modules/quote-server/30-traffic-director-config.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/30-traffic-director-config.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -138,13 +138,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628909558379</updated>
-    </task>
-    <task id="LOCAL-00003" summary="fix quotes">
-      <created>1631239733186</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1631239733186</updated>
     </task>
     <task id="LOCAL-00004" summary="not an ingress">
       <created>1631239898998</created>
@@ -482,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631387077951</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="protocol">
+      <created>1631387105548</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1631387105548</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -502,7 +502,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="format" />
     <MESSAGE value="remove bad defer" />
     <MESSAGE value="Don't block" />
     <MESSAGE value="health check" />
@@ -527,7 +526,8 @@
     <MESSAGE value="beta provider" />
     <MESSAGE value="correct resource" />
     <MESSAGE value="ip address" />
-    <option name="LAST_COMMIT_MESSAGE" value="ip address" />
+    <MESSAGE value="protocol" />
+    <option name="LAST_COMMIT_MESSAGE" value="protocol" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
