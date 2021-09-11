@@ -34,8 +34,7 @@ resource "google_compute_firewall" "quote-server-grpc-gke-allow-health-checks" {
   allow {
     protocol = "tcp"
     ports = [
-      # TODO: set automatically
-      "8081",
+      var.port_grpc,
     ]
   }
 
