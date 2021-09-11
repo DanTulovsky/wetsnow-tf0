@@ -62,7 +62,8 @@ resource "google_compute_backend_service" "quote-server-backend-service" {
 }
 
 # url-map
-resource "google_compute_url_map" "urlmap" {
+# https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_url_map
+resource "google_compute_url_map" "quote-server-urlmap" {
   name            = "quote-server-urlmap"
   description     = "quote server grpc url map"
   default_service = google_compute_backend_service.quote-server-backend-service.id
@@ -87,4 +88,11 @@ resource "google_compute_url_map" "urlmap" {
       //      route_action {}
     }
   }
+}
+
+#  target gRPC proxy
+resource "google_compute_target_grpc_proxy" "quote-server-grpc-proxy" {
+  name                   = "proxy"
+  url_map                = google_compute_url_map.quote-server-urlmap.id
+  validate_for_proxyless = true
 }

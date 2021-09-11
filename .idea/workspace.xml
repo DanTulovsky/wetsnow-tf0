@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="url map">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="service">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/quote-server/30-traffic-director-config.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/30-traffic-director-config.tf" afterDir="false" />
     </list>
@@ -448,7 +448,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631385676099</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="service">
+      <created>1631385916726</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1631385916726</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -468,7 +475,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="new releases" />
     <MESSAGE value="grpc behind flag" />
     <MESSAGE value="fix err" />
     <MESSAGE value="handle errors" />
@@ -493,7 +499,8 @@
     <MESSAGE value="set status" />
     <MESSAGE value="new release" />
     <MESSAGE value="url map" />
-    <option name="LAST_COMMIT_MESSAGE" value="url map" />
+    <MESSAGE value="service" />
+    <option name="LAST_COMMIT_MESSAGE" value="service" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
