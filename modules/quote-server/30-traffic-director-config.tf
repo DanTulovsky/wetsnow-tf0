@@ -17,11 +17,10 @@ resource "google_compute_health_check" "quote-server-grpc-health-check" {
   }
 
   grpc_health_check {
-    //    port_name          = "health-check-port"
+    # must match what is set in code with healthServer.SetServingStatus
+    # TODO: Automate and sync with code
     grpc_service_name  = "grpc.health.v1.quoteservice"
     port_specification = "USE_SERVING_PORT"
-    # TODO: Automate
-    //    port = var.port_grpc
   }
 }
 
