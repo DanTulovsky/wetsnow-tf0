@@ -8,24 +8,25 @@ module "common" {
 module "ambassador" {
   source = "../modules/ambassador"
   # depends_on                   = [module.gke]
-  license_key                  = var.ambassador_secrets.license_key
-  lightstep_access_token       = var.lightstep_secrets.access_token
-  namespace                    = module.common.namespaces.ambassador
-  prom_enabled                 = true
-  backend_config               = "ambassador-hc-config"
-  name                         = "ambassador"
+  license_key            = var.ambassador_secrets.license_key
+  lightstep_access_token = var.lightstep_secrets.access_token
+  namespace              = module.common.namespaces.ambassador
+  prom_enabled           = true
+  backend_config         = "ambassador-hc-config"
+  name                   = "ambassador"
 }
 
 module "argo" {
-  source = "../modules/argo"
-  namespace                    = module.common.namespaces.argo-rollouts
+  source       = "../modules/argo"
+  namespace    = module.common.namespaces.argo-rollouts
   argo_version = "v1.0.3"
 }
 
 module "http-ingress" {
-  source     = "../modules/http-ingress"
-  depends_on = [module.ambassador]
-  namespace  = module.common.namespaces.ambassador
+  source = "../modules/http-ingress"
+  depends_on = [
+  module.ambassador]
+  namespace = module.common.namespaces.ambassador
 }
 # module "kafka" {
 #   source           = "./modules/kafka"
@@ -36,12 +37,12 @@ module "http-ingress" {
 # }
 module "grafana" {
   source = "../modules/grafana"
-//  depends_on     = [module.gke]
+  //  depends_on     = [module.gke]
   admin_password = var.grafana_secrets.admin_password
   smtp_password  = var.grafana_secrets.smtp_password
   namespace      = module.common.namespaces.monitoring
-  prom_enabled = true
-  oauth_secret = ""
+  prom_enabled   = true
+  oauth_secret   = ""
 }
 //module "kyverno" {
 //  source    = "../modules/kyverno"
@@ -72,12 +73,14 @@ module "prometheus" {
   cluster_name           = "cluster0"
 }
 module "quote-server" {
-  source                 = "../modules/quote-server"
-  depends_on             = [module.common]
+  source = "../modules/quote-server"
+  depends_on = [
+  module.common]
   namespace              = module.common.namespaces.web
   app_version            = var.quote_server.app_version
   lightstep_access_token = var.lightstep_secrets.access_token
   priority_class         = module.common.priority_class.high0
+  prom_enabled           = true
 }
 # module "vector" {
 #   source     = "./modules/vector"
@@ -94,5 +97,6 @@ module "web-static" {
   namespace              = module.common.namespaces.web
   app_version            = var.web_static.app_version
   lightstep_access_token = var.lightstep_secrets.access_token
+  prom_enabled           = true
 }
 
