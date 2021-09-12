@@ -18,7 +18,7 @@ resource "google_compute_health_check" "quote-server-grpc-health-check" {
 
   grpc_health_check {
     //    port_name          = "health-check-port"
-    //    grpc_service_name  = "Quote"
+    grpc_service_name  = "health.v1.Health"
     port_specification = "USE_SERVING_PORT"
     # TODO: Automate
     //    port = var.port_grpc
