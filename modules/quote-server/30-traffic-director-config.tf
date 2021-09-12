@@ -1,3 +1,9 @@
+# Bind the web/default service account to a new IAM account with proper permissions
+# Required if using workload identity
+# gcloud iam service-accounts create k8s-web-default
+# gcloud projects add-iam-policy-binding snowcloud-01 --member serviceAccount:k8s-web-default@snowcloud-01.iam.gserviceaccount.com --role roles/trafficdirector.client
+# gcloud iam service-accounts add-iam-policy-binding --role roles/iam.workloadIdentityUser --member "serviceAccount:snowcloud-01.svc.id.goog[web/default]" k8s-web-default@snowcloud-01.iam.gserviceaccount.comk -n web annotate serviceaccount --namespace web default iam.gke.io/gcp-service-account=k8s-web-default@snowcloud-01.iam.gserviceaccount.com
+
 # Health check
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_health_check
 resource "google_compute_health_check" "quote-server-grpc-health-check" {
@@ -9,9 +15,9 @@ resource "google_compute_health_check" "quote-server-grpc-health-check" {
   grpc_health_check {
     //    port_name          = "health-check-port"
     //    grpc_service_name  = "Quote"
-    port_specification = "USE_FIXED_PORT"
+    port_specification = "USE_SERVING_PORT"
     # TODO: Automate
-    port = var.port_grpc
+    //    port = var.port_grpc
   }
 }
 

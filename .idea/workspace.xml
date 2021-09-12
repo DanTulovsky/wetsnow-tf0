@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="recreate strategy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/web-static/20-deployment.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/web-static/20-deployment.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/quote-server/30-traffic-director-config.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/30-traffic-director-config.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +76,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="optimize.imports.on.save" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -139,13 +139,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628909558379</updated>
-    </task>
-    <task id="LOCAL-00015" summary="handle errors">
-      <created>1631325167787</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1631325167787</updated>
     </task>
     <task id="LOCAL-00016" summary="new release">
       <created>1631325199795</created>
@@ -483,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631398869026</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="recreate strategy">
+      <created>1631398941861</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1631398941861</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
