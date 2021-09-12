@@ -18,7 +18,7 @@ resource "google_compute_health_check" "quote-server-grpc-health-check" {
 
   grpc_health_check {
     //    port_name          = "health-check-port"
-    grpc_service_name  = "health.v1.Health"
+    grpc_service_name  = "grpc.health.v1.Health"
     port_specification = "USE_SERVING_PORT"
     # TODO: Automate
     //    port = var.port_grpc
@@ -70,6 +70,9 @@ resource "google_compute_backend_service" "quote-server-backend-service" {
     group                 = "projects/snowcloud-01/zones/us-central1-c/networkEndpointGroups/k8s1-c5c88bb8-web-quote-server-grpc-8081-dde5610f"
     balancing_mode        = "RATE"
     max_rate_per_endpoint = 5
+  }
+  log_config {
+    enable = true
   }
 }
 
