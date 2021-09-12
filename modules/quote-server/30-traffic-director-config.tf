@@ -28,6 +28,7 @@ resource "google_compute_health_check" "quote-server-grpc-health-check" {
 # Firewall rule
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_firewall
 resource "google_compute_firewall" "quote-server-grpc-gke-allow-health-checks" {
+  provider = google-beta
   # TODO: set automatically
   project = "snowcloud-01"
   name    = "grpc-gke-allow-health-checks"
@@ -57,7 +58,8 @@ resource "google_compute_firewall" "quote-server-grpc-gke-allow-health-checks" {
 # Backend service
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_backend_service
 resource "google_compute_backend_service" "quote-server-backend-service" {
-  name = "quote-server-grpc-backend-service"
+  provider = google-beta
+  name     = "quote-server-grpc-backend-service"
   health_checks = [
     google_compute_health_check.quote-server-grpc-health-check.id
   ]
@@ -74,6 +76,7 @@ resource "google_compute_backend_service" "quote-server-backend-service" {
 # url-map
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_url_map
 resource "google_compute_url_map" "quote-server-urlmap" {
+  provider        = google-beta
   name            = "quote-server-urlmap"
   description     = "quote server grpc url map"
   default_service = google_compute_backend_service.quote-server-backend-service.id
@@ -103,6 +106,7 @@ resource "google_compute_url_map" "quote-server-urlmap" {
 #  target gRPC proxy
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_target_grpc_proxy
 resource "google_compute_target_grpc_proxy" "quote-server-grpc-proxy" {
+  provider               = google-beta
   name                   = "proxy"
   url_map                = google_compute_url_map.quote-server-urlmap.id
   validate_for_proxyless = true
