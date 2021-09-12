@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="enable prom grpc metrics">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="add pom metrics">
+      <change beforePath="$PROJECT_DIR$/../web-static/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../web-static/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-static/server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/../web-static/server/server.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" afterDir="false" />
     </list>
@@ -139,13 +141,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628909558379</updated>
-    </task>
-    <task id="LOCAL-00036" summary="fix ports">
-      <created>1631383919985</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1631383919985</updated>
     </task>
     <task id="LOCAL-00037" summary="fix ports">
       <created>1631383976592</created>
@@ -483,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631462277200</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="new releases">
+      <created>1631462310542</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1631462310542</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,8 +505,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="network" />
-    <MESSAGE value="set project" />
     <MESSAGE value="enable xds" />
     <MESSAGE value="enable xds initContainer" />
     <MESSAGE value="Fix config" />
@@ -528,7 +528,9 @@
     <MESSAGE value="set proper network name" />
     <MESSAGE value="put back http service" />
     <MESSAGE value="enable prom grpc metrics" />
-    <option name="LAST_COMMIT_MESSAGE" value="enable prom grpc metrics" />
+    <MESSAGE value="new releases" />
+    <MESSAGE value="add pom metrics" />
+    <option name="LAST_COMMIT_MESSAGE" value="add pom metrics" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
