@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="recreate strategy">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="user serving port">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/quote-server/30-traffic-director-config.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/30-traffic-director-config.tf" afterDir="false" />
     </list>
@@ -139,13 +139,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628909558379</updated>
-    </task>
-    <task id="LOCAL-00016" summary="new release">
-      <created>1631325199795</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1631325199795</updated>
     </task>
     <task id="LOCAL-00017" summary="fix flag">
       <created>1631325751590</created>
@@ -483,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631398941861</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="user serving port">
+      <created>1631412282740</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1631412282740</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,7 +503,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fqdn for network endpoint group" />
     <MESSAGE value="fix ports" />
     <MESSAGE value="fixed port" />
     <MESSAGE value="disable network policy" />
@@ -528,7 +527,8 @@
     <MESSAGE value="put container in the right binary" />
     <MESSAGE value="fix volume_mount" />
     <MESSAGE value="recreate strategy" />
-    <option name="LAST_COMMIT_MESSAGE" value="recreate strategy" />
+    <MESSAGE value="user serving port" />
+    <option name="LAST_COMMIT_MESSAGE" value="user serving port" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

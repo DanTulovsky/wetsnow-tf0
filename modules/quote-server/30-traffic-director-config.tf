@@ -11,6 +11,9 @@ resource "google_compute_health_check" "quote-server-grpc-health-check" {
 
   timeout_sec        = 1
   check_interval_sec = 1
+  log_config {
+    enable = true
+  }
 
   grpc_health_check {
     //    port_name          = "health-check-port"
