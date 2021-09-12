@@ -71,10 +71,6 @@ resource "google_compute_backend_service" "quote-server-backend-service" {
     balancing_mode        = "RATE"
     max_rate_per_endpoint = 5
   }
-  log_config {
-    # does not work for grpc
-    enable = false
-  }
 }
 
 # url-map
