@@ -7,7 +7,8 @@
 # Health check
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_health_check
 resource "google_compute_health_check" "quote-server-grpc-health-check" {
-  name = "quote-server-grpc-health-check"
+  provider = google-beta
+  name     = "quote-server-grpc-health-check"
 
   timeout_sec        = 1
   check_interval_sec = 1
