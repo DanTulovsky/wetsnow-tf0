@@ -33,19 +33,20 @@
 
 resource "kubernetes_service" "quote_server_grpc" {
   metadata {
-    name      = "quote-server-grpc"
+    name = "quote-server-grpc"
     namespace = var.namespace
 
     labels = {
-      app       = "quote"
+      app = "quote"
       component = "server-http"
-      service   = "quote-server-grpc"
-      tier      = "production"
+      service = "quote-server-grpc"
+      tier = "production"
     }
 
     annotations = {
       # configure for traffic director; allows sending traffic directly to the pods, bypassing the node
-      "cloud.google.com/neg" : "{\"exposed_ports\":{\"${var.port_grpc}\":{}}}"
+      # TODO automate and sync with configs
+      "cloud.google.com/neg" : "{\"exposed_ports\":{\"${var.port_grpc}\":{\"name\":\"k8s-quote-server-neg\"}}}"
     }
   }
 
@@ -57,20 +58,20 @@ resource "kubernetes_service" "quote_server_grpc" {
 
   spec {
     port {
-      name        = "grpc"
-      protocol    = "TCP"
-      port        = var.port_grpc
+      name = "grpc"
+      protocol = "TCP"
+      port = var.port_grpc
       target_port = var.port_grpc
     }
 
     selector = {
-      app       = "quote"
+      app = "quote"
       component = "server-http"
-      tier      = "production"
+      tier = "production"
     }
 
-    cluster_ip       = "None"
-    type             = "ClusterIP"
+    cluster_ip = "None"
+    type = "ClusterIP"
     session_affinity = "None"
   }
 }

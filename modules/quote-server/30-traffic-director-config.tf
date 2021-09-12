@@ -66,7 +66,7 @@ resource "google_compute_backend_service" "quote-server-backend-service" {
   protocol              = "GRPC"
   backend {
     # TODO: Automate; get from neg-status annotation on Service
-    group                 = "projects/snowcloud-01/zones/us-central1-c/networkEndpointGroups/k8s1-c5c88bb8-web-quote-server-grpc-8081-dde5610f"
+    group                 = "projects/snowcloud-01/zones/us-central1-c/networkEndpointGroups/k8s-quote-server-neg"
     balancing_mode        = "RATE"
     max_rate_per_endpoint = 5
   }
