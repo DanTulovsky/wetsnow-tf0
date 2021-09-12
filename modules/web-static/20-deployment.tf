@@ -64,7 +64,12 @@ resource "kubernetes_deployment" "frontend" {
           name = "grpc-td-init"
           args = [
             "--output",
-            "/tmp/bootstrap/td-grpc-bootstrap.json"
+            "/tmp/bootstrap/td-grpc-bootstrap.json",
+            "--vpc-network-name",
+            "vpc0",
+            "--gcp-project-number",
+            "53644033433"
+
           ]
           image             = "gcr.io/trafficdirector-prod/td-grpc-bootstrap:0.11.0"
           image_pull_policy = "IfNotPresent"
