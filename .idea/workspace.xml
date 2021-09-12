@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix health service name">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="disable logs">
       <change beforePath="$PROJECT_DIR$/modules/quote-server/30-traffic-director-config.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/30-traffic-director-config.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,13 +138,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628909558379</updated>
-    </task>
-    <task id="LOCAL-00026" summary="new release">
-      <created>1631327753724</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1631327753724</updated>
     </task>
     <task id="LOCAL-00027" summary="Don't block">
       <created>1631328459041</created>
@@ -483,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631454578831</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="disable logs">
+      <created>1631454777030</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1631454777030</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,7 +502,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="set status" />
     <MESSAGE value="new release" />
     <MESSAGE value="url map" />
     <MESSAGE value="service" />
@@ -528,7 +526,8 @@
     <MESSAGE value="s/http/grpc/g" />
     <MESSAGE value="health check service name" />
     <MESSAGE value="fix health service name" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix health service name" />
+    <MESSAGE value="disable logs" />
+    <option name="LAST_COMMIT_MESSAGE" value="disable logs" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
