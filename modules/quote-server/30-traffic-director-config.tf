@@ -72,7 +72,8 @@ resource "google_compute_backend_service" "quote-server-backend-service" {
     max_rate_per_endpoint = 5
   }
   log_config {
-    enable = true
+    # does not work for grpc
+    enable = false
   }
 }
 
