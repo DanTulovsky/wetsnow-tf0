@@ -10,8 +10,8 @@ resource "google_compute_health_check" "quote-server-grpc-health-check" {
   provider = google-beta
   name     = "quote-server-grpc-health-check"
 
-  timeout_sec        = 1
-  check_interval_sec = 1
+  timeout_sec        = 5
+  check_interval_sec = 5
   log_config {
     enable = true
   }
