@@ -2,9 +2,9 @@ locals {
   release = "release"
 }
 
-resource "kubernetes_deployment" "quote_server_http" {
+resource "kubernetes_deployment" "quote_server_grpc" {
   metadata {
-    name      = "quote-server-http"
+    name      = "quote-server-grpc"
     namespace = var.namespace
   }
 

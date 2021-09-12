@@ -103,7 +103,7 @@ resource "kubernetes_deployment" "frontend" {
             "--version=${var.app_version}",
             "--enable_kafka=false",
             "--kafka_broker=kafka0.kafka",
-            "--quote_server=http://quote-server-http.web:8080",
+            //            "--quote_server=http://quote-server-http.web:8080",
             "--quote_server_grpc=xds:///quote-server-gke:8000"
           ]
 

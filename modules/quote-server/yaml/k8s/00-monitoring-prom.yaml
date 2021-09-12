@@ -2,7 +2,7 @@
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
-  name: quote-server-http-monitor
+  name: quote-server-grpc-monitor
   namespace: ${namespace}
   labels:
     release: prometheus
@@ -11,7 +11,7 @@ spec:
     any: true
   selector:
     matchLabels:
-      service: quote-server-http
+      service: quote-server-grpc
   endpoints:
     - port: http
   podTargetLabels:
