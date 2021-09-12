@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="set neg name">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="set proper network name">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/web-static/20-deployment.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/web-static/20-deployment.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/quote-server/10-service.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/10-service.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/quote-server/20-deployment.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/20-deployment.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,13 +140,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628909558379</updated>
-    </task>
-    <task id="LOCAL-00033" summary="attach backend to neg">
-      <created>1631380201479</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1631380201479</updated>
     </task>
     <task id="LOCAL-00034" summary="fqdn for network endpoint group">
       <created>1631380443978</created>
@@ -483,7 +477,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631456994081</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="set proper network name">
+      <created>1631460505248</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1631460505248</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,7 +504,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="correct resource" />
     <MESSAGE value="ip address" />
     <MESSAGE value="protocol" />
     <MESSAGE value="network" />
@@ -528,7 +528,8 @@
     <MESSAGE value="cleanup" />
     <MESSAGE value="increase timeout" />
     <MESSAGE value="set neg name" />
-    <option name="LAST_COMMIT_MESSAGE" value="set neg name" />
+    <MESSAGE value="set proper network name" />
+    <option name="LAST_COMMIT_MESSAGE" value="set proper network name" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

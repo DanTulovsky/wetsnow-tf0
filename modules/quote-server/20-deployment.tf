@@ -79,10 +79,10 @@ resource "kubernetes_deployment" "quote_server_grpc" {
             "--version=${var.app_version}",
           ]
 
-          //          port {
-          //            name           = "http"
-          //            container_port = var.port_http
-          //          }
+          port {
+            name           = "http"
+            container_port = var.port_http
+          }
 
           port {
             name           = "grpc"
