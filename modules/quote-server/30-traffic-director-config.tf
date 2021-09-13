@@ -75,9 +75,13 @@ resource "google_compute_backend_service" "quote-server-backend-service" {
 # url-map
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_url_map
 resource "google_compute_url_map" "quote-server-urlmap" {
-  provider        = google-beta
-  name            = "quote-server-urlmap"
-  description     = "quote server grpc url map"
+  provider    = google-beta
+  name        = "quote-server-urlmap"
+  description = "quote server grpc url map"
+  # The defaultService, defaultRouteAction, defaultUrlRedirect, and headerAction of the
+  # URL map are not used by proxyless gRPC services. If a matching host rule is not found when a
+  # proxyless gRPC client looks up a service name, Traffic Director returns a name lookup error
+  # instead of using the default service or action of the URL map.
   default_service = google_compute_backend_service.quote-server-backend-service.id
 
   host_rule {
