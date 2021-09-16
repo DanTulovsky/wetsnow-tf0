@@ -25,6 +25,8 @@ module "gke" {
   network_policy           = true
   remove_default_node_pool = true
   initial_node_count       = 1
+  node_metadata            = "GKE_METADATA_SERVER"
+  identity_namespace       = "enabled"
 
   node_pools = [
     {
