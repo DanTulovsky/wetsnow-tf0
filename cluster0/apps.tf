@@ -25,7 +25,8 @@ module "argo" {
 module "http-ingress" {
   source = "../modules/http-ingress"
   depends_on = [
-  module.ambassador]
+    module.ambassador
+  ]
   namespace = module.common.namespaces.ambassador
 }
 # module "kafka" {
@@ -57,6 +58,7 @@ module "open-telemetry" {
   gke                    = true
   cluster_name           = "cluster0"
   prom_enabled           = true
+  image_version          = "0.35.0"
 }
 # module "postgres" {
 #   source         = "./modules/postgres"
@@ -75,7 +77,8 @@ module "prometheus" {
 module "quote-server" {
   source = "../modules/quote-server"
   depends_on = [
-  module.common]
+    module.common
+  ]
   namespace              = module.common.namespaces.web
   app_version            = var.quote_server.app_version
   lightstep_access_token = var.lightstep_secrets.access_token
