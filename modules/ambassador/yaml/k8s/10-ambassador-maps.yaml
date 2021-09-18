@@ -33,6 +33,7 @@ spec:
   prefix: /
   host: wetsnow.com
   resolver: endpoint
+  timeout_ms: 2000 # /quote is slow
   service: static-web-frontend.web:8080
 ---
 apiVersion: getambassador.io/v2
@@ -44,6 +45,7 @@ spec:
   prefix: /
   host: www.wetsnow.com
   resolver: endpoint
+  timeout_ms: 2000 # /quote is slow
   service: static-web-frontend.web:8080
 ---
 apiVersion: getambassador.io/v2
