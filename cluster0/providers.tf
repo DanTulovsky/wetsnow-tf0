@@ -13,9 +13,9 @@ provider "helm" {
       data.google_container_cluster.cluster0.master_auth[0].cluster_ca_certificate,
     )
   }
-  experiments {
-    manifest = true
-  }
+  #  experiments {
+  #    manifest = true
+  #  }
 }
 
 provider "kubectl" {
