@@ -8,7 +8,7 @@ image:
   pullPolicy: IfNotPresent
   repository: grafana/grafana
   sha: ""
-  tag: 8.1.0-beta3
+  tag: 8.2.0-beta1
 
 deploymentStrategy:
   type: "Recreate"
@@ -31,8 +31,8 @@ service:
   port: 80
   targetPort:
     "grafana"
-    # targetPort: 4181 To be used with a proxy extraContainer
-  annotations: {}
+  # targetPort: 4181 To be used with a proxy extraContainer
+  annotations: { }
   labels: { "service": "grafana" }
   portName: service
 
@@ -113,6 +113,10 @@ dashboardProviders:
 #
 dashboards:
   default:
+    go-grpc1:
+      gnetId: 9186
+      revision: 4
+      datasource: Prometheus
     ambassador:
       gnetId: 10434
       revision: 1
@@ -195,32 +199,32 @@ grafana.ini:
     allow_loading_unsigned_plugins: "grafana-lightstep-datasource,grafana-lightstep-graph,lightstep-metrics-datasource,lightstep-app,grafana-kubernetes-datasource,prometheus-kubernetes-nodeinfo-panel,prometheus-kubernetes-podnav-panel,grafana-kubernetes-app"
     plugin_admin_enabled: true
     enable_alpha: true
-#  auth:
-#    oauth_auto_login: false
-#    signout_redirect_url: "https://login.wetsnow.com/auth/realms/wetsnow/protocol/openid-connect/logout?redirect_uri=https%3A%2F%2Flogin.wetsnow.com%2Fauth%2Frealms%2Fwetsnow%2Faccount%2F%23%2F"
-#  auth.generic_oauth:
-#    enabled: true
-#    name: "Keycloak"
-#    allow_sign_up: false
-#    auth_url: "https://login.wetsnow.com/auth/realms/wetsnow/protocol/openid-connect/auth"
-#    token_url: "https://login.wetsnow.com/auth/realms/wetsnow/protocol/openid-connect/token"
-#    api_url: "https://login.wetsnow.com/auth/realms/wetsnow/protocol/openid-connect/userinfo"
-#    scopes: "email profile"
-#    # TODO: #3 Figure out why this breaks terraform
-#    # role_attribute_path: "contains(roles[*], 'admin') && 'Admin' || contains(roles[*], 'editor') && 'Editor' || 'Viewer'"
-#  remote_cache:
-#    type: "database"
-#  database:
-#    type: postgres
-#    # host: pgsql-postgresql.db:5432
-#    host: db1.gke-internal.wetsnow.com:5432
-#    name: grafana
-#    user: grafana
-#    log_queries: false
-#    ssl_mode: disable
-#    conn_max_lifetime: 2000
-#    max_open_conn: 300
-#    max_idle_conn: 2
+  #  auth:
+  #    oauth_auto_login: false
+  #    signout_redirect_url: "https://login.wetsnow.com/auth/realms/wetsnow/protocol/openid-connect/logout?redirect_uri=https%3A%2F%2Flogin.wetsnow.com%2Fauth%2Frealms%2Fwetsnow%2Faccount%2F%23%2F"
+  #  auth.generic_oauth:
+  #    enabled: true
+  #    name: "Keycloak"
+  #    allow_sign_up: false
+  #    auth_url: "https://login.wetsnow.com/auth/realms/wetsnow/protocol/openid-connect/auth"
+  #    token_url: "https://login.wetsnow.com/auth/realms/wetsnow/protocol/openid-connect/token"
+  #    api_url: "https://login.wetsnow.com/auth/realms/wetsnow/protocol/openid-connect/userinfo"
+  #    scopes: "email profile"
+  #    # TODO: #3 Figure out why this breaks terraform
+  #    # role_attribute_path: "contains(roles[*], 'admin') && 'Admin' || contains(roles[*], 'editor') && 'Editor' || 'Viewer'"
+  #  remote_cache:
+  #    type: "database"
+  #  database:
+  #    type: postgres
+  #    # host: pgsql-postgresql.db:5432
+  #    host: db1.gke-internal.wetsnow.com:5432
+  #    name: grafana
+  #    user: grafana
+  #    log_queries: false
+  #    ssl_mode: disable
+  #    conn_max_lifetime: 2000
+  #    max_open_conn: 300
+  #    max_idle_conn: 2
   tracing.jaeger:
     # env used below
     address: otel-collector.observability:6831
