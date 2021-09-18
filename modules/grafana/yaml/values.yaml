@@ -117,6 +117,10 @@ dashboards:
       gnetId: 9186
       revision: 4
       datasource: Prometheus
+    gRPC-go:
+      gnetId: 14765
+      revision: 3
+      datasource: Prometheus
     ambassador:
       gnetId: 10434
       revision: 1
