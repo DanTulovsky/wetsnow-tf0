@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="prom version">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/variables.tf" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="otel version">
       <change beforePath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/prometheus/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/prometheus/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/prometheus/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/prometheus/variables.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +154,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add rollouts.wetsnow.com to cert." />
     <MESSAGE value="fix cert name" />
     <MESSAGE value="Upgrade argo to 1.0.3" />
     <MESSAGE value="rework argo version as variable." />
@@ -184,7 +178,8 @@
     <MESSAGE value="don't set chart version" />
     <MESSAGE value="grafana version" />
     <MESSAGE value="prom version" />
-    <option name="LAST_COMMIT_MESSAGE" value="prom version" />
+    <MESSAGE value="otel version" />
+    <option name="LAST_COMMIT_MESSAGE" value="otel version" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
