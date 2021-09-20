@@ -1,19 +1,21 @@
 module "gke" {
   # depends_on = [google_sql_database_instance.master]
 
-  source                          = "terraform-google-modules/kubernetes-engine/google"
-  version                         = "14.0.1"
-  project_id                      = var.project
-  name                            = var.cluster_info.name
-  region                          = var.region
-  regional                        = false
-  release_channel                 = "RAPID"
-  zones                           = var.zones
-  network                         = var.cluster_info.vpc_name
-  subnetwork                      = var.cluster_info.vpc_name
-  enable_shielded_nodes           = true
-  ip_range_pods                   = "" # defaults
-  ip_range_services               = "" # defaults
+  source                = "terraform-google-modules/kubernetes-engine/google"
+  version               = "14.0.1"
+  project_id            = var.project
+  name                  = var.cluster_info.name
+  region                = var.region
+  regional              = false
+  release_channel       = "RAPID"
+  zones                 = var.zones
+  network               = var.cluster_info.vpc_name
+  subnetwork            = var.cluster_info.vpc_name
+  enable_shielded_nodes = true
+  ip_range_pods         = ""
+  # defaults
+  ip_range_services = ""
+  # defaults
   http_load_balancing             = true
   horizontal_pod_autoscaling      = false
   enable_vertical_pod_autoscaling = false
@@ -23,6 +25,8 @@ module "gke" {
   network_policy           = true
   remove_default_node_pool = true
   initial_node_count       = 1
+  node_metadata            = "GKE_METADATA_SERVER"
+  identity_namespace       = "enabled"
 
   node_pools = [
     {
@@ -65,6 +69,7 @@ module "gke" {
     all = [
       "https://www.googleapis.com/auth/logging.write",
       "https://www.googleapis.com/auth/monitoring",
+      # required for traffic director
       "https://www.googleapis.com/auth/cloud-platform",
     ]
 
@@ -102,7 +107,9 @@ module "gke" {
   }
 
   node_pools_tags = {
-    all = []
+    all = [
+      "allow-health-checks"
+    ]
 
     default-node-pool = [
       "default-node-pool",

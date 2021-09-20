@@ -2,7 +2,7 @@
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
-  name: quote-server-http-monitor
+  name: quote-server-grpc-monitor
   namespace: ${namespace}
   labels:
     release: prometheus
