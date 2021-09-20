@@ -8,7 +8,7 @@ quote_server = {
   app_version = "0.0.22"
 }
 argo_rollouts = {
-  app_version = "v1.0.6"
+  app_version = "v1.0.3"
 }
 otel_collector = {
   app_version = "0.35.0"
