@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="ambassador version">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="back to 1.0.3">
       <change beforePath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -155,7 +154,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix providers again." />
     <MESSAGE value="add yaml files" />
     <MESSAGE value="add namespace" />
     <MESSAGE value="namespace for service_account." />
@@ -180,7 +178,8 @@
     <MESSAGE value="headers 0.22" />
     <MESSAGE value="set app versions in the same place" />
     <MESSAGE value="ambassador version" />
-    <option name="LAST_COMMIT_MESSAGE" value="ambassador version" />
+    <MESSAGE value="back to 1.0.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="back to 1.0.3" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

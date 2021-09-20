@@ -1,18 +1,18 @@
 
 # Before updating this, make sure an image with this tag exists.
 # TODO: #5 Can this be automatically checked?
-web_static = {
-  app_version = "0.0.42"
-}
-quote_server = {
-  app_version = "0.0.22"
+ambassador = {
+  app_version = "1.14.1"
 }
 argo_rollouts = {
   app_version = "v1.0.3"
 }
+quote_server = {
+  app_version = "0.0.22"
+}
 otel_collector = {
   app_version = "0.35.0"
 }
-ambassador = {
-  app_version = "1.14.1"
+web_static = {
+  app_version = "0.0.42"
 }
