@@ -76,6 +76,7 @@ module "prometheus" {
   enabled                = true
   cluster_name           = "cluster0"
   operator_version       = var.prometheus.operator_version
+  otel_sidecar_version   = var.prometheus.otel_sidecar_version
 }
 module "quote-server" {
   source = "../modules/quote-server"

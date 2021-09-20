@@ -11,7 +11,8 @@ grafana = {
   app_version = "8.2.0-beta1"
 }
 prometheus = {
-  opertator_version = "0.0.42"
+  operator_version     = "0.0.42"
+  otel_sidecar_version = "v0.27.0"
 }
 quote_server = {
   app_version = "0.0.22"
