@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="0.41">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="v 0.21">
       <change beforePath="$PROJECT_DIR$/../quote-server/cmd/http/run.go" beforeDir="false" afterPath="$PROJECT_DIR$/../quote-server/cmd/http/run.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-static/server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/../web-static/server/server.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" afterDir="false" />
     </list>
@@ -17,13 +16,14 @@
   </component>
   <component name="GOROOT" url="file:///usr/local/Cellar/go/1.17/libexec" />
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="PUSH_TAGS">
       <GitPushTagMode>
         <option name="argument" value="--tags" />
         <option name="title" value="All" />
       </GitPushTagMode>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../quote-server" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -142,7 +142,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Upgrade grafana to 8.0.0" />
     <MESSAGE value="grafana plugin settings." />
     <MESSAGE value="dashboard for argo" />
     <MESSAGE value="add missing provider" />
@@ -167,7 +166,8 @@
     <MESSAGE value="fix" />
     <MESSAGE value="default src self." />
     <MESSAGE value="0.41" />
-    <option name="LAST_COMMIT_MESSAGE" value="0.41" />
+    <MESSAGE value="v 0.21" />
+    <option name="LAST_COMMIT_MESSAGE" value="v 0.21" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
