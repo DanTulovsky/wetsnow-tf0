@@ -19,7 +19,7 @@ module "ambassador" {
 module "argo" {
   source       = "../modules/argo"
   namespace    = module.common.namespaces.argo-rollouts
-  argo_version = "v1.0.3"
+  argo_version = var.argo_rollouts.app_version
 }
 
 module "http-ingress" {
@@ -58,7 +58,7 @@ module "open-telemetry" {
   gke                    = true
   cluster_name           = "cluster0"
   prom_enabled           = true
-  image_version          = "0.35.0"
+  image_version          = var.otel_collector.app_version
 }
 # module "postgres" {
 #   source         = "./modules/postgres"
