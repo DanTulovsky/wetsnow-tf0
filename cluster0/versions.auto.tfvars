@@ -2,7 +2,7 @@
 # BEfore updating this, make sure an image with this tage exists.
 # TODO: #5 Can this be automatically checked?
 web_static = {
-  app_version = "0.0.40"
+  app_version = "0.0.41"
 }
 
 quote_server = {
