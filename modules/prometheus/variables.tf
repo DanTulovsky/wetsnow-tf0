@@ -14,3 +14,7 @@ variable "enabled" {
 variable "cluster_name" {
   type = string
 }
+
+variable "operator_version" {
+  type = string
+}

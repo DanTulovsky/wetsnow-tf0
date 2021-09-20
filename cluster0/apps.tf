@@ -75,6 +75,7 @@ module "prometheus" {
   namespace              = module.common.namespaces.monitoring
   enabled                = true
   cluster_name           = "cluster0"
+  operator_version       = var.prometheus.operator_version
 }
 module "quote-server" {
   source = "../modules/quote-server"

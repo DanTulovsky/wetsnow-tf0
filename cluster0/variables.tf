@@ -111,3 +111,8 @@ variable "grafana" {
     app_version = string
   })
 }
+variable "prometheus" {
+  type = object({
+    operator_version = string
+  })
+}

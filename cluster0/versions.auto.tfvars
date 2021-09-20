@@ -10,6 +10,9 @@ argo_rollouts = {
 grafana = {
   app_version = "8.2.0-beta1"
 }
+prometheus = {
+  opertator_version = "0.0.42"
+}
 quote_server = {
   app_version = "0.0.22"
 }
