@@ -14,6 +14,7 @@ module "ambassador" {
   prom_enabled           = true
   backend_config         = "ambassador-hc-config"
   name                   = "ambassador"
+  app_version            = var.ambassador.app_version
 }
 
 module "argo" {

@@ -1,5 +1,5 @@
 resource "helm_release" "ambassador" {
-  depends_on = [kubernetes_secret.lightstep-access-token, kubectl_manifest.ambassador-backend-config, kubectl_manifest.ambassador-backend-config-iap]
+  depends_on   = [kubernetes_secret.lightstep-access-token, kubectl_manifest.ambassador-backend-config, kubectl_manifest.ambassador-backend-config-iap]
   name         = var.name
   namespace    = var.namespace
   repository   = "https://getambassador.io"
@@ -8,10 +8,11 @@ resource "helm_release" "ambassador" {
   force_update = false
 
   values = [templatefile("${path.module}/yaml/values.yaml", {
-    licenseKey  = var.license_key
-    promEnabled = var.prom_enabled
+    licenseKey    = var.license_key
+    promEnabled   = var.prom_enabled
     backendConfig = var.backend_config
     name          = var.name
+    app_version   = var.app_version
   })]
 }
 
@@ -37,7 +38,7 @@ resource "kubectl_manifest" "ambassador-monitor" {
   yaml_body  = file("${path.module}/yaml/k8s/40-ambassador-monitor.yaml")
 }
 resource "kubectl_manifest" "ambassador-backend-config" {
-  yaml_body  = file("${path.module}/yaml/k8s-gcp/backend-config.yaml")
+  yaml_body = file("${path.module}/yaml/k8s-gcp/backend-config.yaml")
 }
 # END: All of these files must have exactly 1 manifest in them
 
@@ -53,7 +54,7 @@ resource "kubectl_manifest" "test" {
 
 // IAP
 resource "kubectl_manifest" "ambassador-backend-config-iap" {
-  yaml_body  = file("${path.module}/yaml/k8s-gcp/backend-config-iap.yaml")
+  yaml_body = file("${path.module}/yaml/k8s-gcp/backend-config-iap.yaml")
 }
 
 resource "kubernetes_service" "ambassador-iap" {
@@ -65,28 +66,28 @@ resource "kubernetes_service" "ambassador-iap" {
     ]
   }
   metadata {
-    name = "ambassador-iap"
+    name      = "ambassador-iap"
     namespace = var.namespace
     annotations = {
-      "cloud.google.com/neg": "{\"ingress\": true}"
-      "cloud.google.com/backend-config": "{\"default\": \"${kubectl_manifest.ambassador-backend-config-iap.name}\"}"
-      "cloud.google.com/app-protocols": "{\"grpc\": \"HTTP2\"}"
+      "cloud.google.com/neg" : "{\"ingress\": true}"
+      "cloud.google.com/backend-config" : "{\"default\": \"${kubectl_manifest.ambassador-backend-config-iap.name}\"}"
+      "cloud.google.com/app-protocols" : "{\"grpc\": \"HTTP2\"}"
     }
   }
   spec {
     selector = {
       "app.kubernetes.io/instance" = "ambassador"
-      "app.kubernetes.io/name" = "ambassador"
+      "app.kubernetes.io/name"     = "ambassador"
     }
     port {
       port        = 8080
       target_port = 8080
-      name = "http"
+      name        = "http"
     }
     port {
       port        = 8443
       target_port = 8443
-      name = "grpc"
+      name        = "grpc"
     }
 
     type = "NodePort"

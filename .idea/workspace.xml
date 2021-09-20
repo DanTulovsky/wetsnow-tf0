@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="headers 0.22">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="set app versions in the same place">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cluster0/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/variables.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ambassador/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ambassador/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ambassador/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/yaml/values.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +160,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="dashboard for argo" />
     <MESSAGE value="add missing provider" />
     <MESSAGE value="fix providers again." />
     <MESSAGE value="add yaml files" />
@@ -182,7 +184,8 @@
     <MESSAGE value="0.41" />
     <MESSAGE value="v 0.21" />
     <MESSAGE value="headers 0.22" />
-    <option name="LAST_COMMIT_MESSAGE" value="headers 0.22" />
+    <MESSAGE value="set app versions in the same place" />
+    <option name="LAST_COMMIT_MESSAGE" value="set app versions in the same place" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

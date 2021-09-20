@@ -101,3 +101,8 @@ variable "otel_collector" {
     app_version = string
   })
 }
+variable "ambassador" {
+  type = object({
+    app_version = string
+  })
+}

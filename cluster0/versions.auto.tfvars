@@ -13,3 +13,6 @@ argo_rollouts = {
 otel_collector = {
   app_version = "0.35.0"
 }
+ambassador = {
+  app_version = "1.14.1"
+}
