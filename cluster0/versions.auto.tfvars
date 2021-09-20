@@ -14,7 +14,7 @@ otel_collector = {
   app_version = "0.35.0"
 }
 prometheus = {
-  operator_version     = "0.0.42"
+  operator_version     = "0.50.0-debian-10-r30"
   otel_sidecar_version = "v0.27.0"
 }
 quote_server = {
