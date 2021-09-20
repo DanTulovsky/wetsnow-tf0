@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="alphabetical order">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="don't set chart version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/variables.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/grafana/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/grafana/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/grafana/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/grafana/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/grafana/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/grafana/yaml/values.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +160,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add namespace" />
     <MESSAGE value="namespace for service_account." />
     <MESSAGE value="add rollouts.wetsnow.com to ambassador." />
     <MESSAGE value="add rollouts.wetsnow.com to cert." />
@@ -181,7 +184,8 @@
     <MESSAGE value="ambassador version" />
     <MESSAGE value="back to 1.0.3" />
     <MESSAGE value="alphabetical order" />
-    <option name="LAST_COMMIT_MESSAGE" value="alphabetical order" />
+    <MESSAGE value="don't set chart version" />
+    <option name="LAST_COMMIT_MESSAGE" value="don't set chart version" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

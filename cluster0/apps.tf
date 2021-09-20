@@ -45,6 +45,7 @@ module "grafana" {
   namespace      = module.common.namespaces.monitoring
   prom_enabled   = true
   oauth_secret   = ""
+  app_version    = var.grafana.app_version
 }
 //module "kyverno" {
 //  source    = "../modules/kyverno"

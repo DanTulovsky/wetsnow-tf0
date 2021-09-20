@@ -106,3 +106,8 @@ variable "ambassador" {
     app_version = string
   })
 }
+variable "grafana" {
+  type = object({
+    app_version = string
+  })
+}
