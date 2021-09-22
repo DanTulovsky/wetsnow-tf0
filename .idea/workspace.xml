@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="disable manifest">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="medium node pool">
       <change beforePath="$PROJECT_DIR$/gcp/gke.tf" beforeDir="false" afterPath="$PROJECT_DIR$/gcp/gke.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -151,13 +150,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628909558379</updated>
-    </task>
-    <task id="LOCAL-00051" summary="ip address">
-      <created>1631387077950</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1631387077951</updated>
     </task>
     <task id="LOCAL-00052" summary="protocol">
       <created>1631387105548</created>
@@ -495,7 +487,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631969831353</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="medium node pool">
+      <created>1632322227683</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1632322227683</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -515,7 +514,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix health service name" />
     <MESSAGE value="disable logs" />
     <MESSAGE value="I dunno, /Check?" />
     <MESSAGE value="remove log lines" />
@@ -540,7 +538,8 @@
     <MESSAGE value="enable manifest" />
     <MESSAGE value="grpc-go" />
     <MESSAGE value="disable manifest" />
-    <option name="LAST_COMMIT_MESSAGE" value="disable manifest" />
+    <MESSAGE value="medium node pool" />
+    <option name="LAST_COMMIT_MESSAGE" value="medium node pool" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

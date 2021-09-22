@@ -51,7 +51,7 @@ module "gke" {
       machine_type = "e2-small"
       #   min_count          = 3
       #   max_count          = 3
-      node_count         = 3
+      node_count         = 0
       local_ssd_count    = 0
       disk_size_gb       = 100
       disk_type          = "pd-standard"
