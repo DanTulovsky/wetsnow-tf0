@@ -1,10 +1,25 @@
-# Before updating this, make sure an image with this tage exists.
-# TODO: #5 Can this be automatically checked?
-web_static = {
-  app_version = "0.0.38"
-}
 
+# Before updating this, make sure an image with this tag exists.
+# TODO: #5 Can this be automatically checked?
+ambassador = {
+  app_version = "1.14.1"
+}
+argo_rollouts = {
+  app_version = "v1.0.6"
+}
+grafana = {
+  app_version = "8.2.0-beta1"
+}
+otel_collector = {
+  app_version = "0.35.0"
+}
+prometheus = {
+  operator_version     = "0.50.0-debian-10-r30"
+  otel_sidecar_version = "v0.27.0"
+}
 quote_server = {
-  # git tag -a v0.0.15 -m "new release"
-  app_version = "0.0.20"
+  app_version = "0.0.22"
+}
+web_static = {
+  app_version = "0.0.42"
 }

@@ -13,11 +13,12 @@ resource "helm_release" "grafana" {
 
   values = [templatefile("${path.module}/yaml/values.yaml", {
     promEnabled = var.prom_enabled
+    app_version = var.app_version
   })]
 }
 
 resource "kubectl_manifest" "grafana-monitor" {
-  count = var.prom_enabled ? 1 : 0
+  count      = var.prom_enabled ? 1 : 0
   depends_on = [helm_release.grafana]
   yaml_body  = file("${path.module}/yaml/k8s/monitor.yaml")
 }

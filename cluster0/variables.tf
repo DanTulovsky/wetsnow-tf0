@@ -42,7 +42,7 @@ variable "grafana_secrets" {
 variable "ambassador_secrets" {
   sensitive = true
   type = object({
-    license_key                  = string
+    license_key = string
   })
 }
 
@@ -76,17 +76,44 @@ variable "kafka_secrets" {
 variable "traefik_secrets" {
   sensitive = true
   type = object({
-    token                  = string
+    token = string
   })
 }
+
+# App versions
 variable "quote_server" {
   type = object({
     app_version = string
   })
 }
-# App versions
 variable "web_static" {
   type = object({
     app_version = string
+  })
+}
+variable "argo_rollouts" {
+  type = object({
+    app_version = string
+  })
+}
+variable "otel_collector" {
+  type = object({
+    app_version = string
+  })
+}
+variable "ambassador" {
+  type = object({
+    app_version = string
+  })
+}
+variable "grafana" {
+  type = object({
+    app_version = string
+  })
+}
+variable "prometheus" {
+  type = object({
+    operator_version     = string
+    otel_sidecar_version = string
   })
 }

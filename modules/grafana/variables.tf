@@ -19,3 +19,7 @@ variable "prom_enabled" {
   type    = bool
   default = false
 }
+
+variable "app_version" {
+  type = string
+}

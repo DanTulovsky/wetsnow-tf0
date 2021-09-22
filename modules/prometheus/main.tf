@@ -11,7 +11,10 @@ resource "helm_release" "prometheus" {
   wait         = true
   force_update = false
 
-  values = [templatefile("${path.module}/yaml/values.yaml", {})]
+  values = [templatefile("${path.module}/yaml/values.yaml", {
+    operator_version     = var.operator_version
+    otel_sidecar_version = var.otel_sidecar_version
+  })]
 }
 
 # resource "helm_release" "prometheus-pushgateway" {

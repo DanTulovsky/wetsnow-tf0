@@ -14,12 +14,13 @@ module "ambassador" {
   prom_enabled           = true
   backend_config         = "ambassador-hc-config"
   name                   = "ambassador"
+  app_version            = var.ambassador.app_version
 }
 
 module "argo" {
   source       = "../modules/argo"
   namespace    = module.common.namespaces.argo-rollouts
-  argo_version = "v1.0.3"
+  argo_version = var.argo_rollouts.app_version
 }
 
 module "http-ingress" {
@@ -44,6 +45,7 @@ module "grafana" {
   namespace      = module.common.namespaces.monitoring
   prom_enabled   = true
   oauth_secret   = ""
+  app_version    = var.grafana.app_version
 }
 //module "kyverno" {
 //  source    = "../modules/kyverno"
@@ -58,7 +60,7 @@ module "open-telemetry" {
   gke                    = true
   cluster_name           = "cluster0"
   prom_enabled           = true
-  image_version          = "0.35.0"
+  image_version          = var.otel_collector.app_version
 }
 # module "postgres" {
 #   source         = "./modules/postgres"
@@ -73,6 +75,8 @@ module "prometheus" {
   namespace              = module.common.namespaces.monitoring
   enabled                = true
   cluster_name           = "cluster0"
+  operator_version       = var.prometheus.operator_version
+  otel_sidecar_version   = var.prometheus.otel_sidecar_version
 }
 module "quote-server" {
   source = "../modules/quote-server"

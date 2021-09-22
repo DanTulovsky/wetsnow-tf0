@@ -14,3 +14,9 @@ variable "enabled" {
 variable "cluster_name" {
   type = string
 }
+variable "operator_version" {
+  type = string
+}
+variable "otel_sidecar_version" {
+  type = string
+}

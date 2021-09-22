@@ -13,14 +13,17 @@ variable "namespace" {
 }
 
 variable "backend_config" {
-  type= string
+  type = string
 }
 
 variable "name" {
-  type= string
+  type = string
 }
 
 variable "prom_enabled" {
   type    = bool
   default = false
+}
+variable "app_version" {
+  type = string
 }

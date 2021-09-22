@@ -13,7 +13,7 @@ operator:
       cpu: 10m
       memory: 64Mi
   image:
-    tag: 0.50.0-debian-10-r30
+    tag: ${operator_version}
 prometheus:
   retention: 7d
   resources:
