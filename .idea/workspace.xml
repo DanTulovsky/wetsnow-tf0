@@ -4,21 +4,15 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="increase polling interval">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="cleanup">
+      <change afterPath="$PROJECT_DIR$/modules/common/secrets.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/common/yaml/k8s/secret-lightstep-access-token.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/kafka/.terraform.lock.hcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/kafka/main.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/kafka/providers.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/kafka/topics.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/kafka/variables.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/kafka/yaml/kowl-values.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/kafka/yaml/values.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/kubernetes-external-secrets/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/kubernetes-external-secrets/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/scope/.terraform.lock.hcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/scope/main.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/scope/providers.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/scope/variables.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/scope/yaml/k8s/scope.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/common/providers.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/common/providers.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/common/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/common/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/quote-server/20-deployment.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/20-deployment.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/quote-server/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/variables.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +75,7 @@
     <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/cluster0/sensitive.auto.tfvars" />
-    <property name="com.google.cloudcode.ide_session_index" value="20210926_0003" />
+    <property name="com.google.cloudcode.ide_session_index" value="20210926_0005" />
     <property name="format.on.save" value="true" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
@@ -93,7 +87,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="optimize.imports.on.save" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="com.intellij.kubernetes.config.KubernetesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -104,11 +98,11 @@
       <recent name="$PROJECT_DIR$/modules/ambassador/yaml/k8s-iap" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/modules/common/yaml/k8s" />
+      <recent name="$PROJECT_DIR$/modules/common" />
       <recent name="$PROJECT_DIR$/modules/argo/yaml/k8s" />
       <recent name="$PROJECT_DIR$/cluster0/yaml/k8s" />
       <recent name="$PROJECT_DIR$/modules/prometheus/yaml" />
-      <recent name="$PROJECT_DIR$/modules/prometheus" />
-      <recent name="$PROJECT_DIR$/modules/ambassador/yaml/k8s" />
     </key>
   </component>
   <component name="RunManager" selected="Makefile Target.proto">
@@ -163,13 +157,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628909558379</updated>
-    </task>
-    <task id="LOCAL-00064" summary="recreate strategy">
-      <created>1631398941861</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1631398941861</updated>
     </task>
     <task id="LOCAL-00065" summary="user serving port">
       <created>1631412282740</created>
@@ -507,7 +494,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632686239843</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="cleanup">
+      <created>1632686651540</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1632686651540</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -527,7 +521,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add pom metrics" />
     <MESSAGE value="new release" />
     <MESSAGE value="monitor the http service which exports the metrics" />
     <MESSAGE value="enable prom" />
@@ -552,7 +545,8 @@
     <MESSAGE value="try 14" />
     <MESSAGE value="try65" />
     <MESSAGE value="increase polling interval" />
-    <option name="LAST_COMMIT_MESSAGE" value="increase polling interval" />
+    <MESSAGE value="cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleanup" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

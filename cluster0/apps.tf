@@ -4,6 +4,9 @@ module "common" {
   source = "../modules/common"
   # depends_on = [module.gke]
   namespaces = var.cluster_info.namespaces
+  project_id = var.project
+  # This token gets written to "lightstep-access-token" in Google Secret Manager
+  lightstep_access_token = var.lightstep_secrets.access_token
 }
 module "ambassador" {
   source = "../modules/ambassador"
@@ -79,11 +82,10 @@ module "quote-server" {
   depends_on = [
     module.common
   ]
-  namespace              = module.common.namespaces.web
-  app_version            = var.quote_server.app_version
-  lightstep_access_token = var.lightstep_secrets.access_token
-  priority_class         = module.common.priority_class.high0
-  prom_enabled           = true
+  namespace      = module.common.namespaces.web
+  app_version    = var.quote_server.app_version
+  priority_class = module.common.priority_class.high0
+  prom_enabled   = true
 }
 # module "vector" {
 #   source     = "./modules/vector"

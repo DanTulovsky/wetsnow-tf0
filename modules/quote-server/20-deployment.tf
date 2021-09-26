@@ -90,14 +90,16 @@ resource "kubernetes_deployment" "quote_server_grpc" {
           }
 
           env {
-            name  = "LS_ACCESS_TOKEN"
-            value = var.lightstep_access_token
+            name = "LS_ACCESS_TOKEN"
+            value_from {
+              secret_key_ref {
+                # Created in the "common" module and guaranteed to exist because
+                # this module depends on the "common" module.
+                name     = "lightstep_access_token"
+                optional = false
+              }
+            }
           }
-
-          # env {
-          #   name  = "LS_SERVICE_VERSION"
-          #   value = var.app_version
-          # }
 
           env {
             name  = "PORT"
