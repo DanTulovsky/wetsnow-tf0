@@ -12,9 +12,10 @@ resource "google_secret_manager_secret" "lightstep-access-token" {
 
 # Create a new version of the secret
 resource "google_secret_manager_secret_version" "lightstep-access-token-0" {
+
   provider = google-beta
 
-  secret      = google_secret_manager_secret.lightstep-access-token.secret_id
+  secret      = google_secret_manager_secret.lightstep-access-token.id
   secret_data = var.lightstep_access_token
 }
 

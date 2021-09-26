@@ -3,7 +3,8 @@ variable "namespaces" {
 }
 
 variable "lightstep_access_token" {
-  type = string
+  sensitive = true
+  type      = string
 }
 
 variable "project_id" {
