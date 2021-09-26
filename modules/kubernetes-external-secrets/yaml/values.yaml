@@ -1,3 +1,10 @@
+serviceAccount:
+  create: true
+  annotations:
+    iam.gke.io/gcp-service-account: "${serviceAccount}@${projectID}.iam.gserviceaccount.com"
+  name: ${serviceAccount}
+
+
 image:
   repository: ghcr.io/external-secrets/kubernetes-external-secrets
   tag: ${appVersion}

@@ -9,7 +9,9 @@ resource "helm_release" "kubernetes-external-secrets" {
 
   values = [
     templatefile("${path.module}/yaml/values.yaml", {
-      appVersion = var.app_version
+      appVersion     = var.app_version
+      projectID      = var.project_id
+      serviceAccount = var.service_account
     })
   ]
 }

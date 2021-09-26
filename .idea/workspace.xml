@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="cleanup and secret syncer">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="no resources">
+      <change afterPath="$PROJECT_DIR$/modules/kubernetes-external-secrets/workload_identity.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kubernetes-external-secrets/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/kubernetes-external-secrets/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kubernetes-external-secrets/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/kubernetes-external-secrets/variables.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/kubernetes-external-secrets/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/kubernetes-external-secrets/yaml/values.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +73,7 @@
     <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/cluster0/sensitive.auto.tfvars" />
-    <property name="com.google.cloudcode.ide_session_index" value="20210926_0000" />
+    <property name="com.google.cloudcode.ide_session_index" value="20210926_0001" />
     <property name="format.on.save" value="true" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
@@ -150,13 +155,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628909558379</updated>
-    </task>
-    <task id="LOCAL-00055" summary="set project">
-      <created>1631387449268</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1631387449268</updated>
     </task>
     <task id="LOCAL-00056" summary="enable xds">
       <created>1631396703298</created>
@@ -494,7 +492,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632678131828</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="no resources">
+      <created>1632678508295</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1632678508296</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -514,7 +519,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="remove log lines" />
     <MESSAGE value="try again!" />
     <MESSAGE value="cleanup" />
     <MESSAGE value="increase timeout" />
@@ -539,7 +543,8 @@
     <MESSAGE value="medium node pool" />
     <MESSAGE value="cleanup for real" />
     <MESSAGE value="cleanup and secret syncer" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleanup and secret syncer" />
+    <MESSAGE value="no resources" />
+    <option name="LAST_COMMIT_MESSAGE" value="no resources" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

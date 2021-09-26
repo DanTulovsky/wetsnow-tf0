@@ -43,6 +43,7 @@ module "kubernetes-external-secrets" {
   source      = "../modules/kubernetes-external-secrets"
   namespace   = module.common.namespaces.security
   app_version = var.kubernetes_external_secrets.app_version
+  project_id  = var.project
 }
 //module "kyverno" {
 //  source    = "../modules/kyverno"
