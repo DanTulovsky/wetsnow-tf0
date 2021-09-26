@@ -30,13 +30,6 @@ module "http-ingress" {
   ]
   namespace = module.common.namespaces.ambassador
 }
-# module "kafka" {
-#   source           = "./modules/kafka"
-#   depends_on       = [module.gke, module.prometheus]
-#   cloudhut_license = var.kafka_secrets.cloudhut_license
-#   namespace        = module.common.namespaces.kafka
-#   kafka_replica_count = 1
-# }
 module "grafana" {
   source = "../modules/grafana"
   //  depends_on     = [module.gke]

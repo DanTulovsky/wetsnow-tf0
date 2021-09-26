@@ -4,8 +4,27 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="medium node pool">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="no small pool">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gcp/gke.tf" beforeDir="false" afterPath="$PROJECT_DIR$/gcp/gke.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kafka/.terraform.lock.hcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kafka/main.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kafka/providers.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kafka/topics.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kafka/variables.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kafka/yaml/kowl-values.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kafka/yaml/values.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/keycloak/.terraform.lock.hcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/keycloak/main.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/keycloak/providers.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/keycloak/variables.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/keycloak/yaml/values.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/scope/.terraform.lock.hcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/scope/main.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/scope/providers.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/scope/variables.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/scope/yaml/k8s/scope.yaml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +87,7 @@
     <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/cluster0/sensitive.auto.tfvars" />
-    <property name="com.google.cloudcode.ide_session_index" value="20210922_0002" />
+    <property name="com.google.cloudcode.ide_session_index" value="20210925_0006" />
     <property name="format.on.save" value="true" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
@@ -150,13 +169,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628909558379</updated>
-    </task>
-    <task id="LOCAL-00052" summary="protocol">
-      <created>1631387105548</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1631387105548</updated>
     </task>
     <task id="LOCAL-00053" summary="network">
       <created>1631387157636</created>
@@ -494,7 +506,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632322227683</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="no small pool">
+      <created>1632322659965</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1632322659965</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -514,7 +533,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="disable logs" />
     <MESSAGE value="I dunno, /Check?" />
     <MESSAGE value="remove log lines" />
     <MESSAGE value="try again!" />
@@ -539,7 +557,8 @@
     <MESSAGE value="grpc-go" />
     <MESSAGE value="disable manifest" />
     <MESSAGE value="medium node pool" />
-    <option name="LAST_COMMIT_MESSAGE" value="medium node pool" />
+    <MESSAGE value="no small pool" />
+    <option name="LAST_COMMIT_MESSAGE" value="no small pool" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
