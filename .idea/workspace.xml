@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="no resources">
-      <change afterPath="$PROJECT_DIR$/modules/kubernetes-external-secrets/workload_identity.tf" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="set service account and workload identity.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/kubernetes-external-secrets/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/kubernetes-external-secrets/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/kubernetes-external-secrets/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/kubernetes-external-secrets/variables.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/kubernetes-external-secrets/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/kubernetes-external-secrets/yaml/values.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kubernetes-external-secrets/workload_identity.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/kubernetes-external-secrets/workload_identity.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +69,7 @@
     <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/cluster0/sensitive.auto.tfvars" />
-    <property name="com.google.cloudcode.ide_session_index" value="20210926_0001" />
+    <property name="com.google.cloudcode.ide_session_index" value="20210926_0002" />
     <property name="format.on.save" value="true" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
@@ -155,13 +151,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628909558379</updated>
-    </task>
-    <task id="LOCAL-00056" summary="enable xds">
-      <created>1631396703298</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1631396703298</updated>
     </task>
     <task id="LOCAL-00057" summary="enable xds initContainer">
       <created>1631397341461</created>
@@ -499,7 +488,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632678508296</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="set service account and workload identity.">
+      <created>1632680716394</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1632680716394</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -519,7 +515,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="try again!" />
     <MESSAGE value="cleanup" />
     <MESSAGE value="increase timeout" />
     <MESSAGE value="set neg name" />
@@ -544,7 +539,8 @@
     <MESSAGE value="cleanup for real" />
     <MESSAGE value="cleanup and secret syncer" />
     <MESSAGE value="no resources" />
-    <option name="LAST_COMMIT_MESSAGE" value="no resources" />
+    <MESSAGE value="set service account and workload identity." />
+    <option name="LAST_COMMIT_MESSAGE" value="set service account and workload identity." />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

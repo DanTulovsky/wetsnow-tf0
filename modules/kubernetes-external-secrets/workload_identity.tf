@@ -21,7 +21,7 @@ resource "google_service_account_iam_policy" "k8s-external-secrets-account-iam" 
 
 # Grant service account access to Secret Manager
 resource "google_service_account_iam_binding" "k8s-external-secrets-account-iam" {
-  service_account_id = google_service_account.k8s-external-secrets.name
+  service_account_id = google_service_account.k8s-external-secrets.id
   role               = "roles/iam.secretmanager.secretAccessor"
 
   members = [
