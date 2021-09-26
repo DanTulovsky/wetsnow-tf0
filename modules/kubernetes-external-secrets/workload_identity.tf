@@ -10,7 +10,7 @@ data "google_iam_policy" "k8s-external-secrets" {
     role = "roles/iam.secretmanager.secretAccessor"
 
     members = [
-      "serviceAccount:${var.project_id}.svc.id.goog[${var.namespace}/${var.service_account}]"
+      "serviceAccount:${var.service_account}@${var.project_id}.iam.gserviceaccount.com"
     ]
   }
 }
