@@ -4,13 +4,6 @@ module "common" {
   source     = "../modules/common"
   namespaces = var.cluster_info.namespaces
 }
-module "kafka" {
-  source              = "../modules/kafka"
-  cloudhut_license    = var.kafka_secrets.cloudhut_license
-  namespace           = module.common.namespaces.kafka
-  prom_enabled        = false
-  kafka_replica_count = 1
-}
 module "kyverno" {
   source    = "../modules/kyverno"
   namespace = module.common.namespaces.kyverno
@@ -30,7 +23,7 @@ module "open-telemetry" {
   lightstep_access_token = var.lightstep_secrets.access_token
   datadog_api_key        = var.datadog_secrets.api_key
   namespace              = module.common.namespaces.observability
-  otel = {
+  otel                   = {
     metrics_receivers  = "[otlp, k8s_cluster]"
     metrics_processors = "[memory_limiter, batch]"
     metrics_exporters  = "[otlp/lightstep, kafka]"
@@ -38,7 +31,7 @@ module "open-telemetry" {
     trace_processors   = "[memory_limiter, batch, k8s_tagger]"
     trace_exporters    = "[otlp/lightstep, kafka]"
   }
-  cluster_name         = "kind0"
+  cluster_name           = "kind0"
 }
 
 module "prometheus" {

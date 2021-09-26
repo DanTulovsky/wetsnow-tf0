@@ -1,0 +1,21 @@
+image:
+  repository: ghcr.io/external-secrets/kubernetes-external-secrets
+  tag: ${appVersion}
+
+env:
+  LOG_LEVEL: info
+  LOG_MESSAGE_KEY: "msg"
+  USE_HUMAN_READABLE_LOG_LEVELS: true
+
+resources:
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
+
+serviceMonitor:
+  enabled: true
+  interval: "30s"
+  namespace: monitoring

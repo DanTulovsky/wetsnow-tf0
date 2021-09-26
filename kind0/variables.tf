@@ -34,7 +34,7 @@ variable "grafana_secrets" {
 variable "ambassador_secrets" {
   sensitive = true
   type = object({
-    license_key                  = string
+    license_key = string
   })
 }
 
@@ -49,20 +49,6 @@ variable "datadog_secrets" {
   sensitive = true
   type = object({
     api_key = string
-  })
-}
-
-variable "pgadmin_secrets" {
-  sensitive = true
-  type = object({
-    admin_password = string
-  })
-}
-
-variable "kafka_secrets" {
-  sensitive = true
-  type = object({
-    cloudhut_license = string
   })
 }
 

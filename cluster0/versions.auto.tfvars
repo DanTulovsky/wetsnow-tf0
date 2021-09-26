@@ -1,4 +1,3 @@
-
 # Before updating this, make sure an image with this tag exists.
 # TODO: #5 Can this be automatically checked?
 ambassador = {
@@ -9,6 +8,9 @@ argo_rollouts = {
 }
 grafana = {
   app_version = "8.2.0-beta1"
+}
+kubernetes_external_secrets = {
+  app_version = "8.3.0"
 }
 otel_collector = {
   app_version = "0.35.0"

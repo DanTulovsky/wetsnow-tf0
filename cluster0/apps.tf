@@ -30,16 +30,8 @@ module "http-ingress" {
   ]
   namespace = module.common.namespaces.ambassador
 }
-# module "kafka" {
-#   source           = "./modules/kafka"
-#   depends_on       = [module.gke, module.prometheus]
-#   cloudhut_license = var.kafka_secrets.cloudhut_license
-#   namespace        = module.common.namespaces.kafka
-#   kafka_replica_count = 1
-# }
 module "grafana" {
-  source = "../modules/grafana"
-  //  depends_on     = [module.gke]
+  source         = "../modules/grafana"
   admin_password = var.grafana_secrets.admin_password
   smtp_password  = var.grafana_secrets.smtp_password
   namespace      = module.common.namespaces.monitoring
@@ -47,13 +39,17 @@ module "grafana" {
   oauth_secret   = ""
   app_version    = var.grafana.app_version
 }
+module "kubernetes-external-secrets" {
+  source      = "../modules/kubernetes-external-secrets"
+  namespace   = module.common.namespaces.security
+  app_version = var.kubernetes_external_secrets.app_version
+}
 //module "kyverno" {
 //  source    = "../modules/kyverno"
 //  namespace = module.common.namespaces.kyverno
 //}
 module "open-telemetry" {
-  source = "../modules/open-telemetry"
-  # depends_on             = [module.gke]
+  source                 = "../modules/open-telemetry"
   lightstep_access_token = var.lightstep_secrets.access_token
   datadog_api_key        = var.datadog_secrets.api_key
   namespace              = module.common.namespaces.observability
@@ -69,8 +65,7 @@ module "open-telemetry" {
 #   namespace      = module.common.namespaces.db
 # }
 module "prometheus" {
-  source = "../modules/prometheus"
-  # depends_on             = [module.gke]
+  source                 = "../modules/prometheus"
   lightstep_access_token = var.lightstep_secrets.access_token
   namespace              = module.common.namespaces.monitoring
   enabled                = true

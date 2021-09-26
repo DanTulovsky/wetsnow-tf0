@@ -32,7 +32,7 @@ variable "cluster_info" {
 # Grafana
 variable "grafana_secrets" {
   sensitive = true
-  type = object({
+  type      = object({
     oauth_secret   = string
     admin_password = string
     smtp_password  = string
@@ -41,52 +41,20 @@ variable "grafana_secrets" {
 
 variable "ambassador_secrets" {
   sensitive = true
-  type = object({
+  type      = object({
     license_key = string
   })
 }
 
 variable "lightstep_secrets" {
   sensitive = true
-  type = object({
+  type      = object({
     access_token = string
   })
 }
 
-variable "datadog_secrets" {
-  sensitive = true
-  type = object({
-    api_key = string
-  })
-}
-variable "pgadmin_secrets" {
-  sensitive = true
-  type = object({
-    admin_password = string
-  })
-}
-
-variable "kafka_secrets" {
-  sensitive = true
-  type = object({
-    cloudhut_license = string
-  })
-}
-
-variable "traefik_secrets" {
-  sensitive = true
-  type = object({
-    token = string
-  })
-}
-
 # App versions
-variable "quote_server" {
-  type = object({
-    app_version = string
-  })
-}
-variable "web_static" {
+variable "ambassador" {
   type = object({
     app_version = string
   })
@@ -96,17 +64,23 @@ variable "argo_rollouts" {
     app_version = string
   })
 }
-variable "otel_collector" {
-  type = object({
-    app_version = string
-  })
-}
-variable "ambassador" {
-  type = object({
-    app_version = string
+variable "datadog_secrets" {
+  sensitive = true
+  type      = object({
+    api_key = string
   })
 }
 variable "grafana" {
+  type = object({
+    app_version = string
+  })
+}
+variable "kubernetes_external_secrets" {
+  type = object({
+    app_version = string
+  })
+}
+variable "otel_collector" {
   type = object({
     app_version = string
   })
@@ -115,5 +89,15 @@ variable "prometheus" {
   type = object({
     operator_version     = string
     otel_sidecar_version = string
+  })
+}
+variable "quote_server" {
+  type = object({
+    app_version = string
+  })
+}
+variable "web_static" {
+  type = object({
+    app_version = string
   })
 }
