@@ -1,0 +1,20 @@
+---
+apiVersion: getambassador.io/v2
+kind: TracingService
+metadata:
+  name: tracing
+  namespace: ambassador
+spec:
+  # https://github.com/datawire/ambassador/issues/3275
+  service: "otel-collector.observability:9411"
+  # service: "otel-collector.observability:4317" # otlp receiver
+  # service: "ingest.lightstep.com:443"
+  driver: zipkin
+  config: {}
+  # driver: lightstep
+  # config: { access_token_file: /etc/lightstep-access-token/token.txt }
+  tag_headers:
+    - ":authority"
+    - ":path"
+  sampling:
+    overall: 100 # %

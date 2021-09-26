@@ -1,0 +1,27 @@
+# https://artifacthub.io/packages/helm/runix/pgadmin4
+env:
+  email: dant@wetsnow.com
+  password: ${pgadminPassword}
+
+resources:
+  limits:
+    cpu: 100m
+    memory: 256Mi
+  requests:
+    cpu: 10m
+    memory: 128Mi
+
+serverDefinitions:
+  enabled: true
+  servers: |-
+    "db1": {
+      "Name": "db1",
+      "Group": "Servers",
+      "Port": 5432,
+      "Username": "postgres",
+      "Host": "db1.gke-internal.wetsnow.com",
+      "SSLMode": "prefer",
+      "MaintenanceDB": "postgres"
+    }
+VolumePermissions:
+  enabled: true

@@ -1,0 +1,16 @@
+---
+apiVersion: getambassador.io/v2
+kind: Host
+metadata:
+  name: l7-redirect
+  namespace: ambassador
+spec:
+  # hostname: www.wetsnow.com
+  # TLS happens at the LB, so disable it here.
+  acmeProvider:
+    authority: none
+  # The default insecure action is Redirect, which is fine.
+  # https://www.getambassador.io/docs/edge-stack/latest/topics/running/tls/cleartext-redirection/#http---https-redirection
+  requestPolicy:
+    insecure:
+      action: Redirect

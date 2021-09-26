@@ -1,0 +1,20 @@
+# this needs prometheus installed for custom resource definition
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: quote-server-grpc-monitor
+  namespace: ${namespace}
+  labels:
+    release: prometheus
+spec:
+  namespaceSelector:
+    any: true
+  selector:
+    matchLabels:
+      service: quote-server-http
+  endpoints:
+    - port: http
+  podTargetLabels:
+    # prometheus converts . to _
+    - service.name
+    - service.version

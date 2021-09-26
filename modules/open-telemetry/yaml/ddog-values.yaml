@@ -1,0 +1,103 @@
+# Send only to Lightstep
+
+# https://github.com/DataDog/helm-charts
+
+datadog:
+  apiKey: ${lightstepAccessToken}
+  dd_url: "https://metricingest.lightstep.com"
+#  apiKey: ${datadogApiKey}
+  logLevel: INFO
+
+  processAgent:
+    enabled: false
+
+  logs:
+    enabled: false
+    containerCollectAll: false
+
+  dogstatsd:
+    useHostPort: true
+    nonLocalTraffic: true
+
+  kubelet:
+    tlsVerify: ${gke}
+
+  env:
+#    - name: DD_TAGS
+#      value: cluster:${clusterName}
+    - name: DD_KUBERNETES_POD_LABELS_AS_TAGS
+      # '{"<POD_LABEL>": "<TAG_KEY>"}'
+      value: "{\"service.name\":\"service.name\"}"
+    - name: DD_DOGSTATSD_TAGS
+      value: "[\"cluster:${clusterName}\"]"
+    - name: DD_CLUSTER_NAME
+      value: ${clusterName}
+
+clusterAgent:
+  resources:
+  requests:
+    cpu: 20m
+    memory: 128Mi
+  limits:
+    cpu: 200m
+    memory: 256Mi
+  env:
+    - name: DD_CLUSTER_NAME
+      value: ${clusterName}
+
+agents:
+  # for kind cluster
+  tolerations:
+    - key: "node-role.kubernetes.io/master"
+      effect: "NoSchedule"
+      operator: "Exists"
+
+containers:
+  agent:
+    resources:
+      requests:
+        cpu: 10m
+        memory: 128Mi
+      limits:
+        cpu: 200m
+        memory: 256Mi
+  processAgent:
+    resources:
+      requests:
+        cpu: 10m
+        memory: 128Mi
+      limits:
+        cpu: 200m
+        memory: 256Mi
+  traceAgent:
+    resources:
+      requests:
+        cpu: 10m
+        memory: 128Mi
+      limits:
+        cpu: 200m
+        memory: 256Mi
+  systemProbe:
+    resources:
+      requests:
+        cpu: 10m
+        memory: 128Mi
+      limits:
+        cpu: 200m
+        memory: 256Mi
+  securityAgent:
+    resources:
+      requests:
+        cpu: 10m
+        memory: 128Mi
+      limits:
+        cpu: 200m
+        memory: 256Mi
+kube-state-metrics:
+  resources:
+    requests:
+      cpu: 10m
+      memory: 128Mi
+    limits:
+      cpu: 200m
+      memory: 256Mi

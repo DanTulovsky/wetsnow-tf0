@@ -1,0 +1,110 @@
+auth:
+  createAdminUser: false
+  adminPassword: ${adminPassword}
+  managementPassword: ${managementPassword}
+
+  ## TLS encryption parameters
+  ## ref: https://github.com/bitnami/bitnami-docker-keycloak#tls-encryption
+  ##
+
+proxyAddressForwarding: true
+
+serviceDiscovery:
+  enabled: true
+  protocol: kubernetes.KUBE_PING
+  properties: []
+  transportStack: tcp
+
+cache:
+  ## Number of nodes that will replicate cached data
+  ##
+  ownersCount: 2
+  ## Number of nodes that will replicate cached authentication data
+  ##
+  authOwnersCount: 2
+
+replicaCount: 1
+
+# podAnnotations:
+#   config.linkerd.io/skip-inbound-ports: "7600" # skip keycloak cluster discovery
+#   config.linkerd.io/skip-outbound-ports: "7600"
+
+containerPorts:
+  http: 8080
+  https: 8443
+
+## Keycloak containers' liveness and readiness probes.
+livenessProbe:
+  initialDelaySeconds: 1800 # java is slow to startup
+
+service:
+  type: ClusterIP
+  port: 8080
+  httpsPort: 443
+  clusterIP: None
+
+resources:
+  limits:
+    cpu: 1
+    memory: 1Gi
+  requests:
+    cpu: 100m
+    memory: 512Mi
+
+rbac:
+  create: true
+  # required for kube_ping discovery
+  rules:
+    - apiGroups:
+        - ""
+      resources:
+        - pods
+      verbs:
+        - get
+        - list
+
+pdb:
+  create: true
+  minAvailable: 1
+
+## Metrics configuration
+##
+metrics:
+  enabled: true
+
+  service:
+    port: 9990
+    annotations:
+      prometheus.io/scrape: "true"
+      prometheus.io/port: "{{ .Values.metrics.service.port }}"
+
+  serviceMonitor:
+    enabled: ${promEnabled}
+
+postgresql:
+  enabled: false
+
+# extraEnvVarsSecret: keycloak-db-secret
+
+# extraEnvVars:
+#   - name: JAEGER_REPORTER_LOG_SPANS
+#     value: "true"
+#   - name: JAEGER_SAMPLER_TYPE
+#     value: "const"
+#   - name: JAEGER_SAMPLER_PARAM
+#     value: "1"
+#   - name: JAEGER_SERVICE_NAME
+#     value: "keycloak"
+#   - name: JAEGER_ENDPOINT
+#     value: "http://linkerd-collector.linkerd:14268/api/traces"
+#   - name: KEYCLOAK_STATISTICS
+#     value: ""
+
+externalDatabase:
+  enabled: true
+  # host set in secret above
+  host: "db1.gke-internal.wetsnow.com"
+  port: 5432
+  user: "bn_keycloak"
+  password: ${dbPassword}
+  database: "bitnami_keycloak"
