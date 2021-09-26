@@ -3,14 +3,14 @@ data "google_iam_policy" "k8s-external-secrets" {
     role = "roles/iam.workloadIdentityUser"
 
     members = [
-      "serviceAccount:${var.project_id}.svc.id.goog[${var.namespace}/${var.service_account}]"
+      "serviceAccount:${var.project_id}.svc.id.goog[${var.namespace}/${var.service_account}]",
     ]
   }
   binding {
     role = "roles/secretmanager.secretAccessor"
 
     members = [
-      "serviceAccount:${var.service_account}@${var.project_id}.iam.gserviceaccount.com"
+      "serviceAccount:${google_service_account.k8s-external-secrets.email}"
     ]
   }
 }
@@ -25,3 +25,10 @@ resource "google_service_account_iam_policy" "k8s-external-secrets-account-iam" 
   service_account_id = google_service_account.k8s-external-secrets.name
   policy_data        = data.google_iam_policy.k8s-external-secrets.policy_data
 }
+
+#resource "google_project_iam_binding" "k8s-external-secrets" {
+#  role = "roles/secretmanager.secretAccessor"
+#  members = [
+#    "serviceAccount:${google_service_account.k8s-external-secrets.email}"
+#  ]
+#}
