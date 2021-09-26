@@ -9,10 +9,15 @@ image:
   repository: ghcr.io/external-secrets/kubernetes-external-secrets
   tag: ${appVersion}
 
+# Free tier (Monthly free usage limits)
+# Active secret versions	6 versions
+# Access operations	10,000 operations (~13 / hour; 1 every ~4 min)
+# Rotation Notifications	3 rotations
 env:
   LOG_LEVEL: info
   LOG_MESSAGE_KEY: "msg"
   USE_HUMAN_READABLE_LOG_LEVELS: true
+  POLLER_INTERVAL_MILLISECONDS: 600000  # every 600 seconds
 
 #resources:
 #  limits:
