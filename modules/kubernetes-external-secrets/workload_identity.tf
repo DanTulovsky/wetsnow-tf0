@@ -7,7 +7,7 @@ data "google_iam_policy" "k8s-external-secrets" {
     ]
   }
   binding {
-    role = "roles/iam.secretmanager.secretAccessor"
+    role = "roles/secretmanager.secretAccessor"
 
     members = [
       "serviceAccount:${var.service_account}@${var.project_id}.iam.gserviceaccount.com"
