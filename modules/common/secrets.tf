@@ -17,7 +17,7 @@ resource "google_secret_manager_secret_version" "lightstep-access-token-0" {
   secret_data = var.lightstep_access_token
 }
 
-# Create an ExternalSecret object
+# Create an ExternalSecret object which will be used to create a k8s secret
 resource "kubectl_manifest" "lightstep-access-token" {
   for_each = var.namespaces
 

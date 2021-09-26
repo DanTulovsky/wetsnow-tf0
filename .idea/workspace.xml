@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="cleanup">
-      <change afterPath="$PROJECT_DIR$/modules/common/secrets.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/common/yaml/k8s/secret-lightstep-access-token.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/common/providers.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/common/providers.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/common/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/common/variables.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/quote-server/20-deployment.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/20-deployment.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/quote-server/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/variables.tf" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="secrets and stuff">
+      <change beforePath="$PROJECT_DIR$/modules/common/secrets.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/common/secrets.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,13 +150,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628909558379</updated>
-    </task>
-    <task id="LOCAL-00065" summary="user serving port">
-      <created>1631412282740</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1631412282740</updated>
     </task>
     <task id="LOCAL-00066" summary="enable health check logging">
       <created>1631414449229</created>
@@ -501,7 +487,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632686651540</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="secrets and stuff">
+      <created>1632695100235</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1632695100235</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -521,7 +514,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="new release" />
     <MESSAGE value="monitor the http service which exports the metrics" />
     <MESSAGE value="enable prom" />
     <MESSAGE value="add comment" />
@@ -546,7 +538,8 @@
     <MESSAGE value="try65" />
     <MESSAGE value="increase polling interval" />
     <MESSAGE value="cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleanup" />
+    <MESSAGE value="secrets and stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="secrets and stuff" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
