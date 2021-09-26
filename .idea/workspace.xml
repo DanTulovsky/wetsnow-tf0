@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="token.txt">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="every 60 seconds for now">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/common/yaml/k8s/secret-lightstep-access-token.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/common/yaml/k8s/secret-lightstep-access-token.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/kubernetes-external-secrets/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/kubernetes-external-secrets/yaml/values.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/quote-server/20-deployment.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/20-deployment.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,13 +151,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628909558379</updated>
-    </task>
-    <task id="LOCAL-00071" summary="s/http/grpc/g">
-      <created>1631453226156</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1631453226156</updated>
     </task>
     <task id="LOCAL-00072" summary="s/http/grpc/g">
       <created>1631453316660</created>
@@ -496,7 +488,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632696622599</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="every 60 seconds for now">
+      <created>1632697536520</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1632697536520</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -516,7 +515,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="increase wetsnow.com timeout" />
     <MESSAGE value="operator" />
     <MESSAGE value="grafana" />
     <MESSAGE value="enable manifest" />
@@ -541,7 +539,8 @@
     <MESSAGE value="fix id." />
     <MESSAGE value="fix secret name" />
     <MESSAGE value="token.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="token.txt" />
+    <MESSAGE value="every 60 seconds for now" />
+    <option name="LAST_COMMIT_MESSAGE" value="every 60 seconds for now" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
