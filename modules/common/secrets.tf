@@ -1,6 +1,7 @@
 # Define secret
 resource "google_secret_manager_secret" "lightstep-access-token" {
   provider = google-beta
+  project  = var.project_id
 
   secret_id = "lightstep-access-token"
 
@@ -19,11 +20,12 @@ resource "google_secret_manager_secret_version" "lightstep-access-token-0" {
 
 # Create an ExternalSecret object which will be used to create a k8s secret
 resource "kubectl_manifest" "lightstep-access-token" {
-  for_each = var.namespaces
+  #  for_each = var.namespaces
 
   yaml_body = templatefile("${path.module}/yaml/k8s/secret-lightstep-access-token.yaml", {
     secretName = google_secret_manager_secret.lightstep-access-token.secret_id
-    namespace  = each.key
-    projectID  = var.project_id
+    #    namespace  = each.key
+    namespace = "web"
+    projectID = var.project_id
   })
 }
