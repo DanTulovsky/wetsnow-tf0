@@ -4,9 +4,21 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="try65">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="increase polling interval">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/kubernetes-external-secrets/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/kubernetes-external-secrets/yaml/values.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kafka/.terraform.lock.hcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kafka/main.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kafka/providers.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kafka/topics.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kafka/variables.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kafka/yaml/kowl-values.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kafka/yaml/values.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kubernetes-external-secrets/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/kubernetes-external-secrets/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/scope/.terraform.lock.hcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/scope/main.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/scope/providers.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/scope/variables.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/scope/yaml/k8s/scope.yaml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,13 +163,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628909558379</updated>
-    </task>
-    <task id="LOCAL-00063" summary="recreate strategy">
-      <created>1631398869026</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1631398869026</updated>
     </task>
     <task id="LOCAL-00064" summary="recreate strategy">
       <created>1631398941861</created>
@@ -495,7 +500,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632683147657</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="increase polling interval">
+      <created>1632686239843</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1632686239843</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -515,7 +527,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="new releases" />
     <MESSAGE value="add pom metrics" />
     <MESSAGE value="new release" />
     <MESSAGE value="monitor the http service which exports the metrics" />
@@ -540,7 +551,8 @@
     <MESSAGE value="proper role name" />
     <MESSAGE value="try 14" />
     <MESSAGE value="try65" />
-    <option name="LAST_COMMIT_MESSAGE" value="try65" />
+    <MESSAGE value="increase polling interval" />
+    <option name="LAST_COMMIT_MESSAGE" value="increase polling interval" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
