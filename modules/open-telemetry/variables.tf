@@ -11,11 +11,6 @@ variable "prom_enabled" {
   default = false
 }
 
-variable "lightstep_access_token" {
-  sensitive = true
-  type      = string
-}
-
 variable "gke" {
   type    = bool
   default = false
