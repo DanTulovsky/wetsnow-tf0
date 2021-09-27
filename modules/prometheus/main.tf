@@ -1,5 +1,5 @@
 resource "helm_release" "prometheus" {
-  depends_on = [kubernetes_secret.lightstep-config]
+  depends_on = [kubernetes_config_map.lightstep-config]
   count      = var.enabled ? 1 : 0
   name       = "prom0"
   namespace  = var.namespace
