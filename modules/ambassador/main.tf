@@ -1,5 +1,5 @@
 resource "helm_release" "ambassador" {
-  depends_on   = [kubernetes_secret.lightstep-access-token, kubectl_manifest.ambassador-backend-config, kubectl_manifest.ambassador-backend-config-iap]
+  depends_on   = [kubectl_manifest.ambassador-backend-config, kubectl_manifest.ambassador-backend-config-iap]
   name         = var.name
   namespace    = var.namespace
   repository   = "https://getambassador.io"
@@ -7,13 +7,15 @@ resource "helm_release" "ambassador" {
   wait         = true
   force_update = false
 
-  values = [templatefile("${path.module}/yaml/values.yaml", {
-    licenseKey    = var.license_key
-    promEnabled   = var.prom_enabled
-    backendConfig = var.backend_config
-    name          = var.name
-    app_version   = var.app_version
-  })]
+  values = [
+    templatefile("${path.module}/yaml/values.yaml", {
+      licenseKey    = var.license_key
+      promEnabled   = var.prom_enabled
+      backendConfig = var.backend_config
+      name          = var.name
+      app_version   = var.app_version
+    })
+  ]
 }
 
 # BEGIN: All of these files must have exactly 1 manifest in them
@@ -92,18 +94,4 @@ resource "kubernetes_service" "ambassador-iap" {
 
     type = "NodePort"
   }
-}
-
-
-resource "kubernetes_secret" "lightstep-access-token" {
-  metadata {
-    name      = "lightstep-access-token"
-    namespace = var.namespace
-  }
-
-  data = {
-    "token.txt" = var.lightstep_access_token
-  }
-
-  type = "Opaque"
 }

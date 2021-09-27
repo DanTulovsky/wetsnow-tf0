@@ -11,13 +11,12 @@ module "common" {
 module "ambassador" {
   source = "../modules/ambassador"
   # depends_on                   = [module.gke]
-  license_key            = var.ambassador_secrets.license_key
-  lightstep_access_token = var.lightstep_secrets.access_token
-  namespace              = module.common.namespaces.ambassador
-  prom_enabled           = true
-  backend_config         = "ambassador-hc-config"
-  name                   = "ambassador"
-  app_version            = var.ambassador.app_version
+  license_key    = var.ambassador_secrets.license_key
+  namespace      = module.common.namespaces.ambassador
+  prom_enabled   = true
+  backend_config = "ambassador-hc-config"
+  name           = "ambassador"
+  app_version    = var.ambassador.app_version
 }
 
 module "argo" {
@@ -55,7 +54,6 @@ module "kubernetes-external-secrets" {
 module "open-telemetry" {
   source                 = "../modules/open-telemetry"
   lightstep_access_token = var.lightstep_secrets.access_token
-  datadog_api_key        = var.datadog_secrets.api_key
   namespace              = module.common.namespaces.observability
   gke                    = true
   cluster_name           = "cluster0"
@@ -99,9 +97,8 @@ module "quote-server" {
 module "web-static" {
   source = "../modules/web-static"
   # depends_on             = [module.gke]
-  namespace              = module.common.namespaces.web
-  app_version            = var.web_static.app_version
-  lightstep_access_token = var.lightstep_secrets.access_token
-  prom_enabled           = true
+  namespace    = module.common.namespaces.web
+  app_version  = var.web_static.app_version
+  prom_enabled = true
 }
 

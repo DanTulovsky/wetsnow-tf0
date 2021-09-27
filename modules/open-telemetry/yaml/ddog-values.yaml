@@ -3,9 +3,8 @@
 # https://github.com/DataDog/helm-charts
 
 datadog:
-  apiKey: ${lightstepAccessToken}
+  apiKeyExistingSecret: "lightstep-access-token"
   dd_url: "https://metricingest.lightstep.com"
-#  apiKey: ${datadogApiKey}
   logLevel: INFO
 
   processAgent:
@@ -23,8 +22,8 @@ datadog:
     tlsVerify: ${gke}
 
   env:
-#    - name: DD_TAGS
-#      value: cluster:${clusterName}
+    #    - name: DD_TAGS
+    #      value: cluster:${clusterName}
     - name: DD_KUBERNETES_POD_LABELS_AS_TAGS
       # '{"<POD_LABEL>": "<TAG_KEY>"}'
       value: "{\"service.name\":\"service.name\"}"

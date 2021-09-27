@@ -1,13 +1,8 @@
-
 variable "license_key" {
   type      = string
   sensitive = true
 }
 
-variable "lightstep_access_token" {
-  type      = string
-  sensitive = true
-}
 variable "namespace" {
   type = string
 }

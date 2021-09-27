@@ -33,10 +33,11 @@ resource "helm_release" "ddog-agent" {
   wait         = true
   force_update = false
 
-  values = [templatefile("${path.module}/yaml/ddog-values.yaml", {
-    lightstepAccessToken = var.lightstep_access_token
-    datadogApiKey        = var.datadog_api_key
-    gke                  = var.gke
-    clusterName          = var.cluster_name
-  })]
+  values = [
+    templatefile("${path.module}/yaml/ddog-values.yaml", {
+      lightstepAccessToken = var.lightstep_access_token
+      gke                  = var.gke
+      clusterName          = var.cluster_name
+    })
+  ]
 }
