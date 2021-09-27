@@ -51,7 +51,7 @@ prometheus:
               optional: false
       args:
         - --config-file=/etc/lightstep/config.yaml
-        - --destination.header="lightstep-access-token=${LIGHTSTEP_ACCESS_TOKEN}"
+        - --destination.header="lightstep-access-token=$${LIGHTSTEP_ACCESS_TOKEN}"
       volumeMounts:
         - name: prometheus-prom0-kube-prometheus-prometheus-db
           mountPath: /prometheus
