@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="syntax!">
-      <change beforePath="$PROJECT_DIR$/modules/prometheus/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/prometheus/yaml/values.yaml" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="syntax!!!!">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kind0/.terraform.lock.hcl" beforeDir="false" afterPath="$PROJECT_DIR$/kind0/.terraform.lock.hcl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kind0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/kind0/apps.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kind0/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/kind0/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kind0/versions.auto.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/kind0/versions.auto.tfvars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/prometheus/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/prometheus/variables.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +75,7 @@
     <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/cluster0/sensitive.auto.tfvars" />
-    <property name="com.google.cloudcode.ide_session_index" value="20210926_0008" />
+    <property name="com.google.cloudcode.ide_session_index" value="20210926_0009" />
     <property name="format.on.save" value="true" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
@@ -150,13 +157,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628909558379</updated>
-    </task>
-    <task id="LOCAL-00088" summary="monitor the http service which exports the metrics">
-      <created>1631464080973</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1631464080973</updated>
     </task>
     <task id="LOCAL-00089" summary="enable prom">
       <created>1631464391492</created>
@@ -494,7 +494,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632706148677</updated>
     </task>
-    <option name="localTasksCounter" value="137" />
+    <task id="LOCAL-00137" summary="syntax!!!!">
+      <created>1632706335925</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1632706335925</updated>
+    </task>
+    <option name="localTasksCounter" value="138" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -514,7 +521,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="no like this" />
     <MESSAGE value="proper role name" />
     <MESSAGE value="try 14" />
     <MESSAGE value="try65" />
@@ -539,7 +545,8 @@
     <MESSAGE value="switch to configmap" />
     <MESSAGE value="fix dep" />
     <MESSAGE value="syntax!" />
-    <option name="LAST_COMMIT_MESSAGE" value="syntax!" />
+    <MESSAGE value="syntax!!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="syntax!!!!" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

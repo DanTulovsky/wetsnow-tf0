@@ -2,6 +2,7 @@ variable "service_account" {
   type    = string
   default = "wetsnow-tf0"
 }
+
 variable "project" {
   type = string
 }
@@ -32,7 +33,7 @@ variable "cluster_info" {
 # Grafana
 variable "grafana_secrets" {
   sensitive = true
-  type      = object({
+  type = object({
     oauth_secret   = string
     admin_password = string
     smtp_password  = string
@@ -41,14 +42,14 @@ variable "grafana_secrets" {
 
 variable "ambassador_secrets" {
   sensitive = true
-  type      = object({
+  type = object({
     license_key = string
   })
 }
 
 variable "lightstep_secrets" {
   sensitive = true
-  type      = object({
+  type = object({
     access_token = string
   })
 }
@@ -62,12 +63,6 @@ variable "ambassador" {
 variable "argo_rollouts" {
   type = object({
     app_version = string
-  })
-}
-variable "datadog_secrets" {
-  sensitive = true
-  type      = object({
-    api_key = string
   })
 }
 variable "grafana" {

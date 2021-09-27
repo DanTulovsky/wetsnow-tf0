@@ -1,8 +1,7 @@
 # https://www.terraform.io/docs/language/modules/syntax.html
 
 module "common" {
-  source = "../modules/common"
-  # depends_on = [module.gke]
+  source     = "../modules/common"
   namespaces = var.cluster_info.namespaces
   project_id = var.project
   # This token gets written to "lightstep-access-token" in Google Secret Manager
@@ -65,13 +64,12 @@ module "open-telemetry" {
 #   namespace      = module.common.namespaces.db
 # }
 module "prometheus" {
-  source                 = "../modules/prometheus"
-  lightstep_access_token = var.lightstep_secrets.access_token
-  namespace              = module.common.namespaces.monitoring
-  enabled                = true
-  cluster_name           = var.cluster_info.name
-  operator_version       = var.prometheus.operator_version
-  otel_sidecar_version   = var.prometheus.otel_sidecar_version
+  source               = "../modules/prometheus"
+  namespace            = module.common.namespaces.monitoring
+  enabled              = true
+  cluster_name         = var.cluster_info.name
+  operator_version     = var.prometheus.operator_version
+  otel_sidecar_version = var.prometheus.otel_sidecar_version
 }
 module "quote-server" {
   source = "../modules/quote-server"
