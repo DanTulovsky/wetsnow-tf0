@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="cleanup">
-      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/yaml/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/yaml/config.yaml" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="remove kafka">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/prometheus/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/prometheus/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/prometheus/yaml/lightstep-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/prometheus/yaml/lightstep-config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/prometheus/yaml/pushgateway-values.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/prometheus/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/prometheus/yaml/values.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +73,7 @@
     <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/cluster0/sensitive.auto.tfvars" />
-    <property name="com.google.cloudcode.ide_session_index" value="20210926_0007" />
+    <property name="com.google.cloudcode.ide_session_index" value="20210926_0008" />
     <property name="format.on.save" value="true" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
@@ -150,13 +155,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628909558379</updated>
-    </task>
-    <task id="LOCAL-00081" summary="set neg name">
-      <created>1631456994081</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1631456994081</updated>
     </task>
     <task id="LOCAL-00082" summary="set proper network name">
       <created>1631460505248</created>
@@ -494,7 +492,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632704334026</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="remove kafka">
+      <created>1632704426962</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1632704426962</updated>
+    </task>
+    <option name="localTasksCounter" value="131" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -514,7 +519,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="medium node pool" />
     <MESSAGE value="cleanup for real" />
     <MESSAGE value="cleanup and secret syncer" />
     <MESSAGE value="no resources" />
@@ -539,7 +543,8 @@
     <MESSAGE value="fix web" />
     <MESSAGE value="collector lightstep access token" />
     <MESSAGE value="cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleanup" />
+    <MESSAGE value="remove kafka" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove kafka" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

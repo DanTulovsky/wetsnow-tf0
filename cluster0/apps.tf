@@ -9,8 +9,7 @@ module "common" {
   lightstep_access_token = var.lightstep_secrets.access_token
 }
 module "ambassador" {
-  source = "../modules/ambassador"
-  # depends_on                   = [module.gke]
+  source         = "../modules/ambassador"
   license_key    = var.ambassador_secrets.license_key
   namespace      = module.common.namespaces.ambassador
   prom_enabled   = true
@@ -55,7 +54,7 @@ module "open-telemetry" {
   source        = "../modules/open-telemetry"
   namespace     = module.common.namespaces.observability
   gke           = true
-  cluster_name  = "cluster0"
+  cluster_name  = var.cluster_info.name
   prom_enabled  = true
   image_version = var.otel_collector.app_version
 }
@@ -70,7 +69,7 @@ module "prometheus" {
   lightstep_access_token = var.lightstep_secrets.access_token
   namespace              = module.common.namespaces.monitoring
   enabled                = true
-  cluster_name           = "cluster0"
+  cluster_name           = var.cluster_info.name
   operator_version       = var.prometheus.operator_version
   otel_sidecar_version   = var.prometheus.otel_sidecar_version
 }
@@ -89,13 +88,8 @@ module "quote-server" {
 #   depends_on = [module.gke, module.prometheus, module.kafka]
 #   namespace  = module.common.namespaces.vector
 # }
-//module "scope" {
-//  source    = "../modules/scope"
-//  namespace = module.common.namespaces.weave
-//}
 module "web-static" {
-  source = "../modules/web-static"
-  # depends_on             = [module.gke]
+  source       = "../modules/web-static"
   namespace    = module.common.namespaces.web
   app_version  = var.web_static.app_version
   prom_enabled = true

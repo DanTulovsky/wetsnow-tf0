@@ -42,8 +42,16 @@ prometheus:
     - name: otel-sidecar
       image: lightstep/opentelemetry-prometheus-sidecar
       imagePullPolicy: Always
+      env:
+        - name: LIGHTSTEP_ACCESS_TOKEN
+          valueFrom:
+            secretKeyRef:
+              name: lightstep-access-token
+              key: api-key
+              optional: false
       args:
         - --config-file=/etc/lightstep/config.yaml
+        - --destination.header="lightstep-access-token=${LIGHTSTEP_ACCESS_TOKEN}"
       volumeMounts:
         - name: prometheus-prom0-kube-prometheus-prometheus-db
           mountPath: /prometheus
