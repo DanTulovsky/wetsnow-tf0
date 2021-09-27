@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="cleanup more">
-      <change beforePath="$PROJECT_DIR$/modules/web-static/20-deployment.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/web-static/20-deployment.tf" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix web">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/30-deployment.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/30-deployment.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/yaml/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/yaml/config.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,13 +152,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628909558379</updated>
-    </task>
-    <task id="LOCAL-00077" summary="remove log lines">
-      <created>1631455349226</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1631455349226</updated>
     </task>
     <task id="LOCAL-00078" summary="try again!">
       <created>1631455649410</created>
@@ -494,7 +489,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632703676417</updated>
     </task>
-    <option name="localTasksCounter" value="126" />
+    <task id="LOCAL-00126" summary="fix web">
+      <created>1632703914283</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1632703914283</updated>
+    </task>
+    <option name="localTasksCounter" value="127" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -514,7 +516,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="grpc-go" />
     <MESSAGE value="disable manifest" />
     <MESSAGE value="medium node pool" />
     <MESSAGE value="cleanup for real" />
@@ -539,7 +540,8 @@
     <MESSAGE value="cleanup" />
     <MESSAGE value="fix" />
     <MESSAGE value="cleanup more" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleanup more" />
+    <MESSAGE value="fix web" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix web" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

@@ -23,7 +23,7 @@ receivers:
     auth_type: "serviceAccount"
     collection_interval: 10s
     node_conditions_to_report:
-      [Ready, MemoryPressure, DiskPressure, PIDPressure, NetworkUnavailable]
+      [ Ready, MemoryPressure, DiskPressure, PIDPressure, NetworkUnavailable ]
   kubeletstats:
     collection_interval: 20s
     auth_type: "serviceAccount"
@@ -47,14 +47,15 @@ processors:
   k8s_tagger:
     passthrough: true
 extensions:
-  health_check: {}
+  health_check: { }
   # https://github.com/open-telemetry/opentelemetry-specification/blob/main/experimental/trace/zpages.md
-  zpages: {}
-  pprof: {}
+  zpages: { }
+  pprof: { }
 exporters:
   otlp/lightstep:
     endpoint: "ingest.lightstep.com:443"
-    headers: { "lightstep-access-token": "${lightstepAccessToken}" }
+    #    headers: { "lightstep-access-token": "${lightstepAccessToken}" }
+    headers: { "lightstep-access-token": "$${LIGHTSTEP_ACCESS_TOKEN}" }
   logging:
     loglevel: info
   kafka:
@@ -62,7 +63,7 @@ exporters:
     brokers:
       - "kafka0-headless.kafka:9092"
 service:
-  extensions: [health_check, zpages, pprof]
+  extensions: [ health_check, zpages, pprof ]
   pipelines:
     metrics:
       receivers: ${metricsReceivers}

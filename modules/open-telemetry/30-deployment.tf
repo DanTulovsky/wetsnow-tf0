@@ -66,6 +66,18 @@ resource "kubernetes_deployment" "otel_collector" {
               }
             }
           }
+          env {
+            name = "LIGHTSTEP_ACCESS_TOKEN"
+            value_from {
+              secret_key_ref {
+                # Created in the "common" module and guaranteed to exist because
+                # this module depends on the "common" module.
+                name     = "lightstep-access-token"
+                key      = "api-key"
+                optional = false
+              }
+            }
+          }
           port {
             name           = "opencensus"
             container_port = 55678
