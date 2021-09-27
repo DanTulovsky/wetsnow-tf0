@@ -36,8 +36,8 @@ prometheus:
     size: 8G
   volumes:
     - name: lightstep-config-volume
-      secret:
-        secretName: lightstep-config
+      configMap:
+        name: lightstep-config
   containers:
     - name: otel-sidecar
       image: lightstep/opentelemetry-prometheus-sidecar

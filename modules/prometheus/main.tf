@@ -17,7 +17,7 @@ resource "helm_release" "prometheus" {
   ]
 }
 
-resource "kubernetes_secret" "lightstep-config" {
+resource "kubernetes_config_map" "lightstep-config" {
   metadata {
     name      = "lightstep-config"
     namespace = var.namespace
@@ -28,6 +28,4 @@ resource "kubernetes_secret" "lightstep-config" {
       clusterName = var.cluster_name
     })
   }
-
-  type = "Opaque"
 }
