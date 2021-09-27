@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix dep">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="syntax!">
       <change beforePath="$PROJECT_DIR$/modules/prometheus/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/prometheus/yaml/values.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -150,13 +150,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628909558379</updated>
-    </task>
-    <task id="LOCAL-00087" summary="new release">
-      <created>1631463653014</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1631463653014</updated>
     </task>
     <task id="LOCAL-00088" summary="monitor the http service which exports the metrics">
       <created>1631464080973</created>
@@ -494,7 +487,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632706009609</updated>
     </task>
-    <option name="localTasksCounter" value="136" />
+    <task id="LOCAL-00136" summary="syntax!">
+      <created>1632706148677</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1632706148677</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -514,7 +514,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="like this?" />
     <MESSAGE value="no like this" />
     <MESSAGE value="proper role name" />
     <MESSAGE value="try 14" />
@@ -539,7 +538,8 @@
     <MESSAGE value="further cleanup" />
     <MESSAGE value="switch to configmap" />
     <MESSAGE value="fix dep" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix dep" />
+    <MESSAGE value="syntax!" />
+    <option name="LAST_COMMIT_MESSAGE" value="syntax!" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
