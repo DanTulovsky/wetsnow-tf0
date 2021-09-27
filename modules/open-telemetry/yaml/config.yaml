@@ -54,7 +54,6 @@ extensions:
 exporters:
   otlp/lightstep:
     endpoint: "ingest.lightstep.com:443"
-    #    headers: { "lightstep-access-token": "${lightstepAccessToken}" }
     headers: { "lightstep-access-token": "$${LIGHTSTEP_ACCESS_TOKEN}" }
   logging:
     loglevel: info
