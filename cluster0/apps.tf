@@ -52,12 +52,13 @@ module "kubernetes-external-secrets" {
 //  namespace = module.common.namespaces.kyverno
 //}
 module "open-telemetry" {
-  source        = "../modules/open-telemetry"
-  namespace     = module.common.namespaces.observability
-  gke           = true
-  cluster_name  = "cluster0"
-  prom_enabled  = true
-  image_version = var.otel_collector.app_version
+  source                 = "../modules/open-telemetry"
+  namespace              = module.common.namespaces.observability
+  gke                    = true
+  cluster_name           = "cluster0"
+  prom_enabled           = true
+  image_version          = var.otel_collector.app_version
+  lightstep_access_token = var.lightstep_secrets.access_token
 }
 # module "postgres" {
 #   source         = "./modules/postgres"
