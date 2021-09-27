@@ -35,9 +35,8 @@ resource "helm_release" "ddog-agent" {
 
   values = [
     templatefile("${path.module}/yaml/ddog-values.yaml", {
-      lightstepAccessToken = var.lightstep_access_token
-      gke                  = var.gke
-      clusterName          = var.cluster_name
+      gke         = var.gke
+      clusterName = var.cluster_name
     })
   ]
 }
