@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="switch to configmap">
-      <change beforePath="$PROJECT_DIR$/modules/prometheus/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/prometheus/main.tf" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix dep">
+      <change beforePath="$PROJECT_DIR$/modules/prometheus/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/prometheus/yaml/values.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,13 +150,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628909558379</updated>
-    </task>
-    <task id="LOCAL-00086" summary="new release">
-      <created>1631463585012</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1631463585012</updated>
     </task>
     <task id="LOCAL-00087" summary="new release">
       <created>1631463653014</created>
@@ -494,7 +487,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632705944150</updated>
     </task>
-    <option name="localTasksCounter" value="135" />
+    <task id="LOCAL-00135" summary="fix dep">
+      <created>1632706009609</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1632706009609</updated>
+    </task>
+    <option name="localTasksCounter" value="136" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -514,7 +514,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="id" />
     <MESSAGE value="like this?" />
     <MESSAGE value="no like this" />
     <MESSAGE value="proper role name" />
@@ -539,7 +538,8 @@
     <MESSAGE value="extra $" />
     <MESSAGE value="further cleanup" />
     <MESSAGE value="switch to configmap" />
-    <option name="LAST_COMMIT_MESSAGE" value="switch to configmap" />
+    <MESSAGE value="fix dep" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix dep" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
