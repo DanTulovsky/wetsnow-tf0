@@ -130,7 +130,7 @@ resource "kubernetes_deployment" "frontend" {
                 # Created in the "common" module and guaranteed to exist because
                 # this module depends on the "common" module.
                 name     = "lightstep-access-token"
-                key      = "token.txt"
+                key      = "api-key"
                 optional = false
               }
             }
