@@ -1,13 +1,12 @@
-
 project = "snowcloud-01"
-region = "us-central1"
-zones = ["us-central1-c"]
+region  = "us-central1"
+zones   = ["us-central1-c"]
 
 environment = "dev"
 
 cluster_info = ({
-  name = "cluster0"
-  vpc_name = "vpc0"
-  namespaces = ["ambassador", "argo-rollouts", "monitoring", "observability", "web"]
+  name       = "cluster0"
+  vpc_name   = "vpc0"
+  namespaces = ["ambassador", "argo-rollouts", "monitoring", "observability", "security", "web"]
 })
 

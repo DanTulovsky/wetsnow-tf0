@@ -3,6 +3,11 @@ variable "service_account" {
   default = "wetsnow-tf0"
 }
 
+variable "project" {
+  type    = string
+  default = "unset_project"
+}
+
 variable "environment" {
   type    = string
   default = "dev"
@@ -31,13 +36,6 @@ variable "grafana_secrets" {
   })
 }
 
-variable "ambassador_secrets" {
-  sensitive = true
-  type = object({
-    license_key                  = string
-  })
-}
-
 variable "lightstep_secrets" {
   sensitive = true
   type = object({
@@ -45,34 +43,33 @@ variable "lightstep_secrets" {
   })
 }
 
-variable "datadog_secrets" {
-  sensitive = true
-  type = object({
-    api_key = string
-  })
-}
-
-variable "pgadmin_secrets" {
-  sensitive = true
-  type = object({
-    admin_password = string
-  })
-}
-
-variable "kafka_secrets" {
-  sensitive = true
-  type = object({
-    cloudhut_license = string
-  })
-}
-
 # App versions
+variable "grafana" {
+  type = object({
+    app_version = string
+  })
+}
+variable "kubernetes_external_secrets" {
+  type = object({
+    app_version = string
+  })
+}
+variable "otel_collector" {
+  type = object({
+    app_version = string
+  })
+}
+variable "prometheus" {
+  type = object({
+    operator_version     = string
+    otel_sidecar_version = string
+  })
+}
 variable "quote_server" {
   type = object({
     app_version = string
   })
 }
-
 variable "web_static" {
   type = object({
     app_version = string

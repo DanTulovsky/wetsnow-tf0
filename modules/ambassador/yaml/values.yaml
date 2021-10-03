@@ -3,7 +3,7 @@ nameOverride: "${name}"
 
 licenseKey:
   value: ${licenseKey}
-  annotations: {}
+  annotations: { }
   createSecret: true
 metrics:
   serviceMonitor:
@@ -22,15 +22,6 @@ podLabels:
   service.name: "ambassador-ambassador"
   service.version: ${app_version}
 
-volumes:
-  - name: lightstep-secret-volume
-    secret:
-      secretName: lightstep-access-token
-
-volumeMounts:
-  - name: lightstep-secret-volume
-    mountPath: /etc/lightstep-access-token
-
 resources:
   limits:
     cpu: 300m
@@ -39,7 +30,7 @@ resources:
     cpu: 10m
     memory: 256Mi
 adminService:
-  annotations: {}
+  annotations: { }
   create: true
   port: 8877
   type: NodePort
@@ -49,7 +40,7 @@ service:
     cloud.google.com/neg: '{"ingress": true}'
     cloud.google.com/backend-config: '{"default": "${backendConfig}"}'
     cloud.google.com/app-protocols: '{"grpc": "HTTP2"}'
-  externalIPs: []
+  externalIPs: [ ]
   ports:
     - name: http
       port: 8080
