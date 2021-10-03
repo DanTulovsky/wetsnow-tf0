@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix operator version">
-      <change beforePath="$PROJECT_DIR$/../quote-server/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../quote-server/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../quote-server/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../quote-server/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="tf upgrade" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -134,6 +130,14 @@
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
     </task>
+    <task id="LOCAL-00001" summary="tf upgrade">
+      <created>1633269262036</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1633269262036</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,7 +170,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="rework argo version as variable." />
     <MESSAGE value="format" />
     <MESSAGE value="set image tag." />
     <MESSAGE value="Fix" />
@@ -191,7 +194,8 @@
     <MESSAGE value="otel version" />
     <MESSAGE value="alphabet" />
     <MESSAGE value="fix operator version" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix operator version" />
+    <MESSAGE value="tf upgrade" />
+    <option name="LAST_COMMIT_MESSAGE" value="tf upgrade" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
