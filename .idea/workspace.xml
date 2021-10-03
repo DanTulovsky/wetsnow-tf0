@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="alphabet">
-      <change beforePath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix operator version">
+      <change beforePath="$PROJECT_DIR$/../quote-server/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../quote-server/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quote-server/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../quote-server/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +60,7 @@
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/cluster0/sensitive.auto.tfvars" />
+    <property name="com.google.cloudcode.ide_session_index" value="20211003_0009" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
@@ -124,6 +127,15 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <created>1633046260734</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1633046260734</updated>
+    </task>
+    <servers />
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
@@ -154,7 +166,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Upgrade argo to 1.0.3" />
     <MESSAGE value="rework argo version as variable." />
     <MESSAGE value="format" />
     <MESSAGE value="set image tag." />
@@ -179,7 +190,8 @@
     <MESSAGE value="prom version" />
     <MESSAGE value="otel version" />
     <MESSAGE value="alphabet" />
-    <option name="LAST_COMMIT_MESSAGE" value="alphabet" />
+    <MESSAGE value="fix operator version" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix operator version" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
