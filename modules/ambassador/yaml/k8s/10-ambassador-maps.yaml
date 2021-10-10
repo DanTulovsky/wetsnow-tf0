@@ -73,6 +73,19 @@ spec:
 apiVersion: getambassador.io/v2
 kind: Mapping
 metadata:
+  name: parca.wetsnow.com
+  namespace: ambassador
+spec:
+  prefix: /
+  host: parca.wetsnow.com
+  resolver: endpoint
+  service: parca.parca:7070
+  allow_upgrade:
+    - websocket
+---
+apiVersion: getambassador.io/v2
+kind: Mapping
+metadata:
   name: prometheus.wetsnow.com
   namespace: ambassador
 spec:
