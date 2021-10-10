@@ -24,6 +24,17 @@ resource "google_compute_managed_ssl_certificate" "wetsnow-com-20211010" {
   name = "wetsnow-cert-20211010"
   managed {
     domains = concat(local.domains, [
+      "wetsnow.com",
+      "www.wetsnow.com",
+      "ambassador-admin.wetsnow.com",
+      "pepper-poker.wetsnow.com",
+      "grafana.wetsnow.com",
+      "login.wetsnow.com",
+      "prometheus.wetsnow.com",
+      "pgadmin.wetsnow.com",
+      "kafka-ui.wetsnow.com",
+      "dusselskolk.com",
+      "www.dusselskolk.com",
       "parca.wetsnow.com",
     ])
   }
