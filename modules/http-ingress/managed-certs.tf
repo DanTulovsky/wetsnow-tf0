@@ -2,7 +2,7 @@
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_managed_ssl_certificate
 
 locals {
-  domains = [
+  domains = sort([
     "ambassador-admin.wetsnow.com.",
     "dusselskolk.com.",
     "grafana.wetsnow.com.",
@@ -16,7 +16,7 @@ locals {
     "wetsnow.com.",
     "www.dusselskolk.com.",
     "www.wetsnow.com.",
-  ]
+  ])
 }
 
 # old
@@ -36,6 +36,9 @@ resource "google_compute_managed_ssl_certificate" "wetsnow-com-20211010" {
       "dusselskolk.com",
       "www.dusselskolk.com",
       "parca.wetsnow.com",
+      "scope.wetsnow.com",
+      "weave-scope.wetsnow.com",
+      "rollouts.wetsnow.com",
     ])
   }
 }
@@ -47,8 +50,8 @@ resource "google_compute_managed_ssl_certificate" "wetsnow-com-20211010" {
 resource "google_compute_managed_ssl_certificate" "wetsnow-com-20211010-01" {
   name = "wetsnow-cert-20211010-01"
   managed {
-    domains = concat(local.domains, [
+    domains = concat(local.domains, sort([
       "parca.wetsnow.com",
-    ])
+    ]))
   }
 }
