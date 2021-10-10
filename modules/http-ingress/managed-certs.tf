@@ -18,13 +18,13 @@ locals {
 }
 
 # old
-resource "google_compute_managed_ssl_certificate" "wetsnow-com-20200502" {
-  name = "wetsnow-cert-20210502"
+resource "google_compute_managed_ssl_certificate" "wetsnow-com-20210610" {
+  name = "wetsnow-cert-20210610"
   managed {
     domains = concat(local.domains, [
       "scope.wetsnow.com",
       "weave-scope.wetsnow.com",
-      "traefik.wetsnow.com",
+      "rollouts.wetsnow.com",
     ])
   }
 }
@@ -33,10 +33,11 @@ resource "google_compute_managed_ssl_certificate" "wetsnow-com-20200502" {
 # update kubernetes_ingress.ambassador in main.tf
 # then remove the previous instance
 # this causes downtime!!
-resource "google_compute_managed_ssl_certificate" "wetsnow-com-20210610" {
+resource "google_compute_managed_ssl_certificate" "wetsnow-com-20211010" {
   name = "wetsnow-cert-20210610"
   managed {
     domains = concat(local.domains, [
+      "parca.wetsnow.com",
       "scope.wetsnow.com",
       "weave-scope.wetsnow.com",
       "rollouts.wetsnow.com",
