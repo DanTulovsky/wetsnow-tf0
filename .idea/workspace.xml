@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="parca ambassador">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="update certs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/http-ingress/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/http-ingress/main.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/http-ingress/managed-certs.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/http-ingress/managed-certs.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -169,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633879942566</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update certs">
+      <created>1633888319017</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1633888319017</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,7 +208,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Fix argo version" />
     <MESSAGE value="upgrade ambassador" />
     <MESSAGE value="update otel" />
     <MESSAGE value="update grafana" />
@@ -227,7 +232,8 @@
     <MESSAGE value="parca" />
     <MESSAGE value="fix ssl cert" />
     <MESSAGE value="parca ambassador" />
-    <option name="LAST_COMMIT_MESSAGE" value="parca ambassador" />
+    <MESSAGE value="update certs" />
+    <option name="LAST_COMMIT_MESSAGE" value="update certs" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

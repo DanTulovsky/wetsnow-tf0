@@ -19,6 +19,15 @@ locals {
   ]
 }
 
+# old
+resource "google_compute_managed_ssl_certificate" "wetsnow-com-20211010" {
+  name = "wetsnow-cert-20211010"
+  managed {
+    domains = concat(local.domains, [
+      "parca.wetsnow.com",
+    ])
+  }
+}
 
 # to add a cert, update the date in the name, add a new cert and
 # update kubernetes_ingress.ambassador in main.tf
