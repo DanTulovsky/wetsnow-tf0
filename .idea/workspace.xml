@@ -4,21 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="tf upgrade">
-      <change afterPath="$PROJECT_DIR$/modules/parca/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/parca/providers.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/parca/variables.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/parca/yaml/k8s/agent.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/parca/yaml/k8s/server.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/providers.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/providers.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/terraform.auto.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/terraform.auto.tfvars" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/http-ingress/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/http-ingress/main.tf" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="parca">
       <change beforePath="$PROJECT_DIR$/modules/http-ingress/managed-certs.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/http-ingress/managed-certs.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/kafka/.terraform.lock.hcl" beforeDir="false" afterPath="$PROJECT_DIR$/modules/parca/.terraform.lock.hcl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/keycloak/.terraform.lock.hcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/scope/.terraform.lock.hcl" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633269286142</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="parca">
+      <created>1633879515022</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1633879515022</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,7 +186,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="format" />
     <MESSAGE value="set image tag." />
     <MESSAGE value="Fix" />
     <MESSAGE value="Fix argo version" />
@@ -217,7 +210,8 @@
     <MESSAGE value="alphabet" />
     <MESSAGE value="fix operator version" />
     <MESSAGE value="tf upgrade" />
-    <option name="LAST_COMMIT_MESSAGE" value="tf upgrade" />
+    <MESSAGE value="parca" />
+    <option name="LAST_COMMIT_MESSAGE" value="parca" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
