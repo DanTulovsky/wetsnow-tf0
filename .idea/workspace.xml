@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix ssl cert">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="parca ambassador">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/ambassador/yaml/k8s/10-ambassador-maps.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/yaml/k8s/10-ambassador-maps.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/http-ingress/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/http-ingress/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/http-ingress/managed-certs.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/http-ingress/managed-certs.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +60,7 @@
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/cluster0/sensitive.auto.tfvars" />
-    <property name="com.google.cloudcode.ide_session_index" value="20211010_0002" />
+    <property name="com.google.cloudcode.ide_session_index" value="20211010_0004" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
@@ -161,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633879700732</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="parca ambassador">
+      <created>1633879942566</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1633879942566</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,7 +202,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Fix" />
     <MESSAGE value="Fix argo version" />
     <MESSAGE value="upgrade ambassador" />
     <MESSAGE value="update otel" />
@@ -219,7 +226,8 @@
     <MESSAGE value="tf upgrade" />
     <MESSAGE value="parca" />
     <MESSAGE value="fix ssl cert" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix ssl cert" />
+    <MESSAGE value="parca ambassador" />
+    <option name="LAST_COMMIT_MESSAGE" value="parca ambassador" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
