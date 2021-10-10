@@ -23,7 +23,7 @@ locals {
 resource "google_compute_managed_ssl_certificate" "wetsnow-com-20211010" {
   name = "wetsnow-cert-20211010"
   managed {
-    domains = concat(local.domains, [
+    domains = [
       "wetsnow.com",
       "www.wetsnow.com",
       "ambassador-admin.wetsnow.com",
@@ -39,7 +39,7 @@ resource "google_compute_managed_ssl_certificate" "wetsnow-com-20211010" {
       "scope.wetsnow.com",
       "weave-scope.wetsnow.com",
       "rollouts.wetsnow.com",
-    ])
+    ]
   }
 }
 

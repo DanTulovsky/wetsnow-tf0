@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="like this?">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="no like this">
       <change beforePath="$PROJECT_DIR$/modules/http-ingress/managed-certs.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/http-ingress/managed-certs.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -189,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633889231582</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="no like this">
+      <created>1633889365678</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1633889365678</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,7 +228,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="update grafana" />
     <MESSAGE value="set headers" />
     <MESSAGE value="upgrade web-static" />
     <MESSAGE value="fix" />
@@ -247,7 +252,8 @@
     <MESSAGE value="update certs" />
     <MESSAGE value="old" />
     <MESSAGE value="like this?" />
-    <option name="LAST_COMMIT_MESSAGE" value="like this?" />
+    <MESSAGE value="no like this" />
+    <option name="LAST_COMMIT_MESSAGE" value="no like this" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
