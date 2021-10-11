@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="or like this">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="login">
+      <change afterPath="$PROJECT_DIR$/../web-static/data/hosts/login.wetsnow.com/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web-static/data/hosts/login.wetsnow.com/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-static/server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/../web-static/server/server.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/ambassador/yaml/k8s/10-ambassador-maps.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/yaml/k8s/10-ambassador-maps.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +25,7 @@
         <option name="title" value="All" />
       </GitPushTagMode>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../web-static" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -59,13 +62,13 @@
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/cluster0/sensitive.auto.tfvars" />
-    <property name="com.google.cloudcode.ide_session_index" value="20211010_0010" />
+    <property name="com.google.cloudcode.ide_session_index" value="20211010_0011" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../web-static/data/hosts/login.wetsnow.com" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -73,11 +76,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../web-static/data/hosts/login.wetsnow.com" />
       <recent name="$PROJECT_DIR$/modules" />
       <recent name="$PROJECT_DIR$/modules/argo" />
       <recent name="$PROJECT_DIR$/cluster0/yaml" />
       <recent name="$PROJECT_DIR$/modules/ambassador/yaml/k8s" />
-      <recent name="$PROJECT_DIR$/modules/ambassador/yaml/k8s-iap" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/modules/parca/yaml/k8s/server" />
@@ -203,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633889446891</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="login">
+      <created>1633911587973</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1633911587973</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,7 +246,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="upgrade web-static" />
     <MESSAGE value="fix" />
     <MESSAGE value="default src self." />
     <MESSAGE value="0.41" />
@@ -261,7 +270,8 @@
     <MESSAGE value="like this?" />
     <MESSAGE value="no like this" />
     <MESSAGE value="or like this" />
-    <option name="LAST_COMMIT_MESSAGE" value="or like this" />
+    <MESSAGE value="login" />
+    <option name="LAST_COMMIT_MESSAGE" value="login" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
