@@ -4,7 +4,7 @@ ambassador = {
   app_version = "1.14.1"
 }
 argo_rollouts = {
-  app_version = "v1.0.6"
+  app_version = "v1.1.0"
 }
 grafana = {
   app_version = "8.2.0-beta1"

@@ -6,3 +6,6 @@ controller:
 
   image:
     tag: ${argo_version}
+
+dashboard:
+  enabled: true
