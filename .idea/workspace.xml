@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="remove parca">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo/main.tf" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="update argo">
       <change beforePath="$PROJECT_DIR$/modules/argo/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo/yaml/values.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -244,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633917369140</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="update argo">
+      <created>1634336800383</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1634336800383</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,7 +281,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="default src self." />
     <MESSAGE value="0.41" />
     <MESSAGE value="v 0.21" />
     <MESSAGE value="headers 0.22" />
@@ -302,7 +305,8 @@
     <MESSAGE value="or like this" />
     <MESSAGE value="login" />
     <MESSAGE value="remove parca" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove parca" />
+    <MESSAGE value="update argo" />
+    <option name="LAST_COMMIT_MESSAGE" value="update argo" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

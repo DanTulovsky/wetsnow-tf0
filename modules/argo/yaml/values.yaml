@@ -9,3 +9,5 @@ controller:
 
 dashboard:
   enabled: true
+  image:
+    tag: ${argo_version}
