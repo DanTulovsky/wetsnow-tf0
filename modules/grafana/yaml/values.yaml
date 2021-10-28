@@ -61,7 +61,6 @@ plugins:
   - grafana-worldmap-panel
   - grafana-kubernetes-app
   - https://github.com/lightstep/lightstep-grafana-plugin/archive/master.zip;lightstep-grafana-plugin
-  - https://github.com/lightstep/lightstep-grafana-plugin/archive/master.zip;lightstep-tracing-app
 
 ## Configure grafana datasources
 datasources:
