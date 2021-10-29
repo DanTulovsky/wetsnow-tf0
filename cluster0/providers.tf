@@ -30,6 +30,9 @@ provider "kubectl" {
 }
 
 provider "kubernetes" {
+  experiments {
+    manifest_resource = true
+  }
   host  = "https://${data.google_container_cluster.cluster0.endpoint}"
   token = data.google_client_config.default.access_token
   cluster_ca_certificate = base64decode(

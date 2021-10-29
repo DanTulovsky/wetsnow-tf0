@@ -4,21 +4,18 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="cleanup" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="add lightstep-tracing">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/grafana/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/grafana/yaml/values.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Go File" />
-      </list>
-    </option>
-  </component>
-  <component name="GOROOT" url="file:///usr/local/Cellar/go/1.17/libexec" />
+  <component name="GOROOT" url="file:///usr/local/Cellar/go/1.17.2/libexec" />
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="PUSH_TAGS">
       <GitPushTagMode>
         <option name="argument" value="--tags" />
@@ -26,8 +23,7 @@
       </GitPushTagMode>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
-    <option name="SAVE_CHANGES_POLICY" value="STASH" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -41,7 +37,7 @@
     <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="KubernetesApiPersistence">
-    <option name="context" value="gke_snowcloud-01_us-central1-c_cluster0" />
+    <option name="context" value="snowcloud-01" />
     <option name="namespace" value="default" />
   </component>
   <component name="ProjectId" id="1r8Ir3miogzozA8u5RxJXu3Nw2Y" />
@@ -59,47 +55,43 @@
     <property name="ACTIVE_CLOUD_PROJECT_NUMBER" value="53644033433" />
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="NEW_TOOLWINDOW_STRIPE_DEFAULTS" value="true" />
+    <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TF_FMT" value="false" />
+    <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/cluster0/sensitive.auto.tfvars" />
     <property name="com.google.cloudcode.ide_session_index" value="20211028_0000" />
-    <property name="format.on.save" value="true" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/modules/kubernetes-external-secrets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="optimize.imports.on.save" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="sshConsole" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/modules/kubernetes-external-secrets" />
+      <recent name="$PROJECT_DIR$/../web-static/data/hosts/login.wetsnow.com" />
+      <recent name="$PROJECT_DIR$/modules" />
       <recent name="$PROJECT_DIR$/modules/argo" />
       <recent name="$PROJECT_DIR$/cluster0/yaml" />
       <recent name="$PROJECT_DIR$/modules/ambassador/yaml/k8s" />
-      <recent name="$PROJECT_DIR$/modules/ambassador/yaml/k8s-iap" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/modules/common/yaml/k8s" />
-      <recent name="$PROJECT_DIR$/modules/common" />
+      <recent name="$PROJECT_DIR$/modules/parca/yaml/k8s/server" />
       <recent name="$PROJECT_DIR$/modules/argo/yaml/k8s" />
       <recent name="$PROJECT_DIR$/cluster0/yaml/k8s" />
       <recent name="$PROJECT_DIR$/modules/prometheus/yaml" />
+      <recent name="$PROJECT_DIR$/modules/prometheus" />
     </key>
   </component>
-  <component name="RunManager" selected="Cloud Code: Kubernetes.Develop on Kubernetes">
+  <component name="RunManager">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="wetsnow" />
       <working_directory value="$PROJECT_DIR$/../web-static" />
@@ -121,442 +113,171 @@
       <framework value="gotest" />
       <method v="2" />
     </configuration>
-    <configuration name="requests-with-authorization#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/requests-with-authorization.http" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="requests-with-authorization#5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/requests-with-authorization.http" index="5" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="requests-with-authorization#6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/requests-with-authorization.http" index="6" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="requests-with-tests#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/requests-with-tests.http" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="proto" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
-      <makefile filename="$PROJECT_DIR$/../quote-server/Makefile" target="proto" workingDirectory="" arguments="">
-        <envs />
-      </makefile>
-      <method v="2" />
-    </configuration>
-    <configuration name="Develop on Kubernetes" type="google-container-tools-skaffold-run-config" factoryName="google-container-tools-skaffold-run-config-dev" show_console_on_std_err="false" show_console_on_std_out="false">
-      <option name="allowRunningInParallel" value="false" />
-      <option name="buildEnvironment" />
-      <option name="builders" />
-      <option name="cleanupDeployments" value="true" />
-      <option name="deployToCurrentContext" value="false" />
-      <option name="deployToMinikube" value="false" />
-      <option name="envVariables" />
-      <option name="imageRepositoryOverride" />
-      <option name="kubernetesContext" />
-      <option name="mappings">
-        <list />
-      </option>
-      <option name="moduleDeploymentType" />
-      <option name="projectPathOnTarget" />
-      <option name="resourceDeletionTimeoutMins" value="2" />
-      <option name="selectedOptions">
-        <list />
-      </option>
-      <option name="skaffoldConfigurationFilePath" value="$PROJECT_DIR$/../web-static/skaffold.yaml" />
-      <option name="skaffoldModules" />
-      <option name="skaffoldNamespace" />
-      <option name="skaffoldProfile" />
-      <option name="skaffoldWatchMode" value="DEPLOY_ON_CHANGES" />
-      <option name="statusCheck" value="true" />
-      <option name="verbosity" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Run on Kubernetes" type="google-container-tools-skaffold-run-config" factoryName="google-container-tools-skaffold-run-config-dev" show_console_on_std_err="false" show_console_on_std_out="false">
-      <option name="allowRunningInParallel" value="false" />
-      <option name="buildEnvironment" />
-      <option name="builders" />
-      <option name="cleanupDeployments" value="true" />
-      <option name="deployToCurrentContext" value="false" />
-      <option name="deployToMinikube" value="false" />
-      <option name="envVariables" />
-      <option name="imageRepositoryOverride" />
-      <option name="kubernetesContext" />
-      <option name="mappings">
-        <list />
-      </option>
-      <option name="moduleDeploymentType" />
-      <option name="projectPathOnTarget" />
-      <option name="resourceDeletionTimeoutMins" value="2" />
-      <option name="selectedOptions">
-        <list />
-      </option>
-      <option name="skaffoldConfigurationFilePath" value="$PROJECT_DIR$/../web-static/skaffold.yaml" />
-      <option name="skaffoldModules" />
-      <option name="skaffoldNamespace" />
-      <option name="skaffoldProfile" />
-      <option name="skaffoldWatchMode" value="ON_DEMAND" />
-      <option name="statusCheck" value="true" />
-      <option name="verbosity" />
+    <configuration name="gobench web-static" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="wetsnow" />
+      <working_directory value="$PROJECT_DIR$/../web-static" />
+      <kind value="DIRECTORY" />
+      <package value="github.com/DanTulovsky/web-static" />
+      <directory value="$PROJECT_DIR$/../web-static" />
+      <filePath value="$PROJECT_DIR$/../web-static" />
+      <framework value="gobench" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.requests-with-tests#1" />
-        <item itemvalue="HTTP Request.requests-with-authorization#6" />
-        <item itemvalue="HTTP Request.requests-with-authorization#5" />
-        <item itemvalue="HTTP Request.requests-with-authorization#1" />
-        <item itemvalue="Makefile Target.proto" />
+        <item itemvalue="Go Test.gobench web-static" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <created>1628909558379</created>
+      <created>1633046260734</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1628909558379</updated>
+      <updated>1633046260734</updated>
     </task>
-    <task id="LOCAL-00090" summary="add comment">
-      <created>1631548923554</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
+    <task id="LOCAL-00001" summary="tf upgrade">
+      <created>1633269262036</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1631548923554</updated>
+      <updated>1633269262036</updated>
     </task>
-    <task id="LOCAL-00091" summary="explicitly enable workload identity.">
-      <created>1631821260750</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
+    <task id="LOCAL-00002" summary="tf upgrade">
+      <created>1633269286142</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1631821260751</updated>
+      <updated>1633269286142</updated>
     </task>
-    <task id="LOCAL-00092" summary="upgrade otel">
-      <created>1631911369738</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
+    <task id="LOCAL-00003" summary="parca">
+      <created>1633879515022</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1631911369739</updated>
+      <updated>1633879515022</updated>
     </task>
-    <task id="LOCAL-00093" summary="increase wetsnow.com timeout">
-      <created>1631967311055</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
+    <task id="LOCAL-00004" summary="fix ssl cert">
+      <created>1633879700732</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1631967311055</updated>
+      <updated>1633879700732</updated>
     </task>
-    <task id="LOCAL-00094" summary="increase wetsnow.com timeout">
-      <created>1631967426376</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
+    <task id="LOCAL-00005" summary="parca ambassador">
+      <created>1633879942566</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1631967426376</updated>
+      <updated>1633879942566</updated>
     </task>
-    <task id="LOCAL-00095" summary="operator">
-      <created>1631968602114</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
+    <task id="LOCAL-00006" summary="update certs">
+      <created>1633888319017</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1631968602114</updated>
+      <updated>1633888319017</updated>
     </task>
-    <task id="LOCAL-00096" summary="grafana">
-      <created>1631969018000</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
+    <task id="LOCAL-00007" summary="old">
+      <created>1633889083271</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1631969018000</updated>
+      <updated>1633889083271</updated>
     </task>
-    <task id="LOCAL-00097" summary="enable manifest">
-      <created>1631969397427</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
+    <task id="LOCAL-00008" summary="like this?">
+      <created>1633889231582</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1631969397427</updated>
+      <updated>1633889231582</updated>
     </task>
-    <task id="LOCAL-00098" summary="grpc-go">
-      <created>1631969630527</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
+    <task id="LOCAL-00009" summary="no like this">
+      <created>1633889365678</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1631969630527</updated>
+      <updated>1633889365678</updated>
     </task>
-    <task id="LOCAL-00099" summary="disable manifest">
-      <created>1631969831353</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
+    <task id="LOCAL-00010" summary="or like this">
+      <created>1633889446891</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1631969831353</updated>
+      <updated>1633889446891</updated>
     </task>
-    <task id="LOCAL-00100" summary="medium node pool">
-      <created>1632322227683</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
+    <task id="LOCAL-00011" summary="login">
+      <created>1633911587973</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
       <option name="project" value="LOCAL" />
-      <updated>1632322227683</updated>
+      <updated>1633911587973</updated>
     </task>
-    <task id="LOCAL-00101" summary="cleanup for real">
-      <created>1632663810587</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
+    <task id="LOCAL-00012" summary="login">
+      <created>1633912527836</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
       <option name="project" value="LOCAL" />
-      <updated>1632663810587</updated>
+      <updated>1633912527836</updated>
     </task>
-    <task id="LOCAL-00102" summary="cleanup and secret syncer">
-      <created>1632677992462</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
+    <task id="LOCAL-00013" summary="login">
+      <created>1633912628685</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
       <option name="project" value="LOCAL" />
-      <updated>1632677992462</updated>
+      <updated>1633912628685</updated>
     </task>
-    <task id="LOCAL-00103" summary="cleanup and secret syncer">
-      <created>1632678131828</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
+    <task id="LOCAL-00014" summary="remove parca">
+      <created>1633916855563</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
-      <updated>1632678131828</updated>
+      <updated>1633916855563</updated>
     </task>
-    <task id="LOCAL-00104" summary="no resources">
-      <created>1632678508295</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
+    <task id="LOCAL-00015" summary="remove parca">
+      <created>1633917369139</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
       <option name="project" value="LOCAL" />
-      <updated>1632678508296</updated>
+      <updated>1633917369140</updated>
     </task>
-    <task id="LOCAL-00105" summary="set service account and workload identity.">
-      <created>1632680716394</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
+    <task id="LOCAL-00016" summary="update argo">
+      <created>1634336800383</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
       <option name="project" value="LOCAL" />
-      <updated>1632680716394</updated>
+      <updated>1634336800383</updated>
     </task>
-    <task id="LOCAL-00106" summary="id">
-      <created>1632681288184</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
+    <task id="LOCAL-00017" summary="dashboard tag">
+      <created>1634337068286</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
       <option name="project" value="LOCAL" />
-      <updated>1632681288184</updated>
+      <updated>1634337068286</updated>
     </task>
-    <task id="LOCAL-00107" summary="like this?">
-      <created>1632681692933</created>
-      <option name="number" value="00107" />
-      <option name="presentableId" value="LOCAL-00107" />
+    <task id="LOCAL-00018" summary="force update">
+      <created>1634337153404</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
       <option name="project" value="LOCAL" />
-      <updated>1632681692933</updated>
+      <updated>1634337153404</updated>
     </task>
-    <task id="LOCAL-00108" summary="no like this">
-      <created>1632681722490</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
+    <task id="LOCAL-00019" summary="update version">
+      <created>1634337302471</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
       <option name="project" value="LOCAL" />
-      <updated>1632681722490</updated>
+      <updated>1634337302471</updated>
     </task>
-    <task id="LOCAL-00109" summary="proper role name">
-      <created>1632682194901</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
+    <task id="LOCAL-00020" summary="add lightstep-tracing">
+      <created>1635451057551</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
       <option name="project" value="LOCAL" />
-      <updated>1632682194901</updated>
+      <updated>1635451057551</updated>
     </task>
-    <task id="LOCAL-00110" summary="try 14">
-      <created>1632682948745</created>
-      <option name="number" value="00110" />
-      <option name="presentableId" value="LOCAL-00110" />
-      <option name="project" value="LOCAL" />
-      <updated>1632682948745</updated>
-    </task>
-    <task id="LOCAL-00111" summary="try65">
-      <created>1632683147657</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1632683147657</updated>
-    </task>
-    <task id="LOCAL-00112" summary="increase polling interval">
-      <created>1632686239843</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1632686239843</updated>
-    </task>
-    <task id="LOCAL-00113" summary="cleanup">
-      <created>1632686651540</created>
-      <option name="number" value="00113" />
-      <option name="presentableId" value="LOCAL-00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1632686651540</updated>
-    </task>
-    <task id="LOCAL-00114" summary="secrets and stuff">
-      <created>1632695100235</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1632695100235</updated>
-    </task>
-    <task id="LOCAL-00115" summary="comments">
-      <created>1632695138174</created>
-      <option name="number" value="00115" />
-      <option name="presentableId" value="LOCAL-00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1632695138174</updated>
-    </task>
-    <task id="LOCAL-00116" summary="create in web namespace only">
-      <created>1632695574763</created>
-      <option name="number" value="00116" />
-      <option name="presentableId" value="LOCAL-00116" />
-      <option name="project" value="LOCAL" />
-      <updated>1632695574763</updated>
-    </task>
-    <task id="LOCAL-00117" summary="fix id.">
-      <created>1632696288804</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1632696288804</updated>
-    </task>
-    <task id="LOCAL-00118" summary="fix secret name">
-      <created>1632696565072</created>
-      <option name="number" value="00118" />
-      <option name="presentableId" value="LOCAL-00118" />
-      <option name="project" value="LOCAL" />
-      <updated>1632696565072</updated>
-    </task>
-    <task id="LOCAL-00119" summary="token.txt">
-      <created>1632696622599</created>
-      <option name="number" value="00119" />
-      <option name="presentableId" value="LOCAL-00119" />
-      <option name="project" value="LOCAL" />
-      <updated>1632696622599</updated>
-    </task>
-    <task id="LOCAL-00120" summary="every 60 seconds for now">
-      <created>1632697536520</created>
-      <option name="number" value="00120" />
-      <option name="presentableId" value="LOCAL-00120" />
-      <option name="project" value="LOCAL" />
-      <updated>1632697536520</updated>
-    </task>
-    <task id="LOCAL-00121" summary="fix deployment">
-      <created>1632697893344</created>
-      <option name="number" value="00121" />
-      <option name="presentableId" value="LOCAL-00121" />
-      <option name="project" value="LOCAL" />
-      <updated>1632697893344</updated>
-    </task>
-    <task id="LOCAL-00122" summary="cleanup">
-      <created>1632702825242</created>
-      <option name="number" value="00122" />
-      <option name="presentableId" value="LOCAL-00122" />
-      <option name="project" value="LOCAL" />
-      <updated>1632702825242</updated>
-    </task>
-    <task id="LOCAL-00123" summary="fix">
-      <created>1632703068545</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1632703068545</updated>
-    </task>
-    <task id="LOCAL-00124" summary="fix">
-      <created>1632703629110</created>
-      <option name="number" value="00124" />
-      <option name="presentableId" value="LOCAL-00124" />
-      <option name="project" value="LOCAL" />
-      <updated>1632703629110</updated>
-    </task>
-    <task id="LOCAL-00125" summary="cleanup more">
-      <created>1632703676417</created>
-      <option name="number" value="00125" />
-      <option name="presentableId" value="LOCAL-00125" />
-      <option name="project" value="LOCAL" />
-      <updated>1632703676417</updated>
-    </task>
-    <task id="LOCAL-00126" summary="fix web">
-      <created>1632703914283</created>
-      <option name="number" value="00126" />
-      <option name="presentableId" value="LOCAL-00126" />
-      <option name="project" value="LOCAL" />
-      <updated>1632703914283</updated>
-    </task>
-    <task id="LOCAL-00127" summary="collector lightstep access token">
-      <created>1632704083868</created>
-      <option name="number" value="00127" />
-      <option name="presentableId" value="LOCAL-00127" />
-      <option name="project" value="LOCAL" />
-      <updated>1632704083868</updated>
-    </task>
-    <task id="LOCAL-00128" summary="cleanup">
-      <created>1632704175519</created>
-      <option name="number" value="00128" />
-      <option name="presentableId" value="LOCAL-00128" />
-      <option name="project" value="LOCAL" />
-      <updated>1632704175519</updated>
-    </task>
-    <task id="LOCAL-00129" summary="cleanup">
-      <created>1632704334026</created>
-      <option name="number" value="00129" />
-      <option name="presentableId" value="LOCAL-00129" />
-      <option name="project" value="LOCAL" />
-      <updated>1632704334026</updated>
-    </task>
-    <task id="LOCAL-00130" summary="remove kafka">
-      <created>1632704426962</created>
-      <option name="number" value="00130" />
-      <option name="presentableId" value="LOCAL-00130" />
-      <option name="project" value="LOCAL" />
-      <updated>1632704426962</updated>
-    </task>
-    <task id="LOCAL-00131" summary="set access token from env">
-      <created>1632705500420</created>
-      <option name="number" value="00131" />
-      <option name="presentableId" value="LOCAL-00131" />
-      <option name="project" value="LOCAL" />
-      <updated>1632705500420</updated>
-    </task>
-    <task id="LOCAL-00132" summary="extra $">
-      <created>1632705561838</created>
-      <option name="number" value="00132" />
-      <option name="presentableId" value="LOCAL-00132" />
-      <option name="project" value="LOCAL" />
-      <updated>1632705561838</updated>
-    </task>
-    <task id="LOCAL-00133" summary="further cleanup">
-      <created>1632705666012</created>
-      <option name="number" value="00133" />
-      <option name="presentableId" value="LOCAL-00133" />
-      <option name="project" value="LOCAL" />
-      <updated>1632705666012</updated>
-    </task>
-    <task id="LOCAL-00134" summary="switch to configmap">
-      <created>1632705944150</created>
-      <option name="number" value="00134" />
-      <option name="presentableId" value="LOCAL-00134" />
-      <option name="project" value="LOCAL" />
-      <updated>1632705944150</updated>
-    </task>
-    <task id="LOCAL-00135" summary="fix dep">
-      <created>1632706009609</created>
-      <option name="number" value="00135" />
-      <option name="presentableId" value="LOCAL-00135" />
-      <option name="project" value="LOCAL" />
-      <updated>1632706009609</updated>
-    </task>
-    <task id="LOCAL-00136" summary="syntax!">
-      <created>1632706148677</created>
-      <option name="number" value="00136" />
-      <option name="presentableId" value="LOCAL-00136" />
-      <option name="project" value="LOCAL" />
-      <updated>1632706148677</updated>
-    </task>
-    <task id="LOCAL-00137" summary="syntax!!!!">
-      <created>1632706335925</created>
-      <option name="number" value="00137" />
-      <option name="presentableId" value="LOCAL-00137" />
-      <option name="project" value="LOCAL" />
-      <updated>1632706335925</updated>
-    </task>
-    <task id="LOCAL-00138" summary="cleanup">
-      <created>1632710049988</created>
-      <option name="number" value="00138" />
-      <option name="presentableId" value="LOCAL-00138" />
-      <option name="project" value="LOCAL" />
-      <updated>1632710049988</updated>
-    </task>
-    <option name="localTasksCounter" value="139" />
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -567,7 +288,20 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="BEK_SORT_TYPE" value="1" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -576,33 +310,32 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <option name="FORCE_NON_EMPTY_COMMENT" value="true" />
-    <MESSAGE value="proper role name" />
-    <MESSAGE value="try 14" />
-    <MESSAGE value="try65" />
-    <MESSAGE value="increase polling interval" />
-    <MESSAGE value="secrets and stuff" />
-    <MESSAGE value="comments" />
-    <MESSAGE value="create in web namespace only" />
-    <MESSAGE value="fix id." />
-    <MESSAGE value="fix secret name" />
-    <MESSAGE value="token.txt" />
-    <MESSAGE value="every 60 seconds for now" />
-    <MESSAGE value="fix deployment" />
-    <MESSAGE value="fix" />
-    <MESSAGE value="cleanup more" />
-    <MESSAGE value="fix web" />
-    <MESSAGE value="collector lightstep access token" />
-    <MESSAGE value="remove kafka" />
-    <MESSAGE value="set access token from env" />
-    <MESSAGE value="extra $" />
-    <MESSAGE value="further cleanup" />
-    <MESSAGE value="switch to configmap" />
-    <MESSAGE value="fix dep" />
-    <MESSAGE value="syntax!" />
-    <MESSAGE value="syntax!!!!" />
-    <MESSAGE value="cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleanup" />
+    <MESSAGE value="ambassador version" />
+    <MESSAGE value="back to 1.0.3" />
+    <MESSAGE value="alphabetical order" />
+    <MESSAGE value="don't set chart version" />
+    <MESSAGE value="grafana version" />
+    <MESSAGE value="prom version" />
+    <MESSAGE value="otel version" />
+    <MESSAGE value="alphabet" />
+    <MESSAGE value="fix operator version" />
+    <MESSAGE value="tf upgrade" />
+    <MESSAGE value="parca" />
+    <MESSAGE value="fix ssl cert" />
+    <MESSAGE value="parca ambassador" />
+    <MESSAGE value="update certs" />
+    <MESSAGE value="old" />
+    <MESSAGE value="like this?" />
+    <MESSAGE value="no like this" />
+    <MESSAGE value="or like this" />
+    <MESSAGE value="login" />
+    <MESSAGE value="remove parca" />
+    <MESSAGE value="update argo" />
+    <MESSAGE value="dashboard tag" />
+    <MESSAGE value="force update" />
+    <MESSAGE value="update version" />
+    <MESSAGE value="add lightstep-tracing" />
+    <option name="LAST_COMMIT_MESSAGE" value="add lightstep-tracing" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

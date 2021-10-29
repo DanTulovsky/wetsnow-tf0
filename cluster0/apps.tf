@@ -63,6 +63,10 @@ module "open-telemetry" {
 #   admin_password = var.pgadmin_secrets.admin_password
 #   namespace      = module.common.namespaces.db
 # }
+#module "parca" {
+#  source    = "../modules/parca"
+#  namespace = module.common.namespaces.parca
+#}
 module "prometheus" {
   source               = "../modules/prometheus"
   namespace            = module.common.namespaces.monitoring

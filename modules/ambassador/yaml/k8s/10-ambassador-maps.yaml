@@ -51,6 +51,18 @@ spec:
 apiVersion: getambassador.io/v2
 kind: Mapping
 metadata:
+  name: login.wetsnow.com
+  namespace: ambassador
+spec:
+  prefix: /
+  host: www.wetsnow.com
+  resolver: endpoint
+  timeout_ms: 20000 # /quote is slow
+  service: static-web-frontend.web:8080
+---
+apiVersion: getambassador.io/v2
+kind: Mapping
+metadata:
   name: www.dusselskolk.com
   namespace: ambassador
 spec:
@@ -69,6 +81,19 @@ spec:
   host: dusselskolk.com
   resolver: endpoint
   service: static-web-frontend.web:8080
+---
+apiVersion: getambassador.io/v2
+kind: Mapping
+metadata:
+  name: parca.wetsnow.com
+  namespace: ambassador
+spec:
+  prefix: /
+  host: parca.wetsnow.com
+  resolver: endpoint
+  service: parca.parca:7070
+  allow_upgrade:
+    - websocket
 ---
 apiVersion: getambassador.io/v2
 kind: Mapping
