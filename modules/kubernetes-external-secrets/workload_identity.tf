@@ -6,13 +6,6 @@ data "google_iam_policy" "k8s-external-secrets" {
       "serviceAccount:${var.project_id}.svc.id.goog[${var.namespace}/${var.service_account}]",
     ]
   }
-  #  binding {
-  #    role = "roles/secretmanager.secretAccessor"
-  #
-  #    members = [
-  #      "serviceAccount:${google_service_account.k8s-external-secrets.email}"
-  #    ]
-  #  }
 }
 
 # Service account tied to the k8s 'k8s-external-secrets' account for access to Secret manager

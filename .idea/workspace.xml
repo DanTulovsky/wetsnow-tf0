@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="syntax!!!!">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/variables.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kind0/.terraform.lock.hcl" beforeDir="false" afterPath="$PROJECT_DIR$/kind0/.terraform.lock.hcl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kind0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/kind0/apps.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kind0/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/kind0/variables.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kind0/versions.auto.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/kind0/versions.auto.tfvars" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/prometheus/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/prometheus/variables.tf" afterDir="false" />
-    </list>
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="cleanup" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +26,8 @@
       </GitPushTagMode>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="SAVE_CHANGES_POLICY" value="STASH" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -75,7 +68,7 @@
     <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/cluster0/sensitive.auto.tfvars" />
-    <property name="com.google.cloudcode.ide_session_index" value="20210926_0009" />
+    <property name="com.google.cloudcode.ide_session_index" value="20211028_0000" />
     <property name="format.on.save" value="true" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
@@ -85,9 +78,10 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/modules/kubernetes-external-secrets" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="optimize.imports.on.save" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="com.intellij.kubernetes.config.KubernetesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -105,7 +99,7 @@
       <recent name="$PROJECT_DIR$/modules/prometheus/yaml" />
     </key>
   </component>
-  <component name="RunManager" selected="Makefile Target.proto">
+  <component name="RunManager" selected="Cloud Code: Kubernetes.Develop on Kubernetes">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="wetsnow" />
       <working_directory value="$PROJECT_DIR$/../web-static" />
@@ -127,14 +121,16 @@
       <framework value="gotest" />
       <method v="2" />
     </configuration>
-    <configuration name="gobench web-static" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="wetsnow" />
-      <working_directory value="$PROJECT_DIR$/../web-static" />
-      <kind value="DIRECTORY" />
-      <package value="github.com/DanTulovsky/web-static" />
-      <directory value="$PROJECT_DIR$/../web-static" />
-      <filePath value="$PROJECT_DIR$/../web-static" />
-      <framework value="gobench" />
+    <configuration name="requests-with-authorization#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/requests-with-authorization.http" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="requests-with-authorization#5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/requests-with-authorization.http" index="5" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="requests-with-authorization#6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/requests-with-authorization.http" index="6" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="requests-with-tests#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/requests-with-tests.http" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="proto" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
@@ -143,10 +139,69 @@
       </makefile>
       <method v="2" />
     </configuration>
+    <configuration name="Develop on Kubernetes" type="google-container-tools-skaffold-run-config" factoryName="google-container-tools-skaffold-run-config-dev" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="buildEnvironment" />
+      <option name="builders" />
+      <option name="cleanupDeployments" value="true" />
+      <option name="deployToCurrentContext" value="false" />
+      <option name="deployToMinikube" value="false" />
+      <option name="envVariables" />
+      <option name="imageRepositoryOverride" />
+      <option name="kubernetesContext" />
+      <option name="mappings">
+        <list />
+      </option>
+      <option name="moduleDeploymentType" />
+      <option name="projectPathOnTarget" />
+      <option name="resourceDeletionTimeoutMins" value="2" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="skaffoldConfigurationFilePath" value="$PROJECT_DIR$/../web-static/skaffold.yaml" />
+      <option name="skaffoldModules" />
+      <option name="skaffoldNamespace" />
+      <option name="skaffoldProfile" />
+      <option name="skaffoldWatchMode" value="DEPLOY_ON_CHANGES" />
+      <option name="statusCheck" value="true" />
+      <option name="verbosity" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Run on Kubernetes" type="google-container-tools-skaffold-run-config" factoryName="google-container-tools-skaffold-run-config-dev" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="buildEnvironment" />
+      <option name="builders" />
+      <option name="cleanupDeployments" value="true" />
+      <option name="deployToCurrentContext" value="false" />
+      <option name="deployToMinikube" value="false" />
+      <option name="envVariables" />
+      <option name="imageRepositoryOverride" />
+      <option name="kubernetesContext" />
+      <option name="mappings">
+        <list />
+      </option>
+      <option name="moduleDeploymentType" />
+      <option name="projectPathOnTarget" />
+      <option name="resourceDeletionTimeoutMins" value="2" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="skaffoldConfigurationFilePath" value="$PROJECT_DIR$/../web-static/skaffold.yaml" />
+      <option name="skaffoldModules" />
+      <option name="skaffoldNamespace" />
+      <option name="skaffoldProfile" />
+      <option name="skaffoldWatchMode" value="ON_DEMAND" />
+      <option name="statusCheck" value="true" />
+      <option name="verbosity" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.requests-with-tests#1" />
+        <item itemvalue="HTTP Request.requests-with-authorization#6" />
+        <item itemvalue="HTTP Request.requests-with-authorization#5" />
+        <item itemvalue="HTTP Request.requests-with-authorization#1" />
         <item itemvalue="Makefile Target.proto" />
-        <item itemvalue="Go Test.gobench web-static" />
       </list>
     </recent_temporary>
   </component>
@@ -157,13 +212,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628909558379</updated>
-    </task>
-    <task id="LOCAL-00089" summary="enable prom">
-      <created>1631464391492</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1631464391492</updated>
     </task>
     <task id="LOCAL-00090" summary="add comment">
       <created>1631548923554</created>
@@ -501,7 +549,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632706335925</updated>
     </task>
-    <option name="localTasksCounter" value="138" />
+    <task id="LOCAL-00138" summary="cleanup">
+      <created>1632710049988</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1632710049988</updated>
+    </task>
+    <option name="localTasksCounter" value="139" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -521,6 +576,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="true" />
     <MESSAGE value="proper role name" />
     <MESSAGE value="try 14" />
     <MESSAGE value="try65" />
@@ -537,7 +593,6 @@
     <MESSAGE value="cleanup more" />
     <MESSAGE value="fix web" />
     <MESSAGE value="collector lightstep access token" />
-    <MESSAGE value="cleanup" />
     <MESSAGE value="remove kafka" />
     <MESSAGE value="set access token from env" />
     <MESSAGE value="extra $" />
@@ -546,7 +601,8 @@
     <MESSAGE value="fix dep" />
     <MESSAGE value="syntax!" />
     <MESSAGE value="syntax!!!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="syntax!!!!" />
+    <MESSAGE value="cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleanup" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
