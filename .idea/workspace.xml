@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix otel">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix jaeger">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/yaml/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/yaml/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/variables.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -341,7 +341,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644083279145</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="fix jaeger">
+      <created>1644083817674</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1644083817674</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -373,7 +380,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="parca" />
     <MESSAGE value="fix ssl cert" />
     <MESSAGE value="parca ambassador" />
     <MESSAGE value="update certs" />
@@ -398,6 +404,7 @@
     <MESSAGE value="upgrade ambassador" />
     <MESSAGE value="upgrade prom" />
     <MESSAGE value="fix otel" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix otel" />
+    <MESSAGE value="fix jaeger" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix jaeger" />
   </component>
 </project>
