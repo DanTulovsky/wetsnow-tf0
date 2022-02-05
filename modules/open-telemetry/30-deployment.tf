@@ -151,11 +151,6 @@ resource "kubernetes_deployment" "otel_collector" {
             mount_path = "/conf"
           }
 
-          volume_mount {
-            name       = "otel-jaeger-sampling-config"
-            mount_path = "/etc/jaeger"
-          }
-
           liveness_probe {
             http_get {
               path = "/"
