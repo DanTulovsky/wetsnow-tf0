@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix jaeger">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="k8s_cluster receiver">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/open-telemetry/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/variables.tf" afterDir="false" />
     </list>
@@ -54,7 +54,7 @@
   <component name="PropertiesComponent">
     <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.google.cloudcode.ide_session_index" value="20220205_0004" />
+    <property name="com.google.cloudcode.ide_session_index" value="20220205_0005" />
     <property name="go.format.on.save.advertiser.fired" value="true" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
@@ -348,7 +348,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644083817674</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="k8s_cluster receiver">
+      <created>1644085237141</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1644085237141</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,7 +387,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix ssl cert" />
     <MESSAGE value="parca ambassador" />
     <MESSAGE value="update certs" />
     <MESSAGE value="old" />
@@ -405,6 +411,7 @@
     <MESSAGE value="upgrade prom" />
     <MESSAGE value="fix otel" />
     <MESSAGE value="fix jaeger" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix jaeger" />
+    <MESSAGE value="k8s_cluster receiver" />
+    <option name="LAST_COMMIT_MESSAGE" value="k8s_cluster receiver" />
   </component>
 </project>
