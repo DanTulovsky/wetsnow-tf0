@@ -127,9 +127,6 @@ resource "kubernetes_daemonset" "otel_collector-daemonset" {
         automount_service_account_token = true
       }
     }
-
-    initial_delay_seconds = 3
-    period_seconds        = 3
   }
 }
 
