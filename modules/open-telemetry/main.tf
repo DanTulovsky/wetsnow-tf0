@@ -23,19 +23,19 @@ resource "kubectl_manifest" "servicemonitor_static_web_monitor" {
   })
 }
 
-resource "helm_release" "ddog-agent" {
-  name       = "ddog-agent"
-  namespace  = var.namespace
-  repository = "https://helm.datadoghq.com"
-  chart      = "datadog"
-  #   version    = "4.1.2"
-  wait         = true
-  force_update = false
-
-  values = [
-    templatefile("${path.module}/yaml/ddog-values.yaml", {
-      gke         = var.gke
-      clusterName = var.cluster_name
-    })
-  ]
-}
+#resource "helm_release" "ddog-agent" {
+#  name       = "ddog-agent"
+#  namespace  = var.namespace
+#  repository = "https://helm.datadoghq.com"
+#  chart      = "datadog"
+#  #   version    = "4.1.2"
+#  wait         = true
+#  force_update = false
+#
+#  values = [
+#    templatefile("${path.module}/yaml/ddog-values.yaml", {
+#      gke         = var.gke
+#      clusterName = var.cluster_name
+#    })
+#  ]
+#}
