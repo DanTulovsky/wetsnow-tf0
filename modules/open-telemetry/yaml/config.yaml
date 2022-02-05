@@ -44,7 +44,7 @@ processors:
     # 25% of limit up to 2G
     spike_limit_mib: 128
     check_interval: 5s
-  k8s_tagger:
+  k8sattributes:
     passthrough: true
 extensions:
   health_check: { }

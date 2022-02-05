@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="upgrade prom">
-      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/30-deployment.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/30-deployment.tf" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix otel">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kind0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/kind0/apps.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/yaml/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/yaml/config.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -326,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644082916219</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="fix otel">
+      <created>1644083125035</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1644083125035</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,7 +368,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="tf upgrade" />
     <MESSAGE value="parca" />
     <MESSAGE value="fix ssl cert" />
     <MESSAGE value="parca ambassador" />
@@ -383,6 +392,7 @@
     <MESSAGE value="upgrade argo" />
     <MESSAGE value="upgrade ambassador" />
     <MESSAGE value="upgrade prom" />
-    <option name="LAST_COMMIT_MESSAGE" value="upgrade prom" />
+    <MESSAGE value="fix otel" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix otel" />
   </component>
 </project>
