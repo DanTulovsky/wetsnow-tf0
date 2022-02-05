@@ -128,8 +128,8 @@ resource "kubernetes_daemonset" "otel_collector-daemonset" {
       }
     }
 
-    min_ready_seconds         = 5
-    progress_deadline_seconds = 120
+    initial_delay_seconds = 3
+    period_seconds        = 3
   }
 }
 
