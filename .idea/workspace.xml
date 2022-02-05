@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="upgrade grafana">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="upgrade otel">
       <change beforePath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -298,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644082596962</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="upgrade otel">
+      <created>1644082669500</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1644082669500</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,7 +337,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="prom version" />
     <MESSAGE value="otel version" />
     <MESSAGE value="alphabet" />
     <MESSAGE value="fix operator version" />
@@ -355,6 +361,7 @@
     <MESSAGE value="fix path" />
     <MESSAGE value="fix argo" />
     <MESSAGE value="upgrade grafana" />
-    <option name="LAST_COMMIT_MESSAGE" value="upgrade grafana" />
+    <MESSAGE value="upgrade otel" />
+    <option name="LAST_COMMIT_MESSAGE" value="upgrade otel" />
   </component>
 </project>
