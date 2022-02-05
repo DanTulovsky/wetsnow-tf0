@@ -7,7 +7,7 @@ argo_rollouts = {
   app_version = "v1.1.0"
 }
 grafana = {
-  app_version = "8.2.0-beta1"
+  app_version = "8.3.4"
 }
 kubernetes_external_secrets = {
   app_version = "8.3.0"
