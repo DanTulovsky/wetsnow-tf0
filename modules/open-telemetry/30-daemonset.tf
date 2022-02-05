@@ -31,7 +31,7 @@ resource "kubernetes_daemonset" "otel_collector-daemonset" {
           name = "otel-collector-config-vol"
 
           config_map {
-            name = "otel-collector-agent-conf"
+            name = kubernetes_config_map.otel-collector-agent-conf.metadata.name
 
             items {
               key  = "otel-collector-config"

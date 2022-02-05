@@ -32,24 +32,11 @@ resource "kubernetes_deployment" "otel_collector" {
           name = "otel-collector-config-vol"
 
           config_map {
-            name = "otel-collector-conf"
+            name = kubernetes_config_map.otel-collector-conf.metadata.name
 
             items {
               key  = "otel-collector-config"
               path = "otel-collector-config.yaml"
-            }
-          }
-        }
-
-        volume {
-          name = "otel-jaeger-sampling-config"
-
-          config_map {
-            name = "jaeger-sampling-configuration"
-
-            items {
-              key  = "sampling"
-              path = "jaeger-sampling-config.json"
             }
           }
         }
