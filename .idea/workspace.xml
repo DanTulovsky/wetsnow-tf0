@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="k8s_cluster receiver">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="kubeletstats">
       <change beforePath="$PROJECT_DIR$/modules/open-telemetry/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/variables.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -355,7 +354,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644085237141</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="kubeletstats">
+      <created>1644085547899</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1644085547899</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -387,7 +393,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="parca ambassador" />
     <MESSAGE value="update certs" />
     <MESSAGE value="old" />
     <MESSAGE value="like this?" />
@@ -412,6 +417,7 @@
     <MESSAGE value="fix otel" />
     <MESSAGE value="fix jaeger" />
     <MESSAGE value="k8s_cluster receiver" />
-    <option name="LAST_COMMIT_MESSAGE" value="k8s_cluster receiver" />
+    <MESSAGE value="kubeletstats" />
+    <option name="LAST_COMMIT_MESSAGE" value="kubeletstats" />
   </component>
 </project>
