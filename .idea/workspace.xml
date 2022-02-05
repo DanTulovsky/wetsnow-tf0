@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="same thing">
-      <change afterPath="$PROJECT_DIR$/modules/nobl9/.terraform.lock.hcl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/nobl9/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/nobl9/providers.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/nobl9/variables.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/30-deployment.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/30-deployment.tf" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="nobl9">
+      <change beforePath="$PROJECT_DIR$/modules/nobl9/yaml/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nobl9/yaml/k8s/deployment.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +51,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.google.cloudcode.ide_session_index" value="20220205_0002" />
     <property name="go.format.on.save.advertiser.fired" value="true" />
@@ -75,11 +70,11 @@
       <recent name="$PROJECT_DIR$/cluster0/yaml" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/modules/nobl9/yaml/k8s" />
       <recent name="$PROJECT_DIR$/modules/parca/yaml/k8s/server" />
       <recent name="$PROJECT_DIR$/modules/argo/yaml/k8s" />
       <recent name="$PROJECT_DIR$/cluster0/yaml/k8s" />
       <recent name="$PROJECT_DIR$/modules/prometheus/yaml" />
-      <recent name="$PROJECT_DIR$/modules/prometheus" />
     </key>
   </component>
   <component name="RunManager">
@@ -275,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635451416192</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="nobl9">
+      <created>1644075300355</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1644075300355</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,7 +309,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="back to 1.0.3" />
     <MESSAGE value="alphabetical order" />
     <MESSAGE value="don't set chart version" />
     <MESSAGE value="grafana version" />
@@ -332,6 +333,7 @@
     <MESSAGE value="update version" />
     <MESSAGE value="add lightstep-tracing" />
     <MESSAGE value="same thing" />
-    <option name="LAST_COMMIT_MESSAGE" value="same thing" />
+    <MESSAGE value="nobl9" />
+    <option name="LAST_COMMIT_MESSAGE" value="nobl9" />
   </component>
 </project>
