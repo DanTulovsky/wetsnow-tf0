@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="config map as variable">
-      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/30-deployment.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/30-deployment.tf" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="remove jaeger">
+      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/yaml/config-agent.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/yaml/config-agent.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -410,7 +410,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644088225188</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="remove jaeger">
+      <created>1644088369538</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1644088369538</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -442,7 +449,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="or like this" />
     <MESSAGE value="login" />
     <MESSAGE value="remove parca" />
     <MESSAGE value="update argo" />
@@ -467,6 +473,7 @@
     <MESSAGE value="remove datadog-agent" />
     <MESSAGE value="otel daemonset" />
     <MESSAGE value="config map as variable" />
-    <option name="LAST_COMMIT_MESSAGE" value="config map as variable" />
+    <MESSAGE value="remove jaeger" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove jaeger" />
   </component>
 </project>

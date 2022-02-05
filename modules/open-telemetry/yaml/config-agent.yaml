@@ -36,6 +36,6 @@ service:
   extensions: [ health_check, zpages, pprof ]
   pipelines:
     metrics:
-      receivers: "[kubeletstats]"
+      receivers: [kubeletstats]
       processors: ${metricsProcessors}
       exporters: ${metricsExporters}
