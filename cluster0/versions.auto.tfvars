@@ -13,7 +13,7 @@ kubernetes_external_secrets = {
   app_version = "8.3.0"
 }
 otel_collector = {
-  app_version = "0.35.0"
+  app_version = "0.43.0"
 }
 prometheus = {
   operator_version     = "0.50.0-debian-10-r30"
