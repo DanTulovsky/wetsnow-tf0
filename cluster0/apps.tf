@@ -49,6 +49,12 @@ module "kubernetes-external-secrets" {
 //  source    = "../modules/kyverno"
 //  namespace = module.common.namespaces.kyverno
 //}
+
+module "nobl9" {
+  source    = "../modules/nobl9"
+  namespace = module.common.namespaces.monitoring
+}
+
 module "open-telemetry" {
   source        = "../modules/open-telemetry"
   namespace     = module.common.namespaces.observability

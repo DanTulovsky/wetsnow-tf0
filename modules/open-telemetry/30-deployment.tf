@@ -1,3 +1,4 @@
+// Secret created manually and stored in password manager
 resource "kubernetes_deployment" "otel_collector" {
   metadata {
     name      = "otel-collector"

@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nobl9-agent-wetsnow-lightstep
+  namespace: monitoring
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      nobl9-agent-name: "lightstep"
+      nobl9-agent-project: "default"
+      nobl9-agent-organization: "wetsnow-AhEoLssUoSbE"
+  template:
+    metadata:
+      labels:
+        nobl9-agent-name: "lightstep"
+        nobl9-agent-project: "default"
+        nobl9-agent-organization: "wetsnow-AhEoLssUoSbE"
+    spec:
+      containers:
+        - name: agent-container
+          image: nobl9/agent:0.38.0
+          resources:
+            requests:
+              memory: "350Mi"
+              cpu: "0.1"
+          env:
+            - name: N9_CLIENT_ID
+              valueFrom:
+                secretKeyRef:
+                  key: client_id
+                  name: nobl9-agent-wetsnow-lightstep
+            - name: LS_APP_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  key: ls_app_token
+                  name: nobl9-agent-wetsnow-lightstep
+            - name: N9_CLIENT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  key: client_secret
+                  name: nobl9-agent-wetsnow-lightstep
+            - name: N9_AUTH_SERVER
+              value: "auseg9kiegWKEtJZC416"
+            - name: N9_OKTA_ORG_URL
+              value: "https://accounts.nobl9.com"
