@@ -1,12 +1,4 @@
 receivers:
-  otlp:
-    protocols:
-      grpc:
-      http:
-  statsd:
-    endpoint: "localhost:8125" # default
-    aggregation_interval: 60s  # default
-    enable_metric_type: true
   kubeletstats:
     collection_interval: 20s
     auth_type: "serviceAccount"
@@ -47,7 +39,3 @@ service:
       receivers: "[kubeletstats]"
       processors: ${metricsProcessors}
       exporters: ${metricsExporters}
-    traces/1:
-      receivers: "[otlp]"
-      processors: ${traceProcessors}
-      exporters: ${traceExporters}

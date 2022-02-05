@@ -32,7 +32,7 @@ resource "kubernetes_deployment" "otel_collector" {
           name = "otel-collector-config-vol"
 
           config_map {
-            name = kubernetes_config_map.otel-collector-conf.metadata.name
+            name = kubernetes_config_map.otel-collector-conf.metadata[0].name
 
             items {
               key  = "otel-collector-config"
