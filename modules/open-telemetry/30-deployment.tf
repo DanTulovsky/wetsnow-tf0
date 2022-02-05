@@ -57,7 +57,7 @@ resource "kubernetes_deployment" "otel_collector" {
         container {
           name    = "otel-collector"
           image   = "otel/opentelemetry-collector-contrib:${var.image_version}"
-          command = ["/otelcontribcol", "--config=/conf/otel-collector-config.yaml"]
+          command = ["/otelcol-contrib", "--config=/conf/otel-collector-config.yaml"]
 
           env {
             name = "K8S_NODE_NAME"
