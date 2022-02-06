@@ -195,6 +195,11 @@ grafana.ini:
     provisioning: /etc/grafana/provisioning
   analytics:
     check_for_updates: true
+  users:
+    verify_email_enabled: true
+    default_theme: light
+    viewers_can_edit: true
+    editors_can_admin: yes
   log:
     mode: console
   grafana_net:
