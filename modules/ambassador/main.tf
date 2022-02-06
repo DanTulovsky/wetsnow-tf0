@@ -10,7 +10,6 @@ resource "helm_release" "ambassador" {
   values = [
     templatefile("${path.module}/yaml/values.yaml", {
       licenseKey    = var.license_key
-      promEnabled   = var.prom_enabled
       backendConfig = var.backend_config
       name          = var.name
       app_version   = var.app_version

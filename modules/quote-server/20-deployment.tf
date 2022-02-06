@@ -36,6 +36,11 @@ resource "kubernetes_deployment" "quote_server_grpc" {
           "service.name"    = "quote"
           "service.version" = var.app_version
         }
+        annotations = {
+          "prometheus.io/scrape" = "true"
+          "prometheus.io/port"   = 8080
+          "prometheus.io/path"   = "/metrics"
+        }
       }
 
       spec {

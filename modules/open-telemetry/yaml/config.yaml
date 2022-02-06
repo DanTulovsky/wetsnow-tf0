@@ -34,6 +34,53 @@ receivers:
       - k8s.volume.type
     k8s_api_config:
       auth_type: serviceAccount
+    prometheus:
+      config:
+        scrape_configs:
+          # Collect metrics about myself
+          - job_name: opentelemetry-collector
+            scrape_interval: 30s
+            static_configs:
+              - targets:
+                  - ${MY_POD_IP}:8888
+          - job_name: kubernetes-pods
+            scrape_interval: 30s
+            kubernetes_sd_configs:
+              - role: pod
+            relabel_configs:
+              - source_labels: [ __meta_kubernetes_pod_annotation_prometheus_io_scrape ]
+                action: keep
+                regex: true
+              - source_labels: [ __meta_kubernetes_pod_annotation_prometheus_io_scrape_slow ]
+                action: drop
+                regex: true
+              - source_labels: [ __meta_kubernetes_pod_annotation_prometheus_io_scheme ]
+                action: replace
+                regex: (https?)
+                target_label: __scheme__
+              - source_labels: [ __meta_kubernetes_pod_annotation_prometheus_io_path ]
+                action: replace
+                target_label: __metrics_path__
+                regex: (.+)
+              - source_labels: [ __address__, __meta_kubernetes_pod_annotation_prometheus_io_port ]
+                action: replace
+                regex: ([^:]+)(?::\d+)?;(\d+)
+                replacement: $$1:$$2
+                target_label: __address__
+              - action: labelmap
+                regex: __meta_kubernetes_pod_annotation_prometheus_io_param_(.+)
+                replacement: __param_$$1
+              - action: labelmap
+                regex: __meta_kubernetes_pod_label_(.+)
+              - source_labels: [ __meta_kubernetes_namespace ]
+                action: replace
+                target_label: namespace
+              - source_labels: [ __meta_kubernetes_pod_name ]
+                action: replace
+                target_label: pod
+              - source_labels: [ __meta_kubernetes_pod_phase ]
+                regex: Pending|Succeeded|Failed|Completed
+                action: drop
 processors:
   batch:
   memory_limiter:

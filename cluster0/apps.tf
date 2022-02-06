@@ -11,7 +11,6 @@ module "ambassador" {
   source         = "../modules/ambassador"
   license_key    = var.ambassador_secrets.license_key
   namespace      = module.common.namespaces.ambassador
-  prom_enabled   = true
   backend_config = "ambassador-hc-config"
   name           = "ambassador"
   app_version    = var.ambassador.app_version
@@ -35,7 +34,7 @@ module "grafana" {
   admin_password = var.grafana_secrets.admin_password
   smtp_password  = var.grafana_secrets.smtp_password
   namespace      = module.common.namespaces.monitoring
-  prom_enabled   = true
+  prom_enabled   = false
   oauth_secret   = ""
   app_version    = var.grafana.app_version
 }
@@ -73,14 +72,14 @@ module "open-telemetry" {
 #  source    = "../modules/parca"
 #  namespace = module.common.namespaces.parca
 #}
-module "prometheus" {
-  source               = "../modules/prometheus"
-  namespace            = module.common.namespaces.monitoring
-  enabled              = true
-  cluster_name         = var.cluster_info.name
-  operator_version     = var.prometheus.operator_version
-  otel_sidecar_version = var.prometheus.otel_sidecar_version
-}
+#module "prometheus" {
+#  source               = "../modules/prometheus"
+#  namespace            = module.common.namespaces.monitoring
+#  enabled              = true
+#  cluster_name         = var.cluster_info.name
+#  operator_version     = var.prometheus.operator_version
+#  otel_sidecar_version = var.prometheus.otel_sidecar_version
+#}
 module "quote-server" {
   source = "../modules/quote-server"
   depends_on = [
@@ -89,7 +88,7 @@ module "quote-server" {
   namespace      = module.common.namespaces.web
   app_version    = var.quote_server.app_version
   priority_class = module.common.priority_class.high0
-  prom_enabled   = true
+  prom_enabled   = false
 }
 # module "vector" {
 #   source     = "./modules/vector"
@@ -100,6 +99,6 @@ module "web-static" {
   source       = "../modules/web-static"
   namespace    = module.common.namespaces.web
   app_version  = var.web_static.app_version
-  prom_enabled = true
+  prom_enabled = false
 }
 

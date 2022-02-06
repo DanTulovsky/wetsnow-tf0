@@ -36,6 +36,11 @@ service:
   labels: { "service": "grafana" }
   portName: service
 
+podAddnotations:
+  prometheus.io/scrape = "true"
+  prometheus.io/port   = 3000
+  prometheus.io/path   = "/metrics"
+
 serviceMonitor:
   ## If true, a ServiceMonitor CRD is created for a prometheus operator
   ## https://github.com/coreos/prometheus-operator
