@@ -209,7 +209,7 @@ grafana.ini:
     root_url: https://grafana.wetsnow.com
     enable_gzip: true
   plugins:
-    allow_loading_unsigned_plugins: "grafana-lightstep-datasource,grafana-lightstep-graph,lightstep-metrics-datasource,lightstep-app,grafana-kubernetes-datasource,prometheus-kubernetes-nodeinfo-panel,prometheus-kubernetes-podnav-panel,grafana-kubernetes-app"
+    allow_loading_unsigned_plugins: ""
     plugin_admin_enabled: true
     enable_alpha: true
   #  auth:
