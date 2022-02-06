@@ -13,6 +13,6 @@ dashboard:
     tag: ${argo_version}
 
 podAnnotations:
-  prometheus.io/scrape = "true"
-  prometheus.io/port   = 8090
-  prometheus.io/path   = "/metrics"
+  prometheus.io/scrape: "true"
+  prometheus.io/port: 8090
+  prometheus.io/path: "/metrics"
