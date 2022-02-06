@@ -24,7 +24,7 @@ podLabels:
 
 podAnnotations:
   prometheus.io/scrape: "true"
-  prometheus.io/port: 8877
+  prometheus.io/port: "8877"
   prometheus.io/path: "/metrics"
 
 resources:

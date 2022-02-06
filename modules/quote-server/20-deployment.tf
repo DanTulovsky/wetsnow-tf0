@@ -38,7 +38,7 @@ resource "kubernetes_deployment" "quote_server_grpc" {
         }
         annotations = {
           "prometheus.io/scrape" = "true"
-          "prometheus.io/port"   = 8080
+          "prometheus.io/port"   = "8080"
           "prometheus.io/path"   = "/metrics"
         }
       }

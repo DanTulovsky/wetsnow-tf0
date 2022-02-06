@@ -27,7 +27,7 @@ resource "kubernetes_deployment" "frontend" {
         }
         annotations = {
           "prometheus.io/scrape" = "true"
-          "prometheus.io/port"   = 8080
+          "prometheus.io/port"   = "8080"
           "prometheus.io/path"   = "/metrics"
         }
       }

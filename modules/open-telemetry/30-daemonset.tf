@@ -26,7 +26,7 @@ resource "kubernetes_daemonset" "otel_collector-daemonset" {
         }
         annotations = {
           "prometheus.io/scrape" = "true"
-          "prometheus.io/port"   = 8888
+          "prometheus.io/port"   = "8888"
           "prometheus.io/path"   = "/metrics"
         }
       }

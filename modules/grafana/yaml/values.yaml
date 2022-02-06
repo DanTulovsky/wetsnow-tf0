@@ -38,7 +38,7 @@ service:
 
 podAnnotations:
   prometheus.io/scrape: "true"
-  prometheus.io/port: 3000
+  prometheus.io/port: "3000"
   prometheus.io/path: "/metrics"
 
 serviceMonitor:
