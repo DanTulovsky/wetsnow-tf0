@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="remove unsigned plugins">
-      <change beforePath="$PROJECT_DIR$/modules/grafana/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/grafana/yaml/values.yaml" afterDir="false" />
-    </list>
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="cleanup" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,7 +52,7 @@
     <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/cluster0/sensitive.auto.tfvars" />
-    <property name="com.google.cloudcode.ide_session_index" value="20220206_0013" />
+    <property name="com.google.cloudcode.ide_session_index" value="20220206_0014" />
     <property name="go.format.on.save.advertiser.fired" value="true" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
@@ -124,13 +122,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00009" summary="no like this">
-      <created>1633889365678</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1633889365678</updated>
     </task>
     <task id="LOCAL-00010" summary="or like this">
       <created>1633889446891</created>
@@ -468,7 +459,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644165317849</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="cleanup">
+      <created>1644165341621</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1644165341621</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -508,7 +506,6 @@
     <MESSAGE value="fix jaeger" />
     <MESSAGE value="k8s_cluster receiver" />
     <MESSAGE value="kubeletstats" />
-    <MESSAGE value="cleanup" />
     <MESSAGE value="remove datadog-agent" />
     <MESSAGE value="otel daemonset" />
     <MESSAGE value="config map as variable" />
@@ -525,6 +522,7 @@
     <MESSAGE value="update grafana" />
     <MESSAGE value="grafana oauth" />
     <MESSAGE value="remove unsigned plugins" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove unsigned plugins" />
+    <MESSAGE value="cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleanup" />
   </component>
 </project>
