@@ -24,6 +24,11 @@ resource "kubernetes_daemonset" "otel_collector-daemonset" {
           app       = "opentelemetry"
           component = "otel-collector-agent"
         }
+        annotations = {
+          "prometheus.io/scrape" = "true"
+          "prometheus.io/port"   = 3001
+          "prometheus.io/path"   = "/metrics"
+        }
       }
 
       spec {
