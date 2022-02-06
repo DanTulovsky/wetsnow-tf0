@@ -12,7 +12,7 @@ dashboard:
   image:
     tag: ${argo_version}
 
-podAddnotations:
+podAnnotations:
   prometheus.io/scrape = "true"
   prometheus.io/port   = 8090
   prometheus.io/path   = "/metrics"

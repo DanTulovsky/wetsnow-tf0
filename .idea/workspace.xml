@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix otel">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/variables.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/yaml/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/yaml/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ambassador/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/yaml/values.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/argo/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo/yaml/values.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/grafana/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/grafana/yaml/values.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kubernetes-external-secrets/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/kubernetes-external-secrets/yaml/values.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -440,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644158321490</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="fix otel">
+      <created>1644158596033</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1644158596033</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -485,7 +494,6 @@
     <MESSAGE value="upgrade argo" />
     <MESSAGE value="upgrade ambassador" />
     <MESSAGE value="upgrade prom" />
-    <MESSAGE value="fix otel" />
     <MESSAGE value="fix jaeger" />
     <MESSAGE value="k8s_cluster receiver" />
     <MESSAGE value="kubeletstats" />
@@ -497,6 +505,7 @@
     <MESSAGE value="fix agent config" />
     <MESSAGE value="switch prom to otel collector" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="fix otel" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix otel" />
   </component>
 </project>
