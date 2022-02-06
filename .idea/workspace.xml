@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="switch prom to otel collector">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/ambassador/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/grafana/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/grafana/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/variables.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/open-telemetry/yaml/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/yaml/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/quote-server/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/web-static/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/web-static/main.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -436,7 +433,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644158148139</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="fix">
+      <created>1644158321490</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1644158321490</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -468,7 +472,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="update argo" />
     <MESSAGE value="dashboard tag" />
     <MESSAGE value="force update" />
     <MESSAGE value="update version" />
@@ -493,6 +496,7 @@
     <MESSAGE value="remove jaeger" />
     <MESSAGE value="fix agent config" />
     <MESSAGE value="switch prom to otel collector" />
-    <option name="LAST_COMMIT_MESSAGE" value="switch prom to otel collector" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
 </project>
