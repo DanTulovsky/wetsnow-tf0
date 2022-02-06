@@ -64,23 +64,27 @@ admin:
 plugins:
   - grafana-piechart-panel
   - grafana-worldmap-panel
-  - grafana-kubernetes-app
-  - https://github.com/lightstep/lightstep-grafana-plugin/archive/master.zip;lightstep-grafana-plugin
+  - andig-darksky-datasource
+  - ayoungprogrammer-finance-datasource
+  - lightstep-metrics-datasource
 
 ## Configure grafana datasources
 datasources:
   datasources.yaml:
-    apiVersion: 1
-    # deleteDatasources:
-    #   - name: Loki
-    #     orgId: 1
-    datasources:
+    deleteDatasources:
+      - name: Prometheus
+        orgId: 1
       - name: LightstepMetrics
-        type: prometheus
-        # TODO: #2 Make this field dynamic in grafana config.
-        url: http://prom0-kube-prometheus-prometheus:9090
-        access: proxy
-        isDefault: true
+        orgId: 1
+      - name: Lightstep
+        orgId: 1
+#    datasources:
+#      - name: Lightstep-Metrics
+#        type: Lightstep Metrics
+#        # TODO: #2 Make this field dynamic in grafana config.
+#        url: http://prom0-kube-prometheus-prometheus:9090
+#        access: proxy
+#        isDefault: true
 ## Configure notifiers
 notifiers:
   notifiers.yaml:
@@ -116,69 +120,69 @@ dashboardProviders:
 #
 # dashboards per provider, use provider name as key.
 #
-dashboards:
-  default:
-    go-grpc1:
-      gnetId: 9186
-      revision: 4
-      datasource: LightstepMetrics
-    gRPC-go:
-      gnetId: 14765
-      revision: 3
-      datasource: LightstepMetrics
-    ambassador:
-      gnetId: 10434
-      revision: 1
-      datasource: LightstepMetrics
-    node-exporter:
-      gnetId: 1860
-      revision: 21
-      datasource: LightstepMetrics
-    k8s-11454:
-      gnetId: 11454
-      revision: 14
-      datasource: LightstepMetrics
-    k8s-11455:
-      gnetId: 11455
-      revision: 6
-      datasource: LightstepMetrics
-    k8s-cluster:
-      gnetId: 7249
-      revision: 1
-      datasource: LightstepMetrics
-    k8s-cluster-3:
-      gnetId: 6417
-      revision: 1
-      datasource: LightstepMetrics
-    k8s-cluster-pods:
-      gnetId: 6663
-      revision: 1
-      datasource: LightstepMetrics
-    k8s-cluster-resources:
-      gnetId: 7187
-      revision: 1
-      datasource: LightstepMetrics
-    k8s-cluster-pv:
-      gnetId: 6739
-      revision: 1
-      datasource: LightstepMetrics
-    k8s-deployment:
-      gnetId: 741
-      revision: 1
-      datasource: LightstepMetrics
-    k8s-app-metrics:
-      gnetId: 1471
-      revision: 1
-      datasource: LightstepMetrics
-    prometheus-overview:
-      gnetId: 3662
-      revision: 2
-      datasource: LightstepMetrics
-      tag: prometheus
-    otel-collector:
-      gnetId: 12553
-      revision: 1
-      datasource: LightstepMetrics
+#dashboards:
+#  default:
+#    go-grpc1:
+#      gnetId: 9186
+#      revision: 4
+#      datasource: LightstepMetrics
+#    gRPC-go:
+#      gnetId: 14765
+#      revision: 3
+#      datasource: LightstepMetrics
+#    ambassador:
+#      gnetId: 10434
+#      revision: 1
+#      datasource: LightstepMetrics
+#    node-exporter:
+#      gnetId: 1860
+#      revision: 21
+#      datasource: LightstepMetrics
+#    k8s-11454:
+#      gnetId: 11454
+#      revision: 14
+#      datasource: LightstepMetrics
+#    k8s-11455:
+#      gnetId: 11455
+#      revision: 6
+#      datasource: LightstepMetrics
+#    k8s-cluster:
+#      gnetId: 7249
+#      revision: 1
+#      datasource: LightstepMetrics
+#    k8s-cluster-3:
+#      gnetId: 6417
+#      revision: 1
+#      datasource: LightstepMetrics
+#    k8s-cluster-pods:
+#      gnetId: 6663
+#      revision: 1
+#      datasource: LightstepMetrics
+#    k8s-cluster-resources:
+#      gnetId: 7187
+#      revision: 1
+#      datasource: LightstepMetrics
+#    k8s-cluster-pv:
+#      gnetId: 6739
+#      revision: 1
+#      datasource: LightstepMetrics
+#    k8s-deployment:
+#      gnetId: 741
+#      revision: 1
+#      datasource: LightstepMetrics
+#    k8s-app-metrics:
+#      gnetId: 1471
+#      revision: 1
+#      datasource: LightstepMetrics
+#    prometheus-overview:
+#      gnetId: 3662
+#      revision: 2
+#      datasource: LightstepMetrics
+#      tag: prometheus
+#    otel-collector:
+#      gnetId: 12553
+#      revision: 1
+#      datasource: LightstepMetrics
 ## Grafana's primary configuration
 ## NOTE: values in map will be converted to ini format
 ## ref: http://docs.grafana.org/installation/configuration/
