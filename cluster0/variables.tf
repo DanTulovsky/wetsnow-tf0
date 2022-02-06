@@ -34,9 +34,10 @@ variable "cluster_info" {
 variable "grafana_secrets" {
   sensitive = true
   type = object({
-    oauth_secret   = string
-    admin_password = string
-    smtp_password  = string
+    admin_password       = string
+    smtp_password        = string
+    google_client_id     = string
+    google_client_secret = string
   })
 }
 
