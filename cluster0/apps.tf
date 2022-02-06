@@ -35,8 +35,8 @@ module "grafana" {
   smtp_password        = var.grafana_secrets.smtp_password
   namespace            = module.common.namespaces.monitoring
   prom_enabled         = false
-  google_client_id     = ""
-  google_client_secret = ""
+  google_client_id     = var.grafana_secrets.google_client_id
+  google_client_secret = var.grafana_secrets.google_client_secret
   app_version          = var.grafana.app_version
 }
 module "kubernetes-external-secrets" {
