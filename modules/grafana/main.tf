@@ -12,25 +12,12 @@ resource "helm_release" "grafana" {
   force_update = false
 
   values = [templatefile("${path.module}/yaml/values.yaml", {
-    promEnabled = var.prom_enabled
-    app_version = var.app_version
+    promEnabled          = var.prom_enabled
+    app_version          = var.app_version
+    google_client_id     = var.google_client_id
+    google_client_secret = var.google_client_secret
   })]
 }
-
-//resource "kubernetes_secret" "grafana-env-secret" {
-//  metadata {
-//    name      = "grafana-env-secret"
-//    namespace = var.namespace
-//  }
-//
-//  data = {
-////    GF_AUTH_GENERIC_OAUTH_CLIENT_ID : "grafana.wetsnow.com"
-////    GF_AUTH_GENERIC_OAUTH_CLIENT_SECRET : var.oauth_secret
-////    GF_DATABASE_PASSWORD : var.db_password
-//  }
-//
-//  type = "Opaque"
-//}
 
 resource "kubernetes_secret" "grafana-admin" {
   metadata {

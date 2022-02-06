@@ -215,6 +215,17 @@ grafana.ini:
   #  auth:
   #    oauth_auto_login: false
   #    signout_redirect_url: "https://login.wetsnow.com/auth/realms/wetsnow/protocol/openid-connect/logout?redirect_uri=https%3A%2F%2Flogin.wetsnow.com%2Fauth%2Frealms%2Fwetsnow%2Faccount%2F%23%2F"
+  auth.google:
+    enabled: true
+    # export GF_AUTH_GOOGLE_CLIENT_ID=newS3cretKey
+    client_id: ${google_client_id}
+    # export GF_AUTH_GOOGLE_CLIENT_SECRET=newS3cretKey
+    client_secret: ${google_client_secret}
+    scopes: https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email
+    auth_url: https://accounts.google.com/o/oauth2/auth
+    token_url: https://accounts.google.com/o/oauth2/token
+    allowed_domains: wetsnow.com
+    allow_sign_up: true
   #  auth.generic_oauth:
   #    enabled: true
   #    name: "Keycloak"

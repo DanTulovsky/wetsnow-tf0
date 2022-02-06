@@ -30,13 +30,14 @@ module "http-ingress" {
   namespace = module.common.namespaces.ambassador
 }
 module "grafana" {
-  source         = "../modules/grafana"
-  admin_password = var.grafana_secrets.admin_password
-  smtp_password  = var.grafana_secrets.smtp_password
-  namespace      = module.common.namespaces.monitoring
-  prom_enabled   = false
-  oauth_secret   = ""
-  app_version    = var.grafana.app_version
+  source               = "../modules/grafana"
+  admin_password       = var.grafana_secrets.admin_password
+  smtp_password        = var.grafana_secrets.smtp_password
+  namespace            = module.common.namespaces.monitoring
+  prom_enabled         = false
+  google_client_id     = ""
+  google_client_secret = ""
+  app_version          = var.grafana.app_version
 }
 module "kubernetes-external-secrets" {
   source      = "../modules/kubernetes-external-secrets"
