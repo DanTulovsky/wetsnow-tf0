@@ -4,21 +4,13 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix agent config">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="switch prom to otel collector">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/ambassador/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/ambassador/yaml/k8s/40-ambassador-monitor.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/ambassador/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/yaml/values.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo/yaml/values.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/grafana/yaml/k8s/monitor.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/grafana/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/grafana/yaml/values.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/kubernetes-external-secrets/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/kubernetes-external-secrets/yaml/values.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/grafana/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/grafana/main.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/open-telemetry/yaml/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/yaml/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/quote-server/20-deployment.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/20-deployment.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/quote-server/yaml/k8s/00-monitoring-prom.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/web-static/20-deployment.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/web-static/20-deployment.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/web-static/yaml/k8s/00-monitoring-prom.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/quote-server/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/quote-server/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/web-static/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/web-static/main.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -437,7 +429,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644088513447</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="switch prom to otel collector">
+      <created>1644158148139</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1644158148139</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -469,7 +468,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="remove parca" />
     <MESSAGE value="update argo" />
     <MESSAGE value="dashboard tag" />
     <MESSAGE value="force update" />
@@ -494,6 +492,7 @@
     <MESSAGE value="config map as variable" />
     <MESSAGE value="remove jaeger" />
     <MESSAGE value="fix agent config" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix agent config" />
+    <MESSAGE value="switch prom to otel collector" />
+    <option name="LAST_COMMIT_MESSAGE" value="switch prom to otel collector" />
   </component>
 </project>

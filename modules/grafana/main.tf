@@ -17,12 +17,6 @@ resource "helm_release" "grafana" {
   })]
 }
 
-resource "kubectl_manifest" "grafana-monitor" {
-  count      = var.prom_enabled ? 1 : 0
-  depends_on = [helm_release.grafana]
-  yaml_body  = file("${path.module}/yaml/k8s/monitor.yaml")
-}
-
 //resource "kubernetes_secret" "grafana-env-secret" {
 //  metadata {
 //    name      = "grafana-env-secret"
