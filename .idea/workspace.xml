@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="update grafana">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="grafana oauth">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/grafana/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/grafana/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/grafana/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/grafana/variables.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/grafana/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/grafana/yaml/values.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,13 +124,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00005" summary="parca ambassador">
-      <created>1633879942566</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1633879942566</updated>
     </task>
     <task id="LOCAL-00006" summary="update certs">
       <created>1633888319017</created>
@@ -472,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644161749570</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="grafana oauth">
+      <created>1644162832727</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1644162832727</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,7 +500,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix path" />
     <MESSAGE value="fix argo" />
     <MESSAGE value="upgrade grafana" />
     <MESSAGE value="upgrade otel" />
@@ -529,6 +524,7 @@
     <MESSAGE value="fix otel port" />
     <MESSAGE value="fix ports" />
     <MESSAGE value="update grafana" />
-    <option name="LAST_COMMIT_MESSAGE" value="update grafana" />
+    <MESSAGE value="grafana oauth" />
+    <option name="LAST_COMMIT_MESSAGE" value="grafana oauth" />
   </component>
 </project>
