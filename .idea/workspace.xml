@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix otel dset">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/ambassador/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/yaml/values.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo/yaml/values.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/grafana/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/grafana/yaml/values.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/kubernetes-external-secrets/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/kubernetes-external-secrets/yaml/values.yaml" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix syntax">
+      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/30-daemonset.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/30-daemonset.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -463,7 +459,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644159053200</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="fix syntax">
+      <created>1644159216824</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1644159216824</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -495,7 +498,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="update version" />
     <MESSAGE value="add lightstep-tracing" />
     <MESSAGE value="same thing" />
     <MESSAGE value="nobl9" />
@@ -520,6 +522,7 @@
     <MESSAGE value="fix otel" />
     <MESSAGE value="fix annotations" />
     <MESSAGE value="fix otel dset" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix otel dset" />
+    <MESSAGE value="fix syntax" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix syntax" />
   </component>
 </project>
