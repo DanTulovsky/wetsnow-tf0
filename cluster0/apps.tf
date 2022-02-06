@@ -41,7 +41,7 @@ module "grafana" {
 }
 module "kube-state-metrics" {
   source    = "../modules/kube-state-metrics"
-  namespace = module.common.namespaces.security
+  namespace = module.common.namespaces.monitoring
 }
 module "kubernetes-external-secrets" {
   source      = "../modules/kubernetes-external-secrets"
