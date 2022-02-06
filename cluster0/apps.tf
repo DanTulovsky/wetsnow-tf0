@@ -39,6 +39,10 @@ module "grafana" {
   google_client_secret = var.grafana_secrets.google_client_secret
   app_version          = var.grafana.app_version
 }
+module "kube-state-metrics" {
+  source    = "../modules/kube-state-metrics"
+  namespace = module.common.namespaces.security
+}
 module "kubernetes-external-secrets" {
   source      = "../modules/kubernetes-external-secrets"
   namespace   = module.common.namespaces.security

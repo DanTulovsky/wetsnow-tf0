@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="users">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="updates">
+      <change afterPath="$PROJECT_DIR$/modules/kube-state-metrics/main.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/kube-state-metrics/providers.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/kube-state-metrics/variables.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/kube-state-metrics/yaml/values.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/grafana/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/grafana/yaml/values.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,22 +59,22 @@
     <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/cluster0/sensitive.auto.tfvars" />
-    <property name="com.google.cloudcode.ide_session_index" value="20220206_0014" />
+    <property name="com.google.cloudcode.ide_session_index" value="20220206_0015" />
     <property name="go.format.on.save.advertiser.fired" value="true" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.watchers.conflict.with.on.save.actions.check.performed" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/modules/open-telemetry/yaml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/modules/kube-state-metrics" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/modules/kube-state-metrics" />
       <recent name="$PROJECT_DIR$/modules/open-telemetry/yaml" />
       <recent name="$PROJECT_DIR$/modules/open-telemetry" />
       <recent name="$PROJECT_DIR$/modules/nobl9" />
       <recent name="$PROJECT_DIR$/../web-static/data/hosts/login.wetsnow.com" />
-      <recent name="$PROJECT_DIR$/modules" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/modules/nobl9/yaml/k8s" />
@@ -125,13 +129,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00013" summary="login">
-      <created>1633912628685</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1633912628685</updated>
     </task>
     <task id="LOCAL-00014" summary="remove parca">
       <created>1633916855563</created>
@@ -469,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644170095364</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="updates">
+      <created>1644170439502</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1644170439502</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -501,7 +505,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="upgrade argo" />
     <MESSAGE value="upgrade ambassador" />
     <MESSAGE value="upgrade prom" />
     <MESSAGE value="fix jaeger" />
@@ -526,6 +529,7 @@
     <MESSAGE value="cleanup" />
     <MESSAGE value="fix secrets" />
     <MESSAGE value="users" />
-    <option name="LAST_COMMIT_MESSAGE" value="users" />
+    <MESSAGE value="updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="updates" />
   </component>
 </project>
