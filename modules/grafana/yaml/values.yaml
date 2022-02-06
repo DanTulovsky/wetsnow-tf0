@@ -71,13 +71,13 @@ plugins:
 ## Configure grafana datasources
 datasources:
   datasources.yaml:
-    deleteDatasources:
-      - name: Prometheus
-        orgId: 1
-      - name: LightstepMetrics
-        orgId: 1
-      - name: Lightstep
-        orgId: 1
+#    deleteDatasources:
+#      - name: Prometheus
+#        orgId: 1
+#      - name: LightstepMetrics
+#        orgId: 1
+#      - name: Lightstep
+#        orgId: 1
 #    datasources:
 #      - name: Lightstep-Metrics
 #        type: Lightstep Metrics
