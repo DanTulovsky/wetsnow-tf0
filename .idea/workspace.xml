@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix secrets">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="users">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/grafana/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/grafana/yaml/values.yaml" afterDir="false" />
     </list>
@@ -125,13 +125,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00012" summary="login">
-      <created>1633912527836</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1633912527836</updated>
     </task>
     <task id="LOCAL-00013" summary="login">
       <created>1633912628685</created>
@@ -469,7 +462,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644169708398</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="users">
+      <created>1644170095364</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1644170095364</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -501,7 +501,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="upgrade otel" />
     <MESSAGE value="upgrade argo" />
     <MESSAGE value="upgrade ambassador" />
     <MESSAGE value="upgrade prom" />
@@ -526,6 +525,7 @@
     <MESSAGE value="remove unsigned plugins" />
     <MESSAGE value="cleanup" />
     <MESSAGE value="fix secrets" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix secrets" />
+    <MESSAGE value="users" />
+    <option name="LAST_COMMIT_MESSAGE" value="users" />
   </component>
 </project>

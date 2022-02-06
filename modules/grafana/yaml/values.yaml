@@ -64,7 +64,6 @@ admin:
 plugins:
   - grafana-piechart-panel
   - grafana-worldmap-panel
-  - andig-darksky-datasource
   - ayoungprogrammer-finance-datasource
   - lightstep-metrics-datasource
 
@@ -95,7 +94,7 @@ notifiers:
         # either:
         org_id: 1
         # or
-        # org_name: Main Org.
+        # org_name: Wetsnow
         is_default: true
         settings:
           addresses: dant@wetsnow.com
