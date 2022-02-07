@@ -8,6 +8,15 @@ metadata:
   name: argo-rollouts-dashboard
 rules:
   - apiGroups:
+    - coordination.k8s.io
+    resources:
+    - leases
+    verbs:
+    - get
+    - update
+    - patch
+    - create
+  - apiGroups:
       - argoproj.io
     resources:
       - rollouts
