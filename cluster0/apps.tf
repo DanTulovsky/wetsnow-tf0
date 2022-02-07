@@ -67,10 +67,10 @@ module "open-telemetry" {
   prom_enabled  = true
   image_version = var.otel_collector.app_version
 }
-module "planetscale" {
-  source                   = "../modules/planetscale"
-  planetscale_access_token = var.planetscale_secrets.access_token
-}
+#module "planetscale" {
+#  source                   = "../modules/planetscale"
+#  planetscale_access_token = var.planetscale_secrets.access_token
+#}
 # module "postgres" {
 #   source         = "./modules/postgres"
 #   depends_on     = [module.gke]
