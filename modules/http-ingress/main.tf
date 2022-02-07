@@ -3,7 +3,7 @@ resource "google_compute_global_address" "default" {
   address = "34.120.237.55"
 }
 
-resource "kubernetes_ingress" "ambassador" {
+resource "kubernetes_ingress_v1" "ambassador" {
   wait_for_load_balancer = true
   metadata {
     name      = "wetsnow-ingress"
@@ -19,26 +19,37 @@ resource "kubernetes_ingress" "ambassador" {
   }
   spec {
     # send everything to ambassador, because we cannot send a across namespaces
-    backend {
+    default_backend {
       # default to IAP
-      service_name = "ambassador-iap"
-      service_port = 8080
+      service {
+        name = "ambassador-iap"
+        port {
+          number = 8080
+        }
+      }
     }
     rule {
       host = "www.wetsnow.com"
       http {
         path {
           backend {
-            service_name = "ambassador-iap"
-            service_port = 8080
+            service {
+              name = "ambassador-iap"
+              port {
+                number = 8080
+              }
+            }
           }
           path = "/auth/*"
         }
-
         path {
           backend {
-            service_name = "ambassador"
-            service_port = 8080
+            service {
+              name = "ambassador"
+              port {
+                number = 8080
+              }
+            }
           }
           path = "/*"
         }
@@ -49,8 +60,12 @@ resource "kubernetes_ingress" "ambassador" {
       http {
         path {
           backend {
-            service_name = "ambassador"
-            service_port = 8080
+            service {
+              name = "ambassador"
+              port {
+                number = 8080
+              }
+            }
           }
         }
       }

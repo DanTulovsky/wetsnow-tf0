@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix namespace">
-      <change afterPath="$PROJECT_DIR$/modules/planetscale/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/planetscale/providers.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/planetscale/variables.tf" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="add planetscale">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cluster0/.terraform.lock.hcl" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/.terraform.lock.hcl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/providers.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/providers.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/http-ingress/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/http-ingress/main.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +56,7 @@
     <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/cluster0/sensitive.auto.tfvars" />
-    <property name="com.google.cloudcode.ide_session_index" value="20220207_0014" />
+    <property name="com.google.cloudcode.ide_session_index" value="20220207_0016" />
     <property name="go.format.on.save.advertiser.fired" value="true" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
@@ -131,13 +126,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00016" summary="update argo">
-      <created>1634336800383</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1634336800383</updated>
     </task>
     <task id="LOCAL-00017" summary="dashboard tag">
       <created>1634337068286</created>
@@ -475,7 +463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644171912170</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="add planetscale">
+      <created>1644263150150</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1644263150150</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -507,7 +502,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix jaeger" />
     <MESSAGE value="k8s_cluster receiver" />
     <MESSAGE value="kubeletstats" />
     <MESSAGE value="remove datadog-agent" />
@@ -532,6 +526,7 @@
     <MESSAGE value="updates" />
     <MESSAGE value="add kube-state-metrics" />
     <MESSAGE value="fix namespace" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix namespace" />
+    <MESSAGE value="add planetscale" />
+    <option name="LAST_COMMIT_MESSAGE" value="add planetscale" />
   </component>
 </project>
