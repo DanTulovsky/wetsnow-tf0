@@ -1,5 +1,5 @@
 // Secret created manually and stored in password manager
-resource "kubernetes_deployment" "otel_collector" {
+resource "kubernetes_deployment_v1" "otel_collector" {
   metadata {
     name      = "otel-collector"
     namespace = var.namespace

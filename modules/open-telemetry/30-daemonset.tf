@@ -1,5 +1,5 @@
 // Secret created manually and stored in password manager
-resource "kubernetes_daemonset" "otel_collector-daemonset" {
+resource "kubernetes_daemon_set_v1" "otel_collector-daemonset" {
   metadata {
     name      = "otel-collector-agent"
     namespace = var.namespace

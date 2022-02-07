@@ -1,4 +1,4 @@
-resource "kubernetes_deployment" "frontend" {
+resource "kubernetes_deployment_v1" "frontend" {
   metadata {
     name      = "frontend"
     namespace = var.namespace
