@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix leases">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="enable planetscale">
       <change beforePath="$PROJECT_DIR$/modules/planetscale/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/planetscale/main.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,13 +124,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00022" summary="nobl9">
-      <created>1644075300355</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1644075300355</updated>
     </task>
     <task id="LOCAL-00023" summary="fix path">
       <created>1644075494456</created>
@@ -470,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644274961169</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="enable planetscale">
+      <created>1644415380680</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1644415380680</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -502,7 +500,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="remove jaeger" />
     <MESSAGE value="fix agent config" />
     <MESSAGE value="switch prom to otel collector" />
     <MESSAGE value="fix" />
@@ -527,6 +524,7 @@
     <MESSAGE value="fixes" />
     <MESSAGE value="update argo rollouts" />
     <MESSAGE value="fix leases" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix leases" />
+    <MESSAGE value="enable planetscale" />
+    <option name="LAST_COMMIT_MESSAGE" value="enable planetscale" />
   </component>
 </project>
