@@ -73,15 +73,24 @@ spec:
 apiVersion: getambassador.io/v2
 kind: Mapping
 metadata:
-  name: argocd.wetsnow.com
+  name: argocd-server-ui
   namespace: ambassador
 spec:
+  host: argocd.wetsnow.com.com
   prefix: /
-  host: argocd.wetsnow.com
   resolver: endpoint
-  service: argo-cd-argocd-server.argocd:80
-  allow_upgrade:
-    - websocket
+  service: argo-cd-argocd-server.argocd:443
+---
+apiVersion: getambassador.io/v2
+kind: Mapping
+metadata:
+  name: argocd-server-cli
+  namespace: ambassador
+spec:
+  host: argocd.wetsnow.com:443
+  prefix: /
+  resolver: endpoint
+  service: argo-cd-argocd-server.argocd:443
 ---
 apiVersion: getambassador.io/v2
 kind: Mapping

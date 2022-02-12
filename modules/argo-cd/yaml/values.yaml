@@ -20,6 +20,8 @@ controller:
         prometheus.io/path: "/metrics"
 
 server:
+  extraArgs:
+    - --insecure
   metrics:
     enabled: true
     service:
