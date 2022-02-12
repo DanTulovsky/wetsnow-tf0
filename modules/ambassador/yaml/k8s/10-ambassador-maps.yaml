@@ -130,7 +130,7 @@ spec:
   prefix: /
   host: argocd.wetsnow.com
   resolver: endpoint
-  service: argo-cd-server.argocd:443
+  service: argo-cd-argocd-server.argocd:443
   allow_upgrade:
     - websocket
 ---
