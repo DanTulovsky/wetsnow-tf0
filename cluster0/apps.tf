@@ -24,7 +24,7 @@ module "argo" {
 
 module "argo-cd" {
   source       = "../modules/argo"
-  namespace    = module.common.namespaces.argo-cd
+  namespace    = module.common.namespaces.argocd
   argo_version = var.argo_cd.app_version
 }
 
