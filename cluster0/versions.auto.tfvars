@@ -7,7 +7,7 @@ argo_cd = {
   app_version = "v2.2.5"
 }
 argo_rollouts = {
-  app_version = "v1.1.1"
+  app_version = "v1.2.0-rc1"
 }
 grafana = {
   app_version = "8.3.4"
