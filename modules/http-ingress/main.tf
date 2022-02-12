@@ -12,7 +12,7 @@ resource "kubernetes_ingress_v1" "ambassador" {
       "kubernetes.io/ingress.global-static-ip-name" : google_compute_global_address.default.name
       # https://github.com/hashicorp/terraform-provider-kubernetes/issues/446
       #   "networking.gke.io/managed-certificates" : google_compute_managed_ssl_certificate.wetsnow-com.name
-      "ingress.gcp.kubernetes.io/pre-shared-cert" : google_compute_managed_ssl_certificate.wetsnow-com-20211010-01.name
+      "ingress.gcp.kubernetes.io/pre-shared-cert" : google_compute_managed_ssl_certificate.wetsnow-com-20220212-00.name
       "kubernetes.io/ingress.class" : "gce"
       "kubernetes.io/ingress.global-static-ip-name" : "global-ip0"
     }

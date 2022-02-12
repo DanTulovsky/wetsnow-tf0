@@ -16,42 +16,30 @@ locals {
     "wetsnow.com.",
     "www.dusselskolk.com.",
     "www.wetsnow.com.",
+    "parca.wetsnow.com.",
   ])
-}
-
-# old
-resource "google_compute_managed_ssl_certificate" "wetsnow-com-20211010" {
-  name = "wetsnow-cert-20211010"
-  managed {
-    domains = [
-      "wetsnow.com",
-      "www.wetsnow.com",
-      "ambassador-admin.wetsnow.com",
-      "pepper-poker.wetsnow.com",
-      "grafana.wetsnow.com",
-      "login.wetsnow.com",
-      "prometheus.wetsnow.com",
-      "pgadmin.wetsnow.com",
-      "kafka-ui.wetsnow.com",
-      "dusselskolk.com",
-      "www.dusselskolk.com",
-      "parca.wetsnow.com",
-      "scope.wetsnow.com",
-      "weave-scope.wetsnow.com",
-      "rollouts.wetsnow.com",
-    ]
-  }
 }
 
 # to add a cert, update the date in the name, add a new cert and
 # update kubernetes_ingress.ambassador in main.tf
 # then remove the previous instance
 # this causes downtime!!
+
+# old
 resource "google_compute_managed_ssl_certificate" "wetsnow-com-20211010-01" {
   name = "wetsnow-cert-20211010-01"
   managed {
     domains = concat(local.domains, sort([
-      "parca.wetsnow.com",
+    ]))
+  }
+}
+
+# new
+resource "google_compute_managed_ssl_certificate" "wetsnow-com-20220212-00" {
+  name = "wetsnow-com-20220212-00"
+  managed {
+    domains = concat(local.domains, sort([
+      "argocd.wetsnow.com.",
     ]))
   }
 }
