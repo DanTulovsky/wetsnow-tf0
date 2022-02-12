@@ -3,6 +3,9 @@
 ambassador = {
   app_version = "1.14.2"
 }
+argo_cd = {
+  app_version = "v2.2.5"
+}
 argo_rollouts = {
   app_version = "v1.2.0-rc1"
 }

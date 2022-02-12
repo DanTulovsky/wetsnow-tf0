@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="argocd space">
-      <change afterPath="$PROJECT_DIR$/modules/argo-cd/.terraform.lock.hcl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/argo-cd/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/argo-cd/providers.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/argo-cd/variables.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/argo-cd/yaml/values.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/argo/yaml/values-argo-cd.yaml" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="argocd">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/argo/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo/main.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -133,13 +126,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00025" summary="upgrade grafana">
-      <created>1644082596962</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1644082596962</updated>
     </task>
     <task id="LOCAL-00026" summary="upgrade otel">
       <created>1644082669500</created>
@@ -477,7 +463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644675862805</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="argocd">
+      <created>1644676876582</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1644676876582</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -509,7 +502,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="switch prom to otel collector" />
     <MESSAGE value="fix" />
     <MESSAGE value="fix otel" />
     <MESSAGE value="fix annotations" />
@@ -534,6 +526,7 @@
     <MESSAGE value="fix leases" />
     <MESSAGE value="enable planetscale" />
     <MESSAGE value="argocd space" />
-    <option name="LAST_COMMIT_MESSAGE" value="argocd space" />
+    <MESSAGE value="argocd" />
+    <option name="LAST_COMMIT_MESSAGE" value="argocd" />
   </component>
 </project>
