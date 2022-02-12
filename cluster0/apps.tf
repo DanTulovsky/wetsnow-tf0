@@ -22,12 +22,12 @@ module "argo" {
   argo_version = var.argo_rollouts.app_version
 }
 
-module "argo-cd" {
-  source       = "../modules/argo-cd"
-  namespace    = module.common.namespaces.argocd
-  argo_version = var.argo_cd.app_version
-}
-
+#module "argo-cd" {
+#  source       = "../modules/argo-cd"
+#  namespace    = module.common.namespaces.argocd
+#  argo_version = var.argo_cd.app_version
+#}
+#
 module "http-ingress" {
   source = "../modules/http-ingress"
   depends_on = [
