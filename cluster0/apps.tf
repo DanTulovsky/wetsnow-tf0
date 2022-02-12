@@ -18,7 +18,7 @@ module "ambassador" {
 
 module "argo" {
   source       = "../modules/argo"
-  namespace    = module.common.namespaces.argo-rollouts
+  namespace    = module.common.namespaces.argocd
   argo_version = var.argo_rollouts.app_version
 }
 
