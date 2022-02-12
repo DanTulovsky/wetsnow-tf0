@@ -124,19 +124,6 @@ spec:
 apiVersion: getambassador.io/v2
 kind: Mapping
 metadata:
-  name: weave-scope.wetsnow.com
-  namespace: ambassador
-spec:
-  prefix: /
-  host: weave-scope.wetsnow.com
-  resolver: endpoint
-  service: weave-scope-app.weave:80
-  allow_upgrade:
-    - websocket
----
-apiVersion: getambassador.io/v2
-kind: Mapping
-metadata:
   name: argocd.wetsnow.com
   namespace: ambassador
 spec:
