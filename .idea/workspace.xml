@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix argo">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix service">
       <change beforePath="$PROJECT_DIR$/modules/ambassador/yaml/k8s/10-ambassador-maps.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/yaml/k8s/10-ambassador-maps.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -124,13 +124,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00039" summary="otel daemonset">
-      <created>1644087876602</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1644087876602</updated>
     </task>
     <task id="LOCAL-00040" summary="config map as variable">
       <created>1644088134472</created>
@@ -468,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644679564323</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="fix service">
+      <created>1644679777258</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1644679777258</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -500,7 +500,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="remove unsigned plugins" />
     <MESSAGE value="cleanup" />
     <MESSAGE value="fix secrets" />
     <MESSAGE value="users" />
@@ -525,6 +524,7 @@
     <MESSAGE value="argo rollouts" />
     <MESSAGE value="fix ssl" />
     <MESSAGE value="fix argo" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix argo" />
+    <MESSAGE value="fix service" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix service" />
   </component>
 </project>
