@@ -16,7 +16,6 @@ locals {
     "wetsnow.com.",
     "www.dusselskolk.com.",
     "www.wetsnow.com.",
-    "parca.wetsnow.com.",
   ])
 }
 
@@ -30,6 +29,7 @@ resource "google_compute_managed_ssl_certificate" "wetsnow-com-20211010-01" {
   name = "wetsnow-cert-20211010-01"
   managed {
     domains = concat(local.domains, sort([
+      "parca.wetsnow.com",
     ]))
   }
 }
