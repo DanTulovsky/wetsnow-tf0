@@ -5,7 +5,7 @@ resource "helm_release" "argo-cd" {
   chart        = "argo-cd"
   wait         = true
   force_update = true
-  version      = "v2.2.5"
+  version      = "3.33.5"
 
   values = [templatefile("${path.module}/yaml/values.yaml", {
     argo_version = var.argo_version
