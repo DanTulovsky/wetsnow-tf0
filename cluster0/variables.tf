@@ -73,6 +73,11 @@ variable "argo_rollouts" {
     app_version = string
   })
 }
+variable "argo_cd" {
+  type = object({
+    app_version = string
+  })
+}
 variable "grafana" {
   type = object({
     app_version = string

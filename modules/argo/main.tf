@@ -11,3 +11,4 @@ resource "helm_release" "argo-rollouts" {
     argo_version = var.argo_version
   })]
 }
+

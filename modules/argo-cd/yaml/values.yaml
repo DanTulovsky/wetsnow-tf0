@@ -1,0 +1,43 @@
+global:
+  image:
+    tag: ${argo_version}
+
+#  podAnnotations:
+#    prometheus.io/scrape: "true"
+#    prometheus.io/port: "8090"
+#    prometheus.io/path: "/metrics"
+
+createAggregateRoles: true
+
+controller:
+  enableStatefulSet: true
+  metrics:
+    enabled: true
+    service:
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "8082"
+        prometheus.io/path: "/metrics"
+
+server:
+  metrics:
+    enabled: true
+    service:
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "8083"
+        prometheus.io/path: "/metrics"
+
+  config:
+    url: https://argocd.wetsnow.com
+
+repoServer:
+  metrics:
+    enabled: true
+    service:
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "8084"
+        prometheus.io/path: "/metrics"
+  clusterAdminAccess:
+    enabled: true
