@@ -76,7 +76,7 @@ metadata:
   name: argocd-server-ui
   namespace: ambassador
 spec:
-  host: argocd.wetsnow.com.com
+  host: argocd.wetsnow.com
   prefix: /
   resolver: endpoint
   service: argo-cd-argocd-server.argocd:443
