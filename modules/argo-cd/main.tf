@@ -1,7 +1,7 @@
 resource "helm_release" "argo-cd" {
   name         = "argo-cd"
   namespace    = var.namespace
-  repository   = "https://argoproj.github.io/argo-cd"
+  repository   = "https://argoproj.github.io/argo-helm"
   chart        = "argo-cd"
   wait         = true
   force_update = true
