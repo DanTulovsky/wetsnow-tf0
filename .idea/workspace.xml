@@ -4,8 +4,40 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix argo host">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="remove argo cd">
+      <change afterPath="$PROJECT_DIR$/modules/argo-events/yaml/eventbus.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/argo-events/yaml/install-validating-webhook.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/terraform.auto.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/terraform.auto.tfvars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/argo-cd/.terraform.lock.hcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/argo-cd/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-events/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/argo-cd/providers.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/argo-cd/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-events/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/argo-cd/yaml/values.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/parca/.terraform.lock.hcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/parca/main.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/parca/providers.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/parca/variables.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/parca/yaml/k8s/agent.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/parca/yaml/k8s/server.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/postgres/.terraform.lock.hcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/postgres/main.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/postgres/providers.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/postgres/variables.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/postgres/yaml/pgadmin4-values.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/prometheus/.terraform.lock.hcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/prometheus/main.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/prometheus/providers.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-events/providers.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/prometheus/variables.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/prometheus/yaml/lightstep-config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/prometheus/yaml/values.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/vector/.terraform.lock.hcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/vector/main.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/vector/providers.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/vector/variables.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/vector/yaml/k8s/00-monitoring-prom.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/vector/yaml/values.yaml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,25 +83,28 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/cluster0/sensitive.auto.tfvars" />
-    <property name="com.google.cloudcode.ide_session_index" value="20220212_0003" />
+    <property name="com.google.cloudcode.ide_session_index" value="20220217_0001" />
+    <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="yaml" />
     <property name="go.format.on.save.advertiser.fired" value="true" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.watchers.conflict.with.on.save.actions.check.performed" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/modules/argo-events" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/modules/argo-events" />
       <recent name="$PROJECT_DIR$/modules" />
       <recent name="$PROJECT_DIR$/modules/planetscale" />
       <recent name="$PROJECT_DIR$/modules/kube-state-metrics" />
       <recent name="$PROJECT_DIR$/modules/open-telemetry/yaml" />
-      <recent name="$PROJECT_DIR$/modules/open-telemetry" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/modules/nobl9/yaml/k8s" />
@@ -124,13 +159,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00044" summary="switch prom to otel collector">
-      <created>1644158148139</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1644158148139</updated>
     </task>
     <task id="LOCAL-00045" summary="fix">
       <created>1644158321490</created>
@@ -468,7 +496,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644682424517</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="remove argo cd">
+      <created>1644686208053</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1644686208053</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -500,7 +535,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="updates" />
     <MESSAGE value="add kube-state-metrics" />
     <MESSAGE value="fix namespace" />
     <MESSAGE value="add planetscale" />
@@ -525,6 +559,7 @@
     <MESSAGE value="cleanup" />
     <MESSAGE value="argo ingress fixes" />
     <MESSAGE value="fix argo host" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix argo host" />
+    <MESSAGE value="remove argo cd" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove argo cd" />
   </component>
 </project>
