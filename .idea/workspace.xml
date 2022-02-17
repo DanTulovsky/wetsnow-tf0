@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="add config checksum to otel">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/30-daemonset.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/30-daemonset.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/30-deployment.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/30-deployment.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/yaml/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/yaml/config.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,13 +128,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00074" summary="argocd">
-      <created>1644676876582</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1644676876582</updated>
     </task>
     <task id="LOCAL-00075" summary="argocd">
       <created>1644677050967</created>
@@ -474,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645132485122</updated>
     </task>
-    <option name="localTasksCounter" value="123" />
+    <task id="LOCAL-00123" summary="add config checksum to otel">
+      <created>1645132671202</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1645132671202</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

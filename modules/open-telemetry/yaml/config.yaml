@@ -14,10 +14,6 @@ receivers:
       thrift_http:
       thrift_compact:
       thrift_binary:
-#    remote_sampling:
-#      strategy_file: "/etc/jaeger/jaeger-sampling-config.json"
-      # Doesn't work
-      # fetch_endpoint: "jaeger-collector.observability:5778"
   zipkin:
   k8s_cluster:
     auth_type: "serviceAccount"
