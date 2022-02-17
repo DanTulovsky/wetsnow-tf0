@@ -1,4 +1,11 @@
 controller:
+  podAnnotations:
+    prometheus.io/scrape: "true"
+    prometheus.io/port: "9090"
+    prometheus.io/path: "/metrics"
+  metricsConfig:
+    enabled: true
+
   image:
     tag: ${argo_version}
 
