@@ -5,9 +5,12 @@ resource "kubernetes_daemon_set_v1" "otel_collector-daemonset" {
     namespace = var.namespace
 
     labels = {
-      app = "opentelemetry"
-
+      app       = "opentelemetry"
       component = "otel-collector-agent"
+    }
+
+    annotations = {
+      "checksum/config" = kubernetes_config_map.otel-collector-agent-conf.metadata.0.resource_version
     }
   }
   spec {

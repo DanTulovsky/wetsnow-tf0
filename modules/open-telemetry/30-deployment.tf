@@ -5,9 +5,12 @@ resource "kubernetes_deployment_v1" "otel_collector" {
     namespace = var.namespace
 
     labels = {
-      app = "opentelemetry"
-
+      app       = "opentelemetry"
       component = "otel-collector"
+    }
+
+    annotations = {
+      "checksum/config" = kubernetes_config_map.otel-collector-conf.metadata.0.resource_version
     }
   }
   spec {
