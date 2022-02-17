@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="prom annotation on eventbus.">
-      <change beforePath="$PROJECT_DIR$/.idea/kubernetes-settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kubernetes-settings.xml" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="per namespace event bus">
+      <change afterPath="$PROJECT_DIR$/modules/argo-events/yaml/sensors/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/argo-events/yaml/triggers/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo-events/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-events/main.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/argo-events/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-events/variables.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo-events/yaml/eventbus.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-events/yaml/eventbus.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,13 +132,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00052" summary="update grafana">
-      <created>1644160436973</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1644160436973</updated>
     </task>
     <task id="LOCAL-00053" summary="update grafana">
       <created>1644161749570</created>
@@ -477,7 +469,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645107907530</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="per namespace event bus">
+      <created>1645109843757</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1645109843757</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -509,7 +508,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="update argo rollouts" />
     <MESSAGE value="fix leases" />
     <MESSAGE value="enable planetscale" />
     <MESSAGE value="argocd space" />
@@ -534,6 +532,7 @@
     <MESSAGE value="fix path" />
     <MESSAGE value="add install" />
     <MESSAGE value="prom annotation on eventbus." />
-    <option name="LAST_COMMIT_MESSAGE" value="prom annotation on eventbus." />
+    <MESSAGE value="per namespace event bus" />
+    <option name="LAST_COMMIT_MESSAGE" value="per namespace event bus" />
   </component>
 </project>

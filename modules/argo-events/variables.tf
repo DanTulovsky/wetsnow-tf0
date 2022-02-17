@@ -7,6 +7,6 @@ variable "argo_version" {
 }
 
 variable "all_namespaces" {
-  type    = list(any)
+  type    = set(any)
   default = []
 }
