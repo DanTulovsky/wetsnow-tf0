@@ -9,9 +9,6 @@ resource "kubernetes_daemon_set_v1" "otel_collector-daemonset" {
       component = "otel-collector-agent"
     }
 
-    annotations = {
-      "checksum/config" = base64sha256(kubernetes_config_map.otel-collector-agent-conf.data.otel-collector-config)
-    }
   }
   spec {
     selector {
@@ -31,6 +28,7 @@ resource "kubernetes_daemon_set_v1" "otel_collector-daemonset" {
           "prometheus.io/scrape" = "true"
           "prometheus.io/port"   = "8888"
           "prometheus.io/path"   = "/metrics"
+          "checksum/config"      = base64sha256(kubernetes_config_map.otel-collector-agent-conf.data.otel-collector-config)
         }
       }
 

@@ -131,13 +131,6 @@
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
     </task>
-    <task id="LOCAL-00073" summary="argocd space">
-      <created>1644675862805</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1644675862805</updated>
-    </task>
     <task id="LOCAL-00074" summary="argocd">
       <created>1644676876582</created>
       <option name="number" value="00074" />
@@ -474,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645132390317</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="add config checksum to otel">
+      <created>1645132485122</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1645132485122</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

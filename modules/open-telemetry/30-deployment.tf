@@ -9,9 +9,6 @@ resource "kubernetes_deployment_v1" "otel_collector" {
       component = "otel-collector"
     }
 
-    annotations = {
-      "checksum/config" = base64sha256(kubernetes_config_map.otel-collector-conf.data.otel-collector-config)
-    }
   }
   spec {
     replicas = 1
@@ -27,6 +24,9 @@ resource "kubernetes_deployment_v1" "otel_collector" {
         labels = {
           app       = "opentelemetry"
           component = "otel-collector"
+        }
+        annotations = {
+          "checksum/config" = base64sha256(kubernetes_config_map.otel-collector-conf.data.otel-collector-config)
         }
       }
 
