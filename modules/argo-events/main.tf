@@ -1,21 +1,16 @@
-# Main argo-events
-data "kubectl_file_documents" "argo-events-docs-install" {
-  content = file("${path.module}/yaml/install.yaml")
-}
+resource "helm_release" "argo-rollouts" {
+  name         = "argo-events"
+  namespace    = var.namespace
+  repository   = "https://argoproj.github.io/argo-helm"
+  chart        = "argo-events"
+  wait         = true
+  force_update = true
+  #  version      = "2.9.3"
 
-resource "kubectl_manifest" "argo-events-install" {
-  for_each  = data.kubectl_file_documents.argo-events-docs-install.manifests
-  yaml_body = each.value
-}
-
-# Validating Webhook
-data "kubectl_file_documents" "argo-events-docs-install-webhook" {
-  content = file("${path.module}/yaml/install.yaml")
-}
-
-resource "kubectl_manifest" "argo-events-install-webhook" {
-  for_each  = data.kubectl_file_documents.argo-events-docs-install-webhook.manifests
-  yaml_body = each.value
+  values = [templatefile("${path.module}/yaml/values.yaml", {
+    argo_version   = var.argo_version
+    all_namespaces = var.all_namespaces
+  })]
 }
 
 # Per-namespace event bus

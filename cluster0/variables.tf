@@ -73,7 +73,7 @@ variable "argo_rollouts" {
     app_version = string
   })
 }
-variable "argo_cd" {
+variable "argo_events" {
   type = object({
     app_version = string
   })
