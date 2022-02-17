@@ -3,6 +3,10 @@ kind: EventSource
 metadata:
   name: calendar
   namespace: ${namespace}
+  annotations:
+    prometheus.io/scrape: "true"
+    prometheus.io/port: "7777"
+    prometheus.io/path: "/metrics"
 spec:
   calendar:
     example-with-interval:
