@@ -9,7 +9,7 @@ resource "helm_release" "argo-events" {
 
   values = [templatefile("${path.module}/yaml/values.yaml", {
     argo_version   = var.argo_version
-    all_namespaces = indent(2, yamlencode(var.all_namespaces))
+    all_namespaces = indent(2, yamlencode(toset(compact([for x in var.all_namespaces : x if x != "argo-events"]))))
   })]
 }
 

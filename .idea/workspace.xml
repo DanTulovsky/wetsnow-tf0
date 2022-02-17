@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="arog events helm chart">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="indent">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/argo-events/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-events/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo-events/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-events/yaml/values.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/argo-events/sesnsors.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-events/sensors.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,13 +130,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00063" summary="add kube-state-metrics">
-      <created>1644171823337</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1644171823337</updated>
     </task>
     <task id="LOCAL-00064" summary="fix namespace">
       <created>1644171912170</created>
@@ -474,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645121763182</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="indent">
+      <created>1645122086566</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1645122086566</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,7 +506,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="argocd" />
     <MESSAGE value="fix versions" />
     <MESSAGE value="rename namespace" />
     <MESSAGE value="fix argo rollouts" />
@@ -531,6 +530,7 @@
     <MESSAGE value="set" />
     <MESSAGE value="source and sensor" />
     <MESSAGE value="arog events helm chart" />
-    <option name="LAST_COMMIT_MESSAGE" value="arog events helm chart" />
+    <MESSAGE value="indent" />
+    <option name="LAST_COMMIT_MESSAGE" value="indent" />
   </component>
 </project>
