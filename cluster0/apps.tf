@@ -23,9 +23,10 @@ module "argo" {
 }
 
 module "argo-events" {
-  source       = "../modules/argo-events"
-  namespace    = module.common.namespaces.argo-events
-  argo_version = var.argo_rollouts.app_version
+  source         = "../modules/argo-events"
+  namespace      = module.common.namespaces.argo-events
+  all_namespaces = var.cluster_info.namespaces
+  argo_version   = var.argo_rollouts.app_version
 }
 
 module "http-ingress" {

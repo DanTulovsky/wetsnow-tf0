@@ -1,3 +1,4 @@
+# Main argo-events
 data "kubectl_file_documents" "argo-events-docs-install" {
   content = file("${path.module}/yaml/install.yaml")
 }
@@ -7,6 +8,7 @@ resource "kubectl_manifest" "argo-events-install" {
   yaml_body = each.value
 }
 
+# Validating Webhook
 data "kubectl_file_documents" "argo-events-docs-install-webhook" {
   content = file("${path.module}/yaml/install.yaml")
 }
@@ -16,11 +18,10 @@ resource "kubectl_manifest" "argo-events-install-webhook" {
   yaml_body = each.value
 }
 
-data "kubectl_file_documents" "argo-events-docs-eventbus" {
-  content = file("${path.module}/yaml/eventbus.yaml")
-}
-
+# Per-namespace event bus
 resource "kubectl_manifest" "argo-events-eventbus" {
-  for_each  = data.kubectl_file_documents.argo-events-docs-eventbus.manifests
-  yaml_body = each.value
+  for_each = var.all_namespaces
+  yaml_body = templatefile("${path.module}/yaml/eventbus.yaml", {
+    namespace = each.value
+  })
 }

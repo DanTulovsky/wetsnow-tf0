@@ -2,5 +2,10 @@
 <project version="4">
   <component name="KubernetesSettings">
     <option name="getSpecFromCluster" value="true" />
+    <specSources>
+      <SpecSource>
+        <option name="pathOrUrl" value="$PROJECT_DIR$/modules/argo-events/yaml/install.yaml" />
+      </SpecSource>
+    </specSources>
   </component>
 </project>
