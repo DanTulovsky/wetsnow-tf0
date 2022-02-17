@@ -1,0 +1,9 @@
+apiVersion: argoproj.io/v1alpha1
+kind: EventSource
+metadata:
+  name: calendar
+spec:
+  calendar:
+    example-with-interval:
+      # creates an event every 10 seconds
+      interval: 20s
