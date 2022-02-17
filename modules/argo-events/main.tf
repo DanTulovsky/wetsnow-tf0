@@ -16,7 +16,7 @@ resource "helm_release" "argo-events" {
 # Per-namespace event bus
 resource "kubectl_manifest" "argo-events-eventbus" {
   for_each = var.all_namespaces
-  yaml_body = templatefile("${path.module}/k8s/yaml/eventbus.yaml", {
+  yaml_body = templatefile("${path.module}/yaml/k8s/eventbus.yaml", {
     namespace = each.value
   })
 }

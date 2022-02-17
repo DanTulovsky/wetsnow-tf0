@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="arog events helm chart">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/argo-events/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-events/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/argo-events/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-events/yaml/values.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,13 +130,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00059" summary="cleanup">
-      <created>1644169434849</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1644169434849</updated>
     </task>
     <task id="LOCAL-00060" summary="fix secrets">
       <created>1644169708398</created>
@@ -472,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645120216823</updated>
     </task>
-    <option name="localTasksCounter" value="108" />
+    <task id="LOCAL-00108" summary="arog events helm chart">
+      <created>1645120905430</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1645120905430</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
