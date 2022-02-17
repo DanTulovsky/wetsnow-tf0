@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="install argo-events">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo-events/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-events/main.tf" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix names">
+      <change beforePath="$PROJECT_DIR$/modules/argo-events/providers.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-events/providers.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,13 +127,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00046" summary="fix otel">
-      <created>1644158596033</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1644158596033</updated>
     </task>
     <task id="LOCAL-00047" summary="fix annotations">
       <created>1644158940439</created>
@@ -472,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645104822745</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="fix names">
+      <created>1645105014566</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1645105014566</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,7 +503,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix namespace" />
     <MESSAGE value="add planetscale" />
     <MESSAGE value="fix ingress for 1.22" />
     <MESSAGE value="comment out planetscale" />
@@ -529,6 +527,7 @@
     <MESSAGE value="fix argo host" />
     <MESSAGE value="remove argo cd" />
     <MESSAGE value="install argo-events" />
-    <option name="LAST_COMMIT_MESSAGE" value="install argo-events" />
+    <MESSAGE value="fix names" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix names" />
   </component>
 </project>
