@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="prom metrics">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="add annotations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo-events/yaml/k8s/sensors/logger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-events/yaml/k8s/sensors/logger.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo-events/yaml/k8s/sources/calendar.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-events/yaml/k8s/sources/calendar.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/yaml/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/yaml/config.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,13 +129,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00069" summary="update argo rollouts">
-      <created>1644274682931</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1644274682931</updated>
     </task>
     <task id="LOCAL-00070" summary="fix leases">
       <created>1644274961169</created>
@@ -474,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645127088219</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="add annotations">
+      <created>1645130515188</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1645130515188</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,7 +505,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix argocd" />
     <MESSAGE value="argo rollouts" />
     <MESSAGE value="fix ssl" />
     <MESSAGE value="fix argo" />
@@ -531,6 +529,7 @@
     <MESSAGE value="argo workflows" />
     <MESSAGE value="fix name" />
     <MESSAGE value="prom metrics" />
-    <option name="LAST_COMMIT_MESSAGE" value="prom metrics" />
+    <MESSAGE value="add annotations" />
+    <option name="LAST_COMMIT_MESSAGE" value="add annotations" />
   </component>
 </project>
