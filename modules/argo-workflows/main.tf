@@ -1,5 +1,5 @@
 resource "helm_release" "argo-workflows" {
-  name         = "argo-events"
+  name         = "argo-workflows"
   namespace    = var.namespace
   repository   = "https://argoproj.github.io/argo-helm"
   chart        = "argo-workflows"

@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix version">
-      <change afterPath="$PROJECT_DIR$/modules/argo-workflows/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/argo-workflows/providers.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/argo-workflows/variables.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/argo-workflows/yaml/values.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kubernetes-settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kubernetes-settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/variables.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo-events/yaml/k8s/eventbus.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-events/yaml/k8s/eventbus.yaml" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="argo workflows">
+      <change beforePath="$PROJECT_DIR$/modules/argo-workflows/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-workflows/main.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,13 +128,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00066" summary="fix ingress for 1.22">
-      <created>1644270017355</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1644270017355</updated>
     </task>
     <task id="LOCAL-00067" summary="comment out planetscale">
       <created>1644270855668</created>
@@ -481,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645123477710</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="argo workflows">
+      <created>1645125918924</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1645125918924</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -513,7 +504,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix argo rollouts" />
     <MESSAGE value="remove weave" />
     <MESSAGE value="update ssl cert" />
     <MESSAGE value="fix argocd" />
@@ -538,6 +528,7 @@
     <MESSAGE value="indent" />
     <MESSAGE value="filter out argo-events" />
     <MESSAGE value="fix version" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix version" />
+    <MESSAGE value="argo workflows" />
+    <option name="LAST_COMMIT_MESSAGE" value="argo workflows" />
   </component>
 </project>
