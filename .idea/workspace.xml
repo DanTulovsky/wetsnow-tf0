@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix path">
-      <change afterPath="$PROJECT_DIR$/modules/argo-events/yaml/install.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="add install">
       <change beforePath="$PROJECT_DIR$/modules/argo-events/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-events/main.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -129,13 +127,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00049" summary="fix syntax">
-      <created>1644159216824</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1644159216824</updated>
     </task>
     <task id="LOCAL-00050" summary="fix otel port">
       <created>1644159329480</created>
@@ -473,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645105309363</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="add install">
+      <created>1645105954206</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1645105954206</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -505,7 +503,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="comment out planetscale" />
     <MESSAGE value="fixes" />
     <MESSAGE value="update argo rollouts" />
     <MESSAGE value="fix leases" />
@@ -530,6 +527,7 @@
     <MESSAGE value="fix names" />
     <MESSAGE value="add provider" />
     <MESSAGE value="fix path" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix path" />
+    <MESSAGE value="add install" />
+    <option name="LAST_COMMIT_MESSAGE" value="add install" />
   </component>
 </project>

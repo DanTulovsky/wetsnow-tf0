@@ -11,7 +11,7 @@ data "kubectl_file_documents" "argo-events-docs-install-webhook" {
   content = file("${path.module}/yaml/install.yaml")
 }
 
-resource "kubectl_manifest" "argo-events-install" {
+resource "kubectl_manifest" "argo-events-install-webhook" {
   for_each  = data.kubectl_file_documents.argo-events-docs-install-webhook.manifests
   yaml_body = each.value
 }
