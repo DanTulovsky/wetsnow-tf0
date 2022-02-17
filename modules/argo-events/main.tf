@@ -1,4 +1,4 @@
-resource "helm_release" "argo-rollouts" {
+resource "helm_release" "argo-events" {
   name         = "argo-events"
   namespace    = var.namespace
   repository   = "https://argoproj.github.io/argo-helm"

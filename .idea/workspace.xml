@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="source and sensor">
-      <change afterPath="$PROJECT_DIR$/modules/argo-events/values.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/variables.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="arog events helm chart">
       <change beforePath="$PROJECT_DIR$/modules/argo-events/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-events/main.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,13 +128,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00056" summary="grafana oauth">
-      <created>1644163426219</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1644163426220</updated>
     </task>
     <task id="LOCAL-00057" summary="remove unsigned plugins">
       <created>1644165317849</created>
@@ -476,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645117943360</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="arog events helm chart">
+      <created>1645120005538</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1645120005538</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -508,7 +504,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="argocd space" />
     <MESSAGE value="argocd" />
     <MESSAGE value="fix versions" />
     <MESSAGE value="rename namespace" />
@@ -533,6 +528,7 @@
     <MESSAGE value="per namespace event bus" />
     <MESSAGE value="set" />
     <MESSAGE value="source and sensor" />
-    <option name="LAST_COMMIT_MESSAGE" value="source and sensor" />
+    <MESSAGE value="arog events helm chart" />
+    <option name="LAST_COMMIT_MESSAGE" value="arog events helm chart" />
   </component>
 </project>
