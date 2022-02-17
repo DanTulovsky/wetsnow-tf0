@@ -8,4 +8,4 @@ sensorController:
   tag: "${argo_version}"
 
 additionalSaNamespaces:
-${all_namespaces}
+  ${all_namespaces}

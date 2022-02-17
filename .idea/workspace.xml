@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="arog events helm chart">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/argo-events/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-events/main.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/argo-events/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-events/yaml/values.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -129,13 +130,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00062" summary="updates">
-      <created>1644170439502</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1644170439502</updated>
     </task>
     <task id="LOCAL-00063" summary="add kube-state-metrics">
       <created>1644171823337</created>
@@ -473,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645121439788</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="arog events helm chart">
+      <created>1645121763182</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1645121763182</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
