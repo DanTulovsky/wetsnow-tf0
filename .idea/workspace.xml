@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="scrape argo-events">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="add config checksum to otel">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/open-telemetry/30-daemonset.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/30-daemonset.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/open-telemetry/30-deployment.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/30-deployment.tf" afterDir="false" />
@@ -130,13 +130,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00071" summary="enable planetscale">
-      <created>1644415380680</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1644415380680</updated>
     </task>
     <task id="LOCAL-00072" summary="enable planetscale">
       <created>1644415562675</created>
@@ -474,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645130818987</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="add config checksum to otel">
+      <created>1645132333721</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1645132333721</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,7 +506,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix ssl" />
     <MESSAGE value="fix argo" />
     <MESSAGE value="fix service" />
     <MESSAGE value="cleanup" />
@@ -531,6 +530,7 @@
     <MESSAGE value="prom metrics" />
     <MESSAGE value="add annotations" />
     <MESSAGE value="scrape argo-events" />
-    <option name="LAST_COMMIT_MESSAGE" value="scrape argo-events" />
+    <MESSAGE value="add config checksum to otel" />
+    <option name="LAST_COMMIT_MESSAGE" value="add config checksum to otel" />
   </component>
 </project>

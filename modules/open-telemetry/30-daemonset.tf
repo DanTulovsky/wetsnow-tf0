@@ -10,7 +10,7 @@ resource "kubernetes_daemon_set_v1" "otel_collector-daemonset" {
     }
 
     annotations = {
-      "checksum/config" = kubernetes_config_map.otel-collector-agent-conf.metadata.0.resource_version
+      "checksum/config" = base64sha256(kubernetes_config_map.otel-collector-agent-conf.data)
     }
   }
   spec {
