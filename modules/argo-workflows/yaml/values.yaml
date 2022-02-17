@@ -1,0 +1,13 @@
+controller:
+  image:
+    tag: ${argo_version}
+
+executor:
+  image:
+    tag: ${argo_version}
+
+server:
+  extraArgs:
+    - --auth-mode=server
+  image:
+    tag: ${argo_version}

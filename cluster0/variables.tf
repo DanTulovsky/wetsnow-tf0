@@ -78,6 +78,11 @@ variable "argo_events" {
     app_version = string
   })
 }
+variable "argo_workflows" {
+  type = object({
+    app_version = string
+  })
+}
 variable "grafana" {
   type = object({
     app_version = string

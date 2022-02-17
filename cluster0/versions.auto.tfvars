@@ -9,6 +9,9 @@ argo_events = {
 argo_rollouts = {
   app_version = "v1.2.0-rc1"
 }
+argo_workflows = {
+  app_version = "v3.3.0-rc4"
+}
 grafana = {
   app_version = "8.3.4"
 }
