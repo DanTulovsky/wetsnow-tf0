@@ -1,5 +1,5 @@
 data "kubectl_file_documents" "argo-events-docs-install" {
-  content = file("yaml/install-validating-webhook.yaml")
+  content = file("${path.module}/yaml/install-validating-webhook.yaml")
 }
 
 resource "kubectl_manifest" "argo-events-install" {
@@ -8,7 +8,7 @@ resource "kubectl_manifest" "argo-events-install" {
 }
 
 data "kubectl_file_documents" "argo-events-docs-eventbus" {
-  content = file("yaml/eventbus.yaml")
+  content = file("${path.module}/yaml/eventbus.yaml")
 }
 
 resource "kubectl_manifest" "argo-events-eventbus" {
