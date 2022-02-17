@@ -25,7 +25,7 @@ module "argo" {
 module "argo-events" {
   source         = "../modules/argo-events"
   namespace      = module.common.namespaces.argo-events
-  all_namespaces = toset(var.cluster_info.namespaces)
+  all_namespaces = var.cluster_info.namespaces
   argo_version   = var.argo_rollouts.app_version
 }
 

@@ -9,7 +9,7 @@ resource "helm_release" "argo-events" {
 
   values = [templatefile("${path.module}/yaml/values.yaml", {
     argo_version   = var.argo_version
-    all_namespaces = var.all_namespaces
+    all_namespaces = yamlencode(var.all_namespaces)
   })]
 }
 
