@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="indent">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo-events/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-events/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo-events/sesnsors.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-events/sensors.tf" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="filter out argo-events">
+      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,13 +128,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00064" summary="fix namespace">
-      <created>1644171912170</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1644171912170</updated>
     </task>
     <task id="LOCAL-00065" summary="add planetscale">
       <created>1644263150150</created>
@@ -474,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645122086566</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="filter out argo-events">
+      <created>1645122854748</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1645122854748</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,7 +504,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix versions" />
     <MESSAGE value="rename namespace" />
     <MESSAGE value="fix argo rollouts" />
     <MESSAGE value="remove weave" />
@@ -531,6 +528,7 @@
     <MESSAGE value="source and sensor" />
     <MESSAGE value="arog events helm chart" />
     <MESSAGE value="indent" />
-    <option name="LAST_COMMIT_MESSAGE" value="indent" />
+    <MESSAGE value="filter out argo-events" />
+    <option name="LAST_COMMIT_MESSAGE" value="filter out argo-events" />
   </component>
 </project>
