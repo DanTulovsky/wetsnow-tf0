@@ -2,6 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: EventSource
 metadata:
   name: calendar
+  namespace: ${namespace}
 spec:
   calendar:
     example-with-interval:

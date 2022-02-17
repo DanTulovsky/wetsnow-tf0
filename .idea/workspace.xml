@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="set">
-      <change afterPath="$PROJECT_DIR$/modules/argo-events/yaml/sensors/logger.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/argo-events/yaml/sources/calendar.yaml" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="source and sensor">
+      <change afterPath="$PROJECT_DIR$/modules/argo-events/event_sources.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/argo-events/sesnsors.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo-events/yaml/triggers/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-events/yaml/sources/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/argo-events/yaml/sensors/logger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-events/yaml/sensors/logger.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/argo-events/yaml/sources/calendar.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-events/yaml/sources/calendar.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,13 +132,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00054" summary="grafana oauth">
-      <created>1644162832727</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1644162832727</updated>
     </task>
     <task id="LOCAL-00055" summary="grafana oauth">
       <created>1644163385842</created>
@@ -475,7 +469,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645110079773</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="source and sensor">
+      <created>1645117729737</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1645117729737</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -507,7 +508,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="enable planetscale" />
     <MESSAGE value="argocd space" />
     <MESSAGE value="argocd" />
     <MESSAGE value="fix versions" />
@@ -532,6 +532,7 @@
     <MESSAGE value="prom annotation on eventbus." />
     <MESSAGE value="per namespace event bus" />
     <MESSAGE value="set" />
-    <option name="LAST_COMMIT_MESSAGE" value="set" />
+    <MESSAGE value="source and sensor" />
+    <option name="LAST_COMMIT_MESSAGE" value="source and sensor" />
   </component>
 </project>
