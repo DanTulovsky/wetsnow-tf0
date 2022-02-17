@@ -10,7 +10,7 @@ resource "kubernetes_deployment_v1" "otel_collector" {
     }
 
     annotations = {
-      "checksum/config" = base64sha256(kubernetes_config_map.otel-collector-conf.data)
+      "checksum/config" = base64sha256(kubernetes_config_map.otel-collector-conf.data.otel-collector-config)
     }
   }
   spec {
