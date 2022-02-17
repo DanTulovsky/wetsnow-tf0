@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="arog events helm chart">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo-events/event_sources.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-events/event_sources.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo-events/sesnsors.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-events/sesnsors.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo-events/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-events/yaml/values.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo-events/yaml/eventbus.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-events/yaml/k8s/eventbus.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo-events/yaml/install-validating-webhook.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-events/yaml/k8s/install-validating-webhook.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo-events/yaml/install.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-events/yaml/k8s/install.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo-events/yaml/sensors/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-events/yaml/k8s/sensors/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo-events/yaml/sensors/logger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-events/yaml/k8s/sensors/logger.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo-events/yaml/sources/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-events/yaml/k8s/sources/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo-events/yaml/sources/calendar.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-events/yaml/k8s/sources/calendar.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/argo-events/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/argo-events/main.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,13 +128,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00058" summary="cleanup">
-      <created>1644165341621</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1644165341621</updated>
     </task>
     <task id="LOCAL-00059" summary="cleanup">
       <created>1644169434849</created>
@@ -482,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645120016350</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="arog events helm chart">
+      <created>1645120216823</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1645120216823</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
