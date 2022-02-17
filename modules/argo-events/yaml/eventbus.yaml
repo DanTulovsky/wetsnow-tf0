@@ -2,6 +2,9 @@ apiVersion: argoproj.io/v1alpha1
 kind: EventBus
 metadata:
   name: default
+  annotations:
+    prometheus.io/scrape: "true"
+    prometheus.io/port: "7777"
 spec:
   nats:
     native:
