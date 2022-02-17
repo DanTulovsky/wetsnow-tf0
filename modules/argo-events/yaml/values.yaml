@@ -7,4 +7,5 @@ eventsourceController:
 sensorController:
   tag: "${argo_version}"
 
-additionalSaNamespaces: ${all_namespaces}
+additionalSaNamespaces:
+${all_namespaces}
