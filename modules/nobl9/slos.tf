@@ -1,4 +1,6 @@
 # https://docs.nobl9.com/Sources/lightstep/
+# https://docs.nobl9.com/yaml-guide/#objective
+
 resource "nobl9_slo" "web_static_latency" {
   name             = "${nobl9_service.web_static.name}-latency"
   service          = nobl9_service.web_static.name
@@ -58,7 +60,6 @@ resource "nobl9_slo" "web_static_availability" {
   objective {
     target       = 0.99
     display_name = "OK"
-    op           = "gte"
     count_metrics {
       incremental = false
       good {

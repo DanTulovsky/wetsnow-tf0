@@ -61,7 +61,7 @@
     <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/cluster0/sensitive.auto.tfvars" />
-    <property name="com.google.cloudcode.ide_session_index" value="20220323_0011" />
+    <property name="com.google.cloudcode.ide_session_index" value="20220323_0012" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
@@ -129,13 +129,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00106" summary="arog events helm chart">
-      <created>1645120016350</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
-      <option name="project" value="LOCAL" />
-      <updated>1645120016350</updated>
     </task>
     <task id="LOCAL-00107" summary="arog events helm chart">
       <created>1645120216823</created>
@@ -473,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648042394807</updated>
     </task>
-    <option name="localTasksCounter" value="155" />
+    <task id="LOCAL-00155" summary="availability">
+      <created>1648042708721</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1648042708721</updated>
+    </task>
+    <option name="localTasksCounter" value="156" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
