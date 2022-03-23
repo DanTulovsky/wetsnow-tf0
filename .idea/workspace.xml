@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix email">
-      <change beforePath="$PROJECT_DIR$/modules/nobl9/alert_policies.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nobl9/alert_policies.tf" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="alert method">
+      <change beforePath="$PROJECT_DIR$/modules/nobl9/slos.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nobl9/slos.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,13 +128,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00100" summary="prom annotation on eventbus.">
-      <created>1645107907530</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1645107907530</updated>
     </task>
     <task id="LOCAL-00101" summary="per namespace event bus">
       <created>1645109843757</created>
@@ -472,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648041240756</updated>
     </task>
-    <option name="localTasksCounter" value="149" />
+    <task id="LOCAL-00149" summary="alert method">
+      <created>1648041329086</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1648041329086</updated>
+    </task>
+    <option name="localTasksCounter" value="150" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,7 +504,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix version" />
     <MESSAGE value="argo workflows" />
     <MESSAGE value="fix name" />
     <MESSAGE value="prom metrics" />
@@ -529,6 +528,7 @@
     <MESSAGE value="secrets" />
     <MESSAGE value="alerts" />
     <MESSAGE value="fix email" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix email" />
+    <MESSAGE value="alert method" />
+    <option name="LAST_COMMIT_MESSAGE" value="alert method" />
   </component>
 </project>

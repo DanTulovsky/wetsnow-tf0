@@ -6,7 +6,7 @@ resource "nobl9_slo" "web_static_latency" {
   project          = nobl9_project.wetsnow.name
 
   alert_policies = [
-    nobl9_alert_policy.default_alert_policy,
+    nobl9_alert_policy.default_alert_policy.name,
   ]
 
   time_window {
