@@ -1,5 +1,5 @@
 resource "nobl9_alert_method_email" "default" {
-  name    = "email_alert_method"
+  name    = "default-email-method"
   project = nobl9_project.wetsnow.name
   subject = "Your SLO $slo_name needs attention!"
   body    = <<EOT
