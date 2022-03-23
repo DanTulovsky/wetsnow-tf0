@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix alert policy name">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix email name">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/nobl9/alert_policies.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nobl9/alert_policies.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/nobl9/slos.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nobl9/slos.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,13 +129,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00102" summary="set">
-      <created>1645110079773</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1645110079773</updated>
     </task>
     <task id="LOCAL-00103" summary="source and sensor">
       <created>1645117729737</created>
@@ -473,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648041454123</updated>
     </task>
-    <option name="localTasksCounter" value="151" />
+    <task id="LOCAL-00151" summary="fix email name">
+      <created>1648041597585</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1648041597585</updated>
+    </task>
+    <option name="localTasksCounter" value="152" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -505,7 +505,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix name" />
     <MESSAGE value="prom metrics" />
     <MESSAGE value="add annotations" />
     <MESSAGE value="scrape argo-events" />
@@ -530,6 +529,7 @@
     <MESSAGE value="fix email" />
     <MESSAGE value="alert method" />
     <MESSAGE value="fix alert policy name" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix alert policy name" />
+    <MESSAGE value="fix email name" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix email name" />
   </component>
 </project>
