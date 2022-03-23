@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="remove kind">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="secrets">
+      <change afterPath="$PROJECT_DIR$/modules/nobl9/alert_policies.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/nobl9/slos.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nobl9/slos.tf" afterDir="false" />
     </list>
@@ -129,13 +130,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00097" summary="fix path">
-      <created>1645105309363</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1645105309363</updated>
     </task>
     <task id="LOCAL-00098" summary="add install">
       <created>1645105954206</created>
@@ -473,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648039796740</updated>
     </task>
-    <option name="localTasksCounter" value="146" />
+    <task id="LOCAL-00146" summary="secrets">
+      <created>1648040336023</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1648040336023</updated>
+    </task>
+    <option name="localTasksCounter" value="147" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -505,7 +506,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="arog events helm chart" />
     <MESSAGE value="indent" />
     <MESSAGE value="filter out argo-events" />
     <MESSAGE value="fix version" />
@@ -530,6 +530,7 @@
     <MESSAGE value="source of" />
     <MESSAGE value="agent" />
     <MESSAGE value="remove kind" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove kind" />
+    <MESSAGE value="secrets" />
+    <option name="LAST_COMMIT_MESSAGE" value="secrets" />
   </component>
 </project>
