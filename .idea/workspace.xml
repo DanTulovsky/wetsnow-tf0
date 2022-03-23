@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="add value">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="upgrade provider">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/.terraform.lock.hcl" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/.terraform.lock.hcl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cluster0/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/main.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/nobl9/providers.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nobl9/providers.tf" afterDir="false" />
     </list>
@@ -130,13 +131,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00110" summary="arog events helm chart">
-      <created>1645121439788</created>
-      <option name="number" value="00110" />
-      <option name="presentableId" value="LOCAL-00110" />
-      <option name="project" value="LOCAL" />
-      <updated>1645121439788</updated>
     </task>
     <task id="LOCAL-00111" summary="arog events helm chart">
       <created>1645121763182</created>
@@ -474,7 +468,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648048135868</updated>
     </task>
-    <option name="localTasksCounter" value="159" />
+    <task id="LOCAL-00159" summary="upgrade provider">
+      <created>1648060350962</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1648060350962</updated>
+    </task>
+    <option name="localTasksCounter" value="160" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,7 +507,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="no-op config change test" />
     <MESSAGE value="add nobl9" />
     <MESSAGE value="disable planetscale" />
     <MESSAGE value="fix planetscale token" />
@@ -531,6 +531,7 @@
     <MESSAGE value="availability" />
     <MESSAGE value="remove op field" />
     <MESSAGE value="add value" />
-    <option name="LAST_COMMIT_MESSAGE" value="add value" />
+    <MESSAGE value="upgrade provider" />
+    <option name="LAST_COMMIT_MESSAGE" value="upgrade provider" />
   </component>
 </project>
