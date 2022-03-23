@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="availability">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="remove op field">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/nobl9/slos.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nobl9/slos.tf" afterDir="false" />
     </list>
@@ -129,13 +129,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00107" summary="arog events helm chart">
-      <created>1645120216823</created>
-      <option name="number" value="00107" />
-      <option name="presentableId" value="LOCAL-00107" />
-      <option name="project" value="LOCAL" />
-      <updated>1645120216823</updated>
     </task>
     <task id="LOCAL-00108" summary="arog events helm chart">
       <created>1645120905430</created>
@@ -473,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648042708721</updated>
     </task>
-    <option name="localTasksCounter" value="156" />
+    <task id="LOCAL-00156" summary="remove op field">
+      <created>1648047344589</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1648047344589</updated>
+    </task>
+    <option name="localTasksCounter" value="157" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -505,7 +505,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="scrape argo-events" />
     <MESSAGE value="add config checksum to otel" />
     <MESSAGE value="no-op config change test" />
     <MESSAGE value="add nobl9" />
@@ -530,6 +529,7 @@
     <MESSAGE value="fix email name" />
     <MESSAGE value="avaulability" />
     <MESSAGE value="availability" />
-    <option name="LAST_COMMIT_MESSAGE" value="availability" />
+    <MESSAGE value="remove op field" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove op field" />
   </component>
 </project>

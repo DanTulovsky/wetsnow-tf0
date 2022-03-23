@@ -60,6 +60,7 @@ resource "nobl9_slo" "web_static_availability" {
   objective {
     target       = 0.99
     display_name = "OK"
+    values       = 1
     count_metrics {
       incremental = false
       good {
