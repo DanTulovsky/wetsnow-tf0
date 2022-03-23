@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="no-op config change test">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="add nobl9">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/.terraform.lock.hcl" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/.terraform.lock.hcl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/main.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cluster0/providers.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/providers.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/variables.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/nobl9/providers.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nobl9/providers.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +59,7 @@
     <property name="ACTIVE_CLOUD_PROJECT_NUMBER" value="53644033433" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/cluster0/sensitive.auto.tfvars" />
     <property name="com.google.cloudcode.ide_session_index" value="20220322_0000" />
@@ -131,13 +130,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00076" summary="argocd">
-      <created>1644677525774</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1644677525774</updated>
     </task>
     <task id="LOCAL-00077" summary="fix versions">
       <created>1644677656469</created>
@@ -475,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645132768553</updated>
     </task>
-    <option name="localTasksCounter" value="125" />
+    <task id="LOCAL-00125" summary="add nobl9">
+      <created>1648000164550</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1648000164551</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -507,7 +506,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix service" />
     <MESSAGE value="cleanup" />
     <MESSAGE value="argo ingress fixes" />
     <MESSAGE value="fix argo host" />
@@ -532,6 +530,7 @@
     <MESSAGE value="scrape argo-events" />
     <MESSAGE value="add config checksum to otel" />
     <MESSAGE value="no-op config change test" />
-    <option name="LAST_COMMIT_MESSAGE" value="no-op config change test" />
+    <MESSAGE value="add nobl9" />
+    <option name="LAST_COMMIT_MESSAGE" value="add nobl9" />
   </component>
 </project>

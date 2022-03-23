@@ -14,6 +14,10 @@ terraform {
       source  = "hashicorp/kubernetes"
       version = ">= 2.0.0"
     }
+    nobl9 = {
+      source  = "nobl9/nobl9"
+      version = "0.1.3"
+    }
   }
 
   backend "remote" {

@@ -39,9 +39,6 @@ provider "kubernetes" {
     data.google_container_cluster.cluster0.master_auth[0].cluster_ca_certificate,
   )
 }
-# provider "kubernetes-alpha" {
-#   server_side_planning = false
-# }
 
 provider "nobl9" {
   organization  = "wetsnow-AhEoLssUoSbE"
