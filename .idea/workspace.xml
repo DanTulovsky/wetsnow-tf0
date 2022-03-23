@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="source_of">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="source of">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/nobl9/agent.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nobl9/agent.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/nobl9/slos.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nobl9/slos.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +62,7 @@
     <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/cluster0/sensitive.auto.tfvars" />
-    <property name="com.google.cloudcode.ide_session_index" value="20220322_0001" />
+    <property name="com.google.cloudcode.ide_session_index" value="20220323_0008" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
@@ -128,13 +130,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00094" summary="install argo-events">
-      <created>1645104822745</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1645104822745</updated>
     </task>
     <task id="LOCAL-00095" summary="fix names">
       <created>1645105014566</created>
@@ -472,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648003731669</updated>
     </task>
-    <option name="localTasksCounter" value="143" />
+    <task id="LOCAL-00143" summary="source of">
+      <created>1648003865970</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1648003865970</updated>
+    </task>
+    <option name="localTasksCounter" value="144" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,7 +506,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="set" />
     <MESSAGE value="source and sensor" />
     <MESSAGE value="arog events helm chart" />
     <MESSAGE value="indent" />
@@ -529,6 +530,7 @@
     <MESSAGE value="indicator" />
     <MESSAGE value="agent type" />
     <MESSAGE value="source_of" />
-    <option name="LAST_COMMIT_MESSAGE" value="source_of" />
+    <MESSAGE value="source of" />
+    <option name="LAST_COMMIT_MESSAGE" value="source of" />
   </component>
 </project>

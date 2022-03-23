@@ -23,7 +23,8 @@ resource "nobl9_slo" "web_static_latency" {
   }
 
   indicator {
-    name    = nobl9_agent.lightstep0.name
+    #    name    = nobl9_agent.lightstep0.name
+    name    = "lightstep"
     kind    = "agent"
     project = nobl9_project.wetsnow.name
 
