@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="agent">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/nobl9/slos.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nobl9/slos.tf" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="indicator">
+      <change beforePath="$PROJECT_DIR$/modules/nobl9/agent.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nobl9/agent.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,13 +128,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00091" summary="argo ingress fixes">
-      <created>1644681978760</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1644681978760</updated>
     </task>
     <task id="LOCAL-00092" summary="fix argo host">
       <created>1644682424517</created>
@@ -473,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648003039183</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="indicator">
+      <created>1648003098218</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1648003098218</updated>
+    </task>
+    <option name="localTasksCounter" value="141" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -505,7 +504,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="prom annotation on eventbus." />
     <MESSAGE value="per namespace event bus" />
     <MESSAGE value="set" />
     <MESSAGE value="source and sensor" />
@@ -530,6 +528,7 @@
     <MESSAGE value="fix names" />
     <MESSAGE value="source_of" />
     <MESSAGE value="agent" />
-    <option name="LAST_COMMIT_MESSAGE" value="agent" />
+    <MESSAGE value="indicator" />
+    <option name="LAST_COMMIT_MESSAGE" value="indicator" />
   </component>
 </project>
