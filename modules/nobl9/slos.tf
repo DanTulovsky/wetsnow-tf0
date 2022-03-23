@@ -65,8 +65,7 @@ resource "nobl9_slo" "web_static_availability" {
   indicator {
     #    name    = nobl9_agent.lightstep0.name
     # This is the name of the agent
-    name = "lightstep"
-    #    kind    = "agent"
+    name    = "lightstep"
     project = nobl9_project.wetsnow.name
 
     raw_metric {
