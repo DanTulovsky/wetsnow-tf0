@@ -23,7 +23,7 @@ resource "nobl9_slo" "web_static_latency" {
   }
 
   indicator {
-    name = "webstatic-latency-agent"
+    name = nobl9_agent.lightstep0.name
     raw_metric {
       lightstep {
         stream_id    = "XTLbMfjL"

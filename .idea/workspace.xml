@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="source_of">
-      <change beforePath="$PROJECT_DIR$/modules/nobl9/agent.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nobl9/agent.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/nobl9/slos.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nobl9/slos.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,13 +128,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00089" summary="fix service">
-      <created>1644681347148</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1644681347148</updated>
     </task>
     <task id="LOCAL-00090" summary="cleanup">
       <created>1644681419703</created>
@@ -472,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648002761073</updated>
     </task>
-    <option name="localTasksCounter" value="138" />
+    <task id="LOCAL-00138" summary="source_of">
+      <created>1648002836698</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1648002836698</updated>
+    </task>
+    <option name="localTasksCounter" value="139" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
