@@ -1,7 +1,7 @@
 # https://docs.nobl9.com/Sources/lightstep/
-resource "nobl9_slo" "this" {
-  name             = "${nobl9_service.web-static.name}-latency"
-  service          = nobl9_service.web-static.name
+resource "nobl9_slo" "web_static_latency" {
+  name             = "${nobl9_service.web_static.name}-latency"
+  service          = nobl9_service.web_static.name
   budgeting_method = "Occurrences"
   project          = nobl9_project.wetsnow.name
 
