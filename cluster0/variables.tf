@@ -29,6 +29,13 @@ variable "cluster_info" {
   })
 }
 
+variable "nobl9_secrets" {
+  sensitive = true
+  type = object({
+    client_id     = string
+    client_secret = string
+  })
+}
 
 # Grafana
 variable "grafana_secrets" {
