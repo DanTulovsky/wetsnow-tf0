@@ -26,7 +26,7 @@ resource "nobl9_slo" "web_static_latency" {
     name = "webstatic_latency"
     raw_metric {
       lightstep {
-        steam_id     = "XTLbMfjL"
+        stream_id    = "XTLbMfjL"
         type_of_data = "latency"
         percentile   = "99"
       }
