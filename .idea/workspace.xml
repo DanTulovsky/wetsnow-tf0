@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix planetscale token">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="nobl9 project">
+      <change afterPath="$PROJECT_DIR$/modules/nobl9/services.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/nobl9/project.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nobl9/project.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,13 +129,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00080" summary="remove weave">
-      <created>1644678094035</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1644678094035</updated>
     </task>
     <task id="LOCAL-00081" summary="update ssl cert">
       <created>1644678464425</created>
@@ -473,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648000953667</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <task id="LOCAL-00129" summary="nobl9 project">
+      <created>1648001256501</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1648001256501</updated>
+    </task>
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -505,7 +505,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix argo host" />
     <MESSAGE value="remove argo cd" />
     <MESSAGE value="install argo-events" />
     <MESSAGE value="fix names" />
@@ -530,6 +529,7 @@
     <MESSAGE value="add nobl9" />
     <MESSAGE value="disable planetscale" />
     <MESSAGE value="fix planetscale token" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix planetscale token" />
+    <MESSAGE value="nobl9 project" />
+    <option name="LAST_COMMIT_MESSAGE" value="nobl9 project" />
   </component>
 </project>
