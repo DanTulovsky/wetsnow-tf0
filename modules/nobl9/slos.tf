@@ -61,6 +61,18 @@ resource "nobl9_slo" "web_static_availability" {
     op           = "gte"
     count_metrics {
       incremental = false
+      good {
+        lightstep {
+          stream_id    = "XTLbMfjL"
+          type_of_data = "good"
+        }
+      }
+      total {
+        lightstep {
+          stream_id    = "XTLbMfjL"
+          type_of_data = "total"
+        }
+      }
     }
   }
 
@@ -69,12 +81,5 @@ resource "nobl9_slo" "web_static_availability" {
     # This is the name of the agent
     name    = "lightstep"
     project = nobl9_project.wetsnow.name
-
-    raw_metric {
-      lightstep {
-        stream_id    = "XTLbMfjL"
-        type_of_data = "good"
-      }
-    }
   }
 }
