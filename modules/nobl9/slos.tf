@@ -58,8 +58,10 @@ resource "nobl9_slo" "web_static_availability" {
   objective {
     target       = 0.99
     display_name = "OK"
-    value        = 60
-    op           = "lte"
+    op           = "gte"
+    count_metrics {
+      incremental = false
+    }
   }
 
   indicator {

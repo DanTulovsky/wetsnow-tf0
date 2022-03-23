@@ -130,13 +130,6 @@
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
     </task>
-    <task id="LOCAL-00104" summary="source and sensor">
-      <created>1645117943360</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1645117943360</updated>
-    </task>
     <task id="LOCAL-00105" summary="arog events helm chart">
       <created>1645120005538</created>
       <option name="number" value="00105" />
@@ -473,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648042063589</updated>
     </task>
-    <option name="localTasksCounter" value="153" />
+    <task id="LOCAL-00153" summary="avaulability">
+      <created>1648042192502</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1648042192502</updated>
+    </task>
+    <option name="localTasksCounter" value="154" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
