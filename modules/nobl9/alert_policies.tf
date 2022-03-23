@@ -35,6 +35,6 @@ resource "nobl9_alert_policy" "default_alert_policy" {
   }
 
   alert_method {
-    name = nobl9_alert_method_email.default
+    name = nobl9_alert_method_email.default.name
   }
 }
