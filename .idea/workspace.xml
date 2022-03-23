@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix typo">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix names">
+      <change afterPath="$PROJECT_DIR$/modules/nobl9/agent.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/nobl9/services.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nobl9/services.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/nobl9/slos.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nobl9/slos.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,13 +129,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00085" summary="fix ssl">
-      <created>1644679339823</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1644679339823</updated>
     </task>
     <task id="LOCAL-00086" summary="fix argo">
       <created>1644679428098</created>
@@ -474,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648002077157</updated>
     </task>
-    <option name="localTasksCounter" value="134" />
+    <task id="LOCAL-00134" summary="fix names">
+      <created>1648002240511</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1648002240511</updated>
+    </task>
+    <option name="localTasksCounter" value="135" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -529,8 +528,8 @@
     <MESSAGE value="nobl9 project" />
     <MESSAGE value="nobl9 web service" />
     <MESSAGE value="latency" />
-    <MESSAGE value="fix names" />
     <MESSAGE value="fix typo" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix typo" />
+    <MESSAGE value="fix names" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix names" />
   </component>
 </project>
