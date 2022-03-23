@@ -16,7 +16,9 @@ Labels:
 - Service: $service_labels_text
 - Alert Policy: $alert_policy_labels_text
 EOT
-  to      = "dant@wetsnow.com"
+  to = [
+    "dant@wetsnow.com"
+  ]
 }
 
 resource "nobl9_alert_policy" "default_alert_policy" {

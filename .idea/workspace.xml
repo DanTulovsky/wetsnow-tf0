@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="secrets">
-      <change afterPath="$PROJECT_DIR$/modules/nobl9/alert_policies.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/nobl9/slos.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nobl9/slos.tf" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="alerts">
+      <change beforePath="$PROJECT_DIR$/modules/nobl9/alert_policies.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nobl9/alert_policies.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,13 +128,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00098" summary="add install">
-      <created>1645105954206</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1645105954206</updated>
     </task>
     <task id="LOCAL-00099" summary="add install">
       <created>1645106006815</created>
@@ -474,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648040336023</updated>
     </task>
-    <option name="localTasksCounter" value="147" />
+    <task id="LOCAL-00147" summary="alerts">
+      <created>1648041118541</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1648041118541</updated>
+    </task>
+    <option name="localTasksCounter" value="148" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,7 +504,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="indent" />
     <MESSAGE value="filter out argo-events" />
     <MESSAGE value="fix version" />
     <MESSAGE value="argo workflows" />
@@ -531,6 +528,7 @@
     <MESSAGE value="agent" />
     <MESSAGE value="remove kind" />
     <MESSAGE value="secrets" />
-    <option name="LAST_COMMIT_MESSAGE" value="secrets" />
+    <MESSAGE value="alerts" />
+    <option name="LAST_COMMIT_MESSAGE" value="alerts" />
   </component>
 </project>
