@@ -30,7 +30,7 @@ resource "nobl9_alert_method_jira" "jira_ticket" {
   apitoken    = var.jira_api_token
 }
 
-resource "nobl9_alert_policy" "email_alert_policy" {
+resource "nobl9_alert_policy" "web_static_error_budget_alert_policy" {
   name         = "web-static"
   project      = nobl9_project.wetsnow.name
   display_name = "web-static"
