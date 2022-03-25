@@ -9,7 +9,6 @@ resource "nobl9_slo" "web_static_latency" {
 
   alert_policies = [
     nobl9_alert_policy.default_alert_policy.name,
-    "jira-ticket",
   ]
 
   time_window {
