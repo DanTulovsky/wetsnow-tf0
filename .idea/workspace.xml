@@ -131,13 +131,6 @@
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
     </task>
-    <task id="LOCAL-00115" summary="argo workflows">
-      <created>1645125918924</created>
-      <option name="number" value="00115" />
-      <option name="presentableId" value="LOCAL-00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1645125918924</updated>
-    </task>
     <task id="LOCAL-00116" summary="fix name">
       <created>1645126163107</created>
       <option name="number" value="00116" />
@@ -474,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648173395792</updated>
     </task>
-    <option name="localTasksCounter" value="164" />
+    <task id="LOCAL-00164" summary="nobl9 jira">
+      <created>1648173551325</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1648173551325</updated>
+    </task>
+    <option name="localTasksCounter" value="165" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
