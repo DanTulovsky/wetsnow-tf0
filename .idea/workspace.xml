@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="nobl9 jira">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix">
+      <change afterPath="$PROJECT_DIR$/modules/nobl9/alert_methods.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/nobl9/alert_policies.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nobl9/alert_policies.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/nobl9/slos.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nobl9/slos.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,13 +131,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00117" summary="prom metrics">
-      <created>1645127088219</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1645127088219</updated>
     </task>
     <task id="LOCAL-00118" summary="add annotations">
       <created>1645130515188</created>
@@ -475,7 +468,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648173619649</updated>
     </task>
-    <option name="localTasksCounter" value="166" />
+    <task id="LOCAL-00166" summary="fix">
+      <created>1648174042051</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1648174042051</updated>
+    </task>
+    <option name="localTasksCounter" value="167" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -507,7 +507,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix planetscale token" />
     <MESSAGE value="nobl9 project" />
     <MESSAGE value="nobl9 web service" />
     <MESSAGE value="latency" />
@@ -532,6 +531,7 @@
     <MESSAGE value="upgrade provider" />
     <MESSAGE value="add jira ticket" />
     <MESSAGE value="nobl9 jira" />
-    <option name="LAST_COMMIT_MESSAGE" value="nobl9 jira" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
 </project>
