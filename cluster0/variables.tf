@@ -32,8 +32,11 @@ variable "cluster_info" {
 variable "nobl9_secrets" {
   sensitive = true
   type = object({
-    client_id     = string
-    client_secret = string
+    client_id           = string
+    client_secret       = string
+    agent_client_id     = string
+    agent_client_secret = string
+    jira_api_token      = string
   })
 }
 

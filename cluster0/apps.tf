@@ -67,8 +67,9 @@ module "kubernetes-external-secrets" {
 //}
 
 module "nobl9" {
-  source    = "../modules/nobl9"
-  namespace = module.common.namespaces.monitoring
+  source         = "../modules/nobl9"
+  namespace      = module.common.namespaces.monitoring
+  jira_api_token = var.nobl9_secrets.jira_api_token
 }
 
 module "open-telemetry" {

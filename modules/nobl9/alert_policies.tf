@@ -21,6 +21,15 @@ EOT
   ]
 }
 
+resource "nobl9_alert_method_jira" "jira_ticket" {
+  name        = "jira-ticket"
+  project     = nobl9_project.wetsnow.name
+  project_key = "SELF"
+  url         = "https://wetsnow0.atlassian.net/"
+  username    = "dant@wetsnow.com"
+  apitoken    = var.jira_api_token
+}
+
 resource "nobl9_alert_policy" "default_alert_policy" {
   name         = "web-static"
   project      = nobl9_project.wetsnow.name
