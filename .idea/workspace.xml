@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="update nobl9 agent image">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="enable metrics and scrape them.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/nobl9/yaml/k8s/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nobl9/yaml/k8s/deployment.yaml" afterDir="false" />
     </list>
@@ -130,13 +130,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00120" summary="add config checksum to otel">
-      <created>1645132333721</created>
-      <option name="number" value="00120" />
-      <option name="presentableId" value="LOCAL-00120" />
-      <option name="project" value="LOCAL" />
-      <updated>1645132333721</updated>
     </task>
     <task id="LOCAL-00121" summary="add config checksum to otel">
       <created>1645132390317</created>
@@ -474,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648482583962</updated>
     </task>
-    <option name="localTasksCounter" value="169" />
+    <task id="LOCAL-00169" summary="enable metrics and scrape them.">
+      <created>1648562615777</created>
+      <option name="number" value="00169" />
+      <option name="presentableId" value="LOCAL-00169" />
+      <option name="project" value="LOCAL" />
+      <updated>1648562615777</updated>
+    </task>
+    <option name="localTasksCounter" value="170" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,7 +506,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="latency" />
     <MESSAGE value="fix typo" />
     <MESSAGE value="fix names" />
     <MESSAGE value="indicator" />
@@ -531,6 +530,7 @@
     <MESSAGE value="fix" />
     <MESSAGE value="refactor" />
     <MESSAGE value="update nobl9 agent image" />
-    <option name="LAST_COMMIT_MESSAGE" value="update nobl9 agent image" />
+    <MESSAGE value="enable metrics and scrape them." />
+    <option name="LAST_COMMIT_MESSAGE" value="enable metrics and scrape them." />
   </component>
 </project>

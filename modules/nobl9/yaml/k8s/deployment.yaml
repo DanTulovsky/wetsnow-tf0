@@ -16,6 +16,7 @@ spec:
         nobl9-agent-name: "lightstep"
         nobl9-agent-project: "default"
         nobl9-agent-organization: "wetsnow-AhEoLssUoSbE"
+        app.kubernetes.io/name: "nobl9-agent"
       annotations:
         prometheus.io/scrape: "true"
         prometheus.io/port: "9876"
