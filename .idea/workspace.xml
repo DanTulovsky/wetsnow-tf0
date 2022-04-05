@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="rename alert policy">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="add attachments">
       <change beforePath="$PROJECT_DIR$/modules/nobl9/slos.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nobl9/slos.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -130,13 +129,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00123" summary="add config checksum to otel">
-      <created>1645132671202</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1645132671202</updated>
     </task>
     <task id="LOCAL-00124" summary="no-op config change test">
       <created>1645132768553</created>
@@ -474,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648687690240</updated>
     </task>
-    <option name="localTasksCounter" value="172" />
+    <task id="LOCAL-00172" summary="add attachments">
+      <created>1649164784143</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1649164784144</updated>
+    </task>
+    <option name="localTasksCounter" value="173" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,7 +505,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="indicator" />
     <MESSAGE value="agent type" />
     <MESSAGE value="source_of" />
     <MESSAGE value="source of" />
@@ -531,6 +529,7 @@
     <MESSAGE value="enable metrics and scrape them." />
     <MESSAGE value="set name" />
     <MESSAGE value="rename alert policy" />
-    <option name="LAST_COMMIT_MESSAGE" value="rename alert policy" />
+    <MESSAGE value="add attachments" />
+    <option name="LAST_COMMIT_MESSAGE" value="add attachments" />
   </component>
 </project>
