@@ -39,6 +39,16 @@ resource "nobl9_slo" "web_static_latency" {
       }
     }
   }
+
+  attachments {
+    url          = "http://www.wetsnow.com"
+    display_name = "Wetsnow"
+  }
+
+  attachments {
+    url          = "http://grafana.wetsnow.com"
+    display_name = "Wetsnow Grafana"
+  }
 }
 
 resource "nobl9_slo" "web_static_availability" {
