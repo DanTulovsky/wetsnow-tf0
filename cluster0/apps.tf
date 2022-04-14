@@ -29,11 +29,11 @@ module "argo-events" {
   argo_version   = var.argo_events.app_version
 }
 
-module "argo-workflows" {
-  source       = "../modules/argo-workflows"
-  namespace    = module.common.namespaces.argocd
-  argo_version = var.argo_workflows.app_version
-}
+#module "argo-workflows" {
+#  source       = "../modules/argo-workflows"
+#  namespace    = module.common.namespaces.argocd
+#  argo_version = var.argo_workflows.app_version
+#}
 module "http-ingress" {
   source = "../modules/http-ingress"
   depends_on = [
