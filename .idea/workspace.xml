@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="add attachments">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="remove argo workflows">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
     </list>
@@ -37,7 +37,7 @@
     <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="KubernetesApiPersistence">
-    <option name="context" value="snowcloud-01" />
+    <option name="context" value="snowcloud" />
     <option name="namespace" value="default" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -51,24 +51,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ACTIVE_CLOUD_PROJECT_ACCOUNT" value="dant@wetsnow.com" />
-    <property name="ACTIVE_CLOUD_PROJECT_ID" value="snowcloud-01" />
-    <property name="ACTIVE_CLOUD_PROJECT_NAME" value="snowcloud" />
-    <property name="ACTIVE_CLOUD_PROJECT_NUMBER" value="53644033433" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="TF_FMT" value="false" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="add_unversioned_files" value="$PROJECT_DIR$/cluster0/sensitive.auto.tfvars" />
-    <property name="com.google.cloudcode.ide_session_index" value="20220414_0011" />
-    <property name="go.formatter.settings.were.checked" value="true" />
-    <property name="go.import.settings.migrated" value="true" />
-    <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
-    <property name="go.watchers.conflict.with.on.save.actions.check.performed" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.google.cloudcode.ide_session_index": "20220414_0001",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "/Users/dant"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/modules" />
@@ -130,13 +125,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00125" summary="add nobl9">
-      <created>1648000164550</created>
-      <option name="number" value="00125" />
-      <option name="presentableId" value="LOCAL-00125" />
-      <option name="project" value="LOCAL" />
-      <updated>1648000164551</updated>
     </task>
     <task id="LOCAL-00126" summary="add nobl9">
       <created>1648000475678</created>
@@ -474,7 +462,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649165361767</updated>
     </task>
-    <option name="localTasksCounter" value="174" />
+    <task id="LOCAL-00174" summary="remove argo workflows">
+      <created>1649950517139</created>
+      <option name="number" value="00174" />
+      <option name="presentableId" value="LOCAL-00174" />
+      <option name="project" value="LOCAL" />
+      <updated>1649950517139</updated>
+    </task>
+    <option name="localTasksCounter" value="175" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,7 +501,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="agent type" />
     <MESSAGE value="source_of" />
     <MESSAGE value="source of" />
     <MESSAGE value="agent" />
@@ -531,6 +525,11 @@
     <MESSAGE value="set name" />
     <MESSAGE value="rename alert policy" />
     <MESSAGE value="add attachments" />
-    <option name="LAST_COMMIT_MESSAGE" value="add attachments" />
+    <MESSAGE value="remove argo workflows" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove argo workflows" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>false</integration-enabled>
+    <settings-migrated>true</settings-migrated>
   </component>
 </project>
