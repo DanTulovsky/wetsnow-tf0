@@ -7,6 +7,6 @@ environment = "dev"
 cluster_info = ({
   name       = "cluster0"
   vpc_name   = "vpc0"
-  namespaces = ["ambassador", "argocd", "argo-events", "monitoring", "observability", "security", "web"]
+  namespaces = ["ambassador", "argocd", "monitoring", "observability", "security", "web"]
 })
 
