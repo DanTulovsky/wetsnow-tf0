@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix helm chart name">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="disable grafana">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/kubecost/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/kubecost/yaml/values.yaml" afterDir="false" />
     </list>
@@ -503,7 +503,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix email" />
     <MESSAGE value="alert method" />
     <MESSAGE value="fix alert policy name" />
     <MESSAGE value="fix email name" />
@@ -528,7 +527,8 @@
     <MESSAGE value="cleanup" />
     <MESSAGE value="namespance" />
     <MESSAGE value="fix helm chart name" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix helm chart name" />
+    <MESSAGE value="disable grafana" />
+    <option name="LAST_COMMIT_MESSAGE" value="disable grafana" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
