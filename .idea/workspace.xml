@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="cleanup">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/terraform.auto.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/terraform.auto.tfvars" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="namespance">
+      <change beforePath="$PROJECT_DIR$/modules/kubecost/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/kubecost/main.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -503,7 +502,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="secrets" />
     <MESSAGE value="alerts" />
     <MESSAGE value="fix email" />
     <MESSAGE value="alert method" />
@@ -528,7 +526,8 @@
     <MESSAGE value="set slo to 95%" />
     <MESSAGE value="kubecost" />
     <MESSAGE value="cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleanup" />
+    <MESSAGE value="namespance" />
+    <option name="LAST_COMMIT_MESSAGE" value="namespance" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>

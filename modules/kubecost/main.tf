@@ -3,7 +3,7 @@ resource "helm_release" "kubecost" {
   name         = "kubecost"
   namespace    = var.namespace
   repository   = "https://kubecost.github.io/cost-analyzer/"
-  chart        = "kubecost"
+  chart        = "cost-analyzer"
   wait         = true
   force_update = false
 
