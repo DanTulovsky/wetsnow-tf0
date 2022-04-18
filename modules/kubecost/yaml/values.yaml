@@ -1,0 +1,24 @@
+namespace: ${namespace}
+kubecostToken: "ZGFudEB3ZXRzbm93LmNvbQ==xm343yadf98"
+
+global:
+  prometheus:
+    enabled: true
+
+prometheus:
+  kube-state-metrics:
+    disabled: true
+
+  nodeExporter:
+    enabled: true
+
+  serviceAccounts:
+    nodeExporter:
+      create: true
+      #resources:
+#  limits:
+#    cpu: 100m
+#    memory: 256Mi
+#  requests:
+#    cpu: 30m
+#    memory: 50Mi

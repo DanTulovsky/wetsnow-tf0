@@ -39,6 +39,10 @@ module "grafana" {
   oauth_secret   = ""
   app_version    = var.grafana.app_version
 }
+module "kubecost" {
+  source    = "../modules/kubecost"
+  namespace = module.common.namespaces.kubecost
+}
 module "kubernetes-external-secrets" {
   source      = "../modules/kubernetes-external-secrets"
   namespace   = module.common.namespaces.security
