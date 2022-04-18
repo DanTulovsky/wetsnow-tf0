@@ -51,18 +51,6 @@ spec:
 apiVersion: getambassador.io/v2
 kind: Mapping
 metadata:
-  name: login.wetsnow.com
-  namespace: ambassador
-spec:
-  prefix: /
-  host: www.wetsnow.com
-  resolver: endpoint
-  timeout_ms: 20000 # /quote is slow
-  service: static-web-frontend.web:8080
----
-apiVersion: getambassador.io/v2
-kind: Mapping
-metadata:
   name: www.dusselskolk.com
   namespace: ambassador
 spec:
@@ -85,54 +73,24 @@ spec:
 apiVersion: getambassador.io/v2
 kind: Mapping
 metadata:
-  name: parca.wetsnow.com
+  name: argocd-server-ui
   namespace: ambassador
 spec:
+  host: argocd.wetsnow.com
   prefix: /
-  host: parca.wetsnow.com
   resolver: endpoint
-  service: parca.parca:7070
-  allow_upgrade:
-    - websocket
+  service: argo-cd-argocd-server.argocd:443
 ---
 apiVersion: getambassador.io/v2
 kind: Mapping
 metadata:
-  name: prometheus.wetsnow.com
+  name: argocd-server-cli
   namespace: ambassador
 spec:
+  host: argocd.wetsnow.com:443
   prefix: /
-  host: prometheus.wetsnow.com
   resolver: endpoint
-  service: prom0-kube-prometheus-prometheus.monitoring:9090
-  allow_upgrade:
-    - websocket
----
-apiVersion: getambassador.io/v2
-kind: Mapping
-metadata:
-  name: scope.wetsnow.com
-  namespace: ambassador
-spec:
-  prefix: /
-  host: scope.wetsnow.com
-  resolver: endpoint
-  service: weave-scope-app.weave:80
-  allow_upgrade:
-    - websocket
----
-apiVersion: getambassador.io/v2
-kind: Mapping
-metadata:
-  name: weave-scope.wetsnow.com
-  namespace: ambassador
-spec:
-  prefix: /
-  host: weave-scope.wetsnow.com
-  resolver: endpoint
-  service: weave-scope-app.weave:80
-  allow_upgrade:
-    - websocket
+  service: argo-cd-argocd-server.argocd:443
 ---
 apiVersion: getambassador.io/v2
 kind: Mapping
@@ -143,7 +101,7 @@ spec:
   prefix: /
   host: rollouts.wetsnow.com
   resolver: endpoint
-  service: argo-rollouts-dashboard.argo-rollouts:3100
+  service: argo-rollouts-dashboard.argocd:3100
   allow_upgrade:
     - websocket
 ---

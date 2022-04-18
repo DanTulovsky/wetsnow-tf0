@@ -5,6 +5,5 @@
       <entry key="MermaidLanguageExtension" value="false" />
       <entry key="PlantUMLLanguageExtension" value="false" />
     </enabledExtensions>
-    <option name="splitLayout" value="SHOW_PREVIEW" />
   </component>
 </project>

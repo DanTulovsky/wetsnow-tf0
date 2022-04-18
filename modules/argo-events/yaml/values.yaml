@@ -1,0 +1,11 @@
+eventbusController:
+  tag: "${argo_version}"
+
+eventsourceController:
+  tag: "${argo_version}"
+
+sensorController:
+  tag: "${argo_version}"
+
+additionalSaNamespaces:
+  ${all_namespaces}

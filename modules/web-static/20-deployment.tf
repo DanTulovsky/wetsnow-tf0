@@ -1,4 +1,4 @@
-resource "kubernetes_deployment" "frontend" {
+resource "kubernetes_deployment_v1" "frontend" {
   metadata {
     name      = "frontend"
     namespace = var.namespace
@@ -24,6 +24,11 @@ resource "kubernetes_deployment" "frontend" {
           "tier"            = "production"
           "service.name"    = "web-static"
           "service.version" = "${var.app_version}"
+        }
+        annotations = {
+          "prometheus.io/scrape" = "true"
+          "prometheus.io/port"   = "8080"
+          "prometheus.io/path"   = "/metrics"
         }
       }
 

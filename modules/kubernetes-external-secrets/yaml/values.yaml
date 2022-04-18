@@ -28,6 +28,12 @@ env:
 #    memory: 128Mi
 
 serviceMonitor:
-  enabled: true
+  enabled: false
   interval: "30s"
   namespace: monitoring
+
+
+podAnnotations:
+  prometheus.io/scrape: "true"
+  prometheus.io/port: "3001"
+  prometheus.io/path: "/metrics"

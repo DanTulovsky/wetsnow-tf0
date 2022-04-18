@@ -31,7 +31,7 @@ module "open-telemetry" {
     metrics_processors = "[memory_limiter, batch]"
     metrics_exporters  = "[otlp/lightstep, kafka]"
     trace_receivers    = "[otlp, zipkin, jaeger]"
-    trace_processors   = "[memory_limiter, batch, k8s_tagger]"
+    trace_processors   = "[memory_limiter, batch, k8sattributes]"
     trace_exporters    = "[otlp/lightstep, kafka]"
   }
   cluster_name = "kind0"

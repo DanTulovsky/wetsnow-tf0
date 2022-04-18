@@ -23,12 +23,11 @@ variable "image_version" {
 variable "otel" {
   type = map(string)
   default = {
-    //    metrics_receivers  = "[otlp, k8s_cluster, kubeletstats]"
-    metrics_receivers  = "[otlp, statsd]"
+    metrics_receivers  = "[otlp, statsd, k8s_cluster, prometheus]"
     metrics_processors = "[memory_limiter, batch]"
     metrics_exporters  = "[otlp/lightstep]"
     trace_receivers    = "[otlp, zipkin, jaeger]"
-    trace_processors   = "[memory_limiter, batch, k8s_tagger]"
+    trace_processors   = "[memory_limiter, batch, k8sattributes]"
     trace_exporters    = "[otlp/lightstep]"
   }
 }

@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="lightstep-beta.">
-      <change afterPath="$PROJECT_DIR$/.idea/externalDependencies.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/markdown.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/kubecost/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/kubecost/providers.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/kubecost/variables.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/kubecost/yaml/values.yaml" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="set slo to 95%">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cluster0/terraform.auto.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/terraform.auto.tfvars" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/grafana/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/grafana/yaml/values.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,36 +53,33 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
     "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TF_FMT": "false",
     "WebServerToolWindowFactoryState": "false",
+    "com.google.cloudcode.ide_session_index": "20220415_0000",
     "go.import.settings.migrated": "true",
-    "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/dant/go/src/github.com/DanTulovsky/wetsnow-tf0/modules/kubecost",
-    "nodejs_package_manager_path": "npm"
+    "last_opened_file_path": "/Users/dant",
+    "settings.editor.selected.configurable": "vcs.Git"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/modules/kubecost" />
-      <recent name="$PROJECT_DIR$/../web-static/data/hosts/login.wetsnow.com" />
       <recent name="$PROJECT_DIR$/modules" />
-      <recent name="$PROJECT_DIR$/modules/argo" />
-      <recent name="$PROJECT_DIR$/cluster0/yaml" />
+      <recent name="$PROJECT_DIR$/modules/argo-events" />
+      <recent name="$PROJECT_DIR$/modules/planetscale" />
+      <recent name="$PROJECT_DIR$/modules/kube-state-metrics" />
+      <recent name="$PROJECT_DIR$/modules/open-telemetry/yaml" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/modules/argo-events/yaml/k8s" />
+      <recent name="$PROJECT_DIR$/modules/argo-events/yaml" />
+      <recent name="$PROJECT_DIR$/modules/nobl9/yaml/k8s" />
       <recent name="$PROJECT_DIR$/modules/parca/yaml/k8s/server" />
       <recent name="$PROJECT_DIR$/modules/argo/yaml/k8s" />
-      <recent name="$PROJECT_DIR$/cluster0/yaml/k8s" />
-      <recent name="$PROJECT_DIR$/modules/prometheus/yaml" />
-      <recent name="$PROJECT_DIR$/modules/prometheus" />
     </key>
   </component>
   <component name="RunManager">
@@ -140,147 +128,350 @@
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
     </task>
-    <task id="LOCAL-00001" summary="tf upgrade">
-      <created>1633269262036</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
+    <task id="LOCAL-00128" summary="fix planetscale token">
+      <created>1648000953667</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
       <option name="project" value="LOCAL" />
-      <updated>1633269262036</updated>
+      <updated>1648000953667</updated>
     </task>
-    <task id="LOCAL-00002" summary="tf upgrade">
-      <created>1633269286142</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
+    <task id="LOCAL-00129" summary="nobl9 project">
+      <created>1648001256501</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
       <option name="project" value="LOCAL" />
-      <updated>1633269286142</updated>
+      <updated>1648001256501</updated>
     </task>
-    <task id="LOCAL-00003" summary="parca">
-      <created>1633879515022</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
+    <task id="LOCAL-00130" summary="nobl9 web service">
+      <created>1648001488019</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
       <option name="project" value="LOCAL" />
-      <updated>1633879515022</updated>
+      <updated>1648001488019</updated>
     </task>
-    <task id="LOCAL-00004" summary="fix ssl cert">
-      <created>1633879700732</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
+    <task id="LOCAL-00131" summary="latency">
+      <created>1648001886114</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
       <option name="project" value="LOCAL" />
-      <updated>1633879700732</updated>
+      <updated>1648001886114</updated>
     </task>
-    <task id="LOCAL-00005" summary="parca ambassador">
-      <created>1633879942566</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
+    <task id="LOCAL-00132" summary="fix names">
+      <created>1648002060088</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
       <option name="project" value="LOCAL" />
-      <updated>1633879942566</updated>
+      <updated>1648002060088</updated>
     </task>
-    <task id="LOCAL-00006" summary="update certs">
-      <created>1633888319017</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
+    <task id="LOCAL-00133" summary="fix typo">
+      <created>1648002077157</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
       <option name="project" value="LOCAL" />
-      <updated>1633888319017</updated>
+      <updated>1648002077157</updated>
     </task>
-    <task id="LOCAL-00007" summary="old">
-      <created>1633889083271</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
+    <task id="LOCAL-00134" summary="fix names">
+      <created>1648002240511</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
       <option name="project" value="LOCAL" />
-      <updated>1633889083271</updated>
+      <updated>1648002240511</updated>
     </task>
-    <task id="LOCAL-00008" summary="like this?">
-      <created>1633889231582</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
+    <task id="LOCAL-00135" summary="agent">
+      <created>1648002524515</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
       <option name="project" value="LOCAL" />
-      <updated>1633889231582</updated>
+      <updated>1648002524515</updated>
     </task>
-    <task id="LOCAL-00009" summary="no like this">
-      <created>1633889365678</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
+    <task id="LOCAL-00136" summary="agent">
+      <created>1648002614571</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
       <option name="project" value="LOCAL" />
-      <updated>1633889365678</updated>
+      <updated>1648002614571</updated>
     </task>
-    <task id="LOCAL-00010" summary="or like this">
-      <created>1633889446891</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
+    <task id="LOCAL-00137" summary="source_of">
+      <created>1648002761073</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
       <option name="project" value="LOCAL" />
-      <updated>1633889446891</updated>
+      <updated>1648002761073</updated>
     </task>
-    <task id="LOCAL-00011" summary="login">
-      <created>1633911587973</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
+    <task id="LOCAL-00138" summary="source_of">
+      <created>1648002836698</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
       <option name="project" value="LOCAL" />
-      <updated>1633911587973</updated>
+      <updated>1648002836698</updated>
     </task>
-    <task id="LOCAL-00012" summary="login">
-      <created>1633912527836</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
+    <task id="LOCAL-00139" summary="agent">
+      <created>1648003039183</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
       <option name="project" value="LOCAL" />
-      <updated>1633912527836</updated>
+      <updated>1648003039183</updated>
     </task>
-    <task id="LOCAL-00013" summary="login">
-      <created>1633912628685</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
+    <task id="LOCAL-00140" summary="indicator">
+      <created>1648003098218</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
       <option name="project" value="LOCAL" />
-      <updated>1633912628685</updated>
+      <updated>1648003098218</updated>
     </task>
-    <task id="LOCAL-00014" summary="remove parca">
-      <created>1633916855563</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
+    <task id="LOCAL-00141" summary="agent type">
+      <created>1648003546539</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
       <option name="project" value="LOCAL" />
-      <updated>1633916855563</updated>
+      <updated>1648003546539</updated>
     </task>
-    <task id="LOCAL-00015" summary="remove parca">
-      <created>1633917369139</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
+    <task id="LOCAL-00142" summary="source_of">
+      <created>1648003731669</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
       <option name="project" value="LOCAL" />
-      <updated>1633917369140</updated>
+      <updated>1648003731669</updated>
     </task>
-    <task id="LOCAL-00016" summary="update argo">
-      <created>1634336800383</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
+    <task id="LOCAL-00143" summary="source of">
+      <created>1648003865970</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
       <option name="project" value="LOCAL" />
-      <updated>1634336800383</updated>
+      <updated>1648003865970</updated>
     </task>
-    <task id="LOCAL-00017" summary="dashboard tag">
-      <created>1634337068286</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
+    <task id="LOCAL-00144" summary="agent">
+      <created>1648039650609</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
       <option name="project" value="LOCAL" />
-      <updated>1634337068286</updated>
+      <updated>1648039650609</updated>
     </task>
-    <task id="LOCAL-00018" summary="force update">
-      <created>1634337153404</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
+    <task id="LOCAL-00145" summary="remove kind">
+      <created>1648039796739</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
       <option name="project" value="LOCAL" />
-      <updated>1634337153404</updated>
+      <updated>1648039796740</updated>
     </task>
-    <task id="LOCAL-00019" summary="update version">
-      <created>1634337302471</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
+    <task id="LOCAL-00146" summary="secrets">
+      <created>1648040336023</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
       <option name="project" value="LOCAL" />
-      <updated>1634337302471</updated>
+      <updated>1648040336023</updated>
     </task>
-    <task id="LOCAL-00020" summary="add lightstep-tracing">
-      <created>1635451057551</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
+    <task id="LOCAL-00147" summary="alerts">
+      <created>1648041118541</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
       <option name="project" value="LOCAL" />
-      <updated>1635451057551</updated>
+      <updated>1648041118541</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00148" summary="fix email">
+      <created>1648041240756</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1648041240756</updated>
+    </task>
+    <task id="LOCAL-00149" summary="alert method">
+      <created>1648041329086</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1648041329086</updated>
+    </task>
+    <task id="LOCAL-00150" summary="fix alert policy name">
+      <created>1648041454123</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1648041454123</updated>
+    </task>
+    <task id="LOCAL-00151" summary="fix email name">
+      <created>1648041597585</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1648041597585</updated>
+    </task>
+    <task id="LOCAL-00152" summary="avaulability">
+      <created>1648042063589</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1648042063589</updated>
+    </task>
+    <task id="LOCAL-00153" summary="avaulability">
+      <created>1648042192502</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1648042192502</updated>
+    </task>
+    <task id="LOCAL-00154" summary="availability">
+      <created>1648042394807</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1648042394807</updated>
+    </task>
+    <task id="LOCAL-00155" summary="availability">
+      <created>1648042708721</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1648042708721</updated>
+    </task>
+    <task id="LOCAL-00156" summary="remove op field">
+      <created>1648047344589</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1648047344589</updated>
+    </task>
+    <task id="LOCAL-00157" summary="add value">
+      <created>1648048077314</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1648048077314</updated>
+    </task>
+    <task id="LOCAL-00158" summary="add value">
+      <created>1648048135868</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1648048135868</updated>
+    </task>
+    <task id="LOCAL-00159" summary="upgrade provider">
+      <created>1648060350962</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1648060350962</updated>
+    </task>
+    <task id="LOCAL-00160" summary="upgrade provider">
+      <created>1648060582815</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1648060582815</updated>
+    </task>
+    <task id="LOCAL-00161" summary="upgrade provider">
+      <created>1648060653996</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1648060653996</updated>
+    </task>
+    <task id="LOCAL-00162" summary="add jira ticket">
+      <created>1648172841933</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1648172841933</updated>
+    </task>
+    <task id="LOCAL-00163" summary="nobl9 jira">
+      <created>1648173395792</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1648173395792</updated>
+    </task>
+    <task id="LOCAL-00164" summary="nobl9 jira">
+      <created>1648173551325</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1648173551325</updated>
+    </task>
+    <task id="LOCAL-00165" summary="nobl9 jira">
+      <created>1648173619649</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1648173619649</updated>
+    </task>
+    <task id="LOCAL-00166" summary="fix">
+      <created>1648174042051</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1648174042051</updated>
+    </task>
+    <task id="LOCAL-00167" summary="refactor">
+      <created>1648174095863</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1648174095863</updated>
+    </task>
+    <task id="LOCAL-00168" summary="update nobl9 agent image">
+      <created>1648482583962</created>
+      <option name="number" value="00168" />
+      <option name="presentableId" value="LOCAL-00168" />
+      <option name="project" value="LOCAL" />
+      <updated>1648482583962</updated>
+    </task>
+    <task id="LOCAL-00169" summary="enable metrics and scrape them.">
+      <created>1648562615777</created>
+      <option name="number" value="00169" />
+      <option name="presentableId" value="LOCAL-00169" />
+      <option name="project" value="LOCAL" />
+      <updated>1648562615777</updated>
+    </task>
+    <task id="LOCAL-00170" summary="set name">
+      <created>1648563355105</created>
+      <option name="number" value="00170" />
+      <option name="presentableId" value="LOCAL-00170" />
+      <option name="project" value="LOCAL" />
+      <updated>1648563355105</updated>
+    </task>
+    <task id="LOCAL-00171" summary="rename alert policy">
+      <created>1648687690239</created>
+      <option name="number" value="00171" />
+      <option name="presentableId" value="LOCAL-00171" />
+      <option name="project" value="LOCAL" />
+      <updated>1648687690240</updated>
+    </task>
+    <task id="LOCAL-00172" summary="add attachments">
+      <created>1649164784143</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1649164784144</updated>
+    </task>
+    <task id="LOCAL-00173" summary="add attachments">
+      <created>1649165361767</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1649165361767</updated>
+    </task>
+    <task id="LOCAL-00174" summary="remove argo workflows">
+      <created>1649950517139</created>
+      <option name="number" value="00174" />
+      <option name="presentableId" value="LOCAL-00174" />
+      <option name="project" value="LOCAL" />
+      <updated>1649950517139</updated>
+    </task>
+    <task id="LOCAL-00175" summary="remove argo events">
+      <created>1649950850626</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
+      <option name="project" value="LOCAL" />
+      <updated>1649950850626</updated>
+    </task>
+    <task id="LOCAL-00176" summary="set slo to 95%">
+      <created>1649978817016</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1649978817016</updated>
+    </task>
+    <option name="localTasksCounter" value="177" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,34 +503,35 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="ambassador version" />
-    <MESSAGE value="back to 1.0.3" />
-    <MESSAGE value="alphabetical order" />
-    <MESSAGE value="don't set chart version" />
-    <MESSAGE value="grafana version" />
-    <MESSAGE value="prom version" />
-    <MESSAGE value="otel version" />
-    <MESSAGE value="alphabet" />
-    <MESSAGE value="fix operator version" />
-    <MESSAGE value="tf upgrade" />
-    <MESSAGE value="parca" />
-    <MESSAGE value="fix ssl cert" />
-    <MESSAGE value="parca ambassador" />
-    <MESSAGE value="update certs" />
-    <MESSAGE value="old" />
-    <MESSAGE value="like this?" />
-    <MESSAGE value="no like this" />
-    <MESSAGE value="or like this" />
-    <MESSAGE value="login" />
-    <MESSAGE value="remove parca" />
-    <MESSAGE value="update argo" />
-    <MESSAGE value="dashboard tag" />
-    <MESSAGE value="force update" />
-    <MESSAGE value="update version" />
-    <MESSAGE value="add lightstep-tracing" />
-    <option name="LAST_COMMIT_MESSAGE" value="add lightstep-tracing" />
+    <MESSAGE value="agent" />
+    <MESSAGE value="remove kind" />
+    <MESSAGE value="secrets" />
+    <MESSAGE value="alerts" />
+    <MESSAGE value="fix email" />
+    <MESSAGE value="alert method" />
+    <MESSAGE value="fix alert policy name" />
+    <MESSAGE value="fix email name" />
+    <MESSAGE value="avaulability" />
+    <MESSAGE value="availability" />
+    <MESSAGE value="remove op field" />
+    <MESSAGE value="add value" />
+    <MESSAGE value="upgrade provider" />
+    <MESSAGE value="add jira ticket" />
+    <MESSAGE value="nobl9 jira" />
+    <MESSAGE value="fix" />
+    <MESSAGE value="refactor" />
+    <MESSAGE value="update nobl9 agent image" />
+    <MESSAGE value="enable metrics and scrape them." />
+    <MESSAGE value="set name" />
+    <MESSAGE value="rename alert policy" />
+    <MESSAGE value="add attachments" />
+    <MESSAGE value="remove argo workflows" />
+    <MESSAGE value="remove argo events" />
+    <MESSAGE value="set slo to 95%" />
+    <option name="LAST_COMMIT_MESSAGE" value="set slo to 95%" />
   </component>
   <component name="VgoProject">
+    <integration-enabled>false</integration-enabled>
     <settings-migrated>true</settings-migrated>
   </component>
 </project>

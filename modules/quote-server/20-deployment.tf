@@ -2,7 +2,7 @@ locals {
   release = "release"
 }
 
-resource "kubernetes_deployment" "quote_server_grpc" {
+resource "kubernetes_deployment_v1" "quote_server_grpc" {
   metadata {
     name      = "quote-server-grpc"
     namespace = var.namespace
@@ -35,6 +35,11 @@ resource "kubernetes_deployment" "quote_server_grpc" {
           "tier"            = "production"
           "service.name"    = "quote"
           "service.version" = var.app_version
+        }
+        annotations = {
+          "prometheus.io/scrape" = "true"
+          "prometheus.io/port"   = "8080"
+          "prometheus.io/path"   = "/metrics"
         }
       }
 

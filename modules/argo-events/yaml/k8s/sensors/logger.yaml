@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Sensor
+metadata:
+  name: log
+  namespace: ${namespace}
+  annotations:
+    prometheus.io/scrape: "true"
+    prometheus.io/port: "7777"
+    prometheus.io/path: "/metrics"
+spec:
+  dependencies:
+    - name: test-dep
+      eventSourceName: calendar
+      eventName: example-with-interval
+  triggers:
+    - template:
+        name: log-trigger
+        log:
+          intervalSeconds: 20

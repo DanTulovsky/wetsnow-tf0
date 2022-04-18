@@ -11,7 +11,6 @@ module "ambassador" {
   source         = "../modules/ambassador"
   license_key    = var.ambassador_secrets.license_key
   namespace      = module.common.namespaces.ambassador
-  prom_enabled   = true
   backend_config = "ambassador-hc-config"
   name           = "ambassador"
   app_version    = var.ambassador.app_version
@@ -19,10 +18,22 @@ module "ambassador" {
 
 module "argo" {
   source       = "../modules/argo"
-  namespace    = module.common.namespaces.argo-rollouts
+  namespace    = module.common.namespaces.argocd
   argo_version = var.argo_rollouts.app_version
 }
 
+#module "argo-events" {
+#  source         = "../modules/argo-events"
+#  namespace      = module.common.namespaces.argo-events
+#  all_namespaces = var.cluster_info.namespaces
+#  argo_version   = var.argo_events.app_version
+#}
+
+#module "argo-workflows" {
+#  source       = "../modules/argo-workflows"
+#  namespace    = module.common.namespaces.argocd
+#  argo_version = var.argo_workflows.app_version
+#}
 module "http-ingress" {
   source = "../modules/http-ingress"
   depends_on = [
@@ -31,13 +42,18 @@ module "http-ingress" {
   namespace = module.common.namespaces.ambassador
 }
 module "grafana" {
-  source         = "../modules/grafana"
-  admin_password = var.grafana_secrets.admin_password
-  smtp_password  = var.grafana_secrets.smtp_password
-  namespace      = module.common.namespaces.monitoring
-  prom_enabled   = true
-  oauth_secret   = ""
-  app_version    = var.grafana.app_version
+  source               = "../modules/grafana"
+  admin_password       = var.grafana_secrets.admin_password
+  smtp_password        = var.grafana_secrets.smtp_password
+  namespace            = module.common.namespaces.monitoring
+  prom_enabled         = false
+  google_client_id     = var.grafana_secrets.google_client_id
+  google_client_secret = var.grafana_secrets.google_client_secret
+  app_version          = var.grafana.app_version
+}
+module "kube-state-metrics" {
+  source    = "../modules/kube-state-metrics"
+  namespace = module.common.namespaces.monitoring
 }
 module "kubecost" {
   source    = "../modules/kubecost"
@@ -53,6 +69,13 @@ module "kubernetes-external-secrets" {
 //  source    = "../modules/kyverno"
 //  namespace = module.common.namespaces.kyverno
 //}
+
+module "nobl9" {
+  source         = "../modules/nobl9"
+  namespace      = module.common.namespaces.monitoring
+  jira_api_token = var.nobl9_secrets.jira_api_token
+}
+
 module "open-telemetry" {
   source        = "../modules/open-telemetry"
   namespace     = module.common.namespaces.observability
@@ -60,6 +83,10 @@ module "open-telemetry" {
   cluster_name  = var.cluster_info.name
   prom_enabled  = true
   image_version = var.otel_collector.app_version
+}
+module "planetscale" {
+  source                   = "../modules/planetscale"
+  planetscale_access_token = var.planetscale_secrets.access_token
 }
 # module "postgres" {
 #   source         = "./modules/postgres"
@@ -71,14 +98,14 @@ module "open-telemetry" {
 #  source    = "../modules/parca"
 #  namespace = module.common.namespaces.parca
 #}
-module "prometheus" {
-  source               = "../modules/prometheus"
-  namespace            = module.common.namespaces.monitoring
-  enabled              = true
-  cluster_name         = var.cluster_info.name
-  operator_version     = var.prometheus.operator_version
-  otel_sidecar_version = var.prometheus.otel_sidecar_version
-}
+#module "prometheus" {
+#  source               = "../modules/prometheus"
+#  namespace            = module.common.namespaces.monitoring
+#  enabled              = true
+#  cluster_name         = var.cluster_info.name
+#  operator_version     = var.prometheus.operator_version
+#  otel_sidecar_version = var.prometheus.otel_sidecar_version
+#}
 module "quote-server" {
   source = "../modules/quote-server"
   depends_on = [
@@ -87,7 +114,7 @@ module "quote-server" {
   namespace      = module.common.namespaces.web
   app_version    = var.quote_server.app_version
   priority_class = module.common.priority_class.high0
-  prom_enabled   = true
+  prom_enabled   = false
 }
 # module "vector" {
 #   source     = "./modules/vector"
@@ -98,6 +125,6 @@ module "web-static" {
   source       = "../modules/web-static"
   namespace    = module.common.namespaces.web
   app_version  = var.web_static.app_version
-  prom_enabled = true
+  prom_enabled = false
 }
 

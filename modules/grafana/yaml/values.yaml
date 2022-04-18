@@ -36,6 +36,11 @@ service:
   labels: { "service": "grafana" }
   portName: service
 
+podAnnotations:
+  prometheus.io/scrape: "true"
+  prometheus.io/port: "3000"
+  prometheus.io/path: "/metrics"
+
 serviceMonitor:
   ## If true, a ServiceMonitor CRD is created for a prometheus operator
   ## https://github.com/coreos/prometheus-operator
@@ -59,24 +64,26 @@ admin:
 plugins:
   - grafana-piechart-panel
   - grafana-worldmap-panel
-  - grafana-kubernetes-app
-  - https://github.com/lightstep/lightstep-grafana-plugin/archive/master.zip;lightstep-grafana-plugin
-  - https://github.com/lightstep/lightstep-metrics-datasource/archive/refs/heads/main.zip;lightstep-grafana-plugin-beta
+  - ayoungprogrammer-finance-datasource
+  - lightstep-metrics-datasource
 
 ## Configure grafana datasources
 datasources:
   datasources.yaml:
-    apiVersion: 1
-    # deleteDatasources:
-    #   - name: Loki
-    #     orgId: 1
-    datasources:
-      - name: Prometheus
-        type: prometheus
-        # TODO: #2 Make this field dynamic in grafana config.
-        url: http://prom0-kube-prometheus-prometheus:9090
-        access: proxy
-        isDefault: true
+#    deleteDatasources:
+#      - name: Prometheus
+#        orgId: 1
+#      - name: LightstepMetrics
+#        orgId: 1
+#      - name: Lightstep
+#        orgId: 1
+#    datasources:
+#      - name: Lightstep-Metrics
+#        type: Lightstep Metrics
+#        # TODO: #2 Make this field dynamic in grafana config.
+#        url: http://prom0-kube-prometheus-prometheus:9090
+#        access: proxy
+#        isDefault: true
 ## Configure notifiers
 notifiers:
   notifiers.yaml:
@@ -87,7 +94,7 @@ notifiers:
         # either:
         org_id: 1
         # or
-        # org_name: Main Org.
+        # org_name: Wetsnow
         is_default: true
         settings:
           addresses: dant@wetsnow.com
@@ -112,69 +119,69 @@ dashboardProviders:
 #
 # dashboards per provider, use provider name as key.
 #
-dashboards:
-  default:
-    go-grpc1:
-      gnetId: 9186
-      revision: 4
-      datasource: Prometheus
-    gRPC-go:
-      gnetId: 14765
-      revision: 3
-      datasource: Prometheus
-    ambassador:
-      gnetId: 10434
-      revision: 1
-      datasource: Prometheus
-    node-exporter:
-      gnetId: 1860
-      revision: 21
-      datasource: Prometheus
-    k8s-11454:
-      gnetId: 11454
-      revision: 14
-      datasource: Prometheus
-    k8s-11455:
-      gnetId: 11455
-      revision: 6
-      datasource: Prometheus
-    k8s-cluster:
-      gnetId: 7249
-      revision: 1
-      datasource: Prometheus
-    k8s-cluster-3:
-      gnetId: 6417
-      revision: 1
-      datasource: Prometheus
-    k8s-cluster-pods:
-      gnetId: 6663
-      revision: 1
-      datasource: Prometheus
-    k8s-cluster-resources:
-      gnetId: 7187
-      revision: 1
-      datasource: Prometheus
-    k8s-cluster-pv:
-      gnetId: 6739
-      revision: 1
-      datasource: Prometheus
-    k8s-deployment:
-      gnetId: 741
-      revision: 1
-      datasource: Prometheus
-    k8s-app-metrics:
-      gnetId: 1471
-      revision: 1
-      datasource: Prometheus
-    prometheus-overview:
-      gnetId: 3662
-      revision: 2
-      datasource: Prometheus
-      tag: prometheus
-    otel-collector:
-      gnetId: 12553
-      revision: 1
-      datasource: Prometheus
+#dashboards:
+#  default:
+#    go-grpc1:
+#      gnetId: 9186
+#      revision: 4
+#      datasource: LightstepMetrics
+#    gRPC-go:
+#      gnetId: 14765
+#      revision: 3
+#      datasource: LightstepMetrics
+#    ambassador:
+#      gnetId: 10434
+#      revision: 1
+#      datasource: LightstepMetrics
+#    node-exporter:
+#      gnetId: 1860
+#      revision: 21
+#      datasource: LightstepMetrics
+#    k8s-11454:
+#      gnetId: 11454
+#      revision: 14
+#      datasource: LightstepMetrics
+#    k8s-11455:
+#      gnetId: 11455
+#      revision: 6
+#      datasource: LightstepMetrics
+#    k8s-cluster:
+#      gnetId: 7249
+#      revision: 1
+#      datasource: LightstepMetrics
+#    k8s-cluster-3:
+#      gnetId: 6417
+#      revision: 1
+#      datasource: LightstepMetrics
+#    k8s-cluster-pods:
+#      gnetId: 6663
+#      revision: 1
+#      datasource: LightstepMetrics
+#    k8s-cluster-resources:
+#      gnetId: 7187
+#      revision: 1
+#      datasource: LightstepMetrics
+#    k8s-cluster-pv:
+#      gnetId: 6739
+#      revision: 1
+#      datasource: LightstepMetrics
+#    k8s-deployment:
+#      gnetId: 741
+#      revision: 1
+#      datasource: LightstepMetrics
+#    k8s-app-metrics:
+#      gnetId: 1471
+#      revision: 1
+#      datasource: LightstepMetrics
+#    prometheus-overview:
+#      gnetId: 3662
+#      revision: 2
+#      datasource: LightstepMetrics
+#      tag: prometheus
+#    otel-collector:
+#      gnetId: 12553
+#      revision: 1
+#      datasource: LightstepMetrics
 ## Grafana's primary configuration
 ## NOTE: values in map will be converted to ini format
 ## ref: http://docs.grafana.org/installation/configuration/
@@ -187,6 +194,11 @@ grafana.ini:
     provisioning: /etc/grafana/provisioning
   analytics:
     check_for_updates: true
+  users:
+    verify_email_enabled: true
+    default_theme: light
+    viewers_can_edit: true
+    editors_can_admin: yes
   log:
     mode: console
   grafana_net:
@@ -201,12 +213,23 @@ grafana.ini:
     root_url: https://grafana.wetsnow.com
     enable_gzip: true
   plugins:
-    allow_loading_unsigned_plugins: "grafana-lightstep-datasource,grafana-lightstep-graph,lightstep-metrics-datasource,lightstep-app,grafana-kubernetes-datasource,prometheus-kubernetes-nodeinfo-panel,prometheus-kubernetes-podnav-panel,grafana-kubernetes-app"
+    allow_loading_unsigned_plugins: ""
     plugin_admin_enabled: true
     enable_alpha: true
   #  auth:
   #    oauth_auto_login: false
   #    signout_redirect_url: "https://login.wetsnow.com/auth/realms/wetsnow/protocol/openid-connect/logout?redirect_uri=https%3A%2F%2Flogin.wetsnow.com%2Fauth%2Frealms%2Fwetsnow%2Faccount%2F%23%2F"
+  auth.google:
+    enabled: true
+    # export GF_AUTH_GOOGLE_CLIENT_ID=newS3cretKey
+    client_id: ${google_client_id}
+    # export GF_AUTH_GOOGLE_CLIENT_SECRET=newS3cretKey
+    client_secret: ${google_client_secret}
+    scopes: https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email
+    auth_url: https://accounts.google.com/o/oauth2/auth
+    token_url: https://accounts.google.com/o/oauth2/token
+    allowed_domains: wetsnow.com
+    allow_sign_up: true
   #  auth.generic_oauth:
   #    enabled: true
   #    name: "Keycloak"

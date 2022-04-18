@@ -1,13 +1,14 @@
-resource "kubernetes_deployment" "otel_collector" {
+// Secret created manually and stored in password manager
+resource "kubernetes_deployment_v1" "otel_collector" {
   metadata {
     name      = "otel-collector"
     namespace = var.namespace
 
     labels = {
-      app = "opentelemetry"
-
+      app       = "opentelemetry"
       component = "otel-collector"
     }
+
   }
   spec {
     replicas = 1
@@ -24,6 +25,9 @@ resource "kubernetes_deployment" "otel_collector" {
           app       = "opentelemetry"
           component = "otel-collector"
         }
+        annotations = {
+          "checksum/config" = base64sha256(kubernetes_config_map.otel-collector-conf.data.otel-collector-config)
+        }
       }
 
       spec {
@@ -31,7 +35,7 @@ resource "kubernetes_deployment" "otel_collector" {
           name = "otel-collector-config-vol"
 
           config_map {
-            name = "otel-collector-conf"
+            name = kubernetes_config_map.otel-collector-conf.metadata[0].name
 
             items {
               key  = "otel-collector-config"
@@ -40,23 +44,10 @@ resource "kubernetes_deployment" "otel_collector" {
           }
         }
 
-        volume {
-          name = "otel-jaeger-sampling-config"
-
-          config_map {
-            name = "jaeger-sampling-configuration"
-
-            items {
-              key  = "sampling"
-              path = "jaeger-sampling-config.json"
-            }
-          }
-        }
-
         container {
           name    = "otel-collector"
           image   = "otel/opentelemetry-collector-contrib:${var.image_version}"
-          command = ["/otelcontribcol", "--config=/conf/otel-collector-config.yaml"]
+          command = ["/otelcol-contrib", "--config=/conf/otel-collector-config.yaml"]
 
           env {
             name = "K8S_NODE_NAME"
@@ -161,11 +152,6 @@ resource "kubernetes_deployment" "otel_collector" {
           volume_mount {
             name       = "otel-collector-config-vol"
             mount_path = "/conf"
-          }
-
-          volume_mount {
-            name       = "otel-jaeger-sampling-config"
-            mount_path = "/etc/jaeger"
           }
 
           liveness_probe {

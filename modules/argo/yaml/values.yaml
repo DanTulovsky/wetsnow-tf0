@@ -2,16 +2,17 @@ controller:
   metrics:
     enabled: true
     serviceMonitor:
-      enabled: true
+      enabled: false # using podAnnotations below
 
   image:
     tag: ${argo_version}
 
 dashboard:
-<<<<<<< HEAD
-  enabled: true
-=======
   enabled: true
   image:
     tag: ${argo_version}
->>>>>>> c94b983bdfeae72f06fcdac35c3378de784ab385
+
+podAnnotations:
+  prometheus.io/scrape: "true"
+  prometheus.io/port: "8090"
+  prometheus.io/path: "/metrics"

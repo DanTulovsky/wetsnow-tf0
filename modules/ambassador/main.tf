@@ -10,7 +10,6 @@ resource "helm_release" "ambassador" {
   values = [
     templatefile("${path.module}/yaml/values.yaml", {
       licenseKey    = var.license_key
-      promEnabled   = var.prom_enabled
       backendConfig = var.backend_config
       name          = var.name
       app_version   = var.app_version
@@ -34,10 +33,6 @@ resource "kubectl_manifest" "ambassador-hosts" {
 resource "kubectl_manifest" "ambassador-tracing" {
   depends_on = [helm_release.ambassador]
   yaml_body  = file("${path.module}/yaml/k8s/30-ambassador-tracing.yaml")
-}
-resource "kubectl_manifest" "ambassador-monitor" {
-  depends_on = [helm_release.ambassador]
-  yaml_body  = file("${path.module}/yaml/k8s/40-ambassador-monitor.yaml")
 }
 resource "kubectl_manifest" "ambassador-backend-config" {
   yaml_body = file("${path.module}/yaml/k8s-gcp/backend-config.yaml")

@@ -14,10 +14,6 @@ receivers:
       thrift_http:
       thrift_compact:
       thrift_binary:
-    remote_sampling:
-      strategy_file: "/etc/jaeger/jaeger-sampling-config.json"
-      # Doesn't work
-      # fetch_endpoint: "jaeger-collector.observability:5778"
   zipkin:
   k8s_cluster:
     auth_type: "serviceAccount"
@@ -34,6 +30,90 @@ receivers:
       - k8s.volume.type
     k8s_api_config:
       auth_type: serviceAccount
+  prometheus:
+    config:
+      scrape_configs:
+        # Collect metrics about myself
+        - job_name: opentelemetry-collector
+          scrape_interval: 30s
+          static_configs:
+            - targets:
+                - $${MY_POD_IP}:8888
+        - job_name: kubernetes-pods
+          scrape_interval: 30s
+          kubernetes_sd_configs:
+            - role: pod
+          relabel_configs:
+            - source_labels: [ __meta_kubernetes_pod_annotation_prometheus_io_scrape ]
+              action: keep
+              regex: true
+            - source_labels: [ __meta_kubernetes_pod_annotation_prometheus_io_scrape_slow ]
+              action: drop
+              regex: true
+            - source_labels: [ __meta_kubernetes_pod_annotation_prometheus_io_scheme ]
+              action: replace
+              regex: (https?)
+              target_label: __scheme__
+            - source_labels: [ __meta_kubernetes_pod_annotation_prometheus_io_path ]
+              action: replace
+              target_label: __metrics_path__
+              regex: (.+)
+            - source_labels: [ __address__, __meta_kubernetes_pod_annotation_prometheus_io_port ]
+              action: replace
+              regex: ([^:]+)(?::\d+)?;(\d+)
+              replacement: $$1:$$2
+              target_label: __address__
+            - action: labelmap
+              regex: __meta_kubernetes_pod_annotation_prometheus_io_param_(.+)
+              replacement: __param_$$1
+            - action: labelmap
+              regex: __meta_kubernetes_pod_label_(.+)
+            - source_labels: [ __meta_kubernetes_namespace ]
+              action: replace
+              target_label: namespace
+            - source_labels: [ __meta_kubernetes_pod_name ]
+              action: replace
+              target_label: pod
+            - source_labels: [ __meta_kubernetes_pod_phase ]
+              regex: Pending|Succeeded|Failed|Completed
+              action: drop
+        - job_name: 'argo-events'
+          kubernetes_sd_configs:
+            - role: pod
+              selectors:
+                - role: pod
+                  label: 'controller in (eventsource-controller,sensor-controller,eventbus-controller)'
+          relabel_configs:
+            - source_labels: [__meta_kubernetes_pod_label_eventbus_name, __meta_kubernetes_pod_label_controller]
+              action: replace
+              regex: (.+);eventbus-controller
+              replacement: $1
+              target_label: 'eventbus_name'
+            - source_labels: [__meta_kubernetes_namespace, __meta_kubernetes_pod_label_controller]
+              action: replace
+              regex: (.+);eventbus-controller
+              replacement: $1
+              target_label: 'namespace'
+            - source_labels: [__address__, __meta_kubernetes_pod_label_controller]
+              action: drop
+              regex: (.+):(\d222);eventbus-controller
+        - job_name: 'argo-events-controllers'
+          kubernetes_sd_configs:
+            - role: pod
+              selectors:
+                - role: pod
+                  label: 'app in (eventsource-controller,sensor-controller,eventbus-controller)'
+          relabel_configs:
+            - source_labels: [__address__, __meta_kubernetes_pod_label_app]
+              action: replace
+              regex: (.+);(eventsource-controller|sensor-controller|eventbus-controller)
+              replacement: $1:7777
+              target_label: '__address__'
+            - source_labels: [__meta_kubernetes_namespace, __meta_kubernetes_pod_label_app]
+              action: replace
+              regex: (.+);(eventsource-controller|sensor-controller|eventbus-controller)
+              replacement: $1
+              target_label: 'namespace'
 processors:
   batch:
   memory_limiter:
@@ -44,7 +124,7 @@ processors:
     # 25% of limit up to 2G
     spike_limit_mib: 128
     check_interval: 5s
-  k8s_tagger:
+  k8sattributes:
     passthrough: true
 extensions:
   health_check: { }

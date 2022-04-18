@@ -1,8 +1,0 @@
-destination:
-  endpoint: https://ingest.lightstep.com:443
-  compression: snappy
-  attribute: cluster_name=${clusterName}
-prometheus:
-  wal: /prometheus/wal
-opentelemetry:
-  metrics-prefix: otel_

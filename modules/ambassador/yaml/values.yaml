@@ -22,6 +22,11 @@ podLabels:
   service.name: "ambassador-ambassador"
   service.version: ${app_version}
 
+podAnnotations:
+  prometheus.io/scrape: "true"
+  prometheus.io/port: "8877"
+  prometheus.io/path: "/metrics"
+
 resources:
   limits:
     cpu: 300m

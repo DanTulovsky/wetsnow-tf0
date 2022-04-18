@@ -29,14 +29,25 @@ variable "cluster_info" {
   })
 }
 
+variable "nobl9_secrets" {
+  sensitive = true
+  type = object({
+    client_id           = string
+    client_secret       = string
+    agent_client_id     = string
+    agent_client_secret = string
+    jira_api_token      = string
+  })
+}
 
 # Grafana
 variable "grafana_secrets" {
   sensitive = true
   type = object({
-    oauth_secret   = string
-    admin_password = string
-    smtp_password  = string
+    admin_password       = string
+    smtp_password        = string
+    google_client_id     = string
+    google_client_secret = string
   })
 }
 
@@ -54,6 +65,13 @@ variable "lightstep_secrets" {
   })
 }
 
+variable "planetscale_secrets" {
+  sensitive = true
+  type = object({
+    access_token = string
+  })
+}
+
 # App versions
 variable "ambassador" {
   type = object({
@@ -61,6 +79,16 @@ variable "ambassador" {
   })
 }
 variable "argo_rollouts" {
+  type = object({
+    app_version = string
+  })
+}
+variable "argo_events" {
+  type = object({
+    app_version = string
+  })
+}
+variable "argo_workflows" {
   type = object({
     app_version = string
   })
