@@ -11,20 +11,3 @@ resource "helm_release" "kubecost" {
     namespace = var.namespace
   })]
 }
-
-resource "kubectl_manifest" "require-labels-yaml" {
-  depends_on = [helm_release.kyverno]
-  yaml_body = templatefile("${path.module}/policies/require-labels.yaml", {
-    validationFailureActions = "audit" # or 'enforce'
-  })
-}
-
-resource "kubectl_manifest" "x-namespace-secrets-yaml" {
-  depends_on = [helm_release.kyverno]
-  yaml_body  = file("${path.module}/policies/x-namespace-secrets.yaml")
-}
-
-resource "kubectl_manifest" "quote-server-max-pods" {
-  depends_on = [helm_release.kyverno]
-  yaml_body  = file("${path.module}/policies/quote-server-max-pods.yaml")
-}
