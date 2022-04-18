@@ -5,6 +5,9 @@ global:
   prometheus:
     enabled: true
 
+grafana:
+  enabled: false
+
 prometheus:
   kube-state-metrics:
     disabled: true
