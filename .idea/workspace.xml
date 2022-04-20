@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="disable grafana">
-      <change beforePath="$PROJECT_DIR$/modules/kubecost/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/kubecost/yaml/values.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ambassador/yaml/k8s/10-ambassador-maps.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/yaml/k8s/10-ambassador-maps.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/http-ingress/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/http-ingress/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/http-ingress/managed-certs.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/http-ingress/managed-certs.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

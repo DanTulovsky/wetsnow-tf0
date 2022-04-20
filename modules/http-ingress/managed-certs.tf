@@ -25,21 +25,22 @@ locals {
 # this causes downtime!!
 
 # old
-resource "google_compute_managed_ssl_certificate" "wetsnow-com-20211010-01" {
-  name = "wetsnow-cert-20211010-01"
-  managed {
-    domains = concat(local.domains, sort([
-      "parca.wetsnow.com",
-    ]))
-  }
-}
-
-# new
 resource "google_compute_managed_ssl_certificate" "wetsnow-com-20220212-00" {
   name = "wetsnow-com-20220212-00"
   managed {
     domains = concat(local.domains, sort([
       "argocd.wetsnow.com.",
+    ]))
+  }
+}
+
+# new
+resource "google_compute_managed_ssl_certificate" "wetsnow-com-20220419" {
+  name = "wetsnow-com-20220212-00"
+  managed {
+    domains = concat(local.domains, sort([
+      "argocd.wetsnow.com.",
+      "kubecost.wetsnow.com.",
     ]))
   }
 }
