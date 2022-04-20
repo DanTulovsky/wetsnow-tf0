@@ -7,7 +7,6 @@ locals {
     "dusselskolk.com.",
     "grafana.wetsnow.com.",
     "login.wetsnow.com.",
-    "pepper-poker.wetsnow.com.",
     "pgadmin.wetsnow.com.",
     "prometheus.wetsnow.com.",
     "rollouts.wetsnow.com",
