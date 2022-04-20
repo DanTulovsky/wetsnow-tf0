@@ -36,7 +36,7 @@ resource "google_compute_managed_ssl_certificate" "wetsnow-com-20220212-00" {
 
 # new
 resource "google_compute_managed_ssl_certificate" "wetsnow-com-20220419" {
-  name = "wetsnow-com-20220212-00"
+  name = "wetsnow-com-20220419"
   managed {
     domains = concat(local.domains, sort([
       "argocd.wetsnow.com.",

@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="disable grafana">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/ambassador/yaml/k8s/10-ambassador-maps.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/yaml/k8s/10-ambassador-maps.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/http-ingress/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/http-ingress/main.tf" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="add kubecost">
       <change beforePath="$PROJECT_DIR$/modules/http-ingress/managed-certs.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/http-ingress/managed-certs.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -505,7 +502,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="alert method" />
     <MESSAGE value="fix alert policy name" />
     <MESSAGE value="fix email name" />
     <MESSAGE value="avaulability" />
@@ -530,7 +526,8 @@
     <MESSAGE value="namespance" />
     <MESSAGE value="fix helm chart name" />
     <MESSAGE value="disable grafana" />
-    <option name="LAST_COMMIT_MESSAGE" value="disable grafana" />
+    <MESSAGE value="add kubecost" />
+    <option name="LAST_COMMIT_MESSAGE" value="add kubecost" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
