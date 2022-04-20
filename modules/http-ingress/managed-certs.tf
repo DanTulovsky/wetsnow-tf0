@@ -31,11 +31,10 @@ resource "google_compute_managed_ssl_certificate" "wetsnow-com-20220419" {
 }
 
 resource "google_compute_managed_ssl_certificate" "wetsnow-com-20220419-00" {
-  name = "wetsnow-com-20220419"
+  name = "wetsnow-com-20220419-00"
   managed {
     domains = sort([
       "ambassador-admin.wetsnow.com.",
-      "argocd.wetsnow.com.",
       "dusselskolk.com.",
       "grafana.wetsnow.com.",
       "kubecost.wetsnow.com.",
