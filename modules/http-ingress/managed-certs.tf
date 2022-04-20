@@ -17,7 +17,7 @@ resource "google_compute_managed_ssl_certificate" "wetsnow-com-20220419" {
       "grafana.wetsnow.com.",
       "kubecost.wetsnow.com.",
       "login.wetsnow.com.",
-      "pepper-poker.wetsnow.com"
+      "pepper-poker.wetsnow.com",
       "pgadmin.wetsnow.com.",
       "prometheus.wetsnow.com.",
       "rollouts.wetsnow.com",
