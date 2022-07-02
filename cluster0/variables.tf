@@ -65,13 +65,6 @@ variable "lightstep_secrets" {
   })
 }
 
-variable "planetscale_secrets" {
-  sensitive = true
-  type = object({
-    access_token = string
-  })
-}
-
 # App versions
 variable "ambassador" {
   type = object({
