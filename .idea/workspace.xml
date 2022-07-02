@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="update nobl9">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/nobl9/providers.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nobl9/providers.tf" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="terraform provider">
+      <change beforePath="$PROJECT_DIR$/cluster0/.terraform.lock.hcl" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/.terraform.lock.hcl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,25 +50,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ACTIVE_CLOUD_PROJECT_ACCOUNT&quot;: &quot;dant@wetsnow.com&quot;,
-    &quot;ACTIVE_CLOUD_PROJECT_ID&quot;: &quot;snowcloud-01&quot;,
-    &quot;ACTIVE_CLOUD_PROJECT_NAME&quot;: &quot;snowcloud&quot;,
-    &quot;ACTIVE_CLOUD_PROJECT_NUMBER&quot;: &quot;53644033433&quot;,
-    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed&quot;: &quot;true&quot;,
-    &quot;TF_FMT&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.google.cloudcode.ide_session_index&quot;: &quot;20220702_0000&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/dant/go/src/github.com/DanTulovsky/wetsnow-tf0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ACTIVE_CLOUD_PROJECT_ACCOUNT": "dant@wetsnow.com",
+    "ACTIVE_CLOUD_PROJECT_ID": "snowcloud-01",
+    "ACTIVE_CLOUD_PROJECT_NAME": "snowcloud",
+    "ACTIVE_CLOUD_PROJECT_NUMBER": "53644033433",
+    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
+    "TF_FMT": "false",
+    "WebServerToolWindowFactoryState": "false",
+    "com.google.cloudcode.ide_session_index": "20220702_0001",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "/Users/dant/go/src/github.com/DanTulovsky/wetsnow-tf0",
+    "settings.editor.selected.configurable": "vcs.Git"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/modules" />
@@ -131,13 +130,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00133" summary="fix typo">
-      <created>1648002077157</created>
-      <option name="number" value="00133" />
-      <option name="presentableId" value="LOCAL-00133" />
-      <option name="project" value="LOCAL" />
-      <updated>1648002077157</updated>
     </task>
     <task id="LOCAL-00134" summary="fix names">
       <created>1648002240511</created>
@@ -475,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656775868500</updated>
     </task>
-    <option name="localTasksCounter" value="182" />
+    <task id="LOCAL-00182" summary="terraform provider">
+      <created>1656776048215</created>
+      <option name="number" value="00182" />
+      <option name="presentableId" value="LOCAL-00182" />
+      <option name="project" value="LOCAL" />
+      <updated>1656776048215</updated>
+    </task>
+    <option name="localTasksCounter" value="183" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -507,7 +506,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add jira ticket" />
     <MESSAGE value="nobl9 jira" />
     <MESSAGE value="fix" />
     <MESSAGE value="refactor" />
@@ -532,7 +530,8 @@
     <MESSAGE value="cleanup" />
     <MESSAGE value="Revert &quot;cleanup&quot;&#10;&#10;This reverts commit 4e796339" />
     <MESSAGE value="update nobl9" />
-    <option name="LAST_COMMIT_MESSAGE" value="update nobl9" />
+    <MESSAGE value="terraform provider" />
+    <option name="LAST_COMMIT_MESSAGE" value="terraform provider" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
