@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix nobl9">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/nobl9/slos.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nobl9/slos.tf" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="terraform provider">
+      <change beforePath="$PROJECT_DIR$/cluster0/.terraform.lock.hcl" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/.terraform.lock.hcl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,6 +130,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
+    </task>
+    <task id="LOCAL-00134" summary="fix names">
+      <created>1648002240511</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1648002240511</updated>
+    </task>
+    <task id="LOCAL-00135" summary="agent">
+      <created>1648002524515</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1648002524515</updated>
+    </task>
+    <task id="LOCAL-00136" summary="agent">
+      <created>1648002614571</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1648002614571</updated>
     </task>
     <task id="LOCAL-00137" summary="source_of">
       <created>1648002761073</created>
@@ -454,28 +474,7 @@
       <option name="project" value="LOCAL" />
       <updated>1656776048215</updated>
     </task>
-    <task id="LOCAL-00183" summary="terraform provider">
-      <created>1656776971702</created>
-      <option name="number" value="00183" />
-      <option name="presentableId" value="LOCAL-00183" />
-      <option name="project" value="LOCAL" />
-      <updated>1656776971703</updated>
-    </task>
-    <task id="LOCAL-00184" summary="remove pscale">
-      <created>1656777036301</created>
-      <option name="number" value="00184" />
-      <option name="presentableId" value="LOCAL-00184" />
-      <option name="project" value="LOCAL" />
-      <updated>1656777036301</updated>
-    </task>
-    <task id="LOCAL-00185" summary="fix nobl9">
-      <created>1656777106810</created>
-      <option name="number" value="00185" />
-      <option name="presentableId" value="LOCAL-00185" />
-      <option name="project" value="LOCAL" />
-      <updated>1656777106810</updated>
-    </task>
-    <option name="localTasksCounter" value="186" />
+    <option name="localTasksCounter" value="183" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -507,6 +506,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="nobl9 jira" />
+    <MESSAGE value="fix" />
     <MESSAGE value="refactor" />
     <MESSAGE value="update nobl9 agent image" />
     <MESSAGE value="enable metrics and scrape them." />
@@ -530,9 +531,7 @@
     <MESSAGE value="Revert &quot;cleanup&quot;&#10;&#10;This reverts commit 4e796339" />
     <MESSAGE value="update nobl9" />
     <MESSAGE value="terraform provider" />
-    <MESSAGE value="remove pscale" />
-    <MESSAGE value="fix nobl9" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix nobl9" />
+    <option name="LAST_COMMIT_MESSAGE" value="terraform provider" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
