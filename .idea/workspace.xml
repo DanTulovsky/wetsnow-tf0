@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="update grafana">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="cleanup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/variables.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/planetscale/main.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/planetscale/providers.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/planetscale/variables.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/nobl9/yaml/k8s/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nobl9/yaml/k8s/deployment.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,13 +131,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00129" summary="nobl9 project">
-      <created>1648001256501</created>
-      <option name="number" value="00129" />
-      <option name="presentableId" value="LOCAL-00129" />
-      <option name="project" value="LOCAL" />
-      <updated>1648001256501</updated>
     </task>
     <task id="LOCAL-00130" summary="nobl9 web service">
       <created>1648001488019</created>
@@ -479,7 +468,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656775476805</updated>
     </task>
-    <option name="localTasksCounter" value="178" />
+    <task id="LOCAL-00178" summary="cleanup">
+      <created>1656775601528</created>
+      <option name="number" value="00178" />
+      <option name="presentableId" value="LOCAL-00178" />
+      <option name="project" value="LOCAL" />
+      <updated>1656775601528</updated>
+    </task>
+    <option name="localTasksCounter" value="179" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -530,13 +526,13 @@
     <MESSAGE value="fix helm chart name" />
     <MESSAGE value="disable grafana" />
     <MESSAGE value="add kubecost" />
-    <MESSAGE value="cleanup" />
     <MESSAGE value="rename" />
     <MESSAGE value="clear" />
     <MESSAGE value="cleanup ambassador" />
     <MESSAGE value="upgrade ambassador" />
     <MESSAGE value="update grafana" />
-    <option name="LAST_COMMIT_MESSAGE" value="update grafana" />
+    <MESSAGE value="cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleanup" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>

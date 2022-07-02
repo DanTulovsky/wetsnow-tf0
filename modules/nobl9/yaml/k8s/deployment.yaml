@@ -24,8 +24,7 @@ spec:
     spec:
       containers:
         - name: agent-container
-#          image: nobl9/agent:0.38.0
-          image: nobl9/agent:0.42.0-lightstep-longer-delay
+          image: nobl9/agent:0.48.0-rc2
           resources:
             requests:
               memory: "350Mi"
