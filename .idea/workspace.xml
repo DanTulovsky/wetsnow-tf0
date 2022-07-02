@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="restore pscale">
-      <change beforePath="$PROJECT_DIR$/modules/planetscale/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/planetscale/main.tf" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="remove pscale">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/.terraform.lock.hcl" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/.terraform.lock.hcl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/planetscale/main.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/planetscale/providers.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/planetscale/variables.tf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,13 +136,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00137" summary="source_of">
-      <created>1648002761073</created>
-      <option name="number" value="00137" />
-      <option name="presentableId" value="LOCAL-00137" />
-      <option name="project" value="LOCAL" />
-      <updated>1648002761073</updated>
     </task>
     <task id="LOCAL-00138" summary="source_of">
       <created>1648002836698</created>
@@ -474,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656777768805</updated>
     </task>
-    <option name="localTasksCounter" value="186" />
+    <task id="LOCAL-00186" summary="remove pscale">
+      <created>1656778034057</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
+      <option name="project" value="LOCAL" />
+      <updated>1656778034057</updated>
+    </task>
+    <option name="localTasksCounter" value="187" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -546,7 +552,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="update nobl9 agent image" />
     <MESSAGE value="enable metrics and scrape them." />
     <MESSAGE value="set name" />
     <MESSAGE value="rename alert policy" />
@@ -571,7 +576,8 @@
     <MESSAGE value="Revert &quot;remove pscale&quot;&#10;&#10;This reverts commit 46ae2b99" />
     <MESSAGE value="fix nobl9" />
     <MESSAGE value="restore pscale" />
-    <option name="LAST_COMMIT_MESSAGE" value="restore pscale" />
+    <MESSAGE value="remove pscale" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove pscale" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>

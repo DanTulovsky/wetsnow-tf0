@@ -116,23 +116,3 @@ provider "registry.terraform.io/nobl9/nobl9" {
     "zh:e73ba32a13972152c2533f0790bc7fb624054d3805cba0c05b181ac87a94b57b",
   ]
 }
-
-provider "registry.terraform.io/s1ntaxe770r/planetscale" {
-  version     = "0.1.2"
-  constraints = "0.1.2"
-  hashes = [
-    "h1:7OP+LNlnOH2GBZQXara13+PfGbvI+M3+i33gDHIWNTs=",
-    "zh:048a8a74129a1d7cd961bf78b2f44ae3b511b206c0c623cc0139c677ab082ddb",
-    "zh:1af736fa206a8c286ee0a2270e46d48e99205924f26d5d9de8f508f2723d7bfa",
-    "zh:2c694c02e3a5bf81b98de8f57de989f57d33b75e390d9369e6104633c1eedea4",
-    "zh:3d5ea44cde4a81a670b5c9c54c499501b7afa43ae0c93b4c059bf1e94cd6f84d",
-    "zh:6587736b5c3116fa2dcebe02181c2f4d25715c863a4e4e404dfe126dbbf1623a",
-    "zh:82b1fb160df9d47e1905dfcaa6b5c2f26719442e37ad1b336f2c0368bd4723e9",
-    "zh:9227f525fca9c74a9def49efdb2e8192206f54923ac49fee76c09456f6a6c87d",
-    "zh:9d874af53f0494b654a0ef39511bae46d3c42bd1827d1be27f5234d44e1169e5",
-    "zh:a3604873097cea845bfd032956307092cd592f9e08d6a391c1e23cf30dc7fb98",
-    "zh:d6015131b02d9723d3ff3b5cbc1d48cd5519dcac6e6bd94f1e49eec0e777b8a6",
-    "zh:dcafa579ddb92c881749a8de906f08f8e110f23eef595ba5c2636d76fbd97da1",
-    "zh:f1ea068ee6115ef5a13fc14c772bb33182bcac910e97a983fb1405f2d2bce9cc",
-  ]
-}
