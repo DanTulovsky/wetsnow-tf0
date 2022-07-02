@@ -23,10 +23,12 @@ resource "nobl9_slo" "web_static_latency" {
     value        = 60
     op           = "lte"
     raw_metric {
-      lightstep {
-        stream_id    = "XTLbMfjL"
-        type_of_data = "latency"
-        percentile   = "99"
+      query {
+        lightstep {
+          stream_id    = "XTLbMfjL"
+          type_of_data = "latency"
+          percentile   = "99"
+        }
       }
     }
   }
