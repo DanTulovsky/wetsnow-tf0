@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="terraform provider">
-      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="remove pscale">
+      <change beforePath="$PROJECT_DIR$/modules/nobl9/slos.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nobl9/slos.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,13 +130,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00135" summary="agent">
-      <created>1648002524515</created>
-      <option name="number" value="00135" />
-      <option name="presentableId" value="LOCAL-00135" />
-      <option name="project" value="LOCAL" />
-      <updated>1648002524515</updated>
     </task>
     <task id="LOCAL-00136" summary="agent">
       <created>1648002614571</created>
@@ -474,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656776971703</updated>
     </task>
-    <option name="localTasksCounter" value="184" />
+    <task id="LOCAL-00184" summary="remove pscale">
+      <created>1656777036301</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
+      <option name="project" value="LOCAL" />
+      <updated>1656777036301</updated>
+    </task>
+    <option name="localTasksCounter" value="185" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,7 +506,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="nobl9 jira" />
     <MESSAGE value="fix" />
     <MESSAGE value="refactor" />
     <MESSAGE value="update nobl9 agent image" />
@@ -531,7 +530,8 @@
     <MESSAGE value="Revert &quot;cleanup&quot;&#10;&#10;This reverts commit 4e796339" />
     <MESSAGE value="update nobl9" />
     <MESSAGE value="terraform provider" />
-    <option name="LAST_COMMIT_MESSAGE" value="terraform provider" />
+    <MESSAGE value="remove pscale" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove pscale" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>

@@ -22,6 +22,13 @@ resource "nobl9_slo" "web_static_latency" {
     display_name = "OK"
     value        = 60
     op           = "lte"
+    raw_metric {
+      lightstep {
+        stream_id    = "XTLbMfjL"
+        type_of_data = "latency"
+        percentile   = "99"
+      }
+    }
   }
 
   indicator {
@@ -31,13 +38,6 @@ resource "nobl9_slo" "web_static_latency" {
     #    kind    = "agent"
     project = nobl9_project.wetsnow.name
 
-    raw_metric {
-      lightstep {
-        stream_id    = "XTLbMfjL"
-        type_of_data = "latency"
-        percentile   = "99"
-      }
-    }
   }
 
   attachments {
