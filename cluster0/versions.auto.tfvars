@@ -13,7 +13,7 @@ argo_workflows = {
   app_version = "v3.3.0-rc4"
 }
 grafana = {
-  app_version = "8.3.4"
+  app_version = "9.0.2"
 }
 kubernetes_external_secrets = {
   app_version = "8.3.0"
