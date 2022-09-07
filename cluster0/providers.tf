@@ -45,6 +45,6 @@ provider "kubernetes" {
 provider "nobl9" {
   organization  = "wetsnow-AhEoLssUoSbE"
   project       = "wetsnow"
-  client_id     = var.nobl9_secrets.client_id
-  client_secret = var.nobl9_secrets.client_secret
+  client_id     = module.common.nobl9_client_id
+  client_secret = module.common.nobl9_client_secret
 }

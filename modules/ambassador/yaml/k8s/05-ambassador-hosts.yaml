@@ -1,11 +1,11 @@
 ---
-apiVersion: getambassador.io/v2
+apiVersion: getambassador.io/v3alpha1
 kind: Host
 metadata:
   name: l7-redirect
   namespace: ambassador
 spec:
-  # hostname: www.wetsnow.com
+  hostname: "*.com"
   # TLS happens at the LB, so disable it here.
   acmeProvider:
     authority: none
@@ -14,3 +14,6 @@ spec:
   requestPolicy:
     insecure:
       action: Redirect
+  mappingSelector:
+    matchLabels:
+      host: default

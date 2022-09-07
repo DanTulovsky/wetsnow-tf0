@@ -34,33 +34,39 @@ resources:
   requests:
     cpu: 10m
     memory: 256Mi
-adminService:
-  annotations: { }
-  create: true
-  port: 8877
-  type: NodePort
-service:
-  annotations:
-    # kubernetes.io/ingress.global-static-ip-name: "ambassador"
-    cloud.google.com/neg: '{"ingress": true}'
-    cloud.google.com/backend-config: '{"default": "${backendConfig}"}'
-    cloud.google.com/app-protocols: '{"grpc": "HTTP2"}'
-  externalIPs: [ ]
-  ports:
-    - name: http
-      port: 8080
-      targetPort: 8080
-    - name: grpc
-      port: 8443
-      targetPort: 8443
-    # - name: minecraft
-    #   port: 25565
-    #   targetPort: 25565
-  # type: LoadBalancer
-  type: NodePort
-  # This breaks on GKE, perhaps healthCheckNodePort is needed?
-  # externalTrafficPolicy: Cluster
-  # externalTrafficPolicy: Local
+emissary-ingress:
+  service:
+    annotations:
+      # kubernetes.io/ingress.global-static-ip-name: "ambassador"
+      cloud.google.com/neg: '{"ingress": true}'
+      cloud.google.com/backend-config: '{"default": "${backendConfig}"}'
+      cloud.google.com/app-protocols: '{"grpc": "HTTP2"}'
+    externalIPs: [ ]
+    ports:
+      - name: http
+        port: 8080
+        targetPort: 8080
+      - name: grpc
+        port: 8443
+        targetPort: 8443
+      # - name: minecraft
+      #   port: 25565
+      #   targetPort: 25565
+    # type: LoadBalancer
+    type: NodePort
+    # This breaks on GKE, perhaps healthCheckNodePort is needed?
+    # externalTrafficPolicy: Cluster
+    # externalTrafficPolicy: Local
+  adminService:
+    annotations: { }
+    create: true
+    port: 8877
+    type: NodePort
+  resolvers:
+    endpoint:
+      create: true
+      name: endpoint
+  createDefaultListeners: false
 env:
   AMBASSADOR_LEGACY_MODE: false
   # https://docs.datadoghq.com/integrations/ambassador/
@@ -95,3 +101,9 @@ readinessProbe:
   initialDelaySeconds: 30
   periodSeconds: 6
   failureThreshold: 6
+
+authService:
+  create: false
+
+ratelimit:
+  create: false

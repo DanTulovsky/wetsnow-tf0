@@ -22,3 +22,7 @@ variable "prom_enabled" {
 variable "app_version" {
   type = string
 }
+
+variable "chart_version" {
+  type = string
+}

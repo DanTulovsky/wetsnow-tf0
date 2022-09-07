@@ -5,22 +5,25 @@ module "common" {
   namespaces = var.cluster_info.namespaces
   project_id = var.project
   # This token gets written to "lightstep-access-token" in Google Secret Manager
-  lightstep_access_token = var.lightstep_secrets.access_token
+  # lightstep_access_token = var.lightstep_secrets.access_token
+  #  lightstep_access_token = var.lightstep_secrets.access_token
 }
 module "ambassador" {
-  source         = "../modules/ambassador"
-  license_key    = var.ambassador_secrets.license_key
+  source = "../modules/ambassador"
+  #  license_key    = var.ambassador_secrets.license_key
+  license_key    = module.common.ambassador_license_key
   namespace      = module.common.namespaces.ambassador
   backend_config = "ambassador-hc-config"
   name           = "ambassador"
   app_version    = var.ambassador.app_version
+  chart_version  = var.ambassador.chart_version
 }
 
-module "argo" {
-  source       = "../modules/argo"
-  namespace    = module.common.namespaces.argocd
-  argo_version = var.argo_rollouts.app_version
-}
+#module "argo" {
+#  source       = "../modules/argo"
+#  namespace    = module.common.namespaces.argocd
+#  argo_version = var.argo_rollouts.app_version
+#}
 
 #module "argo-events" {
 #  source         = "../modules/argo-events"
@@ -43,22 +46,22 @@ module "http-ingress" {
 }
 module "grafana" {
   source               = "../modules/grafana"
-  admin_password       = var.grafana_secrets.admin_password
-  smtp_password        = var.grafana_secrets.smtp_password
+  admin_password       = module.common.grafana_admin_password
+  smtp_password        = module.common.grafana_smtp_password
   namespace            = module.common.namespaces.monitoring
   prom_enabled         = false
-  google_client_id     = var.grafana_secrets.google_client_id
-  google_client_secret = var.grafana_secrets.google_client_secret
+  google_client_id     = module.common.grafana_google_client_id
+  google_client_secret = module.common.grafana_google_client_secret
   app_version          = var.grafana.app_version
 }
 module "kube-state-metrics" {
   source    = "../modules/kube-state-metrics"
   namespace = module.common.namespaces.monitoring
 }
-module "kubecost" {
-  source    = "../modules/kubecost"
-  namespace = module.common.namespaces.kubecost
-}
+#module "kubecost" {
+#  source    = "../modules/kubecost"
+#  namespace = module.common.namespaces.kubecost
+#}
 module "kubernetes-external-secrets" {
   source      = "../modules/kubernetes-external-secrets"
   namespace   = module.common.namespaces.security
@@ -73,7 +76,7 @@ module "kubernetes-external-secrets" {
 module "nobl9" {
   source         = "../modules/nobl9"
   namespace      = module.common.namespaces.monitoring
-  jira_api_token = var.nobl9_secrets.jira_api_token
+  jira_api_token = module.common.nobl9_jira_api_token
 }
 
 module "open-telemetry" {
@@ -102,16 +105,16 @@ module "open-telemetry" {
 #  operator_version     = var.prometheus.operator_version
 #  otel_sidecar_version = var.prometheus.otel_sidecar_version
 #}
-module "quote-server" {
-  source = "../modules/quote-server"
-  depends_on = [
-    module.common
-  ]
-  namespace      = module.common.namespaces.web
-  app_version    = var.quote_server.app_version
-  priority_class = module.common.priority_class.high0
-  prom_enabled   = false
-}
+#module "quote-server" {
+#  source = "../modules/quote-server"
+#  depends_on = [
+#    module.common
+#  ]
+#  namespace      = module.common.namespaces.web
+#  app_version    = var.quote_server.app_version
+#  priority_class = module.common.priority_class.high0
+#  prom_enabled   = false
+#}
 # module "vector" {
 #   source     = "./modules/vector"
 #   depends_on = [module.gke, module.prometheus, module.kafka]

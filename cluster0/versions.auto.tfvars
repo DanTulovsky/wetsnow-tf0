@@ -1,7 +1,8 @@
 # Before updating this, make sure an image with this tag exists.
 # TODO: #5 Can this be automatically checked?
 ambassador = {
-  app_version = "1.14.3"
+  app_version   = "3.1.0"
+  chart_version = "8.1.1"
 }
 argo_events = {
   app_version = "v1.6.0"

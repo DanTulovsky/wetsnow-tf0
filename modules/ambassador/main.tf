@@ -2,10 +2,11 @@ resource "helm_release" "ambassador" {
   depends_on   = [kubectl_manifest.ambassador-backend-config, kubectl_manifest.ambassador-backend-config-iap]
   name         = var.name
   namespace    = var.namespace
-  repository   = "https://getambassador.io"
-  chart        = "ambassador"
+  repository   = "https://app.getambassador.io"
+  chart        = "edge-stack"
   wait         = true
   force_update = false
+  version      = var.chart_version
 
   values = [
     templatefile("${path.module}/yaml/values.yaml", {
@@ -29,6 +30,14 @@ resource "kubectl_manifest" "ambassador-endpoint" {
 resource "kubectl_manifest" "ambassador-hosts" {
   depends_on = [helm_release.ambassador]
   yaml_body  = file("${path.module}/yaml/k8s/05-ambassador-hosts.yaml")
+}
+resource "kubectl_manifest" "ambassador-listener-http" {
+  depends_on = [helm_release.ambassador]
+  yaml_body  = file("${path.module}/yaml/k8s/07-ambassador-http-listener.yaml")
+}
+resource "kubectl_manifest" "ambassador-listener-https" {
+  depends_on = [helm_release.ambassador]
+  yaml_body  = file("${path.module}/yaml/k8s/07-ambassador-https-listener.yaml")
 }
 resource "kubectl_manifest" "ambassador-tracing" {
   depends_on = [helm_release.ambassador]

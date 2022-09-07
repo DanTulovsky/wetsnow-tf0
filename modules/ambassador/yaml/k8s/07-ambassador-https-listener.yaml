@@ -1,0 +1,12 @@
+apiVersion: getambassador.io/v3alpha1
+kind: Listener
+metadata:
+  name: ambassador-https-listener
+spec:
+  port: 8443
+  protocol: HTTPS
+  securityModel: XFP
+  l7Depth: 1
+  hostBinding:
+    namespace:
+      from: ALL
