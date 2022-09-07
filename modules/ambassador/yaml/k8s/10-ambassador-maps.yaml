@@ -2,17 +2,6 @@
 apiVersion: getambassador.io/v3alpha1
 kind: Mapping
 metadata:
-  name: admin-mapping
-  namespace: ambassador
-spec:
-  host: ambassador-admin.wetsnow.com
-  prefix: /edge_stack/
-  rewrite: /edge_stack_ui/edge_stack/
-  service: localhost:8500
----
-apiVersion: getambassador.io/v3alpha1
-kind: Mapping
-metadata:
   name: grafana
   namespace: ambassador
 spec:

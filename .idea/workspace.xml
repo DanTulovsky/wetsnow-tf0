@@ -4,21 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="updates">
-      <change afterPath="$PROJECT_DIR$/modules/ambassador/yaml/k8s/07-ambassador-http-listener.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/ambassador/yaml/k8s/07-ambassador-https-listener.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/providers.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/providers.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/variables.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/ambassador/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/ambassador/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/variables.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/ambassador/yaml/k8s/05-ambassador-hosts.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/yaml/k8s/05-ambassador-hosts.yaml" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="ambassador upgrade">
       <change beforePath="$PROJECT_DIR$/modules/ambassador/yaml/k8s/10-ambassador-maps.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/yaml/k8s/10-ambassador-maps.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/ambassador/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/yaml/values.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/common/secrets.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/common/secrets.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/common/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/common/variables.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,13 +134,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00141" summary="agent type">
-      <created>1648003546539</created>
-      <option name="number" value="00141" />
-      <option name="presentableId" value="LOCAL-00141" />
-      <option name="project" value="LOCAL" />
-      <updated>1648003546539</updated>
     </task>
     <task id="LOCAL-00142" summary="source_of">
       <created>1648003731669</created>
@@ -491,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662513911031</updated>
     </task>
-    <option name="localTasksCounter" value="190" />
+    <task id="LOCAL-00190" summary="ambassador upgrade">
+      <created>1662560032319</created>
+      <option name="number" value="00190" />
+      <option name="presentableId" value="LOCAL-00190" />
+      <option name="project" value="LOCAL" />
+      <updated>1662560032319</updated>
+    </task>
+    <option name="localTasksCounter" value="191" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -563,7 +550,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add attachments" />
     <MESSAGE value="remove argo workflows" />
     <MESSAGE value="remove argo events" />
     <MESSAGE value="set slo to 95%" />
@@ -588,7 +574,8 @@
     <MESSAGE value="to spacelif." />
     <MESSAGE value="upgrade" />
     <MESSAGE value="updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="updates" />
+    <MESSAGE value="ambassador upgrade" />
+    <option name="LAST_COMMIT_MESSAGE" value="ambassador upgrade" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
