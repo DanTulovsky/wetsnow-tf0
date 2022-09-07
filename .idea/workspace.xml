@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="ambassador upgrade">
-      <change beforePath="$PROJECT_DIR$/modules/ambassador/yaml/k8s/10-ambassador-maps.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/yaml/k8s/10-ambassador-maps.yaml" afterDir="false" />
-    </list>
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="remove admin mapping" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -134,13 +132,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00142" summary="source_of">
-      <created>1648003731669</created>
-      <option name="number" value="00142" />
-      <option name="presentableId" value="LOCAL-00142" />
-      <option name="project" value="LOCAL" />
-      <updated>1648003731669</updated>
     </task>
     <task id="LOCAL-00143" summary="source of">
       <created>1648003865970</created>
@@ -478,7 +469,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662560032319</updated>
     </task>
-    <option name="localTasksCounter" value="191" />
+    <task id="LOCAL-00191" summary="remove admin mapping">
+      <created>1662560163325</created>
+      <option name="number" value="00191" />
+      <option name="presentableId" value="LOCAL-00191" />
+      <option name="project" value="LOCAL" />
+      <updated>1662560163325</updated>
+    </task>
+    <option name="localTasksCounter" value="192" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -550,7 +548,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="remove argo workflows" />
     <MESSAGE value="remove argo events" />
     <MESSAGE value="set slo to 95%" />
     <MESSAGE value="kubecost" />
@@ -575,7 +572,8 @@
     <MESSAGE value="upgrade" />
     <MESSAGE value="updates" />
     <MESSAGE value="ambassador upgrade" />
-    <option name="LAST_COMMIT_MESSAGE" value="ambassador upgrade" />
+    <MESSAGE value="remove admin mapping" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove admin mapping" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
