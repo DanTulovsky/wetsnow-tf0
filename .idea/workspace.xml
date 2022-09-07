@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="to spacelif.">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="upgrade">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/providers.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/providers.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,13 +135,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00139" summary="agent">
-      <created>1648003039183</created>
-      <option name="number" value="00139" />
-      <option name="presentableId" value="LOCAL-00139" />
-      <option name="project" value="LOCAL" />
-      <updated>1648003039183</updated>
     </task>
     <task id="LOCAL-00140" summary="indicator">
       <created>1648003098218</created>
@@ -478,7 +472,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662511758599</updated>
     </task>
-    <option name="localTasksCounter" value="188" />
+    <task id="LOCAL-00188" summary="upgrade">
+      <created>1662512666049</created>
+      <option name="number" value="00188" />
+      <option name="presentableId" value="LOCAL-00188" />
+      <option name="project" value="LOCAL" />
+      <updated>1662512666049</updated>
+    </task>
+    <option name="localTasksCounter" value="189" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -550,7 +551,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="set name" />
     <MESSAGE value="rename alert policy" />
     <MESSAGE value="add attachments" />
     <MESSAGE value="remove argo workflows" />
@@ -575,7 +575,8 @@
     <MESSAGE value="restore pscale" />
     <MESSAGE value="remove pscale" />
     <MESSAGE value="to spacelif." />
-    <option name="LAST_COMMIT_MESSAGE" value="to spacelif." />
+    <MESSAGE value="upgrade" />
+    <option name="LAST_COMMIT_MESSAGE" value="upgrade" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>

@@ -1,3 +1,5 @@
+# State is stored in a GCS bucket called: terraform-gcs
+
 provider "google" {
   # export GOOGLE_CREDENTIALS=/Users/dant/github/wetsnow-tf0/cluster0/.gcloud_credentials
   project = var.project
