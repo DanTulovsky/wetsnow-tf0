@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="remove argo-events namespace">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="to spacelif.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/main.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +31,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="4246c2ca-87c4-4564-9560-104ff8d73865" />
   </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
@@ -68,7 +70,7 @@
     "com.google.cloudcode.ide_session_index": "20220906_0000",
     "go.import.settings.migrated": "true",
     "last_opened_file_path": "/Users/dant/go/src/github.com/DanTulovsky/wetsnow-tf0",
-    "settings.editor.selected.configurable": "vcs.Git"
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -132,13 +134,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00138" summary="source_of">
-      <created>1648002836698</created>
-      <option name="number" value="00138" />
-      <option name="presentableId" value="LOCAL-00138" />
-      <option name="project" value="LOCAL" />
-      <updated>1648002836698</updated>
     </task>
     <task id="LOCAL-00139" summary="agent">
       <created>1648003039183</created>
@@ -476,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656778034057</updated>
     </task>
-    <option name="localTasksCounter" value="187" />
+    <task id="LOCAL-00187" summary="to spacelif.">
+      <created>1662511758599</created>
+      <option name="number" value="00187" />
+      <option name="presentableId" value="LOCAL-00187" />
+      <option name="project" value="LOCAL" />
+      <updated>1662511758599</updated>
+    </task>
+    <option name="localTasksCounter" value="188" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -548,7 +550,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="enable metrics and scrape them." />
     <MESSAGE value="set name" />
     <MESSAGE value="rename alert policy" />
     <MESSAGE value="add attachments" />
@@ -573,7 +574,8 @@
     <MESSAGE value="fix nobl9" />
     <MESSAGE value="restore pscale" />
     <MESSAGE value="remove pscale" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove pscale" />
+    <MESSAGE value="to spacelif." />
+    <option name="LAST_COMMIT_MESSAGE" value="to spacelif." />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
