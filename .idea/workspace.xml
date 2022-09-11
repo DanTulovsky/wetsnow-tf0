@@ -6,10 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="clenaup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gcp/.terraform.lock.hcl" beforeDir="false" afterPath="$PROJECT_DIR$/gcp/.terraform.lock.hcl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gcp/gke.tf" beforeDir="false" afterPath="$PROJECT_DIR$/gcp/gke.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gcp/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/gcp/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gcp/providers.tf" beforeDir="false" afterPath="$PROJECT_DIR$/gcp/providers.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kind0/.terraform.lock.hcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kind0/apps.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kind0/main.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kind0/providers.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kind0/terraform.auto.tfvars" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kind0/variables.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kind0/versions.auto.tfvars" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,13 +142,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00148" summary="fix email">
-      <created>1648041240756</created>
-      <option name="number" value="00148" />
-      <option name="presentableId" value="LOCAL-00148" />
-      <option name="project" value="LOCAL" />
-      <updated>1648041240756</updated>
     </task>
     <task id="LOCAL-00149" summary="alert method">
       <created>1648041329086</created>
@@ -482,7 +479,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662910475122</updated>
     </task>
-    <option name="localTasksCounter" value="197" />
+    <task id="LOCAL-00197" summary="clenaup">
+      <created>1662910877295</created>
+      <option name="number" value="00197" />
+      <option name="presentableId" value="LOCAL-00197" />
+      <option name="project" value="LOCAL" />
+      <updated>1662910877295</updated>
+    </task>
+    <option name="localTasksCounter" value="198" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

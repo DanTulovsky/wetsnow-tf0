@@ -4,27 +4,14 @@ ambassador = {
   app_version   = "3.1.0"
   chart_version = "8.1.1"
 }
-argo_events = {
-  app_version = "v1.6.0"
-}
-argo_rollouts = {
-  app_version = "v1.2.0-rc1"
-}
-argo_workflows = {
-  app_version = "v3.3.0-rc4"
-}
 grafana = {
-  app_version = "9.0.2"
+  app_version = "9.1.4"
 }
 kubernetes_external_secrets = {
   app_version = "8.3.0"
 }
 otel_collector = {
-  app_version = "0.43.0"
-}
-prometheus = {
-  operator_version     = "0.54.0-debian-10-r9"
-  otel_sidecar_version = "v0.27.0"
+  app_version = "0.59.0"
 }
 quote_server = {
   app_version = "0.0.22"
