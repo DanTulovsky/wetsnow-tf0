@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="resources">
-      <change beforePath="$PROJECT_DIR$/../quote-server/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../quote-server/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../quote-server/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../quote-server/go.sum" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="cleanup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gcp/network.tf" beforeDir="false" afterPath="$PROJECT_DIR$/gcp/network.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/db.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gcp/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/gcp/main.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,13 +137,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00145" summary="remove kind">
-      <created>1648039796739</created>
-      <option name="number" value="00145" />
-      <option name="presentableId" value="LOCAL-00145" />
-      <option name="project" value="LOCAL" />
-      <updated>1648039796740</updated>
     </task>
     <task id="LOCAL-00146" summary="secrets">
       <created>1648040336023</created>
@@ -481,7 +474,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662560688392</updated>
     </task>
-    <option name="localTasksCounter" value="194" />
+    <task id="LOCAL-00194" summary="cleanup">
+      <created>1662909616666</created>
+      <option name="number" value="00194" />
+      <option name="presentableId" value="LOCAL-00194" />
+      <option name="project" value="LOCAL" />
+      <updated>1662909616666</updated>
+    </task>
+    <option name="localTasksCounter" value="195" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -564,7 +564,6 @@
     <MESSAGE value="cleanup ambassador" />
     <MESSAGE value="upgrade ambassador" />
     <MESSAGE value="update grafana" />
-    <MESSAGE value="cleanup" />
     <MESSAGE value="Revert &quot;cleanup&quot;&#10;&#10;This reverts commit 4e796339" />
     <MESSAGE value="update nobl9" />
     <MESSAGE value="terraform provider" />
@@ -578,7 +577,8 @@
     <MESSAGE value="ambassador upgrade" />
     <MESSAGE value="remove admin mapping" />
     <MESSAGE value="resources" />
-    <option name="LAST_COMMIT_MESSAGE" value="resources" />
+    <MESSAGE value="cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleanup" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>

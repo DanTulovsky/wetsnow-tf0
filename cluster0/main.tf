@@ -24,15 +24,6 @@ terraform {
     bucket = "wetsnow-tf"
     prefix = "cluster0"
   }
-
-  #  backend "remote" {
-  #    # hostname     = "app.terraform.io"
-  #    organization = "Wetsnow"
-  #
-  #    workspaces {
-  #      name = "wetsnow-tf0"
-  #    }
-  #  }
 }
 
 data "google_container_cluster" "cluster0" {
