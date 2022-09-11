@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="clenaup">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kind0/.terraform.lock.hcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kind0/apps.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kind0/main.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kind0/providers.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kind0/terraform.auto.tfvars" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kind0/variables.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kind0/versions.auto.tfvars" beforeDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="Upgrades">
+      <change beforePath="$PROJECT_DIR$/cluster0/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/variables.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,13 +134,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00149" summary="alert method">
-      <created>1648041329086</created>
-      <option name="number" value="00149" />
-      <option name="presentableId" value="LOCAL-00149" />
-      <option name="project" value="LOCAL" />
-      <updated>1648041329086</updated>
     </task>
     <task id="LOCAL-00150" summary="fix alert policy name">
       <created>1648041454123</created>
@@ -486,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662910877295</updated>
     </task>
-    <option name="localTasksCounter" value="198" />
+    <task id="LOCAL-00198" summary="Upgrades">
+      <created>1662927793891</created>
+      <option name="number" value="00198" />
+      <option name="presentableId" value="LOCAL-00198" />
+      <option name="project" value="LOCAL" />
+      <updated>1662927793891</updated>
+    </task>
+    <option name="localTasksCounter" value="199" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -558,7 +550,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="kubecost" />
     <MESSAGE value="namespance" />
     <MESSAGE value="fix helm chart name" />
     <MESSAGE value="disable grafana" />
@@ -583,7 +574,8 @@
     <MESSAGE value="cleanup" />
     <MESSAGE value="updates" />
     <MESSAGE value="clenaup" />
-    <option name="LAST_COMMIT_MESSAGE" value="clenaup" />
+    <MESSAGE value="Upgrades" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upgrades" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>

@@ -36,21 +36,6 @@ variable "ambassador" {
     chart_version = string
   })
 }
-variable "argo_rollouts" {
-  type = object({
-    app_version = string
-  })
-}
-variable "argo_events" {
-  type = object({
-    app_version = string
-  })
-}
-variable "argo_workflows" {
-  type = object({
-    app_version = string
-  })
-}
 variable "grafana" {
   type = object({
     app_version = string
@@ -64,12 +49,6 @@ variable "kubernetes_external_secrets" {
 variable "otel_collector" {
   type = object({
     app_version = string
-  })
-}
-variable "prometheus" {
-  type = object({
-    operator_version     = string
-    otel_sidecar_version = string
   })
 }
 variable "quote_server" {
