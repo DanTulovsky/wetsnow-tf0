@@ -1,8 +1,6 @@
 module "gke" {
-  # depends_on = [google_sql_database_instance.master]
-
   source                = "terraform-google-modules/kubernetes-engine/google"
-  version               = "14.0.1"
+  version               = "23.0.0"
   project_id            = var.project
   name                  = var.cluster_info.name
   region                = var.region
