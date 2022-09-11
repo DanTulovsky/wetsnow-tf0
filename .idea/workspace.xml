@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="remove admin mapping">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="resources">
+      <change beforePath="$PROJECT_DIR$/../quote-server/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../quote-server/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quote-server/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../quote-server/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/ambassador/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/yaml/values.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gcp/network.tf" beforeDir="false" afterPath="$PROJECT_DIR$/gcp/network.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +70,7 @@
     "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
     "TF_FMT": "false",
     "WebServerToolWindowFactoryState": "false",
-    "com.google.cloudcode.ide_session_index": "20220907_0001",
+    "com.google.cloudcode.ide_session_index": "20220911_0000",
     "go.import.settings.migrated": "true",
     "last_opened_file_path": "/Users/dant/go/src/github.com/DanTulovsky/wetsnow-tf0/modules/ambassador/yaml/k8s",
     "settings.editor.selected.configurable": "vcs.Git"
@@ -135,13 +137,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00144" summary="agent">
-      <created>1648039650609</created>
-      <option name="number" value="00144" />
-      <option name="presentableId" value="LOCAL-00144" />
-      <option name="project" value="LOCAL" />
-      <updated>1648039650609</updated>
     </task>
     <task id="LOCAL-00145" summary="remove kind">
       <created>1648039796739</created>
@@ -479,7 +474,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662560426754</updated>
     </task>
-    <option name="localTasksCounter" value="193" />
+    <task id="LOCAL-00193" summary="resources">
+      <created>1662560688391</created>
+      <option name="number" value="00193" />
+      <option name="presentableId" value="LOCAL-00193" />
+      <option name="project" value="LOCAL" />
+      <updated>1662560688392</updated>
+    </task>
+    <option name="localTasksCounter" value="194" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -551,7 +553,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="remove argo events" />
     <MESSAGE value="set slo to 95%" />
     <MESSAGE value="kubecost" />
     <MESSAGE value="namespance" />
@@ -576,7 +577,8 @@
     <MESSAGE value="updates" />
     <MESSAGE value="ambassador upgrade" />
     <MESSAGE value="remove admin mapping" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove admin mapping" />
+    <MESSAGE value="resources" />
+    <option name="LAST_COMMIT_MESSAGE" value="resources" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
