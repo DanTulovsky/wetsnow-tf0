@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="cleanup">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/yaml/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/yaml/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/pronestheus/helm/templates/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/pronestheus/helm/templates/deployment.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/pronestheus/helm/templates/service.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/terraform.auto.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/terraform.auto.tfvars" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,13 +134,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00152" summary="avaulability">
-      <created>1648042063589</created>
-      <option name="number" value="00152" />
-      <option name="presentableId" value="LOCAL-00152" />
-      <option name="project" value="LOCAL" />
-      <updated>1648042063589</updated>
     </task>
     <task id="LOCAL-00153" summary="avaulability">
       <created>1648042192502</created>
@@ -481,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663035251577</updated>
     </task>
-    <option name="localTasksCounter" value="201" />
+    <task id="LOCAL-00201" summary="cleanup">
+      <created>1663035884787</created>
+      <option name="number" value="00201" />
+      <option name="presentableId" value="LOCAL-00201" />
+      <option name="project" value="LOCAL" />
+      <updated>1663035884787</updated>
+    </task>
+    <option name="localTasksCounter" value="202" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
