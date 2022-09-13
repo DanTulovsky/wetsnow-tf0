@@ -1,1 +1,0 @@
-Sensors receive events from the eventbus and do stuff in response.

@@ -13,6 +13,9 @@ kubernetes_external_secrets = {
 otel_collector = {
   app_version = "0.59.0"
 }
+pronestheus = {
+  app_version = "v1.1.0"
+}
 quote_server = {
   app_version = "0.0.22"
 }

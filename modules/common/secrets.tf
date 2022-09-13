@@ -110,3 +110,40 @@ output "nobl9_jira_api_token" {
   sensitive = true
   value     = data.google_secret_manager_secret_version.nobl9_jira_api_token.secret_data
 }
+
+# Nest
+data "google_secret_manager_secret_version" "nest_client_id" {
+  secret = "nest_client_id"
+}
+output "nest_client_id" {
+  sensitive = true
+  value     = data.google_secret_manager_secret_version.nest_client_id.secret_data
+}
+data "google_secret_manager_secret_version" "nest_client_secret" {
+  secret = "nest_client_secret"
+}
+output "nest_client_secret" {
+  sensitive = true
+  value     = data.google_secret_manager_secret_version.nest_client_secret.secret_data
+}
+data "google_secret_manager_secret_version" "nest_project_id" {
+  secret = "nest_project_id"
+}
+output "nest_project_id" {
+  sensitive = true
+  value     = data.google_secret_manager_secret_version.nest_project_id.secret_data
+}
+data "google_secret_manager_secret_version" "nest_refresh_token" {
+  secret = "nest_refresh_token"
+}
+output "nest_refresh_token" {
+  sensitive = true
+  value     = data.google_secret_manager_secret_version.nest_refresh_token.secret_data
+}
+data "google_secret_manager_secret_version" "open_weather_token" {
+  secret = "open_weather_token"
+}
+output "open_weather_token" {
+  sensitive = true
+  value     = data.google_secret_manager_secret_version.open_weather_token.secret_data
+}

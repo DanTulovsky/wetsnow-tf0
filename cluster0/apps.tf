@@ -18,25 +18,6 @@ module "ambassador" {
   app_version    = var.ambassador.app_version
   chart_version  = var.ambassador.chart_version
 }
-
-#module "argo" {
-#  source       = "../modules/argo"
-#  namespace    = module.common.namespaces.argocd
-#  argo_version = var.argo_rollouts.app_version
-#}
-
-#module "argo-events" {
-#  source         = "../modules/argo-events"
-#  namespace      = module.common.namespaces.argo-events
-#  all_namespaces = var.cluster_info.namespaces
-#  argo_version   = var.argo_events.app_version
-#}
-
-#module "argo-workflows" {
-#  source       = "../modules/argo-workflows"
-#  namespace    = module.common.namespaces.argocd
-#  argo_version = var.argo_workflows.app_version
-#}
 module "http-ingress" {
   source = "../modules/http-ingress"
   depends_on = [
@@ -87,24 +68,16 @@ module "open-telemetry" {
   prom_enabled  = true
   image_version = var.otel_collector.app_version
 }
-# module "postgres" {
-#   source         = "./modules/postgres"
-#   depends_on     = [module.gke]
-#   admin_password = var.pgadmin_secrets.admin_password
-#   namespace      = module.common.namespaces.db
-# }
-#module "parca" {
-#  source    = "../modules/parca"
-#  namespace = module.common.namespaces.parca
-#}
-#module "prometheus" {
-#  source               = "../modules/prometheus"
-#  namespace            = module.common.namespaces.monitoring
-#  enabled              = true
-#  cluster_name         = var.cluster_info.name
-#  operator_version     = var.prometheus.operator_version
-#  otel_sidecar_version = var.prometheus.otel_sidecar_version
-#}
+module "pronestheus" {
+  source             = "../modules/pronestheus"
+  namespace          = module.common.namespaces.observability
+  app_version        = var.pronestheus.app_version
+  nest_refresh_token = module.common.nest_refresh_token
+  nest_client_id     = module.common.nest_client_id
+  nest_client_secret = module.common.nest_client_secret
+  nest_project_id    = module.common.nest_project_id
+  open_weather_token = module.common.open_weather_token
+}
 #module "quote-server" {
 #  source = "../modules/quote-server"
 #  depends_on = [
@@ -115,11 +88,6 @@ module "open-telemetry" {
 #  priority_class = module.common.priority_class.high0
 #  prom_enabled   = false
 #}
-# module "vector" {
-#   source     = "./modules/vector"
-#   depends_on = [module.gke, module.prometheus, module.kafka]
-#   namespace  = module.common.namespaces.vector
-# }
 module "web-static" {
   source       = "../modules/web-static"
   namespace    = module.common.namespaces.web

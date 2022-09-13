@@ -1,0 +1,25 @@
+image:
+  repository: grdl/pronestheus
+  tag: ${appVersion}
+
+# Based on NodeExporter Helm chart (https://github.com/helm/charts/blob/master/stable/prometheus-node-exporter/values.yaml)
+service:
+  type: ClusterIP
+  port: 9999
+  targetPort: 9999
+  nodePort:
+  annotations:
+    prometheus.io/scrape: "true"
+    prometheus.io/port:  "9999"
+
+nest:
+  refresh_token: ${refreshToken}
+  client_id: ${clientID}
+  client_secret: ${clientSecret}
+  project_id: ${projectID}
+  url: https://developer-api.nest.com/devices/thermostats
+
+openWeatherMap:
+  token: ${openWeatherToken}
+  url: http://api.openweathermap.org/data/2.5/weather
+  location: "5128581" # That's Staten Island

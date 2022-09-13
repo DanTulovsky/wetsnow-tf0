@@ -51,6 +51,11 @@ variable "otel_collector" {
     app_version = string
   })
 }
+variable "pronestheus" {
+  type = object({
+    app_version = string
+  })
+}
 variable "quote_server" {
   type = object({
     app_version = string

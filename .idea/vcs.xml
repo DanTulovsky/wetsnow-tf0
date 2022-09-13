@@ -8,7 +8,6 @@
     </option>
   </component>
   <component name="VcsDirectoryMappings">
-    <mapping directory="$PROJECT_DIR$/../quote-server" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../web-static" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>

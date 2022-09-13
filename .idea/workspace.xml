@@ -4,8 +4,49 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="Upgrades">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="cleanup">
+      <change afterPath="$PROJECT_DIR$/modules/pronestheus/helm/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/pronestheus/helm/templates/_helpers.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/pronestheus/helm/templates/deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/pronestheus/helm/templates/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/pronestheus/helm/templates/serviceaccount.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/pronestheus/helm/values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/pronestheus/main.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/pronestheus/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/wetsnow.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wetsnow.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cluster0/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/argo-events/event_sources.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/argo-events/main.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/argo-events/providers.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/argo-events/sensors.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/argo-events/variables.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/argo-events/yaml/k8s/eventbus.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/argo-events/yaml/k8s/sensors/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/argo-events/yaml/k8s/sensors/logger.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/argo-events/yaml/k8s/sources/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/argo-events/yaml/k8s/sources/calendar.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/argo-events/yaml/values.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/argo-workflows/main.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/argo-workflows/providers.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/argo-workflows/variables.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/argo-workflows/yaml/values.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/common/secrets.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/common/secrets.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kubecost/main.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kubecost/providers.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kubecost/variables.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kubecost/yaml/values.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kyverno/.terraform.lock.hcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kyverno/main.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kyverno/policies/quote-server-max-pods.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kyverno/policies/require-labels.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kyverno/policies/x-namespace-secrets.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kyverno/providers.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kyverno/variables.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/kyverno/yaml/values.yaml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +80,7 @@
     <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="KubernetesApiPersistence">
-    <option name="context" value="gke_snowcloud-01_us-central1-c_cluster0" />
+    <option name="context" value="snowcloud" />
     <option name="namespace" value="default" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -67,26 +108,26 @@
     "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
     "TF_FMT": "false",
     "WebServerToolWindowFactoryState": "false",
-    "com.google.cloudcode.ide_session_index": "20220911_0000",
+    "com.google.cloudcode.ide_session_index": "20220912_0001",
     "go.import.settings.migrated": "true",
-    "last_opened_file_path": "/Users/dant/go/src/github.com/DanTulovsky/wetsnow-tf0/modules/ambassador/yaml/k8s",
-    "settings.editor.selected.configurable": "vcs.Git"
+    "last_opened_file_path": "/Users/dant/go/src/github.com/DanTulovsky/wetsnow-tf0/modules/common/yaml/k8s",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/modules/common/yaml/k8s" />
+      <recent name="$PROJECT_DIR$/modules/pronestheus" />
       <recent name="$PROJECT_DIR$/modules/ambassador/yaml/k8s" />
       <recent name="$PROJECT_DIR$/modules" />
       <recent name="$PROJECT_DIR$/modules/argo-events" />
-      <recent name="$PROJECT_DIR$/modules/planetscale" />
-      <recent name="$PROJECT_DIR$/modules/kube-state-metrics" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/modules/pronestheus/helm" />
       <recent name="$PROJECT_DIR$/modules/argo-events/yaml/k8s" />
       <recent name="$PROJECT_DIR$/modules/argo-events/yaml" />
       <recent name="$PROJECT_DIR$/modules/nobl9/yaml/k8s" />
       <recent name="$PROJECT_DIR$/modules/parca/yaml/k8s/server" />
-      <recent name="$PROJECT_DIR$/modules/argo/yaml/k8s" />
     </key>
   </component>
   <component name="RunManager">
@@ -134,13 +175,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00150" summary="fix alert policy name">
-      <created>1648041454123</created>
-      <option name="number" value="00150" />
-      <option name="presentableId" value="LOCAL-00150" />
-      <option name="project" value="LOCAL" />
-      <updated>1648041454123</updated>
     </task>
     <task id="LOCAL-00151" summary="fix email name">
       <created>1648041597585</created>
@@ -478,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662927793891</updated>
     </task>
-    <option name="localTasksCounter" value="199" />
+    <task id="LOCAL-00199" summary="cleanup">
+      <created>1662927879954</created>
+      <option name="number" value="00199" />
+      <option name="presentableId" value="LOCAL-00199" />
+      <option name="project" value="LOCAL" />
+      <updated>1662927879954</updated>
+    </task>
+    <option name="localTasksCounter" value="200" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -550,6 +591,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../quote-server" />
+    </ignored-roots>
     <MESSAGE value="namespance" />
     <MESSAGE value="fix helm chart name" />
     <MESSAGE value="disable grafana" />
@@ -571,11 +615,11 @@
     <MESSAGE value="ambassador upgrade" />
     <MESSAGE value="remove admin mapping" />
     <MESSAGE value="resources" />
-    <MESSAGE value="cleanup" />
     <MESSAGE value="updates" />
     <MESSAGE value="clenaup" />
     <MESSAGE value="Upgrades" />
-    <option name="LAST_COMMIT_MESSAGE" value="Upgrades" />
+    <MESSAGE value="cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleanup" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
