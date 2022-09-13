@@ -5,48 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="cleanup">
-      <change afterPath="$PROJECT_DIR$/modules/pronestheus/helm/Chart.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/pronestheus/helm/templates/_helpers.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/pronestheus/helm/templates/deployment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/pronestheus/helm/templates/service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/pronestheus/helm/templates/serviceaccount.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/pronestheus/helm/values.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/pronestheus/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/pronestheus/variables.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/wetsnow.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wetsnow.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/variables.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo-events/event_sources.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo-events/main.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo-events/providers.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo-events/sensors.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo-events/variables.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo-events/yaml/k8s/eventbus.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo-events/yaml/k8s/sensors/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo-events/yaml/k8s/sensors/logger.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo-events/yaml/k8s/sources/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo-events/yaml/k8s/sources/calendar.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo-events/yaml/values.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo-workflows/main.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo-workflows/providers.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo-workflows/variables.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/argo-workflows/yaml/values.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/common/secrets.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/common/secrets.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/kubecost/main.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/kubecost/providers.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/kubecost/variables.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/kubecost/yaml/values.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/kyverno/.terraform.lock.hcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/kyverno/main.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/kyverno/policies/quote-server-max-pods.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/kyverno/policies/require-labels.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/kyverno/policies/x-namespace-secrets.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/kyverno/providers.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/kyverno/variables.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/kyverno/yaml/values.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/open-telemetry/yaml/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/open-telemetry/yaml/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/pronestheus/helm/templates/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/pronestheus/helm/templates/deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/pronestheus/helm/templates/service.yaml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,13 +137,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00151" summary="fix email name">
-      <created>1648041597585</created>
-      <option name="number" value="00151" />
-      <option name="presentableId" value="LOCAL-00151" />
-      <option name="project" value="LOCAL" />
-      <updated>1648041597585</updated>
     </task>
     <task id="LOCAL-00152" summary="avaulability">
       <created>1648042063589</created>
@@ -519,7 +474,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662927879954</updated>
     </task>
-    <option name="localTasksCounter" value="200" />
+    <task id="LOCAL-00200" summary="cleanup">
+      <created>1663035251577</created>
+      <option name="number" value="00200" />
+      <option name="presentableId" value="LOCAL-00200" />
+      <option name="project" value="LOCAL" />
+      <updated>1663035251577</updated>
+    </task>
+    <option name="localTasksCounter" value="201" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -13,6 +13,9 @@ spec:
     metadata:
       labels:
         app: pronestheus
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port:  "9999"
     spec:
       serviceAccountName: pronestheus-service-account
       containers:
