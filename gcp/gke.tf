@@ -1,6 +1,6 @@
 module "gke" {
   source                = "terraform-google-modules/kubernetes-engine/google"
-  version               = "23.0.0"
+  version               = "23.1.0"
   project_id            = var.project
   name                  = var.cluster_info.name
   region                = var.region
@@ -53,7 +53,6 @@ module "gke" {
       local_ssd_count    = 0
       disk_size_gb       = 100
       disk_type          = "pd-standard"
-      image_type         = "COS"
       auto_repair        = true
       auto_upgrade       = true
       autoscaling        = false

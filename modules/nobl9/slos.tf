@@ -36,8 +36,8 @@ resource "nobl9_slo" "web_static_latency" {
   indicator {
     #    name    = nobl9_agent.lightstep0.name
     # This is the name of the agent
-    name = "lightstep-hosted-agent"
-    #    kind    = "agent"
+    name    = "lightstep-hosted-agent"
+    kind    = "Direct"
     project = nobl9_project.wetsnow.name
 
   }
@@ -89,6 +89,7 @@ resource "nobl9_slo" "web_static_availability" {
     #    name    = nobl9_agent.lightstep0.name
     # This is the name of the agent
     name    = "lightstep-hosted-agent"
+    kind    = "Direct"
     project = nobl9_project.wetsnow.name
   }
 }
