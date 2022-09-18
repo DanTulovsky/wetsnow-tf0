@@ -88,7 +88,7 @@ resource "nobl9_slo" "web_static_availability" {
   indicator {
     #    name    = nobl9_agent.lightstep0.name
     # This is the name of the agent
-    name    = "lightstep"
+    name    = "lightstep-hosted-agent"
     project = nobl9_project.wetsnow.name
   }
 }
