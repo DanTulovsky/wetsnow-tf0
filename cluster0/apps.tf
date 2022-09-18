@@ -25,34 +25,18 @@ module "http-ingress" {
   ]
   namespace = module.common.namespaces.ambassador
 }
-module "grafana" {
-  source               = "../modules/grafana"
-  admin_password       = module.common.grafana_admin_password
-  smtp_password        = module.common.grafana_smtp_password
-  namespace            = module.common.namespaces.monitoring
-  prom_enabled         = false
-  google_client_id     = module.common.grafana_google_client_id
-  google_client_secret = module.common.grafana_google_client_secret
-  app_version          = var.grafana.app_version
-}
+
 module "kube-state-metrics" {
   source    = "../modules/kube-state-metrics"
   namespace = module.common.namespaces.monitoring
 }
-#module "kubecost" {
-#  source    = "../modules/kubecost"
-#  namespace = module.common.namespaces.kubecost
-#}
+
 module "kubernetes-external-secrets" {
   source      = "../modules/kubernetes-external-secrets"
   namespace   = module.common.namespaces.security
   app_version = var.kubernetes_external_secrets.app_version
   project_id  = var.project
 }
-//module "kyverno" {
-//  source    = "../modules/kyverno"
-//  namespace = module.common.namespaces.kyverno
-//}
 
 module "nobl9" {
   source         = "../modules/nobl9"
@@ -68,6 +52,7 @@ module "open-telemetry" {
   prom_enabled  = true
   image_version = var.otel_collector.app_version
 }
+
 module "pronestheus" {
   source             = "../modules/pronestheus"
   namespace          = module.common.namespaces.observability

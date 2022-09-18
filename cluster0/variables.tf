@@ -36,11 +36,6 @@ variable "ambassador" {
     chart_version = string
   })
 }
-variable "grafana" {
-  type = object({
-    app_version = string
-  })
-}
 variable "kubernetes_external_secrets" {
   type = object({
     app_version = string

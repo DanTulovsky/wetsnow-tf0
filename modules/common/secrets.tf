@@ -39,38 +39,6 @@ output "ambassador_license_key" {
   value     = data.google_secret_manager_secret_version.ambassador_license_key.secret_data
 }
 
-data "google_secret_manager_secret_version" "grafana_admin_password" {
-  secret = "grafana_admin_password"
-}
-output "grafana_admin_password" {
-  sensitive = true
-  value     = data.google_secret_manager_secret_version.grafana_admin_password.secret_data
-}
-
-data "google_secret_manager_secret_version" "grafana_smtp_password" {
-  secret = "grafana_smtp_password"
-}
-output "grafana_smtp_password" {
-  sensitive = true
-  value     = data.google_secret_manager_secret_version.grafana_smtp_password.secret_data
-}
-
-data "google_secret_manager_secret_version" "grafana_google_client_id" {
-  secret = "grafana_google_client_id"
-}
-output "grafana_google_client_id" {
-  sensitive = true
-  value     = data.google_secret_manager_secret_version.grafana_google_client_id.secret_data
-}
-
-data "google_secret_manager_secret_version" "grafana_google_client_secret" {
-  secret = "grafana_google_client_secret"
-}
-output "grafana_google_client_secret" {
-  sensitive = true
-  value     = data.google_secret_manager_secret_version.grafana_google_client_secret.secret_data
-}
-
 data "google_secret_manager_secret_version" "nobl9_client_id" {
   secret = "nobl9_client_id"
 }

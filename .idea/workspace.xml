@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="remove nobl9 agent, switch to hosted one.">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="cleanup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gcp/terraform.auto.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/gcp/terraform.auto.tfvars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/variables.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/common/secrets.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/common/secrets.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/grafana/.terraform.lock.hcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/grafana/main.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/grafana/providers.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/grafana/variables.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/grafana/yaml/values.yaml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,13 +142,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00157" summary="add value">
-      <created>1648048077314</created>
-      <option name="number" value="00157" />
-      <option name="presentableId" value="LOCAL-00157" />
-      <option name="project" value="LOCAL" />
-      <updated>1648048077314</updated>
     </task>
     <task id="LOCAL-00158" summary="add value">
       <created>1648048135868</created>
@@ -479,7 +479,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663536441609</updated>
     </task>
-    <option name="localTasksCounter" value="206" />
+    <task id="LOCAL-00206" summary="cleanup">
+      <created>1663536684072</created>
+      <option name="number" value="00206" />
+      <option name="presentableId" value="LOCAL-00206" />
+      <option name="project" value="LOCAL" />
+      <updated>1663536684072</updated>
+    </task>
+    <option name="localTasksCounter" value="207" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -577,9 +584,9 @@
     <MESSAGE value="updates" />
     <MESSAGE value="clenaup" />
     <MESSAGE value="Upgrades" />
-    <MESSAGE value="cleanup" />
     <MESSAGE value="remove nobl9 agent, switch to hosted one." />
-    <option name="LAST_COMMIT_MESSAGE" value="remove nobl9 agent, switch to hosted one." />
+    <MESSAGE value="cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleanup" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
