@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="remove nobl9 agent, switch to hosted one.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gcp/gke.tf" beforeDir="false" afterPath="$PROJECT_DIR$/gcp/gke.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/nobl9/slos.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nobl9/slos.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gcp/terraform.auto.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/gcp/terraform.auto.tfvars" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,13 +135,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00156" summary="remove op field">
-      <created>1648047344589</created>
-      <option name="number" value="00156" />
-      <option name="presentableId" value="LOCAL-00156" />
-      <option name="project" value="LOCAL" />
-      <updated>1648047344589</updated>
     </task>
     <task id="LOCAL-00157" summary="add value">
       <created>1648048077314</created>
@@ -480,7 +472,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663535950454</updated>
     </task>
-    <option name="localTasksCounter" value="205" />
+    <task id="LOCAL-00205" summary="remove nobl9 agent, switch to hosted one.">
+      <created>1663536441609</created>
+      <option name="number" value="00205" />
+      <option name="presentableId" value="LOCAL-00205" />
+      <option name="project" value="LOCAL" />
+      <updated>1663536441609</updated>
+    </task>
+    <option name="localTasksCounter" value="206" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
