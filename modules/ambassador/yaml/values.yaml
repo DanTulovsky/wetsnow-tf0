@@ -8,10 +8,10 @@ licenseKey:
 
 
 emissary-ingress:
-image:
-  repository: docker.io/datawire/aes
-  tag: ${app_version}
-  pullPolicy: IfNotPresent
+  image:
+    repository: docker.io/datawire/aes
+    tag: ${app_version}
+    pullPolicy: IfNotPresent
   replicaCount: 1
   podAnnotations:
     prometheus.io/scrape: "true"
