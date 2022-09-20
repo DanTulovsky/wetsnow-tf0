@@ -33,3 +33,5 @@ cluster0/.gcloud_credentials
 kind0/sensitive.auto.tfvars
 cluster0/sensitive.auto.tfvars
 /.idea/dbnavigator.xml
+/.idea/workspace.xml
+.DS_Store
