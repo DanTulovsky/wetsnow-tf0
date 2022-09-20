@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="otel update">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix ambassador metrics.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/ambassador/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/yaml/values.yaml" afterDir="false" />
     </list>
@@ -155,13 +155,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00160" summary="upgrade provider">
-      <created>1648060582815</created>
-      <option name="number" value="00160" />
-      <option name="presentableId" value="LOCAL-00160" />
-      <option name="project" value="LOCAL" />
-      <updated>1648060582815</updated>
     </task>
     <task id="LOCAL-00161" summary="upgrade provider">
       <created>1648060653996</created>
@@ -499,7 +492,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663636879337</updated>
     </task>
-    <option name="localTasksCounter" value="209" />
+    <task id="LOCAL-00209" summary="fix ambassador metrics.">
+      <created>1663637592056</created>
+      <option name="number" value="00209" />
+      <option name="presentableId" value="LOCAL-00209" />
+      <option name="project" value="LOCAL" />
+      <updated>1663637592056</updated>
+    </task>
+    <option name="localTasksCounter" value="210" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -574,7 +574,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/../quote-server" />
     </ignored-roots>
-    <MESSAGE value="add kubecost" />
     <MESSAGE value="rename" />
     <MESSAGE value="clear" />
     <MESSAGE value="cleanup ambassador" />
@@ -599,7 +598,8 @@
     <MESSAGE value="cleanup" />
     <MESSAGE value="delete grafana" />
     <MESSAGE value="otel update" />
-    <option name="LAST_COMMIT_MESSAGE" value="otel update" />
+    <MESSAGE value="fix ambassador metrics." />
+    <option name="LAST_COMMIT_MESSAGE" value="fix ambassador metrics." />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>

@@ -15,15 +15,16 @@ image:
   tag: ${app_version}
   pullPolicy: IfNotPresent
 
-replicaCount: 1
-
-podLabels:
-  # match the span service.name
-  service.name: "ambassador-ambassador"
-  service.version: ${app_version}
-
-
 emissary-ingress:
+  replicaCount: 1
+  podAnnotations:
+    prometheus.io/scrape: "true"
+    prometheus.io/port: "8877"
+    prometheus.io/path: "/metrics"
+  podLabels:
+    # match the span service.name
+    service.name: "ambassador-ambassador"
+    service.version: ${app_version}
   resources:
     limits:
       cpu: 300m
@@ -54,10 +55,6 @@ emissary-ingress:
     # externalTrafficPolicy: Cluster
     # externalTrafficPolicy: Local
   adminService:
-    annotations:
-      prometheus.io/scrape: "true"
-      prometheus.io/port: "8877"
-      prometheus.io/path: "/metrics"
     create: true
     port: 8877
     type: NodePort
