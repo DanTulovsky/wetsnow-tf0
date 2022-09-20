@@ -1,6 +1,5 @@
 variable "license_key" {
-  type      = string
-  sensitive = true
+  type = string
 }
 
 variable "namespace" {

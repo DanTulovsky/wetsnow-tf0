@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="fix ambassador metrics.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/ambassador/yaml/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/yaml/values.yaml" afterDir="false" />
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="more cleanup">
+      <change beforePath="$PROJECT_DIR$/modules/ambassador/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ambassador/variables.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,13 +154,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00162" summary="add jira ticket">
-      <created>1648172841933</created>
-      <option name="number" value="00162" />
-      <option name="presentableId" value="LOCAL-00162" />
-      <option name="project" value="LOCAL" />
-      <updated>1648172841933</updated>
     </task>
     <task id="LOCAL-00163" summary="nobl9 jira">
       <created>1648173395792</created>
@@ -499,7 +491,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663638002078</updated>
     </task>
-    <option name="localTasksCounter" value="211" />
+    <task id="LOCAL-00211" summary="more cleanup">
+      <created>1663638340002</created>
+      <option name="number" value="00211" />
+      <option name="presentableId" value="LOCAL-00211" />
+      <option name="project" value="LOCAL" />
+      <updated>1663638340002</updated>
+    </task>
+    <option name="localTasksCounter" value="212" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -574,7 +573,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/../quote-server" />
     </ignored-roots>
-    <MESSAGE value="rename" />
     <MESSAGE value="clear" />
     <MESSAGE value="cleanup ambassador" />
     <MESSAGE value="upgrade ambassador" />
@@ -599,7 +597,8 @@
     <MESSAGE value="delete grafana" />
     <MESSAGE value="otel update" />
     <MESSAGE value="fix ambassador metrics." />
-    <option name="LAST_COMMIT_MESSAGE" value="fix ambassador metrics." />
+    <MESSAGE value="more cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="more cleanup" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
