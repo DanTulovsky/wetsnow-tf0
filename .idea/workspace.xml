@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="cleanup">
+    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="delete grafana">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/apps.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/apps.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster0/variables.tf" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/variables.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/common/secrets.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/common/secrets.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/grafana/.terraform.lock.hcl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/grafana/main.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/grafana/providers.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/grafana/variables.tf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/grafana/yaml/values.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/.terraform.lock.hcl" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/.terraform.lock.hcl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/nobl9/agent.tf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/nobl9/providers.tf" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nobl9/providers.tf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,13 +37,13 @@
     </file-type-list>
   </component>
   <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="4246c2ca-87c4-4564-9560-104ff8d73865" />
+    <option name="defaultAccountId" value="4156194b-e0ed-44af-a425-c95f5df564f6" />
   </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="KubernetesApiPersistence">
-    <option name="context" value="snowcloud" />
+    <option name="context" value="gke_snowcloud-01_us-central1-c_cluster0" />
     <option name="namespace" value="default" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -68,6 +64,8 @@
     "ACTIVE_CLOUD_PROJECT_ID": "snowcloud-01",
     "ACTIVE_CLOUD_PROJECT_NAME": "snowcloud",
     "ACTIVE_CLOUD_PROJECT_NUMBER": "53644033433",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
@@ -75,7 +73,7 @@
     "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
     "TF_FMT": "false",
     "WebServerToolWindowFactoryState": "false",
-    "com.google.cloudcode.ide_session_index": "20220918_0001",
+    "com.google.cloudcode.ide_session_index": "20220919_0005",
     "go.import.settings.migrated": "true",
     "last_opened_file_path": "/Users/dant/go/src/github.com/DanTulovsky/wetsnow-tf0/modules/common/yaml/k8s",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
@@ -97,7 +95,7 @@
       <recent name="$PROJECT_DIR$/modules/parca/yaml/k8s/server" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Terraform.Plan nobl9_slo.web_static_latency">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="wetsnow" />
       <working_directory value="$PROJECT_DIR$/../web-static" />
@@ -129,8 +127,26 @@
       <framework value="gobench" />
       <method v="2" />
     </configuration>
+    <configuration name="Plan nobl9_slo.web_static_latency" type="#org.intellij.plugins.hcl.terraform.run.TerraformConfigurationType" factoryName="Terraform Plan" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="passParentEnvs" value="true" />
+      <option name="programParameters" value="plan -target=nobl9_slo.web_static_latency" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="workingDirectory" value="$PROJECT_DIR$/modules/nobl9" />
+      <option name="PROGRAM_PARAMETERS" value="plan -target=nobl9_slo.web_static_latency" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/modules/nobl9" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Terraform.Plan nobl9_slo.web_static_latency" />
         <item itemvalue="Go Test.gobench web-static" />
       </list>
     </recent_temporary>
@@ -142,13 +158,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633046260734</updated>
-    </task>
-    <task id="LOCAL-00158" summary="add value">
-      <created>1648048135868</created>
-      <option name="number" value="00158" />
-      <option name="presentableId" value="LOCAL-00158" />
-      <option name="project" value="LOCAL" />
-      <updated>1648048135868</updated>
     </task>
     <task id="LOCAL-00159" summary="upgrade provider">
       <created>1648060350962</created>
@@ -486,7 +495,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663536684072</updated>
     </task>
-    <option name="localTasksCounter" value="207" />
+    <task id="LOCAL-00207" summary="delete grafana">
+      <created>1663536857075</created>
+      <option name="number" value="00207" />
+      <option name="presentableId" value="LOCAL-00207" />
+      <option name="project" value="LOCAL" />
+      <updated>1663536857075</updated>
+    </task>
+    <option name="localTasksCounter" value="208" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -561,7 +577,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/../quote-server" />
     </ignored-roots>
-    <MESSAGE value="fix helm chart name" />
     <MESSAGE value="disable grafana" />
     <MESSAGE value="add kubecost" />
     <MESSAGE value="rename" />
@@ -586,7 +601,8 @@
     <MESSAGE value="Upgrades" />
     <MESSAGE value="remove nobl9 agent, switch to hosted one." />
     <MESSAGE value="cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleanup" />
+    <MESSAGE value="delete grafana" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete grafana" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>

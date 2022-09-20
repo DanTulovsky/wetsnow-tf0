@@ -11,7 +11,7 @@ terraform {
     }
     nobl9 = {
       source  = "nobl9/nobl9"
-      version = ">= 0.3.0"
+      version = ">= 0.5.0"
     }
   }
 }
