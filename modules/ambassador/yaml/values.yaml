@@ -22,10 +22,6 @@ podLabels:
   service.name: "ambassador-ambassador"
   service.version: ${app_version}
 
-podAnnotations:
-  prometheus.io/scrape: "true"
-  prometheus.io/port: "8877"
-  prometheus.io/path: "/metrics"
 
 emissary-ingress:
   resources:
@@ -58,7 +54,10 @@ emissary-ingress:
     # externalTrafficPolicy: Cluster
     # externalTrafficPolicy: Local
   adminService:
-    annotations: { }
+    annotations:
+      prometheus.io/scrape: "true"
+      prometheus.io/port: "8877"
+      prometheus.io/path: "/metrics"
     create: true
     port: 8877
     type: NodePort
