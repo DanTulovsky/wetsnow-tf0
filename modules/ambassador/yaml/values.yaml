@@ -1,21 +1,17 @@
-# https://github.com/datawire/ambassador/tree/master/charts/ambassador
+# https://artifacthub.io/packages/helm/datawire/edge-stack/8.1.0
 nameOverride: "${name}"
 
 licenseKey:
   value: ${licenseKey}
   annotations: { }
   createSecret: true
-metrics:
-  serviceMonitor:
-    # we use our own
-    enabled: false
 
+
+emissary-ingress:
 image:
   repository: docker.io/datawire/aes
   tag: ${app_version}
   pullPolicy: IfNotPresent
-
-emissary-ingress:
   replicaCount: 1
   podAnnotations:
     prometheus.io/scrape: "true"
