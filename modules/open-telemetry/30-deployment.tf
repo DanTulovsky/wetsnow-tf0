@@ -13,7 +13,6 @@ resource "kubernetes_deployment_v1" "otel_collector" {
       "prometheus.io/port"   = "8888"
       "prometheus.io/path"   = "/metrics"
     }
-
   }
   spec {
     replicas = 1
@@ -31,7 +30,10 @@ resource "kubernetes_deployment_v1" "otel_collector" {
           component = "otel-collector"
         }
         annotations = {
-          "checksum/config" = base64sha256(kubernetes_config_map.otel-collector-conf.data.otel-collector-config)
+          "prometheus.io/scrape" = "true"
+          "prometheus.io/port"   = "8888"
+          "prometheus.io/path"   = "/metrics"
+          "checksum/config"      = base64sha256(kubernetes_config_map.otel-collector-conf.data.otel-collector-config)
         }
       }
 
