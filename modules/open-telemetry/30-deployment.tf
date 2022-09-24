@@ -8,6 +8,11 @@ resource "kubernetes_deployment_v1" "otel_collector" {
       app       = "opentelemetry"
       component = "otel-collector"
     }
+    annotations = {
+      "prometheus.io/scrape" = "true"
+      "prometheus.io/port"   = "8888"
+      "prometheus.io/path"   = "/metrics"
+    }
 
   }
   spec {
