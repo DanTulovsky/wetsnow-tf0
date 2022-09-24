@@ -24,7 +24,7 @@ processors:
     passthrough: true
 extensions:
   health_check: { }
-  # https://github.com/open-telemetry/opentelemetry-specification/blob/main/experimental/trace/zpages.md
+  # https://github.com/open-telemetry/opentelemetry-collector/blob/main/extension/zpagesextension/README.md#exposed-zpages-routes
   zpages: { }
   pprof: { }
 exporters:
