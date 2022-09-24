@@ -1,4 +1,5 @@
 receivers:
+  # https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/receiver/kubeletstatsreceiver/documentation.md
   kubeletstats:
     collection_interval: 20s
     auth_type: "serviceAccount"
