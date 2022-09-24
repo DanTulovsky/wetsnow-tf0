@@ -27,7 +27,7 @@ variable "otel" {
     metrics_processors = "[memory_limiter, batch]"
     metrics_exporters  = "[otlp/lightstep]"
     trace_receivers    = "[otlp, zipkin, jaeger]"
-    trace_processors   = "[memory_limiter, batch, k8sattributes]"
+    trace_processors   = "[memory_limiter, batch, k8sattributes, servicegraph]"
     trace_exporters    = "[otlp/lightstep]"
   }
 }
