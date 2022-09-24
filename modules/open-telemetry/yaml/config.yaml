@@ -34,15 +34,15 @@ receivers:
     config:
       scrape_configs:
         # Collect metrics about myself
-        - job_name: opentelemetry-collector
-          scrape_interval: 30s
-          static_configs:
-            - targets:
-                - $${MY_POD_IP}:8888
-              labels:
-                app: opentelemetry
-                component: otel-collector-agent
-                net_host_name: $${MY_POD_NAME}
+#        - job_name: opentelemetry-collector
+#          scrape_interval: 30s
+#          static_configs:
+#            - targets:
+#                - $${MY_POD_IP}:8888
+#              labels:
+#                app: opentelemetry
+#                component: otel-collector-agent
+#                net_host_name: $${MY_POD_NAME}
         - job_name: kubernetes-pods
           scrape_interval: 30s
           kubernetes_sd_configs:
