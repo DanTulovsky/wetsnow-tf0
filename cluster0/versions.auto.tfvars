@@ -4,9 +4,6 @@ ambassador = {
   app_version   = "3.1.0"
   chart_version = "8.1.1"
 }
-grafana = {
-  app_version = "9.1.4"
-}
 kubernetes_external_secrets = {
   app_version = "8.3.0"
 }
@@ -14,7 +11,7 @@ otel_collector = {
   app_version = "0.60.0"
 }
 pronestheus = {
-  app_version = "v1.1.0"
+  app_version = "v0.2.0"
 }
 quote_server = {
   app_version = "0.0.22"

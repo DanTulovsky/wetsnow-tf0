@@ -8,10 +8,14 @@ resource "helm_release" "pronestheus" {
   values = [
     templatefile("${path.module}/helm/values.yaml", {
       appVersion       = var.app_version
-      clientID         = var.nest_client_id
-      clientSecret     = var.nest_client_secret
-      projectID        = var.nest_project_id
-      refreshToken     = var.nest_refresh_token
+      honeywellClientID         = var.honeywell_client_id
+      honeywellClientSecret     = var.honeywell_client_secret
+      honeywellLocationID        = var.honeywell_location_id
+      honeywellRefreshToken     = var.honeywell_refresh_token
+      nestClientID         = var.nest_client_id
+      nestClientSecret     = var.nest_client_secret
+      nestProjectID        = var.nest_project_id
+      nestRefreshToken     = var.nest_refresh_token
       openWeatherToken = var.open_weather_token
     })
   ]
