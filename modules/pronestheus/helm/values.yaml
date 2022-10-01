@@ -17,7 +17,7 @@ honeywell:
   refresh_token: ${honeywellRefreshToken}
   client_id: ${honeywellClientID}
   client_secret: ${honeywellClientSecret}
-  location_id: ${honeywellLocationID}
+  location_id: "${honeywellLocationID}"
 
 nest:
   refresh_token: ${nestRefreshToken}
