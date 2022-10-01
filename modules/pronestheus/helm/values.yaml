@@ -1,3 +1,4 @@
+force_change: 1
 image:
   repository: mrwetsnow/pronestheus
   tag: ${appVersion}
