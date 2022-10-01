@@ -23,11 +23,11 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           env:
             - name: PROHONEYWELLHEUS_HONEYWELL_REFRESH_TOKEN
-              value: {{ .Values.nest.refresh_token |quote }}
+              value: {{ .Values.honeywell.refresh_token |quote }}
             - name: PROHONEYWELLHEUS_HONEYWELL_CLIENT_ID
-              value: {{ .Values.nest.client_id |quote }}
+              value: {{ .Values.honeywell.client_id |quote }}
             - name: PROHONEYWELLHEUS_HONEYWELL_CLIENT_SECRET
-              value: {{ .Values.nest.client_secret |quote }}
+              value: {{ .Values.honeywell.client_secret |quote }}
             - name: PRONESTHEUS_NEST_REFRESH_TOKEN
               value: {{ .Values.nest.refresh_token |quote }}
             - name: PRONESTHEUS_NEST_CLIENT_ID
