@@ -22,6 +22,14 @@ spec:
         - name: pronestheus
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           env:
+            - name: PRONESTHEUS_HONEYWELL_REFRESH_TOKEN
+              value: {{ .Values.honeywell.refresh_token |quote }}
+            - name: PRONESTHEUS_HONEYWELL_CLIENT_ID
+              value: {{ .Values.honeywell.client_id |quote }}
+            - name: PRONESTHEUS_HONEYWELL_CLIENT_SECRET
+              value: {{ .Values.honeywell.client_secret |quote }}
+            - name: PRONESTHEUS_HONEYWELL_LOCATION_ID
+              value: {{ .Values.honeywell.location_id |quote }}
             - name: PRONESTHEUS_NEST_REFRESH_TOKEN
               value: {{ .Values.nest.refresh_token |quote }}
             - name: PRONESTHEUS_NEST_CLIENT_ID

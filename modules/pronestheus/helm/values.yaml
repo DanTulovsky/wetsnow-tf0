@@ -1,5 +1,6 @@
+force_change: 2
 image:
-  repository: grdl/pronestheus
+  repository: mrwetsnow/pronestheus
   tag: ${appVersion}
 
 # Based on NodeExporter Helm chart (https://github.com/helm/charts/blob/master/stable/prometheus-node-exporter/values.yaml)
@@ -12,11 +13,17 @@ service:
     prometheus.io/scrape: "true"
     prometheus.io/port:  "9999"
 
+honeywell:
+  refresh_token: ${honeywellRefreshToken}
+  client_id: ${honeywellClientID}
+  client_secret: ${honeywellClientSecret}
+  location_id: "${honeywellLocationID}"
+
 nest:
-  refresh_token: ${refreshToken}
-  client_id: ${clientID}
-  client_secret: ${clientSecret}
-  project_id: ${projectID}
+  refresh_token: ${nestRefreshToken}
+  client_id: ${nestClientID}
+  client_secret: ${nestClientSecret}
+  project_id: ${nestProjectID}
   url: https://developer-api.nest.com/devices/thermostats
 
 openWeatherMap:

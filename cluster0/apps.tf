@@ -57,6 +57,10 @@ module "pronestheus" {
   source             = "../modules/pronestheus"
   namespace          = module.common.namespaces.observability
   app_version        = var.pronestheus.app_version
+  honeywell_refresh_token = module.common.honeywell_refresh_token
+  honeywell_client_id     = module.common.honeywell_client_id
+  honeywell_client_secret = module.common.honeywell_client_secret
+  honeywell_location_id    = "2816484" // 962 N Mountain Rd Kitchen
   nest_refresh_token = module.common.nest_refresh_token
   nest_client_id     = module.common.nest_client_id
   nest_client_secret = module.common.nest_client_secret

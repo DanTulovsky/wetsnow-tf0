@@ -79,6 +79,28 @@ output "nobl9_jira_api_token" {
   value     = data.google_secret_manager_secret_version.nobl9_jira_api_token.secret_data
 }
 
+# Honeywell
+data "google_secret_manager_secret_version" "honeywell_client_id" {
+  secret = "honeywell_client_id"
+}
+output "honeywell_client_id" {
+  sensitive = true
+  value     = data.google_secret_manager_secret_version.honeywell_client_id.secret_data
+}
+data "google_secret_manager_secret_version" "honeywell_client_secret" {
+  secret = "honeywell_client_secret"
+}
+output "honeywell_client_secret" {
+  sensitive = true
+  value     = data.google_secret_manager_secret_version.honeywell_client_secret.secret_data
+}
+data "google_secret_manager_secret_version" "honeywell_refresh_token" {
+  secret = "honeywell_refresh_token"
+}
+output "honeywell_refresh_token" {
+  sensitive = true
+  value     = data.google_secret_manager_secret_version.honeywell_refresh_token.secret_data
+}
 # Nest
 data "google_secret_manager_secret_version" "nest_client_id" {
   secret = "nest_client_id"
