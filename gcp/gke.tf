@@ -9,6 +9,7 @@ module "gke" {
   zones                 = var.zones
   network               = var.cluster_info.vpc_name
   subnetwork            = var.cluster_info.vpc_name
+  dns_cache             = true
   enable_shielded_nodes = true
   ip_range_pods         = ""
   # defaults
