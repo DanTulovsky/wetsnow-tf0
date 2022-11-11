@@ -29,4 +29,4 @@ nest:
 openWeatherMap:
   token: ${openWeatherToken}
   url: http://api.openweathermap.org/data/2.5/weather
-  location: "5128581" # That's Staten Island
+  location: "5128581" # That's New York
