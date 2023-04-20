@@ -43,7 +43,7 @@ processors:
         - tag_name: app
           key: app
           from: pod
-        - tag_name: app.kubernetes.io/name
+        - tag_name: "app.kubernetes.io/name"
           key: service
           from: pod
 extensions:
