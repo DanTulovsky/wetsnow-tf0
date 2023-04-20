@@ -60,6 +60,14 @@ resource "kubernetes_daemon_set_v1" "otel_collector-daemonset" {
             }
           }
           env {
+            name = "KUBE_NODE_NAME"
+            value_from {
+              field_ref {
+                field_path = "spec.nodeName"
+              }
+            }
+          }
+          env {
             name = "LIGHTSTEP_ACCESS_TOKEN"
             value_from {
               secret_key_ref {
@@ -135,4 +143,3 @@ resource "kubernetes_daemon_set_v1" "otel_collector-daemonset" {
     }
   }
 }
-
