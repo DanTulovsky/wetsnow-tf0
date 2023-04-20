@@ -42,11 +42,9 @@ processors:
       labels:
         - tag_name: app
           key: app
-          regex: field=(?P<value>.+)
           from: pod
         - tag_name: app.kubernetes.io/name
           key: service
-          regex: field=(?P<value>.+)
           from: pod
 extensions:
   health_check: { }
