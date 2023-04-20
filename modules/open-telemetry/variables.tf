@@ -24,7 +24,7 @@ variable "otel" {
   type = map(string)
   default = {
     metrics_receivers  = "[otlp, statsd, k8s_cluster, prometheus]"
-    metrics_processors = "[memory_limiter, batch]"
+    metrics_processors = "[memory_limiter, batch, k8sattributes]"
     metrics_exporters  = "[otlp/lightstep]"
     trace_receivers    = "[otlp, zipkin, jaeger]"
     trace_processors   = "[memory_limiter, batch, k8sattributes]"
