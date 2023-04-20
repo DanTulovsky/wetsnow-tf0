@@ -21,7 +21,15 @@ processors:
     spike_limit_mib: 128
     check_interval: 5s
   k8sattributes:
-    passthrough: true
+    labels:
+      - tag_name: app
+        key: app
+        regex: field=(?P<value>.+)
+        from: pod
+      - tag_name: app.kubernetes.io/name
+        key: service
+        regex: field=(?P<value>.+)
+        from: pod
 extensions:
   health_check: { }
   # https://github.com/open-telemetry/opentelemetry-collector/blob/main/extension/zpagesextension/README.md#exposed-zpages-routes
