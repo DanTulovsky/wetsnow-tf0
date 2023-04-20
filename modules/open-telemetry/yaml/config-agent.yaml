@@ -43,8 +43,8 @@ processors:
         - tag_name: app
           key: app
           from: pod
-        - tag_name: "app.kubernetes.io/name"
-          key: service
+        - tag_name: service
+          key: "app.kubernetes.io/name"
           from: pod
 extensions:
   health_check: { }
