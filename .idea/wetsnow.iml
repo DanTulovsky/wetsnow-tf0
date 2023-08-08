@@ -3,7 +3,22 @@
   <component name="Go" enabled="true" />
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$/../web-static" />
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/cluster0/.terraform/modules" />
+      <excludeFolder url="file://$MODULE_DIR$/cluster0/.terraform/providers" />
+      <excludeFolder url="file://$MODULE_DIR$/gcp/.terraform/modules" />
+      <excludeFolder url="file://$MODULE_DIR$/gcp/.terraform/providers" />
+      <excludeFolder url="file://$MODULE_DIR$/modules/ambassador/.terraform/providers" />
+      <excludeFolder url="file://$MODULE_DIR$/modules/argo/.terraform/providers" />
+      <excludeFolder url="file://$MODULE_DIR$/modules/common/.terraform/providers" />
+      <excludeFolder url="file://$MODULE_DIR$/modules/http-ingress/.terraform/providers" />
+      <excludeFolder url="file://$MODULE_DIR$/modules/nobl9/.terraform/modules" />
+      <excludeFolder url="file://$MODULE_DIR$/modules/nobl9/.terraform/providers" />
+      <excludeFolder url="file://$MODULE_DIR$/modules/open-telemetry/.terraform/providers" />
+      <excludeFolder url="file://$MODULE_DIR$/modules/quote-server/.terraform/providers" />
+      <excludeFolder url="file://$MODULE_DIR$/modules/web-static/.terraform/providers" />
+      <excludeFolder url="file://$MODULE_DIR$/tutorial/.terraform/providers" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
