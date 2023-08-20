@@ -26,6 +26,7 @@ module "gke" {
   initial_node_count       = 1
   node_metadata            = "GKE_METADATA_SERVER"
   identity_namespace       = "enabled"
+  gke_backup_agent_config  = true
 
   node_pools = [
     {
