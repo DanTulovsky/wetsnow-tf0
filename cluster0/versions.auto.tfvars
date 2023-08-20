@@ -1,8 +1,8 @@
 # Before updating this, make sure an image with this tag exists.
 # TODO: #5 Can this be automatically checked?
 ambassador = {
-  app_version   = "3.1.0"
-  chart_version = "8.1.1"
+  app_version   = "3.7.2"
+  chart_version = "8.7.2"
 }
 kubernetes_external_secrets = {
   app_version = "8.3.0"
