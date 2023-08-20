@@ -8,7 +8,7 @@ kubernetes_external_secrets = {
   app_version = "8.3.0"
 }
 otel_collector = {
-  app_version = "0.60.0"
+  app_version = "0.83.0"
 }
 pronestheus = {
   app_version = "v0.2.0"
