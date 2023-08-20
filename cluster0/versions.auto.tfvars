@@ -17,5 +17,5 @@ quote_server = {
   app_version = "0.0.22"
 }
 web_static = {
-  app_version = "0.0.43"
+  app_version = "0.0.44"
 }
