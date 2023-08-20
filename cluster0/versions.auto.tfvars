@@ -17,6 +17,6 @@ quote_server = {
   app_version = "0.0.22"
 }
 web_static = {
-  # Also update build_push.sh
+  # Also update build_push.sh; but this is pushed automatically via github actions
   app_version = "0.0.44"
 }
