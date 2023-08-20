@@ -17,5 +17,6 @@ quote_server = {
   app_version = "0.0.22"
 }
 web_static = {
+  # Also update build_push.sh
   app_version = "0.0.44"
 }
