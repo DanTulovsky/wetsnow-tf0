@@ -48,7 +48,7 @@ module "open-telemetry" {
   source        = "../modules/open-telemetry"
   namespace     = module.common.namespaces.observability
   gke           = true
-  cluster_name  = var.cluster_info.nam
+  cluster_name  = var.cluster_info.name
   prom_enabled  = true
   image_version = var.otel_collector.app_version
 }
