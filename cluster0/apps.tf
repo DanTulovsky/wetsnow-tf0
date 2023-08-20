@@ -48,35 +48,35 @@ module "open-telemetry" {
   source        = "../modules/open-telemetry"
   namespace     = module.common.namespaces.observability
   gke           = true
-  cluster_name  = var.cluster_info.name
+  cluster_name  = var.cluster_info.nam
   prom_enabled  = true
   image_version = var.otel_collector.app_version
 }
 
 module "pronestheus" {
-  source             = "../modules/pronestheus"
-  namespace          = module.common.namespaces.observability
-  app_version        = var.pronestheus.app_version
+  source                  = "../modules/pronestheus"
+  namespace               = module.common.namespaces.observability
+  app_version             = var.pronestheus.app_version
   honeywell_refresh_token = module.common.honeywell_refresh_token
   honeywell_client_id     = module.common.honeywell_client_id
   honeywell_client_secret = module.common.honeywell_client_secret
-  honeywell_location_id    = "2816484" // 962 N Mountain Rd Kitchen
-  nest_refresh_token = module.common.nest_refresh_token
-  nest_client_id     = module.common.nest_client_id
-  nest_client_secret = module.common.nest_client_secret
-  nest_project_id    = module.common.nest_project_id
-  open_weather_token = module.common.open_weather_token
+  honeywell_location_id   = "2816484" // 962 N Mountain Rd Kitchen
+  nest_refresh_token      = module.common.nest_refresh_token
+  nest_client_id          = module.common.nest_client_id
+  nest_client_secret      = module.common.nest_client_secret
+  nest_project_id         = module.common.nest_project_id
+  open_weather_token      = module.common.open_weather_token
 }
-#module "quote-server" {
-#  source = "../modules/quote-server"
-#  depends_on = [
-#    module.common
-#  ]
-#  namespace      = module.common.namespaces.web
-#  app_version    = var.quote_server.app_version
-#  priority_class = module.common.priority_class.high0
-#  prom_enabled   = false
-#}
+module "quote-server" {
+  source = "../modules/quote-server"
+  depends_on = [
+    module.common
+  ]
+  namespace      = module.common.namespaces.web
+  app_version    = var.quote_server.app_version
+  priority_class = module.common.priority_class.high0
+  prom_enabled   = false
+}
 module "web-static" {
   source       = "../modules/web-static"
   namespace    = module.common.namespaces.web
