@@ -9,6 +9,7 @@
 resource "google_compute_health_check" "quote-server-grpc-health-check" {
   provider = google-beta
   name     = "quote-server-grpc-health-check"
+  project  = "snowcloud-01"
 
   timeout_sec        = 5
   check_interval_sec = 5
