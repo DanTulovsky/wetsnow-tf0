@@ -10,7 +10,7 @@ resource "kubernetes_deployment_v1" "quote_server_grpc" {
 
   spec {
     # managed by Argo Rollouts (yaml/k8s/rollout.yaml)
-    replicas                  = 0
+    replicas                  = 1
     progress_deadline_seconds = 300
     revision_history_limit    = 5
     min_ready_seconds         = 20
