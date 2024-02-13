@@ -9,6 +9,7 @@
 resource "google_compute_health_check" "quote-server-grpc-health-check" {
   provider = google-beta
   name     = "quote-server-grpc-health-check"
+  project  = "snowcloud-01"
 
   timeout_sec        = 5
   check_interval_sec = 5
@@ -59,6 +60,7 @@ resource "google_compute_firewall" "quote-server-grpc-gke-allow-health-checks" {
 resource "google_compute_backend_service" "quote-server-backend-service" {
   provider = google-beta
   name     = "quote-server-grpc-backend-service"
+  project  = "snowcloud-01"
   health_checks = [
     google_compute_health_check.quote-server-grpc-health-check.id
   ]
@@ -77,6 +79,7 @@ resource "google_compute_backend_service" "quote-server-backend-service" {
 resource "google_compute_url_map" "quote-server-urlmap" {
   provider    = google-beta
   name        = "quote-server-urlmap"
+  project     = "snowcloud-01"
   description = "quote server grpc url map"
   # The defaultService, defaultRouteAction, defaultUrlRedirect, and headerAction of the
   # URL map are not used by proxyless gRPC services. If a matching host rule is not found when a
@@ -111,6 +114,7 @@ resource "google_compute_url_map" "quote-server-urlmap" {
 resource "google_compute_target_grpc_proxy" "quote-server-grpc-proxy" {
   provider               = google-beta
   name                   = "proxy"
+  project                = "snowcloud-01"
   url_map                = google_compute_url_map.quote-server-urlmap.id
   validate_for_proxyless = true
 }

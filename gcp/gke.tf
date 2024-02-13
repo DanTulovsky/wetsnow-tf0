@@ -1,6 +1,6 @@
 module "gke" {
   source                = "terraform-google-modules/kubernetes-engine/google"
-  version               = "23.1.0"
+  version               = "27.0.0"
   project_id            = var.project
   name                  = var.cluster_info.name
   region                = var.region
@@ -26,6 +26,7 @@ module "gke" {
   initial_node_count       = 1
   node_metadata            = "GKE_METADATA_SERVER"
   identity_namespace       = "enabled"
+  gke_backup_agent_config  = true
 
   node_pools = [
     {

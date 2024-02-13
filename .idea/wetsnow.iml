@@ -18,6 +18,8 @@
       <excludeFolder url="file://$MODULE_DIR$/modules/quote-server/.terraform/providers" />
       <excludeFolder url="file://$MODULE_DIR$/modules/web-static/.terraform/providers" />
       <excludeFolder url="file://$MODULE_DIR$/tutorial/.terraform/providers" />
+      <excludeFolder url="file://$MODULE_DIR$/kind0/.terraform/modules" />
+      <excludeFolder url="file://$MODULE_DIR$/kind0/.terraform/providers" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

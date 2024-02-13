@@ -1,0 +1,57 @@
+Index: .idea/workspace.xml
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -4,9 +4,9 @@
+     <option name="autoReloadType" value="ALL" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="cleanup ambassador">
++    <list default="true" id="44baa8ff-d018-417e-a1fc-c92925bb8f06" name="Default Changelist" comment="set slo to 95%">
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/cluster0/versions.auto.tfvars" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -22,7 +22,7 @@
+         <option name="title" value="All" />
+       </GitPushTagMode>
+     </option>
+-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../quote-server" />
+     <option name="ROOT_SYNC" value="SYNC" />
+   </component>
+   <component name="GitSEFilterConfiguration">
+@@ -45,6 +45,7 @@
+   </component>
+   <component name="ProjectId" id="1r8Ir3miogzozA8u5RxJXu3Nw2Y" />
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
++    <OptionsSetting value="false" id="Update" />
+     <ConfirmationsSetting value="2" id="Add" />
+   </component>
+   <component name="ProjectViewState">
+@@ -53,6 +54,8 @@
+   </component>
+   <component name="PropertiesComponent">{
+   &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+     &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
+     &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+     &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+@@ -60,10 +63,11 @@
+     &quot;RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed&quot;: &quot;true&quot;,
+     &quot;TF_FMT&quot;: &quot;false&quot;,
+     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+-    &quot;com.google.cloudcode.ide_session_index&quot;: &quot;20220415_0000&quot;,
++    &quot;com.google.cloudcode.ide_session_index&quot;: &quot;20221126_0005&quot;,
+     &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+     &quot;last_opened_file_path&quot;: &quot;/Users/dant&quot;,
+-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+   }
+ }</component>
+   <component name="RecentsManager">
